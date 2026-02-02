@@ -1,0 +1,52 @@
+{
+  "rules": {
+    "chat": {
+      "$channel": {
+        "messages": {
+          "$message": {
+            ".write": "auth != null && (newData.child('authorId').val() === auth.uid || (data.exists() && data.child('authorId').val() === auth.uid))",
+            ".read": true,
+            "authorId": {
+              ".validate": "newData.val() === auth.uid || newData.val() === null"
+            },
+            "timestamp": {
+              ".validate": "newData.isNumber()"
+            }
+          }
+        }
+      }
+    },
+    "users": {
+      "$uid": {
+        ".write": "auth != null && auth.uid === $uid",
+        ".read": true
+      }
+    },
+    "usernames": {
+      ".read": true,
+      ".write": "false" 
+    },
+    "friendRequests": {
+      "$receiver": {
+        "$sender": {
+          ".write": "auth != null && auth.uid === $sender", 
+          ".read": "auth != null && (auth.uid === $receiver || auth.uid === $sender)"
+        }
+      }
+    },
+    "friends": {
+      "$uid": {
+        "$friendUid": {
+          ".write": "auth != null && (auth.uid === $uid || auth.uid === $friendUid)",
+          ".read": "auth != null && (auth.uid === $uid || auth.uid === $friendUid)"
+        }
+      }
+    },
+    "bans": {
+      "$uid": {
+        ".write": "root.child('moderators').child(auth.uid).val() === true",
+        ".read": true
+      }
+    }
+  }
+}

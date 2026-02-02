@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍳 Cooking Department - Live Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #ff6b35;
+            --secondary-color: #f7931e;
+            --accent-color: #ffd700;
+            --text-color: #ffffff;
+            --bg-dark: rgba(0, 0, 0, 0.8);
+            --bg-light: rgba(255, 255, 255, 0.1);
+            --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            --border-radius: 15px;
+            --glass-effect: rgba(255, 255, 255, 0.15);
+            --success-color: #4CAF50;
+            --error-color: #f44336;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 20px;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://cdn.dribbble.com/userupload/24944322/file/original-e9fa56736e2e38dd120d0ed4b40bb4c5.gif') center center fixed;
+            background-size: cover;
+            color: var(--text-color);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Glass morphism overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(10, 10, 12, 0.6) 0%, rgba(10, 10, 12, 0.78) 100%);
+            z-index: -1;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            background: rgba(18, 18, 24, 0.88);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            position: relative;
+            overflow: visible;
+        }
+
+        .header::before {
+            display: none;
+        }
+
+        .header-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 15px;
+        }
+
+        .header-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-self: center;
+        }
+
+        .header-actions {
+            display: flex;
+            justify-content: flex-end;
+            justify-self: end;
+        }
+
+        .header-gif {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-color);
+        }
+
+        .homepage-btn {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .homepage-btn:hover {
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.5);
+            border-color: var(--accent-color);
+        }
+
+        .homepage-btn i {
+            font-size: 1rem;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .quick-link {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .quick-link:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .live-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .stat-item {
+            background: linear-gradient(135deg, var(--bg-light), rgba(255, 255, 255, 0.05));
+            padding: 15px 24px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            min-width: 120px;
+        }
+
+        .stat-item:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.6s;
+        }
+
+        .stat-item:hover:before {
+            left: 100%;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 40px rgba(255, 107, 53, 0.5);
+            border-color: var(--accent-color);
+        }
+
+        .stat-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-icon {
+            background: var(--accent-color);
+            color: #000;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .stat-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .stat-value {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        /* Main Content Layout */
+        .main-content {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr auto;
+            gap: 20px;
+            grid-template-areas:
+                "rankings activity"
+                "menu menu";
+        }
+
+        .rankings-section {
+            grid-area: rankings;
+            background: var(--glass-effect);
+            backdrop-filter: blur(20px);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-height: 75vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .activity-section {
+            grid-area: activity;
+            background: var(--glass-effect);
+            backdrop-filter: blur(20px);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-height: 75vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-section {
+            grid-area: menu;
+            background: var(--glass-effect);
+            backdrop-filter: blur(20px);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-height: 40vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Section Cards */
+        .section-card {
+            background: var(--glass-effect);
+            backdrop-filter: blur(20px);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            height: fit-content;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        .section-header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: linear-gradient(135deg, var(--glass-effect), rgba(255, 255, 255, 0.1));
+            backdrop-filter: blur(25px);
+            padding: 20px 25px 15px 25px;
+            margin: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+        }
+
+        .menu-section .section-header {
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            border-bottom: none;
+            padding-bottom: 10px;
+        }
+
+        .section-header h2 {
+            font-size: 1.4rem;
+            margin: 0;
+            text-align: center;
+            color: var(--accent-color);
+            text-shadow: 0 0 12px rgba(255, 215, 0, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .section-header h2 i {
+            color: var(--primary-color);
+        }
+
+        .section-content {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 25px;
+            scroll-behavior: smooth;
+        }
+
+        .activity-section .section-content {
+            padding: 20px;
+        }
+
+        /* Chef Rankings Layout */
+        .rankings-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Top 3 Podium Layout */
+        .podium-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr 1fr;
+            grid-template-areas:
+                "second first third";
+            gap: 20px;
+            margin-bottom: 30px;
+            align-items: end;
+            padding: 0 10px;
+        }
+
+        .podium-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+            border-radius: 25px;
+            padding: 30px 20px 25px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(20px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .podium-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.6s;
+            border-radius: 25px;
+        }
+        
+        .podium-card:hover::before {
+            left: 100%;
+        }
+
+        /* Discord Profile Integration */
+        .chef-avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-color);
+            margin: 0;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: visible;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .chef-avatar:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 45px rgba(255, 107, 53, 0.6);
+        }
+
+        .chef-avatar.first-place:hover {
+            transform: scale(1.08);
+            box-shadow: 0 15px 50px rgba(255, 215, 0, 0.8);
+        }
+
+        .chef-avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .chef-avatar.first-place {
+            width: 130px;
+            height: 130px;
+            border-color: #ffd700;
+            border-width: 5px;
+            box-shadow: 0 10px 40px rgba(255, 215, 0, 0.6);
+        }
+
+        .chef-badge {
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            z-index: 3;
+            filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.5));
+        }
+
+        .chef-avatar.first-place .chef-badge {
+            font-size: 2.5rem;
+            animation: bounce 2s infinite;
+        }
+
+        .chef-status {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 3px solid white;
+            background: #43b581; /* Online green */
+            z-index: 2;
+        }
+
+        .chef-status.away {
+            background: #faa61a; /* Away yellow */
+        }
+
+        .chef-status.busy {
+            background: #f04747; /* Busy red */
+        }
+
+        .chef-status.offline {
+            background: #747f8d; /* Offline gray */
+        }
+
+        .discord-tag {
+            font-size: 0.8rem;
+            color: var(--secondary-color);
+            opacity: 0.8;
+            margin-top: 5px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .compact-chef-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-color);
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: white;
+            font-weight: bold;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+
+        .compact-chef-avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .compact-status {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid white;
+            background: #43b581;
+        }
+
+        .podium-card.first-place {
+            grid-area: first;
+            transform: scale(1.1);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(255, 237, 78, 0.15), var(--bg-light));
+            border-color: var(--accent-color);
+            border-width: 3px;
+            box-shadow: 0 20px 60px rgba(255, 215, 0, 0.5), inset 0 2px 10px rgba(255, 215, 0, 0.2);
+        }
+
+        .podium-card.second-place {
+            grid-area: second;
+            background: linear-gradient(135deg, rgba(192, 192, 192, 0.25), rgba(232, 232, 232, 0.15), var(--bg-light));
+            border-color: #c0c0c0;
+            box-shadow: 0 15px 45px rgba(192, 192, 192, 0.4), inset 0 2px 8px rgba(192, 192, 192, 0.15);
+        }
+
+        .podium-card.third-place {
+            grid-area: third;
+            background: linear-gradient(135deg, rgba(205, 127, 50, 0.25), rgba(218, 165, 32, 0.15), var(--bg-light));
+            border-color: #cd7f32;
+            box-shadow: 0 15px 45px rgba(205, 127, 50, 0.4), inset 0 2px 8px rgba(205, 127, 50, 0.15);
+        }
+
+        .podium-card {
+            will-change: transform;
+        }
+        
+        .podium-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 25px 60px rgba(255, 107, 53, 0.5);
+        }
+
+        .podium-card.first-place:hover {
+            transform: translateY(-10px) scale(1.13);
+            box-shadow: 0 30px 70px rgba(255, 215, 0, 0.6);
+        }
+
+        .podium-chef-name {
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: var(--text-color);
+            margin: 5px 0 0 0;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .podium-card.first-place .podium-chef-name {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .podium-chef-role {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin: 0;
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .podium-rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: var(--accent-color);
+            margin: 8px 0;
+        }
+
+        .podium-card.first-place .podium-rating {
+            font-size: 1.6rem;
+        }
+
+        .podium-rating i {
+            color: #ffd700;
+            font-size: 1.2rem;
+        }
+
+        .podium-stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.85rem;
+            margin-top: 5px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            width: 100%;
+        }
+
+        .podium-card.first-place .podium-stats {
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+
+        .podium-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .podium-stat i {
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+        .podium-stat-value {
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .podium-stat-label {
+            font-size: 0.7rem;
+            color: var(--secondary-color);
+            opacity: 0.8;
+        }
+
+        /* Remaining Chefs Grid */
+        .remaining-chefs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+        }
+
+        .compact-chef-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+            border-radius: 15px;
+            padding: 16px;
+            border: 1.5px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(12px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .compact-chef-card:hover {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+            transform: translateX(5px) scale(1.02);
+            border-color: var(--accent-color);
+            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
+        }
+
+        .compact-rank {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            min-width: 30px;
+            height: 30px;
+            padding: 0 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.85rem;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .compact-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .compact-name {
+            font-size: 1rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 3px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .compact-role {
+            color: var(--secondary-color);
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        .compact-stats {
+            display: flex;
+            gap: 12px;
+            font-size: 0.8rem;
+        }
+
+        .compact-stat {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .compact-stat i {
+            color: var(--accent-color);
+            width: 12px;
+            text-align: center;
+        }
+
+        /* Menu System */
+        .menu-tabs {
+            display: flex;
+            gap: 2px;
+            padding: 0 20px 15px 20px;
+            background: linear-gradient(135deg, var(--glass-effect), rgba(255, 255, 255, 0.05));
+            backdrop-filter: blur(25px);
+            position: sticky;
+            top: 0;
+            z-index: 9;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: -1px;
+        }
+
+        .menu-tab {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-color);
+            padding: 10px 18px;
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0.6;
+            font-weight: 500;
+            position: relative;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+        }
+
+        .menu-tab:hover {
+            background: rgba(255, 255, 255, 0.1);
+            opacity: 0.8;
+            transform: translateY(-1px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .menu-tab.active {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            opacity: 1;
+            border-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 3px 12px rgba(255, 107, 53, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .menu-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary-color);
+            border-radius: 0;
+        }
+
+        .menu-content {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            padding: 15px 20px;
+            background: transparent;
+        }
+
+        .menu-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .menu-content::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            margin: 5px;
+        }
+
+        .menu-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-content::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+            box-shadow: 0 0 6px rgba(255, 107, 53, 0.4);
+        }
+
+        .menu-category {
+            display: none;
+        }
+
+        .menu-category.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .menu-item {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin-bottom: 10px;
+            backdrop-filter: blur(12px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .menu-item:hover {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+            transform: translateX(3px);
+            border-color: rgba(255, 107, 53, 0.3);
+            box-shadow: 0 3px 15px rgba(255, 107, 53, 0.2);
+        }
+
+        .menu-item-info {
+            flex: 1;
+        }
+
+        .menu-item-name {
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 4px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .menu-item-name::before {
+            content: '🍽️';
+            font-size: 0.9rem;
+        }
+
+        .menu-item-ingredients {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.3;
+        }
+
+        .menu-item-prices {
+            text-align: right;
+            font-size: 0.85rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 2px;
+        }
+
+        .cost-price {
+            color: #ff8a8a;
+            text-decoration: line-through;
+            opacity: 0.6;
+            font-size: 0.75rem;
+            font-weight: 400;
+        }
+
+        .selling-price {
+            color: var(--success-color);
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Activity Log */
+        .activity-item {
+            background: var(--bg-light);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-left: 4px solid var(--primary-color);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .activity-item.new-activity {
+            opacity: 0;
+            transform: translateX(-30px) scale(0.95);
+        }
+
+        .activity-item.slide-in {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+            animation: slideInSmooth 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        .activity-item:hover {
+            transform: translateX(4px);
+            box-shadow: 0 6px 25px rgba(255, 107, 53, 0.3);
+            border-left-color: var(--accent-color);
+        }
+
+        @keyframes slideInSmooth {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px) scale(0.95);
+            }
+            50% {
+                opacity: 0.7;
+                transform: translateX(2px) scale(1.02);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0) scale(1);
+            }
+        }
+
+        .activity-time {
+            font-size: 0.75rem;
+            color: var(--secondary-color);
+            margin-bottom: 4px;
+        }
+
+        .activity-text {
+            font-size: 0.9rem;
+            line-height: 1.3;
+        }
+
+        .activity-user {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .activity-action {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+
+
+        /* Loading and States */
+        .loading {
+            text-align: center;
+            padding: 30px;
+            font-size: 1rem;
+            color: var(--secondary-color);
+            animation: pulse 2s infinite;
+        }
+
+        .updated {
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        .error {
+            color: var(--error-color);
+        }
+
+        /* Animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-8px); }
+            60% { transform: translateY(-4px); }
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes dataUpdate {
+            0% { background-color: var(--bg-light); }
+            50% { background-color: rgba(255, 215, 0, 0.2); }
+            100% { background-color: var(--bg-light); }
+        }
+
+        .data-updated {
+            animation: dataUpdate 1s ease;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .main-content {
+                grid-template-columns: 1.5fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "rankings"
+                    "activity"
+                    "menu";
+                gap: 15px;
+            }
+            
+            .rankings-section,
+            .activity-section {
+                max-height: 60vh;
+            }
+            
+            .menu-section {
+                max-height: 45vh;
+            }
+            
+            /* Mobile podium layout */
+            .podium-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "first"
+                    "second"
+                    "third";
+                gap: 15px;
+                padding: 0 5px;
+            }
+            
+            .podium-card {
+                padding: 20px 15px;
+            }
+            
+            .podium-card.first-place {
+                transform: scale(1.02);
+            }
+            
+            .podium-card.first-place:hover {
+                transform: translateY(-3px) scale(1.05);
+            }
+            
+            .chef-avatar {
+                width: 90px;
+                height: 90px;
+            }
+            
+            .chef-avatar.first-place {
+                width: 110px;
+                height: 110px;
+            }
+            
+            .remaining-chefs {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            
+            .compact-chef-card {
+                padding: 12px;
+            }
+            
+            .compact-chef-avatar {
+                width: 35px;
+                height: 35px;
+            }
+            
+            .header-content {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .header-title {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .header-actions {
+                justify-content: center;
+            }
+
+            .homepage-btn {
+                margin: 0 auto;
+                display: inline-flex;
+                width: fit-content;
+                font-size: 0.85rem;
+                padding: 10px 18px;
+            }
+            
+            .header-gif {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .live-stats {
+                gap: 8px;
+            }
+            
+            .stat-item {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+                min-width: 100px;
+            }
+
+            .quick-links {
+                gap: 8px;
+            }
+
+            .quick-link {
+                padding: 8px 12px;
+                font-size: 0.85rem;
+            }
+            
+            .section-content {
+                padding: 15px;
+            }
+            
+            .activity-section .section-content {
+                padding: 12px;
+            }
+        }
+
+        .trend-up { color: var(--success-color); }
+        .trend-down { color: var(--error-color); }
+
+        /* Enhanced Smooth Scrollbar Styling */
+        .section-content::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .section-content::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            margin: 8px;
+        }
+
+        .section-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 12px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            transition: all 0.3s ease;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+        }
+
+        .section-content::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+            box-shadow: 0 0 15px rgba(255, 107, 53, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+            transform: scaleY(1.1);
+        }
+
+        .section-content::-webkit-scrollbar-thumb:active {
+            background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+        }
+
+        /* Smooth scrolling for Firefox */
+        .section-content {
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary-color) rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="header-title">
+                    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXdvc2hlM2ZlYXoyZW94MXlxenhtYWpobW04eW1rN3lrczc0d2M0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/eaarEl3xnKF3JraWi0/giphy.gif" 
+                         alt="Chef GIF" class="header-gif">
+                    <h1>🍳 Cooking Department Dashboard</h1>
+                    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXdvc2hlM2ZlYXoyZW94MXlxenhtYWpobW04eW1rN3lrczc0d2M0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/eaarEl3xnKF3JraWi0/giphy.gif" 
+                         alt="Chef GIF" class="header-gif">
+                </div>
+                <div class="header-actions">
+                    <a href="https://crumbl-crafts.github.io/Bloxburg/" class="homepage-btn" id="homepageBtn">
+                        <i class="fas fa-home"></i>
+                        <span>Back to Home</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="quick-links">
+                <a href="https://discord.com/channels/1301988304279048275/1365365079674978466" target="_blank" class="quick-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Food
+                </a>
+                <a href="https://discord.com/channels/1301988304279048275/1364539050760998912" target="_blank" class="quick-link">
+                    <i class="fas fa-user-plus"></i>
+                    Apply for Chef
+                </a>
+                <a href="https://discord.com/channels/1301988304279048275" target="_blank" class="quick-link">
+                    <i class="fab fa-discord"></i>
+                    Join Discord
+                </a>
+            </div>
+
+            <div class="live-stats" id="liveStats">
+                <div class="stat-item">
+                    <div class="stat-content">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Total Chefs</div>
+                            <div class="stat-value" id="totalChefs">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-content">
+                        <div class="stat-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Orders</div>
+                            <div class="stat-value" id="totalOrders">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-content">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Avg Rating</div>
+                            <div class="stat-value" id="avgRating">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-content">
+                        <div class="stat-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Active Now</div>
+                            <div class="stat-value" id="activeChefs">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-content">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Last Update</div>
+                            <div class="stat-value" id="lastUpdate">Never</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Chef Rankings - Main Focus -->
+            <section class="rankings-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-trophy"></i> Chef Rankings</h2>
+                </div>
+                <div class="section-content">
+                    <div class="rankings-container" id="chefRankings">
+                        <div class="loading">Loading chef rankings...</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activity Log - Right Side -->
+            <section class="activity-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-history"></i> Live Activity</h2>
+                </div>
+                <div class="section-content">
+                    <div class="activity-container" id="activityLog">
+                        <div class="loading">Loading activity log...</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu - Bottom -->
+            <section class="menu-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-book-open"></i> Menu Items</h2>
+                </div>
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-category="seasonal">🍂 Seasonal</button>
+                    <button class="menu-tab" data-category="non-seasonal">🍽️ Non-Seasonal</button>
+                </div>
+                <div class="menu-content" id="menuContainer">
+                    <div class="loading">Loading menu data...</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+    <script>
+        const CONFIG = {
+            dataUrl: '/api/chef-data',
+            refreshInterval: 120000,
+            maxVisibleActivities: 10,
+            requestTimeout: 8000
+        };
+
+        const elements = {
+            totalChefs: document.getElementById('totalChefs'),
+            totalOrders: document.getElementById('totalOrders'),
+            avgRating: document.getElementById('avgRating'),
+            activeChefs: document.getElementById('activeChefs'),
+            lastUpdate: document.getElementById('lastUpdate'),
+            chefRankings: document.getElementById('chefRankings'),
+            menuContainer: document.getElementById('menuContainer'),
+            activityLog: document.getElementById('activityLog'),
+            menuTabs: document.querySelector('.menu-tabs')
+        };
+
+        let refreshTimer = null;
+        let lastPayloadHash = '';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadDashboardData();
+            startRefresh();
+        });
+
+        function startRefresh() {
+            if (refreshTimer) clearInterval(refreshTimer);
+            refreshTimer = setInterval(loadDashboardData, CONFIG.refreshInterval);
+        }
+
+        async function loadDashboardData() {
+            try {
+                const data = await fetchDashboardData();
+                const hash = JSON.stringify(data || {});
+                if (hash === lastPayloadHash) return;
+                lastPayloadHash = hash;
+                applyDashboardData(data || {});
+                updateLastUpdateTime();
+            } catch (err) {
+                console.warn('Failed to load dashboard data', err);
+                showEmptyState();
+            }
+        }
+
+        async function fetchDashboardData() {
+            const controller = new AbortController();
+            const timeout = setTimeout(() => controller.abort(), CONFIG.requestTimeout);
+            try {
+                const response = await fetch(CONFIG.dataUrl, {
+                    cache: 'no-store',
+                    signal: controller.signal
+                });
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                return await response.json();
+            } finally {
+                clearTimeout(timeout);
+            }
+        }
+
+        function applyDashboardData(data) {
+            const chefs = Array.isArray(data.chefs) ? data.chefs : [];
+            const stats = data.stats || {};
+            const totalOrders = Number(stats.totalOrders ?? chefs.reduce((sum, chef) => sum + (Number(chef.tickets) || 0), 0));
+            const activeChefs = Number(stats.activeChefs ?? chefs.filter(chef => ['active', 'cooking', 'online'].includes((chef.status || '').toLowerCase())).length);
+            const avgRating = Number(stats.avgRating ?? 0);
+
+            updateLiveStats({
+                total_chefs: chefs.length,
+                total_orders: totalOrders,
+                avg_rating: avgRating,
+                active_chefs: activeChefs
+            });
+
+            updateChefRankings(chefs);
+            updateActivityLog(Array.isArray(data.activities) ? data.activities : []);
+            updateMenuData(Array.isArray(data.menu) ? data.menu : (data.menuItems || data.menu_items || null));
+        }
+
+        function showEmptyState() {
+            updateLiveStats({ total_chefs: 0, total_orders: 0, avg_rating: 0, active_chefs: 0 });
+            elements.chefRankings.innerHTML = '<div class="loading">No chef data available</div>';
+            elements.activityLog.innerHTML = '<div class="loading">No recent activity</div>';
+            elements.menuContainer.innerHTML = '<div class="loading">No menu data available</div>';
+            if (elements.menuTabs) elements.menuTabs.style.display = 'none';
+        }
+
+        function updateLiveStats(stats) {
+            elements.totalChefs.textContent = stats.total_chefs ?? 0;
+            elements.totalOrders.textContent = stats.total_orders ?? 0;
+            elements.avgRating.textContent = stats.avg_rating ? `${stats.avg_rating.toFixed(1)}⭐` : '—';
+            elements.activeChefs.textContent = stats.active_chefs ?? 0;
+        }
+
+        function updateChefRankings(chefs) {
+            if (!chefs || chefs.length === 0) {
+                elements.chefRankings.innerHTML = '<div class="loading">No chef data available</div>';
+                return;
+            }
+
+            const sorted = chefs.slice().sort((a, b) => (Number(b.points) || 0) - (Number(a.points) || 0));
+            let html = '';
+
+            if (sorted.length >= 1) {
+                html += '<div class="podium-container">';
+                [1, 0, 2].forEach(index => {
+                    if (!sorted[index]) return;
+                    const chef = sorted[index];
+                    const rank = index + 1;
+                    const placeClass = rank === 1 ? 'first-place' : rank === 2 ? 'second-place' : 'third-place';
+                    const medalEmoji = rank === 1 ? '🥇' : rank === 2 ? '🥈' : '🥉';
+                    const avatarUrl = getChefAvatar(chef);
+                    const statusClass = normalizeStatus(chef.status);
+
+                    html += `
+                        <div class="podium-card ${placeClass}">
+                            <div class="chef-avatar ${placeClass}">
+                                <img src="${avatarUrl}" alt="${chef.name}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(chef.name || 'Chef')}&background=random&size=128&bold=true'">
+                                <div class="chef-status ${statusClass}"></div>
+                                <div class="chef-badge">${medalEmoji}</div>
+                            </div>
+                            <div class="podium-chef-name">${chef.name || 'Chef'}</div>
+                            <div class="podium-chef-role">🏆 ${Number(chef.points) || 0} points</div>
+                            <div class="podium-stats">
+                                <div class="podium-stat">
+                                    <i class="fas fa-clipboard-check"></i>
+                                    <span class="podium-stat-value">${Number(chef.tickets) || 0}</span>
+                                    <span class="podium-stat-label">Tickets</span>
+                                </div>
+                                <div class="podium-stat">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span class="podium-stat-value">${formatJoinTime(chef.joinDate)}</span>
+                                    <span class="podium-stat-label">Tenure</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+            }
+
+            if (sorted.length > 3) {
+                html += '<div class="remaining-chefs">';
+                sorted.slice(3).forEach((chef, index) => {
+                    const rank = index + 4;
+                    const avatarUrl = getChefAvatar(chef);
+                    const statusClass = normalizeStatus(chef.status);
+                    const discordTag = chef.discord_tag ? `<div class="discord-tag">${chef.discord_tag}</div>` : '';
+
+                    html += `
+                        <div class="compact-chef-card">
+                            <div class="compact-rank">${rank}</div>
+                            <div class="compact-chef-avatar">
+                                <img src="${avatarUrl}" alt="${chef.name}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(chef.name || 'Chef')}&background=random&size=128&bold=true'">
+                                <div class="compact-status ${statusClass}"></div>
+                            </div>
+                            <div class="compact-info">
+                                <div class="compact-name">${chef.name || 'Chef'}</div>
+                                ${discordTag}
+                                <div class="compact-role">🏆 ${Number(chef.points) || 0} points</div>
+                                <div class="compact-stats">
+                                    <div class="compact-stat">
+                                        <i class="fas fa-clipboard-check"></i>
+                                        <span>${Number(chef.tickets) || 0}</span>
+                                    </div>
+                                    <div class="compact-stat">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <span>${formatJoinTime(chef.joinDate)}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+            }
+
+            elements.chefRankings.innerHTML = html;
+        }
+
+        function updateMenuData(menuItems) {
+            if (!menuItems || (Array.isArray(menuItems) && menuItems.length === 0)) {
+                elements.menuContainer.innerHTML = '<div class="loading">No menu data available</div>';
+                if (elements.menuTabs) elements.menuTabs.style.display = 'none';
+                return;
+            }
+
+            if (Array.isArray(menuItems)) {
+                if (elements.menuTabs) elements.menuTabs.style.display = 'none';
+                const html = menuItems.map(item => {
+                    const price = item.price != null ? `$${Number(item.price).toFixed(2)}` : '—';
+                    const chefName = item.chef ? ` • ${item.chef}` : '';
+                    const status = item.status ? ` (${item.status})` : '';
+                    return `
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">${item.name || 'Menu Item'}${status}</div>
+                                <div class="menu-item-ingredients">${chefName}</div>
+                            </div>
+                            <div class="menu-item-prices">
+                                <div class="selling-price">${price}</div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                elements.menuContainer.innerHTML = html;
+                return;
+            }
+
+            if (elements.menuTabs) elements.menuTabs.style.display = 'flex';
+
+            let html = '';
+            Object.entries(menuItems).forEach(([category, items]) => {
+                const isActive = category === 'seasonal' ? 'active' : '';
+                html += `<div class="menu-category ${isActive}" data-category="${category}">`;
+                Object.entries(items).forEach(([itemName, itemData]) => {
+                    html += `
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">${itemName}</div>
+                                <div class="menu-item-ingredients">${itemData.ingredients || ''}</div>
+                            </div>
+                            <div class="menu-item-prices">
+                                <div class="selling-price">$${Number(itemData.selling_price || 0).toFixed(2)}</div>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += `</div>`;
+            });
+
+            elements.menuContainer.innerHTML = html;
+            setupMenuTabs();
+        }
+
+        function setupMenuTabs() {
+            const tabs = document.querySelectorAll('.menu-tab');
+            const categories = document.querySelectorAll('.menu-category');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const category = tab.getAttribute('data-category');
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    categories.forEach(c => {
+                        c.classList.remove('active');
+                        if (c.getAttribute('data-category') === category) {
+                            c.classList.add('active');
+                        }
+                    });
+                }, { passive: true });
+            });
+        }
+
+        function updateActivityLog(activities) {
+            if (!activities || activities.length === 0) {
+                elements.activityLog.innerHTML = '<div class="loading">No recent activity</div>';
+                return;
+            }
+
+            const limited = activities.slice(0, CONFIG.maxVisibleActivities);
+            const html = limited.map(activity => {
+                const timeText = activity.time || (activity.timestamp ? getTimeAgo(activity.timestamp) : 'just now');
+                const icon = getActivityIcon(activity.type || activity.action_type);
+                const text = formatActivityText(activity);
+                return `
+                    <div class="activity-item">
+                        <div class="activity-time">${icon} ${timeText}</div>
+                        <div class="activity-text">${text}</div>
+                    </div>
+                `;
+            }).join('');
+            elements.activityLog.innerHTML = html;
+        }
+
+        function getChefAvatar(chef) {
+            return chef.avatar || chef.avatar_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(chef.name || 'Chef')}&background=ff6b35&color=fff&bold=true&size=128`;
+        }
+
+        function normalizeStatus(status) {
+            const value = (status || '').toLowerCase();
+            if (['active', 'online', 'cooking'].includes(value)) return 'online';
+            if (['break', 'away', 'idle'].includes(value)) return 'away';
+            if (['busy'].includes(value)) return 'busy';
+            return 'offline';
+        }
+
+        function formatJoinTime(joinDate) {
+            if (!joinDate) return '—';
+            const start = new Date(joinDate).getTime();
+            if (!Number.isFinite(start)) return '—';
+            const diffDays = Math.floor((Date.now() - start) / 86400000);
+            if (diffDays < 1) return '<1d';
+            if (diffDays < 30) return `${diffDays}d`;
+            const months = Math.floor(diffDays / 30);
+            if (months < 12) return `${months}mo`;
+            return `${Math.floor(months / 12)}y`;
+        }
+
+        function getActivityIcon(actionType) {
+            const icons = {
+                completion: '✅',
+                order_completed: '✅',
+                rating_received: '⭐',
+                menu_update: '📋',
+                promotion: '📈',
+                demotion: '📉',
+                application_submitted: '📝'
+            };
+            return icons[actionType] || '📝';
+        }
+
+        function formatActivityText(activity) {
+            if (activity.details) {
+                return activity.details;
+            }
+            const chef = activity.chef || activity.user_name || 'Chef';
+            const action = activity.action || 'updated the kitchen';
+            return `<span class="activity-user">${chef}</span> <span class="activity-action">${action}</span>`;
+        }
+
+        function getTimeAgo(timestamp) {
+            const now = new Date();
+            const time = new Date(timestamp);
+            const diff = Math.floor((now - time) / 1000);
+            if (!Number.isFinite(diff) || diff < 0) return 'just now';
+            if (diff < 60) return `${diff}s ago`;
+            if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
+            if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
+            return `${Math.floor(diff / 86400)}d ago`;
+        }
+
+        function updateLastUpdateTime() {
+            const now = new Date();
+            elements.lastUpdate.textContent = now.toLocaleTimeString();
+        }
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                if (refreshTimer) clearInterval(refreshTimer);
+            } else {
+                loadDashboardData();
+                startRefresh();
+            }
+        });
+    </script>
+</body>
+</html>
