@@ -1377,10 +1377,10 @@
 
     <script>
         // Configuration for real data from your database
-        const REMOTE_COOKING_ENDPOINT = window.COOKING_ENDPOINT || 'https://raw.githubusercontent.com/tobolchi/Crumbl_Crafts/main/chef-data.json';
+        const REMOTE_COOKING_ENDPOINT = 'https://raw.githubusercontent.com/tobolchi/Crumbl_Crafts/main/chef-data.json';
         const CONFIG = {
             dataUrl: REMOTE_COOKING_ENDPOINT,
-            refreshInterval: 30000, // 30 seconds (refresh less often for static data)
+            refreshInterval: 30000, // 30 seconds
             maxVisibleActivities: 20,
             requestTimeout: 8000,
             maxRetries: 3
@@ -1697,19 +1697,21 @@
                 return;
             }
 
+            // Handle array format from bot
             if (Array.isArray(menuItems)) {
                 if (elements.menuTabs) elements.menuTabs.style.display = 'none';
                 const html = menuItems.map(item => {
                     const price = item.price != null ? `$${Number(item.price).toFixed(2)}` : '—';
-                    const chefName = item.chef ? ` • ${item.chef}` : '';
-                    const status = item.status ? ` (${item.status})` : '';
+                    const category = item.category ? ` • ${item.category}` : '';
+                    const ingredients = item.ingredients || 'No description available';
                     return `
                         <div class="menu-item">
                             <div class="menu-item-info">
-                                <div class="menu-item-name">${item.name || 'Menu Item'}${status}</div>
-                                <div class="menu-item-ingredients">${chefName}</div>
+                                <div class="menu-item-name">${item.name || 'Menu Item'}${category}</div>
+                                <div class="menu-item-ingredients">${ingredients}</div>
                             </div>
                             <div class="menu-item-prices">
+                                ${item.cost_price ? `<div class="cost-price">$${Number(item.cost_price).toFixed(2)}</div>` : ''}
                                 <div class="selling-price">${price}</div>
                             </div>
                         </div>
@@ -1719,6 +1721,7 @@
                 return;
             }
 
+            // Handle object format with categories
             if (elements.menuTabs) elements.menuTabs.style.display = 'flex';
 
             let html = '';
@@ -1793,6 +1796,10 @@
         }
 
         function getChefAvatar(chef) {
+            // Use Discord avatar URL if available, otherwise fallback to generated avatar
+            if (chef.avatar && chef.avatar.includes('discord')) {
+                return chef.avatar;
+            }
             return chef.avatar || chef.avatar_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(chef.name || 'Chef')}&background=ff6b35&color=fff&bold=true&size=128`;
         }
 
@@ -1852,7 +1859,7 @@
         function updateLastUpdateTime() {
             const now = new Date();
             const statusText = isOnline ? 
-                (consecutiveFailures > 0 ? `${now.toLocaleTimeString()} (${consecutiveFailures} retries)` : now.toLocaleTimeString()) :
+                (consecutiveFailures > 0 ? `${getTimeAgo(lastSuccessfulFetch)} (${consecutiveFailures} retries)` : getTimeAgo(lastSuccessfulFetch)) :
                 'Offline';
             elements.lastUpdate.textContent = statusText;
             
