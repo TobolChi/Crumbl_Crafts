@@ -16,7 +16,7 @@
             --bg-light: rgba(255, 255, 255, 0.1);
             --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
             --border-radius: 15px;
-            --glass-effect: rgba(255, 255, 255, 0.15);
+            --glass-effect: rgba(255, 255, 255, 0.08);
             --success-color: #4CAF50;
             --error-color: #f44336;
         }
@@ -35,7 +35,7 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: url('https://cdn.dribbble.com/userupload/24944322/file/original-e9fa56736e2e38dd120d0ed4b40bb4c5.gif') center center fixed;
+            background: url('https://i.pinimg.com/originals/01/53/b0/0153b0c71e0d9ad3dfb9dc5dd0e192f0.gif') center center fixed;
             background-size: cover;
             color: var(--text-color);
             min-height: 100vh;
@@ -52,7 +52,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(180deg, rgba(10, 10, 12, 0.6) 0%, rgba(10, 10, 12, 0.78) 100%);
+            background: linear-gradient(180deg, rgba(10, 10, 12, 0.3) 0%, rgba(10, 10, 12, 0.45) 100%);
             z-index: -1;
         }
 
@@ -70,7 +70,7 @@
         .header {
             text-align: center;
             margin-bottom: 20px;
-            background: rgba(18, 18, 24, 0.88);
+            background: rgba(18, 18, 24, 0.65);
             border-radius: var(--border-radius);
             padding: 20px;
             box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
@@ -1361,11 +1361,28 @@
 
 
     <script>
+        // === CONFIGURATION ===
+        // Update this URL to point to your actual API endpoint
+        // Example: 'https://api.your-domain.com/cooking-data'
+        // For local development: 'http://localhost:8080/api/cooking-data'
+        window.COOKING_ENDPOINT = 'https://api.your-domain.com/cooking-data';
+        
+        // You can also set this via URL parameter: ?api=https://your-api.com/data
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('api')) {
+            window.COOKING_ENDPOINT = urlParams.get('api');
+        }
+    </script>
+
+    <script>
+        // Configuration similar to Building Dept.html
+        const REMOTE_COOKING_ENDPOINT = window.COOKING_ENDPOINT || 'https://your-api-domain.com/api/cooking-data';
         const CONFIG = {
-            dataUrl: '/api/chef-data',
-            refreshInterval: 120000,
-            maxVisibleActivities: 10,
-            requestTimeout: 8000
+            dataUrl: REMOTE_COOKING_ENDPOINT,
+            refreshInterval: 5000, // 5 seconds like Building Dept
+            maxVisibleActivities: 20,
+            requestTimeout: 8000,
+            maxRetries: 3
         };
 
         const elements = {
@@ -1382,6 +1399,78 @@
 
         let refreshTimer = null;
         let lastPayloadHash = '';
+        let consecutiveFailures = 0;
+        let isOnline = true;
+        let lastSuccessfulFetch = Date.now();
+        
+        // Activity management for audio notifications
+        let activityCache = [];
+        let lastActivityCount = 0;
+        
+        // Audio notification for new activity only
+        let audioContext = null;
+        let audioUnlocked = false;
+        
+        const unlockAudio = () => {
+            if (!audioUnlocked && !audioContext) {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                audioUnlocked = true;
+                console.log('✓ Audio unlocked for notifications');
+            }
+        };
+        
+        const playNotificationSound = () => {
+            try {
+                if (!audioContext) {
+                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                
+                // Resume context if suspended (browser autoplay policy)
+                if (audioContext.state === 'suspended') {
+                    audioContext.resume();
+                }
+                
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+                
+                oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
+                oscillator.type = 'sine';
+                
+                gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+                
+                oscillator.start(audioContext.currentTime);
+                oscillator.stop(audioContext.currentTime + 0.3);
+                
+                console.log('🔔 Activity notification played');
+            } catch (e) {
+                console.warn('Sound failed:', e.message);
+            }
+        };
+        
+        // Unlock audio on first user interaction
+        document.addEventListener('click', unlockAudio, { once: true });
+        document.addEventListener('keydown', unlockAudio, { once: true });
+        document.addEventListener('touchstart', unlockAudio, { once: true });
+        
+        // Fallback data structure
+        const placeholderData = {
+            chefs: [],
+            stats: {
+                totalOrders: 0,
+                activeChefs: 0,
+                avgRating: 0
+            },
+            activities: [],
+            menu: {},
+            meta: {
+                generated_at: Date.now() / 1000,
+                mode: 'fallback'
+            }
+        };
 
         document.addEventListener('DOMContentLoaded', () => {
             loadDashboardData();
@@ -1395,33 +1484,74 @@
 
         async function loadDashboardData() {
             try {
+                const startTime = performance.now();
                 const data = await fetchDashboardData();
+                
+                // Success - reset failure counter
+                consecutiveFailures = 0;
+                lastSuccessfulFetch = Date.now();
+                isOnline = true;
+                
                 const hash = JSON.stringify(data || {});
                 if (hash === lastPayloadHash) return;
                 lastPayloadHash = hash;
-                applyDashboardData(data || {});
+                
+                applyDashboardData(data || placeholderData);
                 updateLastUpdateTime();
+                
+                const latency = Math.round(performance.now() - startTime);
+                console.log(`✓ Cooking data fetched in ${latency}ms`);
+                
             } catch (err) {
-                console.warn('Failed to load dashboard data', err);
-                showEmptyState();
+                consecutiveFailures++;
+                console.warn(`Failed to load cooking data (attempt ${consecutiveFailures})`, err);
+                
+                if (consecutiveFailures > CONFIG.maxRetries) {
+                    isOnline = false;
+                    console.error('Multiple fetch failures, showing fallback data');
+                    applyDashboardData(placeholderData);
+                } else {
+                    // Retry with exponential backoff
+                    const retryDelay = Math.min(1000 * Math.pow(2, consecutiveFailures), 30000);
+                    setTimeout(loadDashboardData, retryDelay);
+                }
             }
         }
 
-        async function fetchDashboardData() {
+        // Cache busting function like Building Dept.html
+        const withCacheBust = (url) => url.includes('?') ? `${url}&v=${Date.now()}` : `${url}?v=${Date.now()}`;
+        
+        // Fetch with timeout and cache busting
+        async function fetchWithTimeout(url, timeout = CONFIG.requestTimeout) {
             const controller = new AbortController();
-            const timeout = setTimeout(() => controller.abort(), CONFIG.requestTimeout);
+            const timeoutId = setTimeout(() => controller.abort(), timeout);
+            
             try {
-                const response = await fetch(CONFIG.dataUrl, {
+                const response = await fetch(url, {
+                    signal: controller.signal,
                     cache: 'no-store',
-                    signal: controller.signal
+                    keepalive: true,
+                    priority: 'high',
+                    headers: {
+                        'Cache-Control': 'no-cache',
+                        'Pragma': 'no-cache',
+                        'Accept-Encoding': 'gzip, deflate, br'
+                    }
                 });
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
-                }
-                return await response.json();
-            } finally {
-                clearTimeout(timeout);
+                clearTimeout(timeoutId);
+                return response;
+            } catch (error) {
+                clearTimeout(timeoutId);
+                throw error;
             }
+        }
+        
+        async function fetchDashboardData() {
+            const response = await fetchWithTimeout(withCacheBust(CONFIG.dataUrl));
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            return await response.json();
         }
 
         function applyDashboardData(data) {
@@ -1623,6 +1753,14 @@
                 return;
             }
 
+            // Check for new activities and play notification sound
+            const newActivitiesCount = activities.length;
+            if (lastActivityCount > 0 && newActivitiesCount > lastActivityCount) {
+                console.log(`New activity detected: ${newActivitiesCount - lastActivityCount} new entries`);
+                playNotificationSound();
+            }
+            lastActivityCount = newActivitiesCount;
+
             const limited = activities.slice(0, CONFIG.maxVisibleActivities);
             const html = limited.map(activity => {
                 const timeText = activity.time || (activity.timestamp ? getTimeAgo(activity.timestamp) : 'just now');
@@ -1697,8 +1835,34 @@
 
         function updateLastUpdateTime() {
             const now = new Date();
-            elements.lastUpdate.textContent = now.toLocaleTimeString();
+            const statusText = isOnline ? 
+                (consecutiveFailures > 0 ? `${now.toLocaleTimeString()} (${consecutiveFailures} retries)` : now.toLocaleTimeString()) :
+                'Offline';
+            elements.lastUpdate.textContent = statusText;
+            
+            // Add visual indicator for connection status
+            if (elements.lastUpdate.parentElement) {
+                const indicator = elements.lastUpdate.parentElement.querySelector('.stat-icon i');
+                if (indicator) {
+                    indicator.className = isOnline ? 
+                        (consecutiveFailures > 0 ? 'fas fa-exclamation-triangle' : 'fas fa-clock') :
+                        'fas fa-wifi-slash';
+                }
+            }
         }
+
+        // Network status monitoring like Building Dept.html
+        window.addEventListener('online', () => {
+            console.log('🌐 Network online');
+            isOnline = true;
+            consecutiveFailures = 0;
+            loadDashboardData();
+        });
+
+        window.addEventListener('offline', () => {
+            console.log('📡 Network offline');
+            isOnline = false;
+        });
 
         document.addEventListener('visibilitychange', () => {
             if (document.hidden) {
