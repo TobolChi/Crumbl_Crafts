@@ -1365,7 +1365,8 @@
         // API endpoint that connects to your database system
         // This should point to your backend server that serves cooking data from the MySQL database
         // Use local JSON file for chef data (hosted on GitHub Pages)
-        window.COOKING_ENDPOINT = './chef-data.json';
+        // GitHub raw URL for bot-updated JSON data
+        window.COOKING_ENDPOINT = 'https://raw.githubusercontent.com/tobolchi/Crumbl_Crafts/main/chef-data.json';
         
         // Fallback for local development or testing
         const urlParams = new URLSearchParams(window.location.search);
@@ -1376,7 +1377,7 @@
 
     <script>
         // Configuration for real data from your database
-        const REMOTE_COOKING_ENDPOINT = window.COOKING_ENDPOINT || './chef-data.json';
+        const REMOTE_COOKING_ENDPOINT = window.COOKING_ENDPOINT || 'https://raw.githubusercontent.com/tobolchi/Crumbl_Crafts/main/chef-data.json';
         const CONFIG = {
             dataUrl: REMOTE_COOKING_ENDPOINT,
             refreshInterval: 30000, // 30 seconds (refresh less often for static data)
