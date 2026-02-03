@@ -289,7 +289,30 @@
             gap: 16px;
         }
         /* Home button alignment: keep Home near the logo and push remaining header items right */
-        .home-nav-btn { margin-left: 12px; display:inline-flex; align-items:center; gap:8px; }
+        .home-nav-btn { 
+            margin-left: 12px; 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 8px;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #FF1744, #FF5252);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 23, 68, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        .home-nav-btn:hover {
+            background: linear-gradient(135deg, #FF5252, #FFD600);
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 23, 68, 0.6);
+            color: white;
+            text-decoration: none;
+        }
         .logo-container + .home-nav-btn { margin-left: 12px; }
         /* Make the element after the Home button become the right-side group */
         .home-nav-btn + * { margin-left: auto; display:flex; gap:12px; align-items:center; }
@@ -6683,6 +6706,10 @@
         <!-- Shared UI transitions: premium promo & cookie banner -->
         <script src="ui-transitions.js"></script>
         <!-- Home button snippet: floating/header Home button -->
+        <script>
+            // Configure home button URL
+            window.CRUMBL_HOME_URL = 'https://tobolchi.github.io/Crumbl_Crafts/';
+        </script>
         <script src="home-nav-snippet.js"></script>
         <script>
             // Register service worker for caching
