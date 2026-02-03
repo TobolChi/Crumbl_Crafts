@@ -5326,6 +5326,9 @@
                 cacheMap.set(cachedId, true);
             });
             
+            // Store the initial cache size before adding new items
+            const initialCacheSize = activityCache.length;
+            
             // Add new activities that don't exist in cache
             newActivities.forEach(item => {
                 if (!item.timestamp) return; // Skip invalid items
@@ -5344,7 +5347,8 @@
                 console.log(`Added ${addedCount} new activity entries`);
                 
                 // Play notification sound for new activities
-                if (lastActivityCount > 0) { // Don't play on initial load
+                // Only play if we had activities before (not initial load) AND we actually added new ones
+                if (initialCacheSize > 0 && addedCount > 0) {
                     playNotificationSound();
                 }
                 
