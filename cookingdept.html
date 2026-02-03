@@ -1235,7 +1235,7 @@
                          alt="Chef GIF" class="header-gif">
                 </div>
                 <div class="header-actions">
-                    <a href="https://tobolchi.github.io/Crumbl_Crafts/" class="homepage-btn" id="homepageBtn">
+                    <a href="https://tobolchi.github.io/Crumbl_Crafts" class="homepage-btn" id="homepageBtn">
                         <i class="fas fa-home"></i>
                         <span>Back to Home</span>
                     </a>
@@ -1364,24 +1364,22 @@
         // === CONFIGURATION ===
         // API endpoint that connects to your database system
         // This should point to your backend server that serves cooking data from the MySQL database
-        window.COOKING_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/api/cooking-data';
+        // Use local JSON file for chef data (hosted on GitHub Pages)
+        window.COOKING_ENDPOINT = './chef-data.json';
         
         // Fallback for local development or testing
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('api')) {
             window.COOKING_ENDPOINT = urlParams.get('api');
-        } else if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-            // Local development endpoint
-            window.COOKING_ENDPOINT = 'http://localhost:8080/api/cooking-data';
         }
     </script>
 
     <script>
         // Configuration for real data from your database
-        const REMOTE_COOKING_ENDPOINT = window.COOKING_ENDPOINT || 'https://tobolchi.github.io/Crumbl_Crafts/api/cooking-data';
+        const REMOTE_COOKING_ENDPOINT = window.COOKING_ENDPOINT || './chef-data.json';
         const CONFIG = {
             dataUrl: REMOTE_COOKING_ENDPOINT,
-            refreshInterval: 5000, // 5 seconds for real-time updates
+            refreshInterval: 30000, // 30 seconds (refresh less often for static data)
             maxVisibleActivities: 20,
             requestTimeout: 8000,
             maxRetries: 3
