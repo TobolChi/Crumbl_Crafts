@@ -1,1 +1,53 @@
-
+{
+  "chefs": [
+    {
+      "name": "Hidenori",
+      "points": 10,
+      "tickets": 2,
+      "role_name": "Chef",
+      "role_stars": 0,
+      "average_rating": 4.5,
+      "total_ratings": 6,
+      "avatar": "https://ui-avatars.com/api/?name=Hidenori&background=ff6b35&color=fff&bold=true&size=128",
+      "status": "active",
+      "joinDate": "2026-01-24"
+    },
+    {
+      "name": "Sam",
+      "points": 3,
+      "tickets": 1,
+      "role_name": "Chef",
+      "role_stars": 0,
+      "average_rating": 5.0,
+      "total_ratings": 2,
+      "avatar": "https://ui-avatars.com/api/?name=Sam&background=ff6b35&color=fff&bold=true&size=128",
+      "status": "active",
+      "joinDate": "2026-01-02"
+    }
+  ],
+  "activities": [
+    {
+      "chef": "Hidenori",
+      "action": "Completed order \u00b7 2 tickets",
+      "time": "5 minutes ago",
+      "type": "completion"
+    },
+    {
+      "chef": "Sam",
+      "action": "Completed order \u00b7 1 tickets",
+      "time": "10 minutes ago",
+      "type": "completion"
+    }
+  ],
+  "menu": [],
+  "stats": {
+    "totalOrders": 13,
+    "activeChefs": 2,
+    "totalChefs": 2,
+    "avgRating": 4.8
+  },
+  "meta": {
+    "timestamp": "2026-02-03T17:12:11.319543",
+    "cached": false
+  }
+}
