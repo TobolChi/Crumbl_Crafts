@@ -35,14 +35,14 @@
       "action": "Completed order \u00b7 2 tickets",
       "time": "5 minutes ago",
       "type": "completion",
-      "timestamp": 1770159471.1733654
+      "timestamp": 1770159772.3826356
     },
     {
       "chef": "Sam",
       "action": "Completed order \u00b7 1 tickets",
       "time": "10 minutes ago",
       "type": "completion",
-      "timestamp": 1770159171.1733677
+      "timestamp": 1770159472.3826385
     }
   ],
   "menu": [],
@@ -53,8 +53,8 @@
     "avgRating": 4.8
   },
   "meta": {
-    "timestamp": "2026-02-04T01:02:51.173378",
-    "last_updated": 1770159771.1733866,
+    "timestamp": "2026-02-04T01:07:52.382649",
+    "last_updated": 1770160072.3826575,
     "cached": false,
     "data_source": "discord_bot"
   }
