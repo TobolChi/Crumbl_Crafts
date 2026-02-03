@@ -35,7 +35,7 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: url('https://i.pinimg.com/originals/01/53/b0/0153b0c71e0d9ad3dfb9dc5dd0e192f0.gif') center center fixed;
+            background: url('https://i.pinimg.com/originals/41/f7/72/41f7728ec0b73ee02e86cad71292f90b.gif') center center fixed;
             background-size: cover;
             color: var(--text-color);
             min-height: 100vh;
@@ -1235,7 +1235,7 @@
                          alt="Chef GIF" class="header-gif">
                 </div>
                 <div class="header-actions">
-                    <a href="https://crumbl-crafts.github.io/Bloxburg/" class="homepage-btn" id="homepageBtn">
+                    <a href="https://tobolchi.github.io/Crumbl_Crafts/" class="homepage-btn" id="homepageBtn">
                         <i class="fas fa-home"></i>
                         <span>Back to Home</span>
                     </a>
@@ -1362,24 +1362,26 @@
 
     <script>
         // === CONFIGURATION ===
-        // Update this URL to point to your actual API endpoint
-        // Example: 'https://api.your-domain.com/cooking-data'
-        // For local development: 'http://localhost:8080/api/cooking-data'
-        window.COOKING_ENDPOINT = 'https://api.your-domain.com/cooking-data';
+        // API endpoint that connects to your database system
+        // This should point to your backend server that serves cooking data from the MySQL database
+        window.COOKING_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/api/cooking-data';
         
-        // You can also set this via URL parameter: ?api=https://your-api.com/data
+        // Fallback for local development or testing
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('api')) {
             window.COOKING_ENDPOINT = urlParams.get('api');
+        } else if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+            // Local development endpoint
+            window.COOKING_ENDPOINT = 'http://localhost:8080/api/cooking-data';
         }
     </script>
 
     <script>
-        // Configuration similar to Building Dept.html
-        const REMOTE_COOKING_ENDPOINT = window.COOKING_ENDPOINT || 'https://your-api-domain.com/api/cooking-data';
+        // Configuration for real data from your database
+        const REMOTE_COOKING_ENDPOINT = window.COOKING_ENDPOINT || 'https://tobolchi.github.io/Crumbl_Crafts/api/cooking-data';
         const CONFIG = {
             dataUrl: REMOTE_COOKING_ENDPOINT,
-            refreshInterval: 5000, // 5 seconds like Building Dept
+            refreshInterval: 5000, // 5 seconds for real-time updates
             maxVisibleActivities: 20,
             requestTimeout: 8000,
             maxRetries: 3
@@ -1485,6 +1487,7 @@
         async function loadDashboardData() {
             try {
                 const startTime = performance.now();
+                console.log(`🔄 Fetching cooking data from: ${CONFIG.dataUrl}`);
                 const data = await fetchDashboardData();
                 
                 // Success - reset failure counter
@@ -1493,26 +1496,40 @@
                 isOnline = true;
                 
                 const hash = JSON.stringify(data || {});
-                if (hash === lastPayloadHash) return;
+                if (hash === lastPayloadHash) {
+                    console.log('📦 Data unchanged, skipping update');
+                    return;
+                }
                 lastPayloadHash = hash;
+                
+                console.log('📊 Processing cooking data:', {
+                    chefs: Array.isArray(data?.chefs) ? data.chefs.length : 0,
+                    activities: Array.isArray(data?.activities) ? data.activities.length : 0,
+                    menu: data?.menu ? Object.keys(data.menu).length : 0
+                });
                 
                 applyDashboardData(data || placeholderData);
                 updateLastUpdateTime();
                 
                 const latency = Math.round(performance.now() - startTime);
-                console.log(`✓ Cooking data fetched in ${latency}ms`);
+                console.log(`✓ Cooking data fetched successfully in ${latency}ms`);
                 
             } catch (err) {
                 consecutiveFailures++;
-                console.warn(`Failed to load cooking data (attempt ${consecutiveFailures})`, err);
+                console.error(`❌ Failed to load cooking data (attempt ${consecutiveFailures}):`, {
+                    error: err.message,
+                    endpoint: CONFIG.dataUrl,
+                    timestamp: new Date().toISOString()
+                });
                 
                 if (consecutiveFailures > CONFIG.maxRetries) {
                     isOnline = false;
-                    console.error('Multiple fetch failures, showing fallback data');
+                    console.error('🚫 Multiple fetch failures, showing fallback data. Please check your database connection and API endpoint.');
                     applyDashboardData(placeholderData);
                 } else {
                     // Retry with exponential backoff
                     const retryDelay = Math.min(1000 * Math.pow(2, consecutiveFailures), 30000);
+                    console.log(`⏳ Retrying in ${retryDelay}ms...`);
                     setTimeout(loadDashboardData, retryDelay);
                 }
             }
