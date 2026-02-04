@@ -228,6 +228,11 @@
             transform: translateZ(0);
             backface-visibility: hidden;
         }
+        .glass.hero {
+            overflow: visible;
+            contain: none;
+            z-index: 1000;
+        }
         .glass::before {
             content: '';
             position: absolute;
