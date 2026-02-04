@@ -365,24 +365,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1145119175061274727",
       "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "jademcd left the server",
-      "timestamp": 1769619100,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/768969958012616724",
-      "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "jademcd joined the server",
-      "timestamp": 1769618959,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/768969958012616724",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -512,19 +494,10 @@
       "timestamp": 1770161689.0,
       "url": "https://www.youtube.com/watch?v=duGF3WluSmI",
       "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "NEW Sims 4 FREE BASEGAME update",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770160289.0,
-      "url": "https://www.youtube.com/watch?v=VF5yjlqocJI",
-      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770223240.3338535,
+    "generated_at": 1770224440.3187118,
     "mode": "memory",
     "refresh_interval": 2000
   }
