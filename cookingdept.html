@@ -11,6 +11,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Universal Authentication System -->
+    <script src="universal-auth.js" defer></script>
     <style>
         /* CSS Variables */
         :root {
@@ -61,32 +64,42 @@
             contain: layout style;
         }
 
-        /* Prevent flickering in rankings and activity */
+        /* Smooth scrolling and performance optimizations */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Performance optimizations without problematic transforms */
         .chef-rankings, .activity-log {
-            transform: translateZ(0);
             backface-visibility: hidden;
             -webkit-backface-visibility: hidden;
             contain: layout style paint;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
         }
         
         .chef-card, .activity-item, .podium-card, .compact-chef-card, .menu-item {
             will-change: auto;
-            transform: translateZ(0);
             backface-visibility: hidden;
-            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, background-color 0.2s ease-out;
+            transition: box-shadow 0.2s ease-out, background-color 0.2s ease-out;
             contain: layout style;
         }
         
         .chef-card:hover, .activity-item:hover, .podium-card:hover, .compact-chef-card:hover, .menu-item:hover {
-            will-change: transform, box-shadow;
+            box-shadow: 0 8px 32px rgba(255, 107, 53, 0.3);
         }
         
-        /* GPU acceleration for smooth animations */
+        /* Smooth animations without transforms */
         .podium-card, .compact-chef-card, .menu-item, .activity-item {
-            transform: translate3d(0, 0, 0);
+            will-change: auto;
         }
 
-        /* Container */
+        /* Container with smooth scrolling */
         .container {
             max-width: 1600px;
             margin: 0 auto;
@@ -97,6 +110,13 @@
             position: relative;
             z-index: 1;
             box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        /* Smooth scrolling for all scrollable elements */
+        .activity-log, .chef-rankings {
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
         }
 
         .header {
@@ -633,21 +653,16 @@
         }
 
         .podium-chef-role {
-            color: var(--secondary-color);
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            margin: 6px 0;
             font-weight: 600;
-            margin: 0;
-            font-size: 0.85rem;
-            opacity: 0.9;
         }
 
         .podium-rating {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            font-size: 1.4rem;
-            font-weight: 900;
-            color: var(--accent-color);
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--text-color);
             margin: 8px 0;
         }
 
@@ -723,7 +738,6 @@
 
         .compact-chef-card:hover {
             background: linear-gradient(135deg, rgba(50, 50, 65, 0.95), rgba(45, 45, 60, 0.9));
-            transform: translateY(-2px);
             border-color: var(--accent-color);
             box-shadow: 0 12px 40px rgba(255, 107, 53, 0.3);
         }
@@ -775,16 +789,47 @@
             font-size: 0.8rem;
         }
 
+        .compact-stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin: 8px 0;
+        }
+
         .compact-stat {
             display: flex;
             align-items: center;
             gap: 4px;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
         }
 
         .compact-stat i {
             color: var(--accent-color);
             width: 12px;
             text-align: center;
+            font-size: 0.7rem;
+        }
+        
+        .join-date {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .join-date i {
+            color: var(--accent-color);
+            font-size: 0.6rem;
+        }
+        
+        .compact-role {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin: 4px 0;
         }
 
         /* Menu System */
@@ -1425,8 +1470,33 @@
             refreshInterval: 30000, // 30 seconds
             maxVisibleActivities: 20,
             requestTimeout: 8000,
-            maxRetries: 3
+            maxRetries: 3,
+            enableIntersectionObserver: true,
+            enableLazyLoading: true,
+            animationDuration: 300
         };
+
+        // Performance optimizations - Intersection Observer
+        let intersectionObserver;
+        if (CONFIG.enableIntersectionObserver && 'IntersectionObserver' in window) {
+            intersectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '50px'
+            });
+        }
+        
+        // Add smooth scrolling polyfill for older browsers
+        if (!('scrollBehavior' in document.documentElement.style)) {
+            const smoothscroll = document.createElement('script');
+            smoothscroll.src = 'https://cdn.jsdelivr.net/gh/iamdustan/smoothscroll@master/smoothscroll.min.js';
+            document.head.appendChild(smoothscroll);
+        }
 
         // Cache DOM elements for better performance
         const elements = {
@@ -1821,17 +1891,25 @@
                                 <div class="chef-badge">${medalEmoji}</div>
                             </div>
                             <div class="podium-chef-name">${chef.name || 'Chef'}</div>
-                            <div class="podium-chef-role">🏆 ${Number(chef.points) || 0} points</div>
+                            <div class="podium-chef-role">
+                                ${chef.role_name || 'Chef'} ${chef.role_stars ? '⭐'.repeat(chef.role_stars) : ''}
+                            </div>
+                            <div class="podium-rating">${Number(chef.points) || 0} points</div>
                             <div class="podium-stats">
                                 <div class="podium-stat">
                                     <i class="fas fa-clipboard-check"></i>
                                     <span class="podium-stat-value">${Number(chef.tickets) || 0}</span>
-                                    <span class="podium-stat-label">Tickets</span>
+                                    <span class="podium-stat-label">Orders</span>
                                 </div>
                                 <div class="podium-stat">
-                                    <i class="fas fa-calendar-alt"></i>
-                                    <span class="podium-stat-value">${formatJoinTime(chef.joinDate)}</span>
-                                    <span class="podium-stat-label">Tenure</span>
+                                    <i class="fas fa-star"></i>
+                                    <span class="podium-stat-value">${chef.average_rating || 0}</span>
+                                    <span class="podium-stat-label">Rating</span>
+                                </div>
+                                <div class="podium-stat">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span class="podium-stat-value">${chef.total_ratings || 0}</span>
+                                    <span class="podium-stat-label">Reviews</span>
                                 </div>
                             </div>
                         </div>
@@ -1855,17 +1933,31 @@
                             </div>
                             <div class="compact-info">
                                 <div class="compact-name">${chef.name || 'Chef'}</div>
+                                <div class="compact-role">
+                                    ${chef.role_name || 'Chef'} ${chef.role_stars ? '⭐'.repeat(chef.role_stars) : ''}
+                                </div>
                                 ${discordTag}
-                                <div class="compact-role">🏆 ${Number(chef.points) || 0} points</div>
-                                <div class="compact-stats">
+                                <div class="compact-stats-grid">
+                                    <div class="compact-stat">
+                                        <i class="fas fa-trophy"></i>
+                                        <span>${Number(chef.points) || 0} pts</span>
+                                    </div>
                                     <div class="compact-stat">
                                         <i class="fas fa-clipboard-check"></i>
-                                        <span>${Number(chef.tickets) || 0}</span>
+                                        <span>${Number(chef.tickets) || 0} orders</span>
                                     </div>
                                     <div class="compact-stat">
-                                        <i class="fas fa-calendar-alt"></i>
-                                        <span>${formatJoinTime(chef.joinDate)}</span>
+                                        <i class="fas fa-star"></i>
+                                        <span>${chef.average_rating || 0} ⭐</span>
                                     </div>
+                                    <div class="compact-stat">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>${chef.total_ratings || 0} reviews</span>
+                                    </div>
+                                </div>
+                                <div class="join-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Joined ${formatJoinTime(chef.joinDate)}
                                 </div>
                             </div>
                         </div>
@@ -1875,6 +1967,12 @@
             }
 
             elements.chefRankings.innerHTML = html;
+            
+            // Add intersection observer to new elements if available
+            if (intersectionObserver) {
+                const newElements = elements.chefRankings.querySelectorAll('.compact-chef-card, .podium-card');
+                newElements.forEach(el => intersectionObserver.observe(el));
+            }
         }
 
         function updateMenuData(menuItems) {
