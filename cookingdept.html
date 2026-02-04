@@ -96,9 +96,9 @@
             flex-direction: column;
             position: relative;
             z-index: 1;
+            box-sizing: border-box;
         }
 
-        /* Header */
         .header {
             text-align: center;
             margin-bottom: 20px;
@@ -109,11 +109,7 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(20px) saturate(180%);
             position: relative;
-            overflow: visible;
-        }
-
-        .header::before {
-            display: none;
+            overflow: hidden;
         }
 
         .header-content {
@@ -295,7 +291,7 @@
 
         /* Main Content Layout */
         .main-content {
-            flex: 1;
+            flex: 1 0 auto;
             display: grid;
             grid-template-columns: 2fr 1fr;
             grid-template-rows: 1fr auto;
@@ -305,6 +301,7 @@
                 "menu menu";
             margin-bottom: 20px;
             align-content: start;
+            min-height: 0;
         }
 
         .rankings-section {
@@ -1450,9 +1447,10 @@
         let isOnline = navigator.onLine;
         let lastSuccessfulFetch = Date.now();
         
-        // Activity management for audio notifications
-        let activityCache = [];
+        // Activity management for audio notifications - FIXED
+        let activityCache = new Map(); // Use Map for better tracking
         let lastActivityCount = 0;
+        let lastActivityIds = new Set();
         
         // Audio notification optimization
         let audioContext = null;
@@ -1472,8 +1470,9 @@
         
         const playNotificationSound = () => {
             try {
-                if (!audioContext) {
-                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                if (!audioContext || !audioUnlocked) {
+                    console.log('🔇 Audio not available for notification');
+                    return;
                 }
                 
                 // Resume context if suspended (browser autoplay policy)
@@ -1497,6 +1496,16 @@
                 oscillator.stop(audioContext.currentTime + 0.3);
                 
                 console.log('🔔 Activity notification played');
+                
+                // Visual notification too
+                if (document.title.indexOf('🔔') === -1) {
+                    const originalTitle = document.title;
+                    document.title = '🔔 ' + originalTitle;
+                    setTimeout(() => {
+                        document.title = originalTitle;
+                    }, 3000);
+                }
+                
             } catch (e) {
                 console.warn('Sound failed:', e.message);
             }
@@ -1510,9 +1519,9 @@
         // Fallback data structure - Rich Demo Data
         const placeholderData = {
             chefs: [
-                { name: "Gordon", status: "online", points: 1540, tickets: 342, joinDate: new Date(Date.now() - 1000 * 60 * 60 * 24 * 365).toISOString(), discord_tag: "gordon#1234" },
-                { name: "Remy", status: "cooking", points: 1250, tickets: 210, joinDate: new Date(Date.now() - 1000 * 60 * 60 * 24 * 120).toISOString(), discord_tag: "remy#5678" },
-                { name: "Julia", status: "active", points: 980, tickets: 156, joinDate: new Date(Date.now() - 1000 * 60 * 60 * 24 * 60).toISOString(), discord_tag: "julia#9012" }
+                { name: "Gordon", points: 1540, tickets: 342, joinDate: new Date(Date.now() - 1000 * 60 * 60 * 24 * 365).toISOString(), discord_tag: "gordon#1234" },
+                { name: "Remy", points: 1250, tickets: 210, joinDate: new Date(Date.now() - 1000 * 60 * 60 * 24 * 120).toISOString(), discord_tag: "remy#5678" },
+                { name: "Julia", points: 980, tickets: 156, joinDate: new Date(Date.now() - 1000 * 60 * 60 * 24 * 60).toISOString(), discord_tag: "julia#9012" }
             ],
             stats: {
                 totalOrders: 1254,
@@ -1543,6 +1552,19 @@
         };
 
         document.addEventListener('DOMContentLoaded', () => {
+            console.log('🚀 DASHBOARD STARTING - Debug Mode');
+            console.log('Expected bot JSON format:', {
+                url: CONFIG.dataUrl,
+                expectedStructure: 'See console for full format'
+            });
+            
+            // Request notification permission
+            if ('Notification' in window && Notification.permission === 'default') {
+                Notification.requestPermission().then(permission => {
+                    console.log('📱 Notification permission:', permission);
+                });
+            }
+            
             loadDashboardData();
             startRefresh();
         });
@@ -1563,18 +1585,73 @@
                 lastSuccessfulFetch = Date.now();
                 isOnline = true;
                 
+                console.log('=== EXPECTED DATA FORMAT FROM BOT ===');
+                console.log(`{
+  "chefs": [
+    {
+      "name": "ChefName",
+      // No status field needed 
+      "points": 1500,
+      "tickets": 150,
+      "joinDate": "2024-01-01T00:00:00.000Z",
+      "discord_tag": "chef#1234",
+      "avatar": "https://discord.com/avatar/url"
+    }
+  ],
+  "activities": [
+    {
+      "id": "unique_id",
+      "chef": "ChefName", 
+      "action": "completed order #1234",
+      "timestamp": "2024-01-01T12:00:00.000Z",
+      "type": "order_completed"
+    }
+  ],
+  "menu": {
+    "seasonal": {
+      "ItemName": {
+        "selling_price": 15.99,
+        "ingredients": "Description here",
+        "cost_price": 5.99
+      }
+    }
+  },
+  "stats": {
+    "totalOrders": 500,
+    "activeChefs": 3,
+    "avgRating": 4.8
+  }
+}`);
+                
+                
+                console.log('=== ACTUAL DATA RECEIVED FROM BOT ===');
+                console.log('Full data object:', JSON.stringify(data, null, 2));
+                
                 // Log the actual structure of received data
-                console.log('📦 Raw data structure:', {
+                console.log('📦 Raw data structure analysis:', {
+                    dataType: typeof data,
+                    isArray: Array.isArray(data),
+                    keys: data ? Object.keys(data) : 'NO DATA',
                     hasChefs: !!data?.chefs,
-                    chefsCount: Array.isArray(data?.chefs) ? data.chefs.length : 0,
+                    chefsType: typeof data?.chefs,
+                    chefsCount: Array.isArray(data?.chefs) ? data.chefs.length : 'NOT ARRAY',
+                    chefsSample: Array.isArray(data?.chefs) && data.chefs[0] ? data.chefs[0] : 'NO CHEF DATA',
                     hasActivities: !!(data?.activities || data?.activity || data?.logs || data?.events),
-                    activitiesCount: Array.isArray(data?.activities) ? data.activities.length : 
-                                   Array.isArray(data?.activity) ? data.activity.length :
-                                   Array.isArray(data?.logs) ? data.logs.length :
-                                   Array.isArray(data?.events) ? data.events.length : 0,
+                    activitiesType: typeof data?.activities,
+                    activitiesCount: Array.isArray(data?.activities) ? data.activities.length : 'NOT ARRAY',
+                    activitiesSample: Array.isArray(data?.activities) && data.activities[0] ? data.activities[0] : 'NO ACTIVITY DATA',
                     hasMenu: !!(data?.menu || data?.menuItems || data?.items),
-                    dataKeys: Object.keys(data || {})
+                    menuType: typeof data?.menu,
+                    menuKeys: data?.menu ? Object.keys(data.menu) : 'NO MENU',
+                    hasStats: !!data?.stats,
+                    statsKeys: data?.stats ? Object.keys(data.stats) : 'NO STATS'
                 });
+                
+                if (!data) {
+                    console.error('❌ BOT RETURNED NO DATA! Check your bot is running and serving JSON at:', CONFIG.dataUrl);
+                    applyDashboardData(placeholderData);
+                    return;
+                }
                 
                 const hash = JSON.stringify(data || {});
                 if (hash === lastPayloadHash) {
@@ -1599,13 +1676,14 @@
                 consecutiveFailures++;
                 console.error(`❌ Failed to load cooking data (attempt ${consecutiveFailures}):`, {
                     error: err.message,
+                    stack: err.stack,
                     endpoint: CONFIG.dataUrl,
                     timestamp: new Date().toISOString()
                 });
                 
                 if (consecutiveFailures > CONFIG.maxRetries) {
                     isOnline = false;
-                    console.error('🚫 Multiple fetch failures, showing fallback data. Please check your database connection and API endpoint.');
+                    console.error('🚫 Multiple fetch failures, showing fallback data. CHECK YOUR BOT IS RUNNING!');
                     applyDashboardData(placeholderData);
                 } else {
                     // Retry with exponential backoff
@@ -1666,7 +1744,7 @@
             const chefs = Array.isArray(data.chefs) ? data.chefs : [];
             const stats = data.stats || {};
             const totalOrders = Number(stats.totalOrders ?? chefs.reduce((sum, chef) => sum + (Number(chef.tickets) || 0), 0));
-            const activeChefs = Number(stats.activeChefs ?? chefs.filter(chef => ['active', 'cooking', 'online'].includes((chef.status || '').toLowerCase())).length);
+            const activeChefs = Number(stats.activeChefs ?? chefs.filter(chef => chef.points > 0).length);
             const avgRating = Number(stats.avgRating ?? 0);
 
             updateLiveStats({
@@ -1804,10 +1882,16 @@
         }
 
         function updateMenuData(menuItems) {
-            console.log('🍽️ Processing menu data:', menuItems);
+            console.log('🍽️ Processing menu data:', {
+                received: menuItems,
+                type: typeof menuItems,
+                isArray: Array.isArray(menuItems),
+                keys: menuItems && typeof menuItems === 'object' ? Object.keys(menuItems) : 'N/A'
+            });
             
             if (!menuItems) {
                 console.log('⚠️ No menu data received, using fallback');
+                console.log('BOT SHOULD SEND: { "menu": { "seasonal": { "ItemName": { "selling_price": 15.99, "ingredients": "Description", "cost_price": 5.99 } } } }');
                 // Use fallback menu data
                 menuItems = {
                     "seasonal": {
@@ -1826,6 +1910,7 @@
             // Handle array format from bot (convert to object format)
             if (Array.isArray(menuItems)) {
                 console.log('📋 Converting array menu format to object format');
+                console.log('Array items received:', menuItems);
                 const categorizedMenu = {
                     "seasonal": {},
                     "non-seasonal": {},
@@ -1833,7 +1918,8 @@
                     "other": {}
                 };
                 
-                menuItems.forEach(item => {
+                menuItems.forEach((item, index) => {
+                    console.log(`Processing menu item ${index}:`, item);
                     const category = (item.category || 'other').toLowerCase().replace(/[^a-z0-9-]/g, '-');
                     if (!categorizedMenu[category]) {
                         categorizedMenu[category] = {};
@@ -1852,6 +1938,7 @@
                     }
                 });
                 
+                console.log('Converted to categorized menu:', categorizedMenu);
                 menuItems = categorizedMenu;
             }
             
@@ -1867,6 +1954,8 @@
                     }
                 };
             }
+
+            console.log('Final menu data to display:', menuItems);
 
             // Show tabs and generate content
             if (elements.menuTabs) elements.menuTabs.style.display = 'flex';
@@ -2027,13 +2116,27 @@
                 return processedActivity;
             }).filter(activity => activity !== null);
 
-            // Check for new activities and play notification sound
-            const newActivitiesCount = processedActivities.length;
-            if (lastActivityCount > 0 && newActivitiesCount > lastActivityCount) {
-                console.log(`🔔 New activity detected: ${newActivitiesCount - lastActivityCount} new entries`);
+            // Check for NEW activities by comparing IDs, not just count
+            const currentActivityIds = new Set(processedActivities.map(a => a.id));
+            const newActivityIds = [...currentActivityIds].filter(id => !lastActivityIds.has(id));
+            
+            if (newActivityIds.length > 0 && lastActivityIds.size > 0) {
+                console.log(`🔔 NEW ACTIVITIES DETECTED: ${newActivityIds.length} new activities`);
+                console.log('New activity IDs:', newActivityIds);
                 playNotificationSound();
+                
+                // Show browser notification if permission granted
+                if (Notification.permission === 'granted') {
+                    new Notification('New Cooking Activity!', {
+                        body: `${newActivityIds.length} new activity${newActivityIds.length > 1 ? 'ies' : ''} in the kitchen`,
+                        icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🍳</text></svg>'
+                    });
+                }
             }
-            lastActivityCount = newActivitiesCount;
+            
+            // Update tracking
+            lastActivityIds = currentActivityIds;
+            lastActivityCount = processedActivities.length;
 
             if (processedActivities.length === 0) {
                 elements.activityLog.innerHTML = '<div class="loading">No recent user activity from bot</div>';
