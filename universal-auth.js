@@ -110,8 +110,14 @@ async function handleAuthStateChange(user) {
         currentUser = null;
     }
     
-    // Broadcast auth change to other tabs
-    window.postMessage({ type: 'AUTH_STATE_CHANGED', user: user }, '*');
+    // Broadcast auth change to other tabs - serialize user data to avoid DataCloneError
+    const userData = user ? {
+        uid: user.uid,
+        email: user.email,
+        displayName: user.displayName,
+        photoURL: user.photoURL
+    } : null;
+    window.postMessage({ type: 'AUTH_STATE_CHANGED', user: userData }, '*');
 }
 
 // ===================================
@@ -779,27 +785,47 @@ function showProfileEdit() {
     closeProfileDropdown();
 }
 
-function toggleProfileDropdown() {
+function toggleProfileDropdown(event) {
+    if (event) {
+        event.stopPropagation();
+    }
+    
     const dropdown = document.getElementById('profileDropdown');
+    console.log('Toggle profile dropdown called', dropdown);
+    
     if (dropdown) {
-        dropdown.classList.toggle('show');
+        const isVisible = dropdown.classList.contains('show');
+        console.log('Dropdown is currently visible:', isVisible);
+        
+        if (isVisible) {
+            dropdown.classList.remove('show');
+        } else {
+            dropdown.classList.add('show');
+        }
+    } else {
+        console.error('Profile dropdown element not found');
     }
     
     // Close dropdown when clicking outside
-    setTimeout(() => {
-        document.addEventListener('click', function closeDropdown(e) {
-            if (!e.target.closest('#userProfile')) {
-                closeProfileDropdown();
-                document.removeEventListener('click', closeDropdown);
+    if (dropdown && dropdown.classList.contains('show')) {
+        setTimeout(() => {
+            function closeDropdown(e) {
+                if (!e.target.closest('#userProfile') && !e.target.closest('#profileDropdown')) {
+                    closeProfileDropdown();
+                    document.removeEventListener('click', closeDropdown);
+                }
             }
-        });
-    }, 100);
+            document.addEventListener('click', closeDropdown);
+        }, 100);
+    }
 }
 
 function closeProfileDropdown() {
     const dropdown = document.getElementById('profileDropdown');
+    console.log('Closing profile dropdown', dropdown);
     if (dropdown) {
         dropdown.classList.remove('show');
+        console.log('Dropdown closed');
     }
 }
 
