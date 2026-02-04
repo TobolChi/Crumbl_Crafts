@@ -11,7 +11,6 @@
       "average_rating": 4.5,
       "total_ratings": 6,
       "avatar": "https://cdn.discordapp.com/avatars/1098992055272878081/3d5587425a502f14a7fbf5cfaaa493a1.png?size=1024",
-      "status": "dnd",
       "joinDate": "2026-01-24"
     },
     {
@@ -25,7 +24,6 @@
       "average_rating": 5.0,
       "total_ratings": 2,
       "avatar": "https://cdn.discordapp.com/avatars/1358340564046712957/2fdd817f8381adcd31984bf14ba58547.png?size=1024",
-      "status": "offline",
       "joinDate": "2026-01-02"
     }
   ],
@@ -35,17 +33,49 @@
       "action": "Completed order \u00b7 2 tickets",
       "time": "5 minutes ago",
       "type": "completion",
-      "timestamp": 1770191995.758732
+      "timestamp": 1770192221.3796723
     },
     {
       "chef": "Sam",
       "action": "Completed order \u00b7 1 tickets",
       "time": "10 minutes ago",
       "type": "completion",
-      "timestamp": 1770191695.7587352
+      "timestamp": 1770191921.3796751
     }
   ],
-  "menu": [],
+  "menu": {
+    "catering": {
+      "lemonade": {
+        "selling_price": 70.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 28.0
+      }
+    },
+    "seasonal": {
+      "Pumpkin Pie": {
+        "selling_price": 5.99,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 2.4
+      },
+      "burger": {
+        "selling_price": 3.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 1.2
+      }
+    },
+    "non-seasonal": {
+      "Pumpkin Pie": {
+        "selling_price": 5.99,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 2.4
+      },
+      "Burger": {
+        "selling_price": 5.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 2.0
+      }
+    }
+  },
   "stats": {
     "totalOrders": 13,
     "activeChefs": 2,
@@ -53,8 +83,8 @@
     "avgRating": 4.8
   },
   "meta": {
-    "timestamp": "2026-02-04T10:04:55.758747",
-    "last_updated": 1770192295.7587562,
+    "timestamp": "2026-02-04T10:08:41.379703",
+    "last_updated": 1770192521.3797114,
     "cached": false,
     "data_source": "discord_bot"
   }
