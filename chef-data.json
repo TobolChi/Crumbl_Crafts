@@ -29,18 +29,64 @@
   ],
   "activities": [
     {
-      "chef": "Hidenori",
-      "action": "Completed order \u00b7 2 tickets",
-      "time": "5 minutes ago",
-      "type": "completion",
-      "timestamp": 1770192562.8325472
+      "id": "activity_1770192923_0",
+      "chef": "Anthony Bourdain",
+      "user": "Anthony Bourdain",
+      "action": "New chef joined the kitchen team",
+      "message": "New chef joined the kitchen team",
+      "time": "15s ago",
+      "type": "new_chef_joined",
+      "event_type": "chef_related",
+      "timestamp": 1770192923.761311,
+      "user_id": 123456793
     },
     {
-      "chef": "Sam",
-      "action": "Completed order \u00b7 1 tickets",
-      "time": "10 minutes ago",
-      "type": "completion",
-      "timestamp": 1770192262.8325498
+      "id": "activity_1770192923_1",
+      "chef": "Marco Pierre",
+      "user": "Marco Pierre",
+      "action": "Finished pasta special for table 12",
+      "message": "Finished pasta special for table 12",
+      "time": "15s ago",
+      "type": "order_completed",
+      "event_type": "chef_related",
+      "timestamp": 1770192923.761274,
+      "user_id": 123456792
+    },
+    {
+      "id": "activity_1770192923_2",
+      "chef": "Jamie Oliver",
+      "user": "Jamie Oliver",
+      "action": "Promoted to Senior Chef",
+      "message": "Promoted to Senior Chef",
+      "time": "15s ago",
+      "type": "role_promotion",
+      "event_type": "chef_related",
+      "timestamp": 1770192923.7612278,
+      "user_id": 123456791
+    },
+    {
+      "id": "activity_1770192923_3",
+      "chef": "Julia Child",
+      "user": "Julia Child",
+      "action": "Received 5-star rating from customer",
+      "message": "Received 5-star rating from customer",
+      "time": "15s ago",
+      "type": "rating_received",
+      "event_type": "chef_related",
+      "timestamp": 1770192923.7611833,
+      "user_id": 123456790
+    },
+    {
+      "id": "activity_1770192923_4",
+      "chef": "Gordon Ramsay",
+      "user": "Gordon Ramsay",
+      "action": "Completed a perfect beef wellington",
+      "message": "Completed a perfect beef wellington",
+      "time": "15s ago",
+      "type": "order_completed",
+      "event_type": "chef_related",
+      "timestamp": 1770192923.7611341,
+      "user_id": 123456789
     }
   ],
   "menu": {
@@ -83,8 +129,8 @@
     "avgRating": 4.8
   },
   "meta": {
-    "timestamp": "2026-02-04T10:14:22.832574",
-    "last_updated": 1770192862.8325813,
+    "timestamp": "2026-02-04T10:15:38.763487",
+    "last_updated": 1770192938.7634943,
     "cached": false,
     "data_source": "discord_bot"
   }
