@@ -2143,6 +2143,94 @@
         .auth-link:hover {
             color: var(--text-bright);
         }
+        
+        /* Auth Button Styles for Building Theme */
+        .auth-signup-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: linear-gradient(135deg, #ff1744, #d50000);
+            border: 3px solid rgba(255, 23, 68, 0.3);
+            border-radius: 12px;
+            color: white;
+            font-weight: 800;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            box-shadow: 0 6px 0 #b71c1c, 0 8px 20px rgba(255, 23, 68, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            font-family: 'Fredoka', cursive;
+            text-decoration: none;
+        }
+        .auth-signup-btn:hover {
+            background: linear-gradient(135deg, #d50000, #b71c1c);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 0 #b71c1c, 0 10px 25px rgba(255, 23, 68, 0.6), inset 0 2px 0 rgba(255, 255, 255, 0.4);
+        }
+        .auth-signup-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 0 #b71c1c, 0 6px 15px rgba(255, 23, 68, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.2);
+        }
+        .auth-signup-btn i {
+            font-size: 1.1rem;
+        }
+        
+        /* User Profile Display */
+        .user-profile-display {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            font-family: 'Fredoka', cursive;
+        }
+        .user-profile-display:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .user-name {
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .profile-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: rgba(30, 41, 59, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 8px 0;
+            min-width: 150px;
+            display: none;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .profile-dropdown-item {
+            padding: 10px 16px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            font-size: 0.85rem;
+        }
+        .profile-dropdown-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
         .profile-pic-upload {
             display: flex;
             flex-direction: column;
@@ -2475,6 +2563,11 @@
                     </div>
                 </div>
                 
+                <a href="https://tobolchi.github.io/Crumbl_Crafts/" class="home-nav-btn" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                
                 <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
                     <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 4px;">
                         <div class="status-badge" id="statusBadge">
@@ -2502,13 +2595,33 @@
                         <i class="fab fa-discord" style="font-size: 1.1rem;"></i>
                         <span>DISCORD</span>
                     </a>
-                    <button id="authButton" class="auth-btn" onclick="showSignUp()" style="display: flex; align-items: center; gap: 8px; padding: 10px 18px; background: linear-gradient(135deg, #FF1744, #ff5252); border: 3px solid rgba(255,255,255,0.3); border-radius: 12px; color: white; font-weight: 800; font-size: 0.85rem; cursor: pointer; transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); box-shadow: 0 4px 0 #c41c3a, 0 6px 16px rgba(255,23,68,0.5), inset 0 2px 0 rgba(255,255,255,0.3);">
+                    
+                    <!-- Hardcoded Auth Elements -->
+                    <button id="authButton" class="auth-signup-btn building-theme" onclick="showSignUp()" style="display: flex;">
                         <i class="fas fa-user-plus"></i>
                         <span>SIGN UP</span>
                     </button>
-                    <div id="userProfile" onclick="showProfileEdit()" style="display: none; align-items: center; gap: 10px; cursor: pointer;">
-                        <img id="userAvatar" src="" alt="Avatar" style="width: 40px; height: 40px; border-radius: 50%; border: 3px solid var(--primary); box-shadow: 0 0 12px rgba(255,23,68,0.5);">
-                        <span id="userName" style="font-weight: 700; color: var(--text-bright);"></span>
+                    
+                    <div id="userProfile" class="user-profile-display building-theme" onclick="toggleProfileDropdown()" style="display: none;">
+                        <img id="userAvatar" class="user-avatar" src="" alt="Avatar">
+                        <span id="userName" class="user-name"></span>
+                        <i class="fas fa-chevron-down" style="margin-left: 4px; font-size: 0.7rem;"></i>
+                        
+                        <div id="profileDropdown" class="profile-dropdown">
+                            <div class="profile-dropdown-item" onclick="showProfileEdit()">
+                                <i class="fas fa-user-edit"></i>
+                                Edit Profile
+                            </div>
+                            <div class="profile-dropdown-item" onclick="viewAccount()">
+                                <i class="fas fa-cog"></i>
+                                Account Settings
+                            </div>
+                            <div class="profile-dropdown-divider"></div>
+                            <div class="profile-dropdown-item danger" onclick="handleSignOut()">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Sign Out
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>
