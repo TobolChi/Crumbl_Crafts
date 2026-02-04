@@ -503,10 +503,19 @@
       "timestamp": 1770164643.0,
       "url": "https://www.youtube.com/watch?v=sQu_1XaSJRs",
       "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "GLOW UP is real \u2728\ud83c\udfe1-Roblox",
+      "description": "Finally done! \u2728 From plain to wow \u2014 sobrang sulit ng pagre-renovate ko sa Roblox. Ang saya makita na...",
+      "source": "YouTube",
+      "timestamp": 1770161689.0,
+      "url": "https://www.youtube.com/watch?v=duGF3WluSmI",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770232840.3251424,
+    "generated_at": 1770234040.3177638,
     "mode": "memory",
     "refresh_interval": 2000
   }
