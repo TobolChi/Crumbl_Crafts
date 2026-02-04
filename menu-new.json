@@ -1,0 +1,33 @@
+{
+  "catering": {
+    "lemonade": {
+      "selling_price": 70.0,
+      "ingredients": "Fresh ingredients prepared by our chefs",
+      "cost_price": 28.0
+    }
+  },
+  "seasonal": {
+    "Pumpkin Pie": {
+      "selling_price": 5.99,
+      "ingredients": "Fresh ingredients prepared by our chefs",
+      "cost_price": 2.4
+    },
+    "burger": {
+      "selling_price": 3.0,
+      "ingredients": "Fresh ingredients prepared by our chefs",
+      "cost_price": 1.2
+    }
+  },
+  "non-seasonal": {
+    "Pumpkin Pie": {
+      "selling_price": 5.99,
+      "ingredients": "Fresh ingredients prepared by our chefs",
+      "cost_price": 2.4
+    },
+    "Burger": {
+      "selling_price": 5.0,
+      "ingredients": "Fresh ingredients prepared by our chefs",
+      "cost_price": 2.0
+    }
+  }
+}
