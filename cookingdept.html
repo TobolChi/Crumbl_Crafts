@@ -1126,6 +1126,17 @@
             font-size: 0.9rem;
         }
 
+        .new-badge {
+            background: var(--accent-color);
+            color: #1b1b1b;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 2px 6px;
+            border-radius: 10px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
         .menu-item-ingredients {
             font-size: 0.85rem;
             color: rgba(255, 255, 255, 0.7);
@@ -1154,6 +1165,42 @@
             font-weight: 800;
             font-size: 1.1rem;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Price Change Styling */
+        .price-change {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 2px;
+        }
+        
+        .old-price {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.4);
+            text-decoration: line-through;
+            text-decoration-color: #ff4444;
+            text-decoration-thickness: 2px;
+            font-weight: 400;
+        }
+        
+        .current-price {
+            color: var(--success-color);
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            animation: priceGlow 2s ease-in-out;
+        }
+        
+        @keyframes priceGlow {
+            0%, 100% { 
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+                transform: scale(1);
+            }
+            50% { 
+                text-shadow: 0 0 8px var(--success-color), 0 1px 2px rgba(0, 0, 0, 0.2);
+                transform: scale(1.05);
+            }
         }
 
         /* Activity Log */
@@ -1639,6 +1686,9 @@
         // Use local JSON file for chef data (hosted on GitHub Pages)
         // GitHub raw URL for bot-updated JSON data
         window.COOKING_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/chef-data.json';
+        window.MENU_OLD_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/menu-old.json';
+        window.MENU_NEW_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/menu-new.json';
+        window.ACTIVITY_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/cooking-activity.json';
         
         // Fallback for local development or testing
         const urlParams = new URLSearchParams(window.location.search);
@@ -1649,7 +1699,10 @@
 
     <script>
         // Configuration for real data from your database
-        const REMOTE_COOKING_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/chef-data.json';
+        const REMOTE_COOKING_ENDPOINT = window.COOKING_ENDPOINT || 'https://tobolchi.github.io/Crumbl_Crafts/chef-data.json';
+        const REMOTE_MENU_OLD_ENDPOINT = window.MENU_OLD_ENDPOINT || 'https://tobolchi.github.io/Crumbl_Crafts/menu-old.json';
+        const REMOTE_MENU_NEW_ENDPOINT = window.MENU_NEW_ENDPOINT || 'https://tobolchi.github.io/Crumbl_Crafts/menu-new.json';
+        const REMOTE_ACTIVITY_ENDPOINT = window.ACTIVITY_ENDPOINT || 'https://tobolchi.github.io/Crumbl_Crafts/cooking-activity.json';
         const CONFIG = {
             dataUrl: REMOTE_COOKING_ENDPOINT,
             refreshInterval: 30000, // 30 seconds
@@ -1773,33 +1826,14 @@
         
         // Fallback data structure - Rich Demo Data
         const placeholderData = {
-            chefs: [
-                { name: "Gordon", points: 1540, tickets: 342, joinDate: new Date(Date.now() - 1000 * 60 * 60 * 24 * 365).toISOString(), discord_tag: "gordon#1234" },
-                { name: "Remy", points: 1250, tickets: 210, joinDate: new Date(Date.now() - 1000 * 60 * 60 * 24 * 120).toISOString(), discord_tag: "remy#5678" },
-                { name: "Julia", points: 980, tickets: 156, joinDate: new Date(Date.now() - 1000 * 60 * 60 * 24 * 60).toISOString(), discord_tag: "julia#9012" }
-            ],
+            chefs: [],
             stats: {
-                totalOrders: 1254,
-                activeChefs: 2,
-                avgRating: 4.8
+                totalOrders: 0,
+                activeChefs: 0,
+                avgRating: 0
             },
-            activities: [
-                { chef: "Gordon", action: "completed order #1234", timestamp: new Date().toISOString(), type: "completion" },
-                { chef: "Remy", action: "updated seasonal menu", timestamp: new Date(Date.now() - 1000 * 60 * 5).toISOString(), type: "menu_update" },
-                { chef: "Julia", action: "received 5-star rating", timestamp: new Date(Date.now() - 1000 * 60 * 15).toISOString(), type: "rating_received" }
-            ],
-            menu: {
-                "seasonal": {
-                    "Pumpkin Soup": { selling_price: 12.50, ingredients: "Pumpkin, Cream, Nutmeg, Herbs", cost_price: 4.00 },
-                    "Turkey Roast": { selling_price: 25.00, ingredients: "Turkey, Stuffing, Cranberry Sauce", cost_price: 10.00 },
-                    "Apple Pie": { selling_price: 8.00, ingredients: "Fresh Apples, Cinnamon, Pastry", cost_price: 2.50 }
-                },
-                "non-seasonal": {
-                    "Classic Burger": { selling_price: 15.00, ingredients: "Beef Patty, Lettuce, Tomato, Bun", cost_price: 5.00 },
-                    "Crispy Fries": { selling_price: 5.00, ingredients: "Potatoes, Sea Salt", cost_price: 1.00 },
-                    "Caesar Salad": { selling_price: 12.00, ingredients: "Romaine, Croutons, Parmesan", cost_price: 3.50 }
-                }
-            },
+            activities: [],
+            menu: {},
             meta: {
                 generated_at: Date.now() / 1000,
                 mode: 'fallback'
@@ -1904,7 +1938,7 @@
                 
                 if (!data) {
                     console.error('❌ BOT RETURNED NO DATA! Check your bot is running and serving JSON at:', CONFIG.dataUrl);
-                    applyDashboardData(placeholderData);
+                    await applyDashboardData(placeholderData);
                     return;
                 }
                 
@@ -1921,7 +1955,7 @@
                     menu: data?.menu ? Object.keys(data.menu).length : 0
                 });
                 
-                applyDashboardData(data || placeholderData);
+                await applyDashboardData(data || placeholderData);
                 updateLastUpdateTime();
                 
                 const latency = Math.round(performance.now() - startTime);
@@ -1939,7 +1973,7 @@
                 if (consecutiveFailures > CONFIG.maxRetries) {
                     isOnline = false;
                     console.error('🚫 Multiple fetch failures, showing fallback data. CHECK YOUR BOT IS RUNNING!');
-                    applyDashboardData(placeholderData);
+                    await applyDashboardData(placeholderData);
                 } else {
                     // Retry with exponential backoff
                     const retryDelay = Math.min(1000 * Math.pow(2, consecutiveFailures), 30000);
@@ -1985,7 +2019,7 @@
             return await response.json();
         }
 
-        function applyDashboardData(data) {
+        async function applyDashboardData(data) {
             console.log('📊 Applying dashboard data:', {
                 chefs: Array.isArray(data?.chefs) ? data.chefs.length : 0,
                 activities: Array.isArray(data?.activities) ? data.activities.length : 0,
@@ -2021,7 +2055,7 @@
                 sample: Array.isArray(activityData) && activityData.length > 0 ? activityData[0] : null
             });
             
-            updateActivityLog(activityData);
+            await loadActivitySnapshot(activityData);
             
             // Try multiple possible menu data sources with better error handling
             let menuData = data.menu || data.menuItems || data.menu_items || null;
@@ -2031,8 +2065,7 @@
                 menuData = data.items;
             }
             
-            // Always call updateMenuData - it will handle null/empty cases with fallbacks
-            updateMenuData(menuData);
+            await loadMenuSnapshots(menuData);
         }
 
         function showEmptyState() {
@@ -2160,36 +2193,12 @@
             }
         }
 
-        function updateMenuData(menuItems) {
-            console.log('🍽️ Processing menu data:', {
-                received: menuItems,
-                type: typeof menuItems,
-                isArray: Array.isArray(menuItems),
-                keys: menuItems && typeof menuItems === 'object' ? Object.keys(menuItems) : 'N/A'
-            });
-            
+        function normalizeMenuData(menuItems) {
             if (!menuItems) {
-                console.log('⚠️ No menu data received, using fallback');
-                console.log('BOT SHOULD SEND: { "menu": { "seasonal": { "ItemName": { "selling_price": 15.99, "ingredients": "Description", "cost_price": 5.99 } } } }');
-                // Use fallback menu data
-                menuItems = {
-                    "seasonal": {
-                        "Pumpkin Soup": { selling_price: 12.50, ingredients: "Pumpkin, Cream, Nutmeg, Herbs", cost_price: 4.00 },
-                        "Turkey Roast": { selling_price: 25.00, ingredients: "Turkey, Stuffing, Cranberry Sauce", cost_price: 10.00 },
-                        "Apple Pie": { selling_price: 8.00, ingredients: "Fresh Apples, Cinnamon, Pastry", cost_price: 2.50 }
-                    },
-                    "non-seasonal": {
-                        "Classic Burger": { selling_price: 15.00, ingredients: "Beef Patty, Lettuce, Tomato, Bun", cost_price: 5.00 },
-                        "Crispy Fries": { selling_price: 5.00, ingredients: "Potatoes, Sea Salt", cost_price: 1.00 },
-                        "Caesar Salad": { selling_price: 12.00, ingredients: "Romaine, Croutons, Parmesan", cost_price: 3.50 }
-                    }
-                };
+                return null;
             }
 
-            // Handle array format from bot (convert to object format)
             if (Array.isArray(menuItems)) {
-                console.log('📋 Converting array menu format to object format');
-                console.log('Array items received:', menuItems);
                 const categorizedMenu = {
                     "seasonal": {},
                     "non-seasonal": {},
@@ -2197,8 +2206,7 @@
                     "other": {}
                 };
                 
-                menuItems.forEach((item, index) => {
-                    console.log(`Processing menu item ${index}:`, item);
+                menuItems.forEach(item => {
                     const category = (item.category || 'other').toLowerCase().replace(/[^a-z0-9-]/g, '-');
                     if (!categorizedMenu[category]) {
                         categorizedMenu[category] = {};
@@ -2210,37 +2218,104 @@
                     };
                 });
                 
-                // Remove empty categories
                 Object.keys(categorizedMenu).forEach(key => {
                     if (Object.keys(categorizedMenu[key]).length === 0) {
                         delete categorizedMenu[key];
                     }
                 });
                 
-                console.log('Converted to categorized menu:', categorizedMenu);
-                menuItems = categorizedMenu;
+                return categorizedMenu;
             }
+
+            if (typeof menuItems === 'object') {
+                return menuItems;
+            }
+
+            return null;
+        }
+
+        async function fetchMenuSnapshot(url) {
+            try {
+                const response = await fetchWithTimeout(withCacheBust(url));
+                if (!response.ok) {
+                    return null;
+                }
+                const data = await response.json();
+                return typeof data === 'object' && data !== null ? data : null;
+            } catch (e) {
+                return null;
+            }
+        }
+
+        async function loadMenuSnapshots(fallbackMenu) {
+            const [oldSnapshotRaw, newSnapshotRaw] = await Promise.all([
+                fetchMenuSnapshot(REMOTE_MENU_OLD_ENDPOINT),
+                fetchMenuSnapshot(REMOTE_MENU_NEW_ENDPOINT)
+            ]);
+
+            const oldSnapshot = normalizeMenuData(oldSnapshotRaw);
+            const newSnapshot = normalizeMenuData(newSnapshotRaw);
+            const fallbackSnapshot = normalizeMenuData(fallbackMenu) || {};
+
+            const newSnapshotHasItems = newSnapshot && Object.keys(newSnapshot).length > 0;
+            const oldSnapshotHasItems = oldSnapshot && Object.keys(oldSnapshot).length > 0;
+
+            if (newSnapshotHasItems) {
+                updateMenuData(newSnapshot, oldSnapshot, true);
+            } else if (oldSnapshotHasItems) {
+                updateMenuData(oldSnapshot, null, false);
+            } else {
+                updateMenuData(fallbackSnapshot, null, false);
+            }
+        }
+
+        async function fetchActivitySnapshot() {
+            try {
+                const response = await fetchWithTimeout(withCacheBust(REMOTE_ACTIVITY_ENDPOINT));
+                if (!response.ok) {
+                    return null;
+                }
+                const data = await response.json();
+                return Array.isArray(data) ? data : null;
+            } catch (e) {
+                return null;
+            }
+        }
+
+        async function loadActivitySnapshot(fallbackActivities) {
+            const snapshot = await fetchActivitySnapshot();
+            if (snapshot && snapshot.length > 0) {
+                updateActivityLog(snapshot);
+                return;
+            }
+
+            const fallbackArray = Array.isArray(fallbackActivities) ? fallbackActivities : [];
+            updateActivityLog(fallbackArray);
+        }
+
+        function updateMenuData(menuItems, oldMenu = null, usingNewMenu = false) {
+            const normalizedMenu = normalizeMenuData(menuItems) || {};
+            const normalizedOldMenu = normalizeMenuData(oldMenu) || {};
+
+            console.log('🍽️ Processing menu data:', {
+                keys: Object.keys(normalizedMenu),
+                usingNewMenu,
+                hasOldMenu: Object.keys(normalizedOldMenu).length > 0
+            });
+
+            if (Object.keys(normalizedMenu).length === 0) {
+                elements.menuContainer.innerHTML = '<div class="loading">No menu data available</div>';
+                if (elements.menuTabs) elements.menuTabs.style.display = 'none';
+                return;
+            }
+
+            console.log('Final menu data to display:', normalizedMenu);
             
-            // Check if we have any menu items after processing
-            if (typeof menuItems === 'object' && Object.keys(menuItems).length === 0) {
-                console.log('⚠️ Empty menu object, using fallback');
-                menuItems = {
-                    "seasonal": {
-                        "Seasonal Special": { selling_price: 18.00, ingredients: "Chef's choice seasonal ingredients", cost_price: 6.00 }
-                    },
-                    "non-seasonal": {
-                        "House Special": { selling_price: 16.00, ingredients: "Chef's signature dish", cost_price: 5.50 }
-                    }
-                };
-            }
-
-            console.log('Final menu data to display:', menuItems);
-
             // Show tabs and generate content
             if (elements.menuTabs) elements.menuTabs.style.display = 'flex';
             
             // Create tabs dynamically
-            const categories = Object.keys(menuItems);
+            const categories = Object.keys(normalizedMenu);
             let tabsHtml = '';
             
             categories.forEach((category, index) => {
@@ -2258,7 +2333,7 @@
             let html = '';
             categories.forEach((category, index) => {
                 const isActive = index === 0 ? 'active' : '';
-                const items = menuItems[category];
+                const items = normalizedMenu[category];
                 
                 html += `<div class="menu-category ${isActive}" data-category="${category}">`;
                 
@@ -2266,18 +2341,37 @@
                     html += '<div class="menu-item"><div class="menu-item-info">No items in this category</div></div>';
                 } else {
                     Object.entries(items).forEach(([itemName, itemData]) => {
-                        const price = itemData.selling_price != null ? `$${Number(itemData.selling_price).toFixed(2)}` : '—';
+                        const priceValue = itemData.selling_price != null ? Number(itemData.selling_price) : null;
+                        const price = priceValue != null ? priceValue.toFixed(2) : null;
                         const costPrice = itemData.cost_price ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` : '';
-                        
+
+                        const oldItem = normalizedOldMenu?.[category]?.[itemName];
+                        const oldPriceValue = oldItem && oldItem.selling_price != null ? Number(oldItem.selling_price) : null;
+                        const isNewItem = usingNewMenu && !oldItem;
+                        const hasPriceChange = usingNewMenu && oldPriceValue != null && priceValue != null && oldPriceValue !== priceValue;
+
+                        let priceDisplay = price ? `$${price}` : '—';
+                        if (hasPriceChange) {
+                            const changeIndicator = priceValue > oldPriceValue ? '📈' : '📉';
+                            priceDisplay = `
+                                <div class="price-change">
+                                    <span class="old-price">$${oldPriceValue.toFixed(2)}</span>
+                                    <span class="current-price">$${price} ${changeIndicator}</span>
+                                </div>
+                            `;
+                        }
+
+                        const itemLabel = isNewItem ? `${itemName} <span class="new-badge">NEW</span>` : itemName;
+
                         html += `
                             <div class="menu-item">
                                 <div class="menu-item-info">
-                                    <div class="menu-item-name">${itemName}</div>
+                                    <div class="menu-item-name">${itemLabel}</div>
                                     <div class="menu-item-ingredients">${itemData.ingredients || 'No description available'}</div>
                                 </div>
                                 <div class="menu-item-prices">
                                     ${costPrice}
-                                    <div class="selling-price">${price}</div>
+                                    <div class="selling-price">${priceDisplay}</div>
                                 </div>
                             </div>
                         `;
@@ -2290,7 +2384,7 @@
             elements.menuContainer.innerHTML = html;
             setupMenuTabs();
             
-            const totalItems = Object.values(menuItems).reduce((total, cat) => total + Object.keys(cat || {}).length, 0);
+            const totalItems = Object.values(normalizedMenu).reduce((total, cat) => total + Object.keys(cat || {}).length, 0);
             console.log(`✅ Menu data loaded: ${categories.length} categories with ${totalItems} items`);
         }
         
@@ -2341,8 +2435,8 @@
             console.log('🔔 First item sample:', Array.isArray(activities) && activities.length > 0 ? activities[0] : activities);
             
             if (!activities || (Array.isArray(activities) && activities.length === 0)) {
-                console.log('⚠️ No activity data available from bot');
-                elements.activityLog.innerHTML = '<div class="loading">No recent activity from bot</div>';
+                console.log('📝 No cooking activities recorded yet');
+                elements.activityLog.innerHTML = '<div class="loading">🍳 No cooking activities yet - activities will appear here when chefs start working!</div>';
                 return;
             }
 
@@ -2442,7 +2536,7 @@
             lastActivityCount = processedActivities.length;
 
             if (processedActivities.length === 0) {
-                elements.activityLog.innerHTML = '<div class="loading">No recent user activity from bot</div>';
+                elements.activityLog.innerHTML = '<div class="loading">🍳 No cooking activities yet - waiting for chefs to get busy in the kitchen!</div>';
                 return;
             }
 
@@ -2602,9 +2696,17 @@
         }
 
         function getTimeAgo(timestamp) {
-            const now = new Date();
-            const time = new Date(timestamp);
-            const diff = Math.floor((now - time) / 1000);
+            const now = Date.now();
+            let timeValue = timestamp;
+
+            if (typeof timestamp === 'number') {
+                timeValue = timestamp < 1e12 ? timestamp * 1000 : timestamp;
+            } else if (typeof timestamp === 'string') {
+                timeValue = Date.parse(timestamp);
+            }
+
+            if (!Number.isFinite(timeValue)) return 'just now';
+            const diff = Math.floor((now - timeValue) / 1000);
             if (!Number.isFinite(diff) || diff < 0) return 'just now';
             if (diff < 60) return `${diff}s ago`;
             if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
