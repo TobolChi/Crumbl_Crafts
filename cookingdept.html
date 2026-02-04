@@ -723,7 +723,7 @@
 
         .compact-chef-card:hover {
             background: linear-gradient(135deg, rgba(50, 50, 65, 0.95), rgba(45, 45, 60, 0.9));
-            transform: translateX(5px) scale(1.02);
+            transform: translateY(-2px);
             border-color: var(--accent-color);
             box-shadow: 0 12px 40px rgba(255, 107, 53, 0.3);
         }
@@ -2055,14 +2055,14 @@
         }
 
         function updateActivityLog(activities) {
-            console.log('📋 Processing activity data:', {
-                type: Array.isArray(activities) ? 'array' : typeof activities,
-                length: Array.isArray(activities) ? activities.length : 'N/A',
-                sample: Array.isArray(activities) && activities.length > 0 ? activities[0] : activities
-            });
-
+            console.log('RAW ACTIVITY DATA RECEIVED:', activities);
+            console.log('🔔 Activity data type:', typeof activities);
+            console.log('🔔 Is array?', Array.isArray(activities));
+            console.log('🔔 Length:', Array.isArray(activities) ? activities.length : 'N/A');
+            console.log('🔔 First item sample:', Array.isArray(activities) && activities.length > 0 ? activities[0] : activities);
+            
             if (!activities || (Array.isArray(activities) && activities.length === 0)) {
-                console.log('⚠️ No activity data available');
+                console.log('⚠️ No activity data available from bot');
                 elements.activityLog.innerHTML = '<div class="loading">No recent activity from bot</div>';
                 return;
             }
@@ -2082,7 +2082,12 @@
             
             // Process and validate activity items, filtering out unwanted types
             const processedActivities = activitiesArray.map((activity, index) => {
-                if (!activity) return null;
+                if (!activity) {
+                    console.log(`🚫 Activity ${index} is null/undefined`);
+                    return null;
+                }
+                
+                console.log(`🔍 Processing activity ${index}:`, activity);
                 
                 // Handle different activity data formats from bot
                 const processedActivity = {
@@ -2093,6 +2098,8 @@
                     type: activity.type || activity.action_type || activity.event_type || 'general',
                     details: activity.details || activity.extra || null
                 };
+                
+                console.log(`✅ Processed activity ${index}:`, processedActivity);
                 
                 // Filter out system events and status notifications
                 const activityType = (processedActivity.type || '').toLowerCase();
@@ -2109,29 +2116,46 @@
                 );
                 
                 if (isExcluded) {
-                    console.log('🚫 Excluding system/status activity:', processedActivity.type, processedActivity.action);
+                    console.log(`🚫 EXCLUDING activity ${index}: Type='${activityType}', Action='${activityAction}'`);
                     return null;
+                } else {
+                    console.log(`✅ INCLUDING activity ${index}: Type='${activityType}', Action='${activityAction}'`);
+                    return processedActivity;
                 }
-                
-                return processedActivity;
             }).filter(activity => activity !== null);
+
+            console.log(`📊 ACTIVITY PROCESSING COMPLETE:`);
+            console.log(`- Raw activities: ${activitiesArray.length}`);
+            console.log(`- After filtering: ${processedActivities.length}`);
+            console.log(`- Processed activities:`, processedActivities);
 
             // Check for NEW activities by comparing IDs, not just count
             const currentActivityIds = new Set(processedActivities.map(a => a.id));
             const newActivityIds = [...currentActivityIds].filter(id => !lastActivityIds.has(id));
             
+            console.log(`🔔 NOTIFICATION CHECK:`);
+            console.log(`- Current activity IDs:`, [...currentActivityIds]);
+            console.log(`- Last activity IDs:`, [...lastActivityIds]);
+            console.log(`- New activity IDs:`, newActivityIds);
+            console.log(`- Should notify? ${newActivityIds.length > 0 && lastActivityIds.size > 0}`);
+            
             if (newActivityIds.length > 0 && lastActivityIds.size > 0) {
                 console.log(`🔔 NEW ACTIVITIES DETECTED: ${newActivityIds.length} new activities`);
-                console.log('New activity IDs:', newActivityIds);
+                console.log('🔔 Playing notification sound...');
                 playNotificationSound();
                 
                 // Show browser notification if permission granted
                 if (Notification.permission === 'granted') {
+                    console.log('🔔 Showing browser notification...');
                     new Notification('New Cooking Activity!', {
                         body: `${newActivityIds.length} new activity${newActivityIds.length > 1 ? 'ies' : ''} in the kitchen`,
                         icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🍳</text></svg>'
                     });
+                } else {
+                    console.log('🔔 Browser notification permission not granted');
                 }
+            } else {
+                console.log('🔕 No new activities to notify about');
             }
             
             // Update tracking
