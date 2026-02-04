@@ -27,7 +27,19 @@
       "joinDate": "2026-01-02"
     }
   ],
-  "activities": [],
+  "activities": [
+    {
+      "type": "order_created",
+      "chef": "Hidenori",
+      "user": "Hidenori",
+      "message": "submitted a new Catering Request order",
+      "action": "submitted a new Catering Request order",
+      "timestamp": 1770211806,
+      "user_id": 1098992055272878081,
+      "id": "cooking_1770211806_0",
+      "source": "live"
+    }
+  ],
   "menu": {
     "catering": {
       "lemonade": {
@@ -68,8 +80,8 @@
     "avgRating": 4.8
   },
   "meta": {
-    "timestamp": "2026-02-04T15:29:51.514842",
-    "last_updated": 1770211791.5148485,
+    "timestamp": "2026-02-04T15:30:28.632133",
+    "last_updated": 1770211828.632138,
     "cached": false,
     "data_source": "discord_bot"
   }
