@@ -5,13 +5,14 @@
 
 // Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAYuU0xDNgUNyqVf4bSCBBs4Qg1hJQ3F1Q",
-    authDomain: "crumblcrafts-9764b.firebaseapp.com",
-    databaseURL: "https://crumblcrafts-9764b-default-rtdb.firebaseio.com",
-    projectId: "crumblcrafts-9764b",
-    storageBucket: "crumblcrafts-9764b.appspot.com",
-    messagingSenderId: "123456789",
-    appId: "1:123456789:web:abcd1234efgh5678ijkl90"
+    apiKey: "AIzaSyB3iLtr9jkL6W2nD7U8yHIROe6fReD-fQs",
+    authDomain: "crumblcrafts-b90cc.firebaseapp.com",
+    databaseURL: "https://crumblcrafts-b90cc-default-rtdb.firebaseio.com",
+    projectId: "crumblcrafts-b90cc",
+    storageBucket: "crumblcrafts-b90cc.appspot.com",
+    messagingSenderId: "851356801084",
+    appId: "1:851356801084:web:dcf29959d53a59d4e44b39",
+    measurementId: "G-J4F5CKV6J3"
 };
 
 // Global variables
