@@ -29,64 +29,54 @@
   ],
   "activities": [
     {
-      "id": "activity_1770192923_0",
+      "type": "new_chef_joined",
       "chef": "Anthony Bourdain",
       "user": "Anthony Bourdain",
-      "action": "New chef joined the kitchen team",
       "message": "New chef joined the kitchen team",
-      "time": "9m ago",
-      "type": "new_chef_joined",
-      "event_type": "chef_related",
-      "timestamp": 1770192923.761311,
-      "user_id": 123456793
+      "action": "New chef joined the kitchen team",
+      "timestamp": 1770193538,
+      "user_id": null,
+      "id": "cooking_1770193538_4"
     },
     {
-      "id": "activity_1770192923_1",
+      "type": "order_completed",
       "chef": "Marco Pierre",
       "user": "Marco Pierre",
-      "action": "Finished pasta special for table 12",
       "message": "Finished pasta special for table 12",
-      "time": "9m ago",
-      "type": "order_completed",
-      "event_type": "chef_related",
-      "timestamp": 1770192923.761274,
-      "user_id": 123456792
+      "action": "Finished pasta special for table 12",
+      "timestamp": 1770193538,
+      "user_id": null,
+      "id": "cooking_1770193538_3"
     },
     {
-      "id": "activity_1770192923_2",
+      "type": "role_promotion",
       "chef": "Jamie Oliver",
       "user": "Jamie Oliver",
-      "action": "Promoted to Senior Chef",
       "message": "Promoted to Senior Chef",
-      "time": "9m ago",
-      "type": "role_promotion",
-      "event_type": "chef_related",
-      "timestamp": 1770192923.7612278,
-      "user_id": 123456791
+      "action": "Promoted to Senior Chef",
+      "timestamp": 1770193538,
+      "user_id": null,
+      "id": "cooking_1770193538_2"
     },
     {
-      "id": "activity_1770192923_3",
+      "type": "rating_received",
       "chef": "Julia Child",
       "user": "Julia Child",
-      "action": "Received 5-star rating from customer",
       "message": "Received 5-star rating from customer",
-      "time": "9m ago",
-      "type": "rating_received",
-      "event_type": "chef_related",
-      "timestamp": 1770192923.7611833,
-      "user_id": 123456790
+      "action": "Received 5-star rating from customer",
+      "timestamp": 1770193538,
+      "user_id": null,
+      "id": "cooking_1770193538_1"
     },
     {
-      "id": "activity_1770192923_4",
+      "type": "order_completed",
       "chef": "Gordon Ramsay",
       "user": "Gordon Ramsay",
-      "action": "Completed a perfect beef wellington",
       "message": "Completed a perfect beef wellington",
-      "time": "9m ago",
-      "type": "order_completed",
-      "event_type": "chef_related",
-      "timestamp": 1770192923.7611341,
-      "user_id": 123456789
+      "action": "Completed a perfect beef wellington",
+      "timestamp": 1770193538,
+      "user_id": null,
+      "id": "cooking_1770193538_0"
     }
   ],
   "menu": {
@@ -129,8 +119,8 @@
     "avgRating": 4.8
   },
   "meta": {
-    "timestamp": "2026-02-04T10:24:58.293674",
-    "last_updated": 1770193498.29368,
+    "timestamp": "2026-02-04T10:25:53.770706",
+    "last_updated": 1770193553.7707136,
     "cached": false,
     "data_source": "discord_bot"
   }
