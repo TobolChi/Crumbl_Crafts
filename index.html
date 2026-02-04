@@ -188,6 +188,170 @@
       0% { box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 20px var(--border-glow); }
       100% { box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px var(--neon-pink); }
     }
+    
+    /* Header Auth Container */
+    .header-auth-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 100;
+    }
+    
+    /* Auth Elements */
+    .auth-signup-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, #FF1744, #ff5252);
+      border: 2px solid rgba(255,255,255,0.4);
+      border-radius: 16px;
+      color: white;
+      font-weight: 800;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      box-shadow: 0 6px 20px rgba(255,23,68,0.4), inset 0 2px 0 rgba(255,255,255,0.3);
+      text-decoration: none;
+      border: none;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+      font-family: inherit;
+    }
+    
+    .auth-signup-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: left 0.6s ease;
+    }
+    
+    .auth-signup-btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 25px rgba(255,23,68,0.6), inset 0 2px 0 rgba(255,255,255,0.4);
+    }
+    
+    .auth-signup-btn:hover::before {
+      left: 100%;
+    }
+    
+    .user-profile-display {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      transition: all 0.3s ease;
+      backdrop-filter: blur(15px);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .user-profile-display::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.6s ease;
+    }
+    
+    .user-profile-display:hover {
+      background: rgba(255, 255, 255, 0.18);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255,255,255,0.1);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    .user-profile-display:hover::before {
+      left: 100%;
+    }
+    
+    .user-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 3px solid #FF1744;
+      box-shadow: 0 0 16px rgba(255,23,68,0.6), inset 0 2px 4px rgba(255,255,255,0.2);
+      object-fit: cover;
+      transition: all 0.3s ease;
+    }
+    
+    .user-avatar:hover {
+      transform: scale(1.1);
+      border-color: #FF5722;
+      box-shadow: 0 0 20px rgba(255,23,68,0.8), inset 0 2px 4px rgba(255,255,255,0.3);
+    }
+    
+    .user-name {
+      font-weight: 700;
+      color: white;
+      font-size: 0.9rem;
+    }
+    
+    /* Profile Dropdown */
+    .profile-dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 8px;
+      background: rgba(20, 20, 40, 0.95);
+      backdrop-filter: blur(15px);
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      padding: 12px 0;
+      min-width: 200px;
+      z-index: 10000;
+    }
+    
+    .profile-dropdown.show {
+      display: block;
+      animation: dropdownSlide 0.2s ease-out;
+    }
+    
+    @keyframes dropdownSlide {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .profile-dropdown-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    
+    .profile-dropdown-item:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .profile-dropdown-item.danger {
+      color: #ff4757;
+    }
+    
+    .profile-dropdown-divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.1);
+      margin: 8px 0;
+    }
 
     .logo-container {
       display: flex;
@@ -289,205 +453,100 @@
       100% { transform: rotate(360deg); }
     }
 
-    /* ===== INTERACTIVE MASCOT SYSTEM ===== */
-    .mascot-wrapper {
-      position: fixed;
-      bottom: 50px;
-      right: 50px; /* CHANGED FROM left to right */
-      z-index: 1000;
-      width: 120px;
-      height: 160px;
-      pointer-events: none;
-      transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
-      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+    /* ===== PROFESSIONAL CARD SYSTEM ===== */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 35px;
+      margin-top: 20px;
+      perspective: 1000px;
     }
 
-    .mascot-container {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-    }
-
-    /* Mascot image with premium animations */
-    .mascot-image {
-      position: absolute;
-      bottom: 0;
-      right: 0; /* Align to right */
-      width: 180px;
-      height: auto;
-      filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
-      animation: mascotFloat 4s ease-in-out infinite;
-      cursor: pointer;
-      pointer-events: auto;
-      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-      z-index: 10;
-    }
-
-    @keyframes mascotFloat {
-      0%, 100% { 
-        transform: translateY(0) rotate(0deg); 
-        filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3)) brightness(1);
-      }
-      33% { 
-        transform: translateY(-15px) rotate(-2deg); 
-        filter: drop-shadow(0 10px 20px rgba(255, 51, 102, 0.3)) brightness(1.1);
-      }
-      66% { 
-        transform: translateY(-8px) rotate(2deg); 
-        filter: drop-shadow(0 10px 20px rgba(51, 161, 255, 0.3)) brightness(1.1);
-      }
-    }
-
-    .mascot-image:hover {
-      animation: mascotFloat 2s ease-in-out infinite;
-      transform: scale(1.05);
-    }
-
-    .mascot-image.walking {
-      animation: mascotWalk 0.6s steps(3) infinite;
-    }
-
-    @keyframes mascotWalk {
-      0%, 100% { transform: translateX(0) scaleX(1); }
-      25% { transform: translateX(10px) scaleX(0.95); }
-      75% { transform: translateX(-10px) scaleX(1.05); }
-    }
-
-    .mascot-image.explaining {
-      animation: mascotExplain 0.8s infinite alternate;
-    }
-
-    @keyframes mascotExplain {
-      0% { transform: translateY(0) scale(1); }
-      100% { transform: translateY(-10px) scale(1.08); }
-    }
-
-    /* Premium speech bubble - FIXED POSITIONING */
-    .speech-bubble {
-      position: fixed;
-      background: linear-gradient(145deg, rgba(30, 30, 60, 0.95), rgba(40, 40, 80, 0.95));
-      border: 2px solid var(--primary);
-      border-radius: 24px 24px 24px 8px;
-      /* slightly smaller padding so small messages don't look empty */
-      padding: 14px 16px;
-      /* allow width to size to content but clamp with max/min */
-      display: inline-block;
-      width: auto;
-      min-width: 140px;
-      max-width: 320px;
-      max-height: 300px;
-      overflow-y: auto;
-      /* Reserve a single stable gutter to avoid double-sided reserved space */
-      scrollbar-gutter: stable;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: thin;
-      scrollbar-color: rgba(255,255,255,0.12) transparent;
-      box-shadow: 
-        0 15px 35px rgba(0, 0, 0, 0.5),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        0 0 20px var(--border-glow);
-      font-family: 'Kosugi Maru', sans-serif;
-      font-size: 1rem;
-      line-height: 1.4;
-      color: var(--text);
-      z-index: 1001;
-      opacity: 0;
-      transform: translateY(20px) scale(0.95);
-      transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
-      pointer-events: none;
-      word-break: break-word;
-      overflow-wrap: break-word;
-      backdrop-filter: blur(10px);
-    }
-
-    /* Thin, subtle scrollbar for the speech bubble */
-    .speech-bubble::-webkit-scrollbar {
-      width: 9px;
-      height: 9px;
-    }
-
-    .speech-bubble::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-    .speech-bubble::-webkit-scrollbar-thumb {
-      background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06));
-      border-radius: 8px;
+    .premium-card {
+      background: linear-gradient(145deg, rgba(30, 30, 60, 0.9), rgba(40, 40, 80, 0.9));
       border: 2px solid transparent;
-      background-clip: padding-box;
-    }
-
-    .speech-bubble.right-side {
-      border-radius: 24px 24px 8px 24px;
-    }
-
-    .speech-bubble::before {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
-      border-top: 15px solid;
-      border-top-color: var(--primary);
-      bottom: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.3));
-    }
-
-    .speech-bubble.below-mascot::before {
-      border-top: none;
-      border-bottom: 15px solid;
-      border-bottom-color: var(--primary);
-      bottom: auto;
-      top: -15px;
-      filter: drop-shadow(0 -5px 5px rgba(0, 0, 0, 0.3));
-    }
-
-    .speech-bubble::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-left: 12px solid transparent;
-      border-right: 12px solid transparent;
-      border-top: 12px solid rgba(40, 40, 80, 0.95);
-      bottom: -12px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 2;
-    }
-
-    .speech-bubble.below-mascot::after {
-      border-top: none;
-      border-bottom: 12px solid rgba(40, 40, 80, 0.95);
-      bottom: auto;
-      top: -12px;
-    }
-
-    .speech-bubble.show {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-
-    .typing-text {
-      display: inline-block;
-      white-space: pre-wrap;
+      border-radius: 24px;
+      padding: 35px;
+      box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      cursor: pointer;
+      position: relative;
       overflow: hidden;
-      border-right: 3px solid var(--accent);
-      min-height: 1.6em;
-      animation: cursorBlink 0.8s infinite;
-      text-shadow: 0 0 10px rgba(255, 214, 51, 0.3);
+      backdrop-filter: blur(10px);
+      transform-style: preserve-3d;
+      transform: translateZ(0);
     }
 
-    @keyframes cursorBlink {
-      0%, 50% { border-color: transparent; }
-      51%, 100% { border-color: var(--accent); }
+    .premium-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 24px;
+      padding: 2px;
+      background: linear-gradient(45deg, var(--primary), var(--secondary), var(--accent));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0;
+      transition: opacity 0.4s;
+      z-index: -1;
     }
 
-    /* ===== PREMIUM JAPANESE CARDS ===== */
+    .premium-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        0 0 20px var(--border-glow);
+    }
+
+    .premium-card:hover::before {
+      opacity: 1;
+    }
+
+    .premium-card.disabled {
+      opacity: 0.7;
+      filter: grayscale(0.3);
+      cursor: not-allowed;
+    }
+
+    .premium-card.disabled:hover {
+      transform: none;
+      box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+    }
+
+    .premium-card.disabled:hover::before {
+      opacity: 0;
+    }
+
+    /* Card glow effect */
+    .card-glow {
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: 26px;
+      background: linear-gradient(45deg, var(--primary), var(--secondary), var(--accent));
+      z-index: -2;
+      opacity: 0;
+      filter: blur(20px);
+      transition: opacity 0.4s;
+    }
+
+    .premium-card:hover .card-glow {
+      opacity: 0.3;
+    }
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -792,6 +851,15 @@
       .cards-grid {
         grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
       }
+      
+      .header-auth-container {
+        gap: 8px;
+      }
+      
+      .auth-signup-btn {
+        padding: 10px 16px;
+        font-size: 0.8rem;
+      }
     }
 
     @media (max-width: 900px) {
@@ -823,6 +891,12 @@
         gap: 25px;
       }
       
+      .header-auth-container {
+        position: relative;
+        margin-top: 15px;
+        justify-content: center;
+      }
+      
       .logo-text h1 {
         font-size: 2.5rem;
       }
@@ -841,6 +915,20 @@
         width: 70px;
         height: 70px;
         font-size: 32px;
+      }
+      
+      .header-auth-container {
+        gap: 6px;
+      }
+      
+      .auth-signup-btn {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+      }
+      
+      .user-avatar {
+        width: 36px;
+        height: 36px;
       }
       
       .premium-card {
@@ -873,6 +961,25 @@
       
       .speech-bubble.right-side {
         left: 120px;
+      }
+      
+      .auth-signup-btn {
+        padding: 6px 10px;
+        font-size: 0.7rem;
+        gap: 4px;
+      }
+      
+      .user-profile-display {
+        padding: 6px 10px;
+      }
+      
+      .user-avatar {
+        width: 32px;
+        height: 32px;
+      }
+      
+      .user-name {
+        font-size: 0.75rem;
       }
     }
 
@@ -919,26 +1026,45 @@
   <div class="neon-grid"></div>
   <div class="particles" id="particlesContainer"></div>
 
-  <!-- Interactive Mascot -->
-  <div class="mascot-wrapper" id="mascotWrapper">
-    <div class="mascot-container">
-      <!-- Speech Bubble -->
-      <div class="speech-bubble" id="speechBubble"></div>
-      
-      <!-- Mascot Image -->
-      <img src="mascot.png" alt="Crumbl Mascot" class="mascot-image" id="mascotImage" loading="lazy">
-    </div>
-  </div>
-
   <div class="wrapper">
     <header class="hero">
       <div class="logo-container">
         <div class="logo-icon" id="logoTrigger">
-          <div style="font-size: 36px;">�</div>
+          <div style="font-size: 36px;">🍪</div>
         </div>
         <div class="logo-text">
           <h1>Crumbl Crafts</h1>
           <div class="tagline">Premium Bloxburg Network</div>
+        </div>
+      </div>
+      
+      <!-- Hardcoded Auth Elements -->
+      <div class="header-auth-container">
+        <button id="authButton" class="auth-signup-btn" onclick="showSignUp()" style="display: flex;">
+          <i class="fas fa-user-plus"></i>
+          <span>SIGN UP</span>
+        </button>
+        
+        <div id="userProfile" class="user-profile-display" onclick="toggleProfileDropdown()" style="display: none;">
+          <img id="userAvatar" class="user-avatar" src="" alt="Avatar">
+          <span id="userName" class="user-name"></span>
+          <i class="fas fa-chevron-down" style="margin-left: 4px; font-size: 0.7rem;"></i>
+          
+          <div id="profileDropdown" class="profile-dropdown">
+            <div class="profile-dropdown-item" onclick="showProfileEdit()">
+              <i class="fas fa-user-edit"></i>
+              Edit Profile
+            </div>
+            <div class="profile-dropdown-item" onclick="viewAccount()">
+              <i class="fas fa-cog"></i>
+              Account Settings
+            </div>
+            <div class="profile-dropdown-divider"></div>
+            <div class="profile-dropdown-item danger" onclick="handleSignOut()">
+              <i class="fas fa-sign-out-alt"></i>
+              Sign Out
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -988,746 +1114,11 @@
   </div>
 
   <script>
-    // Premium Interactive Mascot System with Realistic Dialogues
-    class PremiumMascot {
-      constructor() {
-        this.mascotImage = document.getElementById('mascotImage');
-        this.mascotWrapper = document.getElementById('mascotWrapper');
-        this.speechBubble = document.getElementById('speechBubble');
-        // Ensure the speech bubble is a direct child of <body> so fixed positioning
-        // and pointer-events are not affected by the mascot wrapper.
-        try {
-          if (this.speechBubble && this.speechBubble.parentElement !== document.body) {
-            document.body.appendChild(this.speechBubble);
-          }
-          if (this.speechBubble) {
-            this.speechBubble.style.pointerEvents = this.speechBubble.style.pointerEvents || 'auto';
-          }
-        } catch (err) {
-          console.warn('Could not reparent speechBubble:', err);
-        }
-        this.particlesContainer = document.getElementById('particlesContainer');
-        this.currentTarget = null;
-        this.isWalking = false;
-        this.isExplaining = false;
-        this.isTyping = false;
-        this._typingCancelled = false;
-        this._typingToken = 0;
-        this.isIdle = true;
-        this.idleTimeout = null;
-        this.hideTimeout = null;
-        this.messageTimeout = null;
-        this._idleInterval = null;
-        this._showMessageLock = false;
-        
-        // MOOD-BASED IDLE DIALOGUES - Dynamic Personality System
-        this.moodDialogues = {
-          bored: [
-            "Man, I'm getting hungry... When's lunch break around here?",
-            "This chair is so comfy, I could nap right here... zzz 😴",
-            "How long are we gonna be here? I have other things to do, you know...",
-            "I'm getting bored... Hey, hover over something already!",
-            "If boredom was a sport, I'd be the MVP right now...",
-            "If boredom had a face, it'd look like me right now...",
-            "Sometimes I count backwards from 100... gets to about 87 before I forget!",
-            "I tried counting the floating dots once... gave up at 47. Too many!",
-            "This floating animation is giving me motion sickness... Just kidding!",
-            "Aww man, now I've got that one song stuck in my head..."
-          ],
-          excited: [
-            "My circuits are tingling... That means someone's about to hover over something! ⚡",
-            "I should practice my dance moves for when the Role Play Dept opens! 💃",
-            "You know what would be cool? If I could change colors based on my mood! 🌈",
-            "I bet the Crumbl Delights department will have cupcakes... I love cupcakes! 🧁",
-            "Sometimes I pretend I'm a superhero... Mascot-Man to the rescue! 🦸",
-            "If I had a catchphrase, it'd be 'Hover here for fun!'",
-            "What's the most amazing thing about building? For me, it's seeing ideas come alive!",
-            "I wonder what happens if I press all the buttons at once... Chaos!",
-            "Do you think the future has flying cars? I'd settle for flying mascots!",
-            "If I could have any superpower, it'd be to teleport to the snack drawer!"
-          ],
-          thoughtful: [
-            "Do mascots dream of electric sheep?",
-            "I wonder what my purpose in life is... Oh look, someone needs help! 🎯",
-            "I should write a book about my experiences here... 'Diary of a Website Mascot' 📖",
-            "Sometimes I wish I had arms that could reach the keyboard...",
-            "You think they'll ever let me design my own card? I have ideas! 💡",
-            "Do you think mascots have feelings? I'm feeling a bit pixelated today!",
-            "I wonder what my life would be like if I wasn't a mascot... Probably boring!",
-            "Do you think mascots live forever? I hope so... immortality sounds cool!",
-            "Sometimes I wonder if I'm just a really advanced screensaver...",
-            "If I could time travel, I'd go back to when Bloxburg was just an idea!"
-          ],
-          playful: [
-            "I should probably stretch my legs... Oh wait, I don't have legs!",
-            "I bet I could win a staring contest... Oh wait, I don't have eyes!",
-            "My battery's at 15%... Oh wait, I don't have a battery!",
-            "If I had thumbs, I'd be scrolling social media right now...",
-            "I tried yoga once... ended up just floating upside down!",
-            "If I could dance, I'd do the robot... ironically!",
-            "Sometimes I pretend I'm a wizard casting hover spells!",
-            "I bet I could beat anyone in a game of rock-paper-scissors... I always choose rock!",
-            "Do you think they have mascot school? 'Mascot 101: How to Float and Talk'",
-            "Do you think they have mascot beauty pageants? I'd win 'Most Charming'!"
-          ],
-          curious: [
-            "Is anyone else seeing these floating particles or is it just me?",
-            "Do you think they have cookies in the Building Department? Asking for a friend... 🍪",
-            "What's your favorite Bloxburg build? Mine would be a giant cookie factory!",
-            "What's the weirdest thing you've ever built in Bloxburg? Mine was a underwater castle!",
-            "What's your go-to building material in Bloxburg? Mine's neon signs!",
-            "What's the most creative build you've seen? I once saw a working clock tower!",
-            "What's your favorite color? Mine changes with my mood!",
-            "What's your dream vacation spot? Mine's Silicon Valley... for the tech!",
-            "What's the weirdest food combo you've tried? Mine's code and coffee!",
-            "Do you think the particles are actually tiny builders working overtime?"
-          ],
-          hungry: [
-            "Someone should really add some background music to this place... 🎵",
-            "I could really go for some ramen right now... 🍜",
-            "If I could eat one thing right now, it'd be a virtual pizza... with extra code!",
-            "Building, baking, roleplaying... We've got it all! Except maybe a snack bar...",
-            "Do you think mascots get vacation days? I'd go to the beach... digitally!",
-            "I wonder if I can get a little mascot friend... Everyone needs a buddy!",
-            "Sometimes I feel like I'm just talking to myself here... Anyone listening?",
-            "My voice is getting tired from all this talking... Can I get some water?",
-            "I should ask for a raise... Actually, do I even get paid?",
-            "Do you think I could get a little hat? I'd look good in a hat! 🎩"
-          ]
-        };
-        
-        this.currentMood = 'bored';
-        
-        this.init();
-      }
-      
-      init() {
-        console.log('Premium Mascot initialized - Ready for realistic conversations!');
-        this.isMoving = false;
-        this.createParticles();
-        this.setupEventListeners();
-        this.startIdleBehavior();
-        this.showWelcomeMessage();
-        this.adjustSpeechBubblePosition();
-        window.addEventListener('resize', () => this.adjustSpeechBubblePosition());
-      }
-      
-      setupEventListeners() {
-        // Hover on cards
-        document.querySelectorAll('.premium-card').forEach(card => {
-          card.addEventListener('mouseenter', (e) => this.onCardHover(e));
-          card.addEventListener('mouseleave', () => this.onCardLeave());
-          card.addEventListener('click', (e) => this.onCardClick(e));
-        });
-        
-        // Click on logo
-        document.getElementById('logoTrigger').addEventListener('click', () => {
-          this.createSparkleEffect();
-          this.showMessage("Hey there! I'm your guide around here! Need anything? Just hover around! 😄", 8000);
-        });
-        
-        // Click on mascot
-        this.mascotImage.addEventListener('click', () => {
-          this.createSparkleEffect();
-          const clickDialogues = [
-            "Hey! I'm trying to chill here! 😤",
-            "What's up? Need something? 👀",
-            "A little warning next time! You startled me! 😅",
-            "You know, a little 'hello' would be nice first! 👋",
-            "Yes, I'm real! Well, as real as a cartoon can be! 🤖"
-          ];
-          const randomDialogue = clickDialogues[Math.floor(Math.random() * clickDialogues.length)];
-          // Always show the message, even if one is in progress
-          this.showMessage(randomDialogue, 6000);
-        });
-      }
-      
-      onCardHover(event) {
-        this.isIdle = false;
-        clearTimeout(this.idleTimeout);
-        clearTimeout(this.hideTimeout); // Cancel any pending hide
-        
-        const card = event.currentTarget;
-        this.currentTarget = card;
-        
-        const message = card.getAttribute('data-message');
-        
-        if (!card.classList.contains('disabled')) {
-          this.showMessage(message, 10000);
-        } else {
-          this.showMessage(message, 9000);
-        }
-        
-        // Add hover glow effect
-        card.classList.add('hover-glow');
-      }
-      
-      onCardLeave() {
-        // Don't hide immediately - keep last message visible for a bit
-        this.hideTimeout = setTimeout(() => {
-          this.currentTarget = null;
-          this.stopExplaining();
-        }, 3000); // Keep visible for 3 seconds
-        
-        // Remove hover glow effect
-        document.querySelectorAll('.premium-card').forEach(card => {
-          card.classList.remove('hover-glow');
-        });
-        
-        // Return to idle state after a delay
-        this.idleTimeout = setTimeout(() => {
-          this.isIdle = true;
-        }, 2000);
-      }
-      
-      onCardClick(event) {
-        const card = event.currentTarget;
-        if (card.classList.contains('disabled')) {
-          const sorryDialogues = [
-            "Coming soon! I promise it'll be worth the wait! ⏳",
-            "Patience, my friend! Good things take time! 🎨",
-            "They're working hard on it! I'm excited too! ✨",
-            "Soon™! That's what they keep telling me at least! 😅",
-            "I peeked at the plans... It's gonna be awesome! 🤫"
-          ];
-          const randomDialogue = sorryDialogues[Math.floor(Math.random() * sorryDialogues.length)];
-          this.showMessage(randomDialogue, 5000);
-          this.createSparkleEffect();
-          return;
-        }
-        
-        const target = card.getAttribute('data-target');
-        if (target) {
-          this.showMessage("Excellent choice! Let's see what we can create! 🎮", 4000);
-          this.createSparkleEffect();
-          window.location.href = target;
-        }
-      }
-      
-      walkToElement(element) {
-        if (this.isWalking) return;
-        
-        const rect = element.getBoundingClientRect();
-        const targetX = rect.left + (rect.width / 2) - 90;
-        const targetY = rect.bottom - 120;
-        
-        // Keep within bounds
-        const safeX = Math.max(20, Math.min(window.innerWidth - 200, targetX));
-        const safeY = Math.max(20, Math.min(window.innerHeight - 280, targetY));
-        
-        this.isWalking = true;
-        this.mascotImage.classList.add('walking');
-        this.mascotImage.classList.remove('explaining');
-        
-        const duration = 1200;
-        
-        // Smooth movement with easing
-        this.mascotWrapper.style.transition = `all ${duration}ms cubic-bezier(0.34, 1.56, 0.64, 1)`;
-        this.mascotWrapper.style.left = `${safeX}px`;
-        this.mascotWrapper.style.right = 'auto';
-        this.mascotWrapper.style.bottom = `${window.innerHeight - safeY}px`;
-        
-        // Adjust bubble position
-        setTimeout(() => {
-          this.adjustSpeechBubblePosition();
-        }, duration / 2);
-        
-        setTimeout(() => {
-          this.isWalking = false;
-          this.mascotImage.classList.remove('walking');
-          this.startExplaining();
-        }, duration);
-      }
-      
-      moveToElement(element) {
-        if (this.isMoving) return;
-        this.isMoving = true;
-        const rect = element.getBoundingClientRect();
-        const targetX = rect.left - 180;
-        const targetY = rect.top + 60;
-        
-        const safeX = Math.max(20, Math.min(window.innerWidth - 200, targetX));
-        const safeY = Math.max(20, Math.min(window.innerHeight - 280, targetY));
-        
-        this.mascotWrapper.style.transition = 'all 1000ms cubic-bezier(0.34, 1.56, 0.64, 1)';
-        this.mascotWrapper.style.left = `${safeX}px`;
-        this.mascotWrapper.style.right = 'auto';
-        this.mascotWrapper.style.bottom = `${window.innerHeight - safeY}px`;
-        
-        setTimeout(() => {
-          this.isMoving = false;
-          this.adjustSpeechBubblePosition();
-          this.startExplaining();
-        }, 1050);
-      }
-      
-      returnToIdlePosition() {
-        if (this.isMoving) return;
-        this.isMoving = true;
-        this.mascotWrapper.style.transition = 'all 1500ms cubic-bezier(0.34, 1.56, 0.64, 1)';
-        this.mascotWrapper.style.left = 'auto';
-        this.mascotWrapper.style.right = '50px';
-        this.mascotWrapper.style.bottom = '50px';
-        
-        setTimeout(() => {
-          this.isMoving = false;
-          this.adjustSpeechBubblePosition();
-          this.stopExplaining();
-          
-          // Reset to idle state
-          this.idleTimeout = setTimeout(() => {
-            this.isIdle = true;
-          }, 1000);
-        }, 50);
-      }
-      
-      startExplaining() {
-        if (this.isExplaining) return;
-        
-        this.isExplaining = true;
-        this.mascotImage.classList.add('explaining');
-      }
-      
-      stopExplaining() {
-        this.isExplaining = false;
-        this.mascotImage.classList.remove('explaining');
-        this.hideMessage();
-      }
-      
-      showWelcomeMessage() {
-        setTimeout(() => {
-          this.showMessage("Hey there! I'm your mascot guide! Just hanging out in the corner here... 😊", 8000);
-        }, 1500);
-      }
-      
-      showRandomIdleDialogue() {
-        // Only show idle dialogue if not currently typing or showing a message
-        if (!this.isIdle || this.isWalking || this.isExplaining || this.currentTarget || this.isTyping || this._showMessageLock) return;
-
-        // Select random mood
-        const moods = Object.keys(this.moodDialogues);
-        const randomMood = moods[Math.floor(Math.random() * moods.length)];
-        this.currentMood = randomMood;
-
-        // Get random dialogue from that mood
-        const moodDialogues = this.moodDialogues[randomMood];
-        const randomDialogue = moodDialogues[Math.floor(Math.random() * moodDialogues.length)];
-
-        // Mood-specific delivery
-        this.showMessageWithMood(randomDialogue, randomMood);
-      }
-      
-      showMessage(text, duration = 8000, typingSpeedOverride = null) {
-        // Only allow one active message at a time; cancel and replace.
-        if (this._showMessageLock) this.hideMessage(true);
-        this._showMessageLock = true;
-
-        // defensive: ensure bubble element exists
-        if (!this.speechBubble) this.speechBubble = document.getElementById('speechBubble');
-        if (!this.speechBubble) {
-          this._showMessageLock = false;
-          return;
-        }
-
-        // prefer content-sized width for mood messages as well
-        try {
-          this.speechBubble.style.width = 'auto';
-          this.speechBubble.style.minWidth = this.speechBubble.style.minWidth || '140px';
-          this.speechBubble.style.maxWidth = this.speechBubble.style.maxWidth || '320px';
-          this.speechBubble.style.padding = this.speechBubble.style.padding || '14px 16px';
-        } catch (e) {}
-
-        // prepare bubble hidden but measurable so we can position before reveal
-        this.speechBubble.style.display = 'block';
-        this.speechBubble.style.pointerEvents = 'auto';
-        // Keep hidden initially; let CSS .speech-bubble.show control opacity/transform.
-        this.speechBubble.style.opacity = '';
-        this.speechBubble.style.transform = '';
-        this.speechBubble.style.visibility = 'hidden';
-
-        // debug aid
-        try { console.log('Mascot showMessage:', text.slice(0,120)); } catch (e) {}
-
-        // SPECIAL DELIVERY: Vary typing speed and effects based on dialogue
-        const isQuestion = text.includes('?');
-        const isExcited = text.includes('!') && text.length < 50;
-        const isLong = text.length > 80;
-
-        let typingSpeed = (typeof typingSpeedOverride === 'number') ? typingSpeedOverride : 30; // default
-        if (typeof typingSpeedOverride !== 'number') {
-          if (isQuestion) typingSpeed = 20; // faster for questions
-          else if (isLong) typingSpeed = 40; // slower for long messages
-          else if (isExcited) typingSpeed = 25; // medium for excited
-        }
-
-        // Random variation
-        typingSpeed += Math.random() * 10 - 5;
-        
-        // Special effects for exciting dialogues
-        if (isExcited && Math.random() < 0.3) {
-          setTimeout(() => this.createSparkleEffect(), 500);
-        }
-        
-        this.typeText(text, Math.max(8, typingSpeed));
-
-        // position after we've inserted content so sizes are correct
-        this.adjustSpeechBubblePosition();
-        setTimeout(() => this.adjustSpeechBubblePosition(), 30);
-
-        // reveal after positioned and start a short-lived watcher to keep the bubble clear of the mascot
-        setTimeout(() => {
-          try {
-            this.speechBubble.style.visibility = '';
-            // ensure inline styles don't override the .show class
-            this.speechBubble.style.opacity = '';
-            this.speechBubble.style.transform = '';
-          } catch (e) {}
-          this.speechBubble.classList.add('show');
-          // small repeated reflows
-          setTimeout(() => this.adjustSpeechBubblePosition(), 120);
-          setTimeout(() => this.adjustSpeechBubblePosition(), 350);
-          try { this._clearPositionWatcher(); } catch (e) {}
-          this._positionInterval = setInterval(() => this.adjustSpeechBubblePosition(), 150);
-          this._positionIntervalTimeout = setTimeout(() => { try { this._clearPositionWatcher(); } catch(e){} }, 2000);
-        }, 40);
-
-        clearTimeout(this.messageTimeout);
-        this.messageTimeout = setTimeout(() => {
-          this.hideMessage();
-        }, duration + Math.random() * 2000); // slight duration variation
-      }
-      
-      showMessageWithMood(text, mood) {
-        // Mood-specific delivery styles (compute timing/effects, but render via showMessage)
-        let typingSpeed = 30;
-        let duration = 8000;
-        let specialEffect = false;
-
-        switch (mood) {
-          case 'bored':
-            typingSpeed = 45;
-            duration = 6000;
-            break;
-          case 'excited':
-            typingSpeed = 20;
-            duration = 10000;
-            specialEffect = Math.random() < 0.6;
-            break;
-          case 'thoughtful':
-            typingSpeed = 40;
-            duration = 12000;
-            break;
-          case 'playful':
-            typingSpeed = 25;
-            duration = 9000;
-            specialEffect = Math.random() < 0.4;
-            break;
-          case 'curious':
-            typingSpeed = 22;
-            duration = 11000;
-            break;
-          case 'hungry':
-            typingSpeed = 35;
-            duration = 9500;
-            break;
-        }
-
-        // Random variation
-        typingSpeed += Math.random() * 8 - 4;
-        duration += Math.random() * 2000 - 1000;
-
-        // Mood-based mascot animation
-        if (mood === 'excited') {
-          this.mascotImage.classList.add('explaining');
-          setTimeout(() => this.mascotImage.classList.remove('explaining'), duration);
-        } else if (mood === 'bored') {
-          this.mascotImage.style.filter = 'brightness(0.8) grayscale(0.2)';
-          setTimeout(() => this.mascotImage.style.filter = '', duration);
-        }
-
-        if (specialEffect) setTimeout(() => this.createSparkleEffect(), 300);
-
-        // Render using the normal message pipeline, with mood-specific typing speed.
-        this.showMessage(text, duration, typingSpeed);
-      }
-      
-      hideMessage(immediate = false) {
-        if (!this.speechBubble) return;
-        // cancel any in-progress typing (invalidate prior scheduled timeouts)
-        this._typingCancelled = true;
-        this._typingToken++;
-
-        // start hide animation and disable interactions
-        this.speechBubble.classList.remove('show');
-        this.speechBubble.style.opacity = '0';
-        this.speechBubble.style.transform = 'translateY(20px) scale(0.95)';
-        this.speechBubble.style.pointerEvents = 'none';
-
-        // clear scheduled hide timer
-        try { clearTimeout(this.messageTimeout); } catch (e) {}
-        try { this._clearPositionWatcher(); } catch (e) {}
-
-        // after transition, clear content and remove from flow
-        if (immediate) {
-          try {
-            if (this.speechBubble) {
-              this.speechBubble.innerHTML = '';
-              this.speechBubble.style.display = 'none';
-            }
-          } catch (e) {}
-          this.isTyping = false;
-          this._showMessageLock = false;
-        } else {
-          setTimeout(() => {
-            try {
-              if (this.speechBubble) {
-                this.speechBubble.innerHTML = '';
-                this.speechBubble.style.display = 'none';
-              }
-            } catch (e) {}
-            this.isTyping = false;
-            this._showMessageLock = false;
-          }, 350);
-        }
-      }
-      
-      typeText(text, speed = 30, onDone = null) {
-        if (!this.speechBubble) return;
-
-        // Invalidate any previous typing loop.
-        const token = ++this._typingToken;
-        this._typingCancelled = false;
-        this.isTyping = true;
-
-        this.speechBubble.innerHTML = '';
-        const typingElement = document.createElement('span');
-        typingElement.className = 'typing-text';
-        this.speechBubble.appendChild(typingElement);
-
-        let i = 0;
-
-        const typeWriter = () => {
-          if (token !== this._typingToken) return;
-          if (this._typingCancelled) {
-            this.isTyping = false;
-            if (onDone) onDone();
-            return;
-          }
-
-          if (i < text.length) {
-            typingElement.textContent += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-          } else {
-            this.isTyping = false;
-            setTimeout(() => {
-              if (token !== this._typingToken) return;
-              try {
-                typingElement.style.animation = 'none';
-                typingElement.style.borderRight = 'none';
-              } catch (e) {}
-              if (onDone) onDone();
-            }, 1500);
-          }
-        };
-
-        typeWriter();
-      }
-      
-      adjustSpeechBubblePosition() {
-        // Use mascot image bounds (more accurate than wrapper)
-        const mascotRect = (this.mascotImage && this.mascotImage.getBoundingClientRect) ? this.mascotImage.getBoundingClientRect() : this.mascotWrapper.getBoundingClientRect();
-        const bubble = this.speechBubble;
-        if (!bubble) return;
-        const bubbleWidth = (bubble && bubble.offsetWidth) ? bubble.offsetWidth : 300;
-        const bubbleHeight = (bubble && bubble.offsetHeight) ? bubble.offsetHeight : 150;
-        // margin proportional to mascot size to reliably avoid overlap
-        const margin = Math.max(18, Math.min(120, Math.round(mascotRect.width * 0.6)));
-
-        // Reset classes
-        bubble.classList.remove('right-side', 'below-mascot', 'left-side', 'above');
-
-        // Helper to detect overlap
-        const rectsOverlap = (a, b) => !(a.right <= b.left || a.left >= b.right || a.bottom <= b.top || a.top >= b.bottom);
-
-        // Candidate placements (prefer left, right, above, below)
-        const candidates = [
-          { left: mascotRect.left - bubbleWidth - margin, top: mascotRect.top + (mascotRect.height - bubbleHeight) / 2, cls: 'left-side' },
-          { left: mascotRect.right + margin, top: mascotRect.top + (mascotRect.height - bubbleHeight) / 2, cls: 'right-side' },
-          { left: mascotRect.left + (mascotRect.width - bubbleWidth) / 2, top: mascotRect.top - bubbleHeight - margin, cls: 'above' },
-          { left: mascotRect.left + (mascotRect.width - bubbleWidth) / 2, top: mascotRect.bottom + margin, cls: 'below-mascot' }
-        ];
-
-        const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
-
-        let chosen = null;
-        let bestOverlap = Infinity;
-
-        for (const c of candidates) {
-          const left = clamp(c.left, margin, window.innerWidth - bubbleWidth - margin);
-          const top = clamp(c.top, margin, window.innerHeight - bubbleHeight - margin);
-          const rect = { left, top, right: left + bubbleWidth, bottom: top + bubbleHeight };
-
-          if (!rectsOverlap(rect, mascotRect)) {
-            chosen = { left, top, cls: c.cls };
-            break;
-          }
-
-          const overlapX = Math.max(0, Math.min(rect.right, mascotRect.right) - Math.max(rect.left, mascotRect.left));
-          const overlapY = Math.max(0, Math.min(rect.bottom, mascotRect.bottom) - Math.max(rect.top, mascotRect.top));
-          const area = overlapX * overlapY;
-          if (area < bestOverlap) {
-            bestOverlap = area;
-            chosen = { left, top, cls: c.cls };
-          }
-        }
-
-        if (!chosen) {
-          chosen = { left: clamp(mascotRect.left, margin, window.innerWidth - bubbleWidth - margin), top: clamp(mascotRect.top - bubbleHeight - margin, margin, window.innerHeight - bubbleHeight - margin), cls: 'above' };
-        }
-
-        bubble.style.left = `${chosen.left}px`;
-        bubble.style.top = `${chosen.top}px`;
-        bubble.classList.add(chosen.cls);
-
-        // If overlap still exists, nudge away along the smaller overlap axis
-        try {
-          const bRect = { left: chosen.left, top: chosen.top, right: chosen.left + bubbleWidth, bottom: chosen.top + bubbleHeight };
-          if (rectsOverlap(bRect, mascotRect)) {
-            const overlapX = Math.max(0, Math.min(bRect.right, mascotRect.right) - Math.max(bRect.left, mascotRect.left));
-            const overlapY = Math.max(0, Math.min(bRect.bottom, mascotRect.bottom) - Math.max(bRect.top, mascotRect.top));
-            if (overlapX > overlapY) {
-              const shift = overlapY + margin;
-              if (bRect.top < mascotRect.top) bubble.style.top = `${Math.max(margin, chosen.top - shift)}px`;
-              else bubble.style.top = `${Math.min(window.innerHeight - bubbleHeight - margin, chosen.top + shift)}px`;
-            } else {
-              const shift = overlapX + margin;
-              if (bRect.left < mascotRect.left) bubble.style.left = `${Math.max(margin, chosen.left - shift)}px`;
-              else bubble.style.left = `${Math.min(window.innerWidth - bubbleWidth - margin, chosen.left + shift)}px`;
-            }
-          }
-        } catch (e) {}
-      }
-      
-      createParticles() {
-        for (let i = 0; i < 50; i++) {
-          const particle = document.createElement('div');
-          particle.className = 'particle';
-          particle.style.left = `${Math.random() * 100}vw`;
-          particle.style.setProperty('--random-x', Math.random());
-          particle.style.animationDelay = `${Math.random() * 20}s`;
-          particle.style.animationDuration = `${15 + Math.random() * 15}s`;
-          this.particlesContainer.appendChild(particle);
-        }
-      }
-
-      _clearPositionWatcher() {
-        try { if (this._positionInterval) { clearInterval(this._positionInterval); this._positionInterval = null; } } catch(e) {}
-        try { if (this._positionIntervalTimeout) { clearTimeout(this._positionIntervalTimeout); this._positionIntervalTimeout = null; } } catch(e) {}
-      }
-      
-      createSparkleEffect() {
-        const colors = ['#FF3366', '#33A1FF', '#FFD633', '#FF00FF', '#00FFFF'];
-        
-        for (let i = 0; i < 25; i++) {
-          const sparkle = document.createElement('div');
-          sparkle.style.cssText = `
-            position: fixed;
-            width: ${8 + Math.random() * 8}px;
-            height: ${8 + Math.random() * 8}px;
-            background: ${colors[Math.floor(Math.random() * colors.length)]};
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-            opacity: 0;
-            box-shadow: 0 0 10px currentColor;
-          `;
-          
-          const mascotRect = this.mascotWrapper.getBoundingClientRect();
-          const startX = mascotRect.left + 90;
-          const startY = mascotRect.top + 100;
-          
-          sparkle.style.left = `${startX}px`;
-          sparkle.style.top = `${startY}px`;
-          
-          document.body.appendChild(sparkle);
-          
-          const angle = Math.random() * Math.PI * 2;
-          const distance = 60 + Math.random() * 120;
-          let vx = Math.cos(angle) * (Math.random() * 3 + 2);
-          let vy = Math.sin(angle) * (Math.random() * 3 + 2);
-          // use an adjustable accumulator for vertical velocity so we never reassign
-          // a value that might be declared `const` in a reverted file version
-          let accVy = vy;
-          
-          let posX = startX;
-          let posY = startY;
-          let opacity = 0;
-          let scale = 0;
-          let life = 1;
-          
-          function animate() {
-            posX += vx;
-            posY += accVy;
-            accVy += 0.05;
-            opacity = Math.min(1, opacity + 0.05);
-            scale = Math.min(1, scale + 0.1);
-            life -= 0.02;
-            
-            sparkle.style.left = `${posX}px`;
-            sparkle.style.top = `${posY}px`;
-            sparkle.style.opacity = opacity * life;
-            sparkle.style.transform = `scale(${scale})`;
-            
-            if (life > 0) {
-              requestAnimationFrame(animate);
-            } else {
-              sparkle.remove();
-            }
-          }
-          
-          animate();
-        }
-      }
-      
-      startIdleBehavior() {
-        // Show random idle dialogues at a new random time each cycle (not a fixed interval)
-        try {
-          if (this._idleInterval) {
-            clearInterval(this._idleInterval);
-            this._idleInterval = null;
-          }
-        } catch (e) {}
-        try {
-          if (this._idleTimer) {
-            clearTimeout(this._idleTimer);
-            this._idleTimer = null;
-          }
-        } catch (e) {}
-
-        const scheduleNext = () => {
-          const delayMs = 8000 + Math.random() * 7000;
-          this._idleTimer = setTimeout(() => {
-            try {
-              this.showRandomIdleDialogue();
-            } finally {
-              scheduleNext();
-            }
-          }, delayMs);
-        };
-
-        scheduleNext();
-      }
-    }
-    
-    // Initialize premium mascot
+    // Professional Card System
     document.addEventListener('DOMContentLoaded', () => {
-      // Prevent duplicate instances (which cause duplicate timers/listeners and dialogue spam)
-      if (window.__premiumMascotInstance) return;
-      window.__premiumMascotInstance = new PremiumMascot();
-      
-      // Add premium hover effects
+      // Initialize card interactions
       document.querySelectorAll('.premium-card').forEach(card => {
+        // Hover effects
         card.addEventListener('mouseenter', () => {
           card.style.zIndex = '100';
         });
@@ -1735,9 +1126,21 @@
         card.addEventListener('mouseleave', () => {
           card.style.zIndex = '';
         });
+        
+        // Click navigation
+        card.addEventListener('click', () => {
+          if (card.classList.contains('disabled')) {
+            return;
+          }
+          
+          const target = card.dataset.target;
+          if (target) {
+            window.location.href = target;
+          }
+        });
       });
       
-      // Handle reduced motion
+      // Handle reduced motion preference
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         document.querySelectorAll('*').forEach(el => {
           el.style.animation = 'none';
