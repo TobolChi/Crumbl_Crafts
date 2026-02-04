@@ -424,6 +424,15 @@
   ],
   "news": [
     {
+      "type": "trend",
+      "title": "ASMR from my bloxburg tv room \ud83d\udcfa \ud83d\udcfa\ud83d\udcfa\ud83d\udcfa\ud83d\udcfa\ud83d\udcfa\ud83d\udcfa\ud83d\udcfa\ud83d\udcfa\ud83d\udcfa\ud83d\udcfa\ud83d\udcfa#bloxburg #bloxburg aesthetic #bloxburgbuild",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770224937.0,
+      "url": "https://www.youtube.com/watch?v=RfYRtuLxryE",
+      "icon": "fa-youtube"
+    },
+    {
       "type": "game_update",
       "title": "New Winter Update Available!",
       "description": "Explore new winter-themed furniture and decorations",
@@ -506,7 +515,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770225640.328358,
+    "generated_at": 1770226240.729743,
     "mode": "memory",
     "refresh_interval": 2000
   }
