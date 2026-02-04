@@ -154,6 +154,157 @@
             display: flex;
             justify-content: flex-end;
             justify-self: end;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+            flex-wrap: nowrap;
+        }
+        
+        /* Auth Elements for Cooking Theme */
+        .auth-signup-btn.cooking-theme {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            border: 2px solid rgba(255,255,255,0.4);
+            border-radius: 16px;
+            color: white;
+            font-weight: 800;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            box-shadow: 0 6px 20px rgba(255,107,53,0.4), inset 0 2px 0 rgba(255,255,255,0.3);
+            text-decoration: none;
+            border: none;
+            backdrop-filter: blur(10px);
+            position: static !important;
+            overflow: hidden;
+            font-family: inherit;
+            z-index: auto;
+            float: none;
+            margin: 0;
+        }
+        
+        .auth-signup-btn.cooking-theme::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .auth-signup-btn.cooking-theme:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(255,107,53,0.6), inset 0 2px 0 rgba(255,255,255,0.4);
+        }
+        
+        .auth-signup-btn.cooking-theme:hover::before {
+            left: 100%;
+        }
+        
+        .user-profile-display.cooking-theme {
+            display: none;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            padding: 10px 14px;
+            background: rgba(255, 107, 53, 0.15);
+            border-radius: 16px;
+            border: 2px solid rgba(255, 107, 53, 0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(15px);
+            position: static !important;
+            overflow: hidden;
+            z-index: auto;
+            float: none;
+            margin: 0;
+        }
+        
+        .user-profile-display.cooking-theme:hover {
+            background: rgba(255, 107, 53, 0.25);
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4), 0 0 20px rgba(255,107,53,0.2);
+            border-color: rgba(255, 107, 53, 0.5);
+        }
+        
+        .user-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 3px solid #ff6b35;
+            box-shadow: 0 0 16px rgba(255,107,53,0.6), inset 0 2px 4px rgba(255,255,255,0.2);
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        
+        .user-avatar:hover {
+            transform: scale(1.1);
+            border-color: #f7931e;
+            box-shadow: 0 0 20px rgba(255,107,53,0.8), inset 0 2px 4px rgba(255,255,255,0.3);
+        }
+        
+        .user-name {
+            font-weight: 700;
+            color: white;
+            font-size: 0.9rem;
+        }
+        
+        /* Profile Dropdown */
+        .profile-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 8px;
+            background: rgba(30, 30, 40, 0.95);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 107, 53, 0.2);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            padding: 12px 0;
+            min-width: 200px;
+            z-index: 10000;
+        }
+        
+        .profile-dropdown.show {
+            display: block;
+            animation: dropdownSlide 0.2s ease-out;
+        }
+        
+        @keyframes dropdownSlide {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .profile-dropdown-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 16px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        
+        .profile-dropdown-item:hover {
+            background: rgba(255, 107, 53, 0.15);
+        }
+        
+        .profile-dropdown-item.danger {
+            color: #ff4757;
+        }
+        
+        .profile-dropdown-divider {
+            height: 1px;
+            background: rgba(255, 107, 53, 0.2);
+            margin: 8px 0;
         }
 
         .header-gif {
@@ -1220,6 +1371,12 @@
 
             .header-actions {
                 justify-content: center;
+                gap: 8px;
+            }
+            
+            .auth-signup-btn.cooking-theme {
+                padding: 10px 16px;
+                font-size: 0.8rem;
             }
 
             .homepage-btn {
@@ -1326,6 +1483,34 @@
                         <i class="fas fa-home"></i>
                         <span>Back to Home</span>
                     </a>
+                    
+                    <!-- Hardcoded Auth Elements -->
+                    <button id="authButton" class="auth-signup-btn cooking-theme" onclick="showSignUp()" style="display: flex;">
+                        <i class="fas fa-user-plus"></i>
+                        <span>SIGN UP</span>
+                    </button>
+                    
+                    <div id="userProfile" class="user-profile-display cooking-theme" onclick="toggleProfileDropdown()" style="display: none;">
+                        <img id="userAvatar" class="user-avatar" src="" alt="Avatar">
+                        <span id="userName" class="user-name"></span>
+                        <i class="fas fa-chevron-down" style="margin-left: 4px; font-size: 0.7rem;"></i>
+                        
+                        <div id="profileDropdown" class="profile-dropdown">
+                            <div class="profile-dropdown-item" onclick="showProfileEdit()">
+                                <i class="fas fa-user-edit"></i>
+                                Edit Profile
+                            </div>
+                            <div class="profile-dropdown-item" onclick="viewAccount()">
+                                <i class="fas fa-cog"></i>
+                                Account Settings
+                            </div>
+                            <div class="profile-dropdown-divider"></div>
+                            <div class="profile-dropdown-item danger" onclick="handleSignOut()">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Sign Out
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
