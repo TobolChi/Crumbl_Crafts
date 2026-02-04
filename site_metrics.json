@@ -433,6 +433,15 @@
   ],
   "news": [
     {
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
+    },
+    {
       "type": "trend",
       "title": "I Let AI Renovate my Kitchen in 50 sec... This Happened!!\ud83e\udd2f\ud83d\udc68\u200d\ud83c\udf73",
       "description": "Yo RenoBlox squad! Watch me nuke this glitchy kitchen and rebuild it EPIC\u2014fast morphs, demo chaos, a...",
@@ -442,20 +451,11 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770212068.2149765,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
-    },
-    {
       "type": "trend",
       "title": "Modern Mansion Builds Trending",
       "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1770208468.2149792,
+      "timestamp": 1770213633.7867038,
       "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
       "icon": "fa-fire"
     },
@@ -464,7 +464,7 @@
       "title": "Money Making Guide 2024",
       "description": "Best jobs and strategies to earn cash quickly",
       "source": "Community Guide",
-      "timestamp": 1770204868.2149806,
+      "timestamp": 1770210033.7867045,
       "url": "#",
       "icon": "fa-lightbulb"
     },
@@ -473,7 +473,7 @@
       "title": "Weekly Build Contest",
       "description": "Submit your best holiday-themed builds to win prizes!",
       "source": "Crumbl Crafts",
-      "timestamp": 1770201268.2149816,
+      "timestamp": 1770206433.7867053,
       "url": "#",
       "icon": "fa-trophy"
     },
@@ -512,19 +512,10 @@
       "timestamp": 1770161689.0,
       "url": "https://www.youtube.com/watch?v=duGF3WluSmI",
       "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "NEW Sims 4 FREE BASEGAME update",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770160289.0,
-      "url": "https://www.youtube.com/watch?v=VF5yjlqocJI",
-      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770220474.956648,
+    "generated_at": 1770220838.604841,
     "mode": "memory",
     "refresh_interval": 2000
   }
