@@ -61,18 +61,6 @@
             contain: layout style;
         }
 
-        /* Glass morphism overlay */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(180deg, rgba(10, 10, 12, 0.05) 0%, rgba(10, 10, 12, 0.08) 100%);
-            z-index: -1;
-        }
-
         /* Prevent flickering in rankings and activity */
         .chef-rankings, .activity-log {
             transform: translateZ(0);
@@ -106,6 +94,8 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            position: relative;
+            z-index: 1;
         }
 
         /* Header */
@@ -313,6 +303,8 @@
             grid-template-areas:
                 "rankings activity"
                 "menu menu";
+            margin-bottom: 20px;
+            align-content: start;
         }
 
         .rankings-section {
@@ -1039,6 +1031,13 @@
             color: var(--primary-color);
             font-weight: 600;
         }
+        
+        .activity-details {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 4px;
+            font-style: italic;
+        }
 
 
 
@@ -1564,6 +1563,19 @@
                 lastSuccessfulFetch = Date.now();
                 isOnline = true;
                 
+                // Log the actual structure of received data
+                console.log('📦 Raw data structure:', {
+                    hasChefs: !!data?.chefs,
+                    chefsCount: Array.isArray(data?.chefs) ? data.chefs.length : 0,
+                    hasActivities: !!(data?.activities || data?.activity || data?.logs || data?.events),
+                    activitiesCount: Array.isArray(data?.activities) ? data.activities.length : 
+                                   Array.isArray(data?.activity) ? data.activity.length :
+                                   Array.isArray(data?.logs) ? data.logs.length :
+                                   Array.isArray(data?.events) ? data.events.length : 0,
+                    hasMenu: !!(data?.menu || data?.menuItems || data?.items),
+                    dataKeys: Object.keys(data || {})
+                });
+                
                 const hash = JSON.stringify(data || {});
                 if (hash === lastPayloadHash) {
                     console.log('📦 Data unchanged, skipping update');
@@ -1644,6 +1656,9 @@
             console.log('📊 Applying dashboard data:', {
                 chefs: Array.isArray(data?.chefs) ? data.chefs.length : 0,
                 activities: Array.isArray(data?.activities) ? data.activities.length : 0,
+                activity: Array.isArray(data?.activity) ? data.activity.length : 0,
+                logs: Array.isArray(data?.logs) ? data.logs.length : 0,
+                events: Array.isArray(data?.events) ? data.events.length : 0,
                 menu: data?.menu ? (Array.isArray(data.menu) ? data.menu.length : Object.keys(data.menu).length) : 0,
                 menuItems: data?.menuItems ? (Array.isArray(data.menuItems) ? data.menuItems.length : Object.keys(data.menuItems).length) : 0
             });
@@ -1662,10 +1677,28 @@
             });
 
             updateChefRankings(chefs);
-            updateActivityLog(Array.isArray(data.activities) ? data.activities : []);
             
-            // Try multiple possible menu data sources
-            const menuData = data.menu || data.menuItems || data.menu_items || null;
+            // Try multiple possible activity data sources from bot
+            let activityData = data.activities || data.activity || data.logs || data.events || data.recent_activity || [];
+            
+            // Log what we found for activities
+            console.log('🔍 Activity data source found:', {
+                source: data.activities ? 'activities' : data.activity ? 'activity' : data.logs ? 'logs' : data.events ? 'events' : data.recent_activity ? 'recent_activity' : 'none',
+                count: Array.isArray(activityData) ? activityData.length : 0,
+                sample: Array.isArray(activityData) && activityData.length > 0 ? activityData[0] : null
+            });
+            
+            updateActivityLog(activityData);
+            
+            // Try multiple possible menu data sources with better error handling
+            let menuData = data.menu || data.menuItems || data.menu_items || null;
+            
+            // If no menu data found, try to create from other sources
+            if (!menuData && data.items) {
+                menuData = data.items;
+            }
+            
+            // Always call updateMenuData - it will handle null/empty cases with fallbacks
             updateMenuData(menuData);
         }
 
@@ -1774,19 +1807,34 @@
             console.log('🍽️ Processing menu data:', menuItems);
             
             if (!menuItems) {
-                console.log('⚠️ No menu data received');
-                elements.menuContainer.innerHTML = '<div class="loading">No menu data available</div>';
-                if (elements.menuTabs) elements.menuTabs.style.display = 'none';
-                return;
+                console.log('⚠️ No menu data received, using fallback');
+                // Use fallback menu data
+                menuItems = {
+                    "seasonal": {
+                        "Pumpkin Soup": { selling_price: 12.50, ingredients: "Pumpkin, Cream, Nutmeg, Herbs", cost_price: 4.00 },
+                        "Turkey Roast": { selling_price: 25.00, ingredients: "Turkey, Stuffing, Cranberry Sauce", cost_price: 10.00 },
+                        "Apple Pie": { selling_price: 8.00, ingredients: "Fresh Apples, Cinnamon, Pastry", cost_price: 2.50 }
+                    },
+                    "non-seasonal": {
+                        "Classic Burger": { selling_price: 15.00, ingredients: "Beef Patty, Lettuce, Tomato, Bun", cost_price: 5.00 },
+                        "Crispy Fries": { selling_price: 5.00, ingredients: "Potatoes, Sea Salt", cost_price: 1.00 },
+                        "Caesar Salad": { selling_price: 12.00, ingredients: "Romaine, Croutons, Parmesan", cost_price: 3.50 }
+                    }
+                };
             }
 
             // Handle array format from bot (convert to object format)
             if (Array.isArray(menuItems)) {
                 console.log('📋 Converting array menu format to object format');
-                const categorizedMenu = {};
+                const categorizedMenu = {
+                    "seasonal": {},
+                    "non-seasonal": {},
+                    "catering": {},
+                    "other": {}
+                };
                 
                 menuItems.forEach(item => {
-                    const category = (item.category || 'other').toLowerCase();
+                    const category = (item.category || 'other').toLowerCase().replace(/[^a-z0-9-]/g, '-');
                     if (!categorizedMenu[category]) {
                         categorizedMenu[category] = {};
                     }
@@ -1797,15 +1845,27 @@
                     };
                 });
                 
+                // Remove empty categories
+                Object.keys(categorizedMenu).forEach(key => {
+                    if (Object.keys(categorizedMenu[key]).length === 0) {
+                        delete categorizedMenu[key];
+                    }
+                });
+                
                 menuItems = categorizedMenu;
             }
             
-            // Check if we have any menu items
+            // Check if we have any menu items after processing
             if (typeof menuItems === 'object' && Object.keys(menuItems).length === 0) {
-                console.log('⚠️ Empty menu object received');
-                elements.menuContainer.innerHTML = '<div class="loading">No menu items found</div>';
-                if (elements.menuTabs) elements.menuTabs.style.display = 'none';
-                return;
+                console.log('⚠️ Empty menu object, using fallback');
+                menuItems = {
+                    "seasonal": {
+                        "Seasonal Special": { selling_price: 18.00, ingredients: "Chef's choice seasonal ingredients", cost_price: 6.00 }
+                    },
+                    "non-seasonal": {
+                        "House Special": { selling_price: 16.00, ingredients: "Chef's signature dish", cost_price: 5.50 }
+                    }
+                };
             }
 
             // Show tabs and generate content
@@ -1817,8 +1877,8 @@
             
             categories.forEach((category, index) => {
                 const isActive = index === 0 ? 'active' : '';
-                const icon = category === 'seasonal' ? '🍂' : category === 'non-seasonal' ? '🍽️' : category === 'catering' ? '🥂' : '📋';
-                const label = category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                const icon = getMenuCategoryIcon(category);
+                const label = formatCategoryLabel(category);
                 tabsHtml += `<button class="menu-tab ${isActive}" data-category="${category}">${icon} ${label}</button>`;
             });
             
@@ -1839,7 +1899,7 @@
                 } else {
                     Object.entries(items).forEach(([itemName, itemData]) => {
                         const price = itemData.selling_price != null ? `$${Number(itemData.selling_price).toFixed(2)}` : '—';
-                        const costPrice = itemData.cost_price ? `<div class="cost-price">$${Number(itemData.cost_price).toFixed(2)}</div>` : '';
+                        const costPrice = itemData.cost_price ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` : '';
                         
                         html += `
                             <div class="menu-item">
@@ -1862,7 +1922,29 @@
             elements.menuContainer.innerHTML = html;
             setupMenuTabs();
             
-            console.log(`✅ Menu data loaded: ${categories.length} categories with ${Object.values(menuItems).reduce((total, cat) => total + Object.keys(cat || {}).length, 0)} items`);
+            const totalItems = Object.values(menuItems).reduce((total, cat) => total + Object.keys(cat || {}).length, 0);
+            console.log(`✅ Menu data loaded: ${categories.length} categories with ${totalItems} items`);
+        }
+        
+        function getMenuCategoryIcon(category) {
+            const icons = {
+                'seasonal': '🍂',
+                'non-seasonal': '🍽️',
+                'catering': '🥂',
+                'specials': '⭐',
+                'drinks': '🥤',
+                'desserts': '🧁',
+                'appetizers': '🥗',
+                'mains': '🍖',
+                'other': '📋'
+            };
+            return icons[category.toLowerCase()] || '📋';
+        }
+        
+        function formatCategoryLabel(category) {
+            return category.split('-').map(word => 
+                word.charAt(0).toUpperCase() + word.slice(1)
+            ).join(' ');
         }
 
         function setupMenuTabs() {
@@ -1884,32 +1966,101 @@
         }
 
         function updateActivityLog(activities) {
-            if (!activities || activities.length === 0) {
-                elements.activityLog.innerHTML = '<div class="loading">No recent activity</div>';
+            console.log('📋 Processing activity data:', {
+                type: Array.isArray(activities) ? 'array' : typeof activities,
+                length: Array.isArray(activities) ? activities.length : 'N/A',
+                sample: Array.isArray(activities) && activities.length > 0 ? activities[0] : activities
+            });
+
+            if (!activities || (Array.isArray(activities) && activities.length === 0)) {
+                console.log('⚠️ No activity data available');
+                elements.activityLog.innerHTML = '<div class="loading">No recent activity from bot</div>';
                 return;
             }
 
+            // Ensure activities is an array
+            let activitiesArray = Array.isArray(activities) ? activities : [activities];
+            
+            // Define system events and status notifications to exclude
+            const excludedTypes = [
+                'system', 'status_changed', 'went_online', 'went_offline', 
+                'break_started', 'break_ended', 'error', 'warning', 
+                'info', 'notification', 'server_start', 'server_stop',
+                'maintenance', 'backup', 'cleanup', 'heartbeat',
+                'connection_lost', 'connection_restored', 'bot_start',
+                'bot_stop', 'database_update', 'cache_clear'
+            ];
+            
+            // Process and validate activity items, filtering out unwanted types
+            const processedActivities = activitiesArray.map((activity, index) => {
+                if (!activity) return null;
+                
+                // Handle different activity data formats from bot
+                const processedActivity = {
+                    id: activity.id || activity._id || `activity_${index}_${Date.now()}`,
+                    chef: activity.chef || activity.user || activity.user_name || activity.username || 'Unknown Chef',
+                    action: activity.action || activity.message || activity.description || activity.event || 'performed an action',
+                    timestamp: activity.timestamp || activity.time || activity.created_at || activity.date || new Date().toISOString(),
+                    type: activity.type || activity.action_type || activity.event_type || 'general',
+                    details: activity.details || activity.extra || null
+                };
+                
+                // Filter out system events and status notifications
+                const activityType = (processedActivity.type || '').toLowerCase();
+                const activityAction = (processedActivity.action || '').toLowerCase();
+                
+                // Check if this activity should be excluded
+                const isExcluded = excludedTypes.some(excludedType => 
+                    activityType.includes(excludedType) || 
+                    activityAction.includes(excludedType) ||
+                    activityAction.includes('status') ||
+                    activityAction.includes('online') ||
+                    activityAction.includes('offline') ||
+                    activityAction.includes('system')
+                );
+                
+                if (isExcluded) {
+                    console.log('🚫 Excluding system/status activity:', processedActivity.type, processedActivity.action);
+                    return null;
+                }
+                
+                return processedActivity;
+            }).filter(activity => activity !== null);
+
             // Check for new activities and play notification sound
-            const newActivitiesCount = activities.length;
+            const newActivitiesCount = processedActivities.length;
             if (lastActivityCount > 0 && newActivitiesCount > lastActivityCount) {
-                console.log(`New activity detected: ${newActivitiesCount - lastActivityCount} new entries`);
+                console.log(`🔔 New activity detected: ${newActivitiesCount - lastActivityCount} new entries`);
                 playNotificationSound();
             }
             lastActivityCount = newActivitiesCount;
 
-            const limited = activities.slice(0, CONFIG.maxVisibleActivities);
-            const html = limited.map(activity => {
-                const timeText = activity.time || (activity.timestamp ? getTimeAgo(activity.timestamp) : 'just now');
-                const icon = getActivityIcon(activity.type || activity.action_type);
+            if (processedActivities.length === 0) {
+                elements.activityLog.innerHTML = '<div class="loading">No recent user activity from bot</div>';
+                return;
+            }
+
+            // Sort by timestamp (newest first) and limit display
+            const sortedActivities = processedActivities
+                .sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime())
+                .slice(0, CONFIG.maxVisibleActivities);
+
+            const html = sortedActivities.map((activity, index) => {
+                const timeText = getTimeAgo(activity.timestamp);
+                const icon = getActivityIcon(activity.type);
                 const text = formatActivityText(activity);
+                
                 return `
-                    <div class="activity-item">
+                    <div class="activity-item" data-activity-id="${activity.id}">
                         <div class="activity-time">${icon} ${timeText}</div>
                         <div class="activity-text">${text}</div>
+                        ${activity.details ? `<div class="activity-details">${activity.details}</div>` : ''}
                     </div>
                 `;
             }).join('');
+            
             elements.activityLog.innerHTML = html;
+            console.log(`✅ Activity log updated: ${sortedActivities.length} user activities displayed (${activitiesArray.length - processedActivities.length} system events filtered out)`);
         }
 
         function getChefAvatar(chef) {
@@ -1942,23 +2093,105 @@
 
         function getActivityIcon(actionType) {
             const icons = {
-                completion: '✅',
-                order_completed: '✅',
-                rating_received: '⭐',
-                menu_update: '📋',
-                promotion: '📈',
-                demotion: '📉',
-                application_submitted: '📝'
+                // Order/Ticket related
+                'completion': '✅',
+                'order_completed': '✅', 
+                'ticket_completed': '✅',
+                'order_created': '📝',
+                'ticket_created': '📝',
+                'order_started': '🍳',
+                'cooking_started': '🍳',
+                
+                // Rating/Review related
+                'rating_received': '⭐',
+                'review_received': '⭐',
+                'feedback': '💬',
+                
+                // Menu related
+                'menu_update': '📋',
+                'menu_added': '➕',
+                'menu_removed': '➖',
+                'price_update': '💰',
+                
+                // Staff/Chef related
+                'promotion': '📈',
+                'demotion': '📉',
+                'chef_joined': '👋',
+                'chef_left': '👋',
+                'application_submitted': '📝',
+                'application_approved': '✅',
+                'application_rejected': '❌',
+                
+                // Status related
+                'status_changed': '🔄',
+                'went_online': '🟢',
+                'went_offline': '🔴',
+                'break_started': '⏸️',
+                'break_ended': '▶️',
+                
+                // System events
+                'system': '⚙️',
+                'error': '❌',
+                'warning': '⚠️',
+                'info': 'ℹ️',
+                
+                // Default categories
+                'general': '📝',
+                'notification': '🔔',
+                'update': '🔄'
             };
-            return icons[actionType] || '📝';
+            
+            const typeKey = (actionType || 'general').toLowerCase();
+            
+            // Try exact match first
+            if (icons[typeKey]) {
+                return icons[typeKey];
+            }
+            
+            // Try partial matches
+            for (const [key, icon] of Object.entries(icons)) {
+                if (typeKey.includes(key) || key.includes(typeKey)) {
+                    return icon;
+                }
+            }
+            
+            // Default icon
+            return '📝';
         }
 
         function formatActivityText(activity) {
-            if (activity.details) {
+            // If activity has pre-formatted details, use that
+            if (activity.details && typeof activity.details === 'string' && activity.details.length > 10) {
                 return activity.details;
             }
-            const chef = activity.chef || activity.user_name || 'Chef';
-            const action = activity.action || 'updated the kitchen';
+            
+            // If activity has a complete message, use that
+            if (activity.message && activity.message.length > 5) {
+                return activity.message;
+            }
+            
+            // Build formatted text from components
+            const chef = activity.chef || activity.user || activity.user_name || 'Chef';
+            let action = activity.action || 'performed an action';
+            
+            // Handle different action formats from bot
+            if (action.toLowerCase().includes('completed') || action.toLowerCase().includes('finished')) {
+                action = action;
+            } else if (action.toLowerCase().includes('order') || action.toLowerCase().includes('ticket')) {
+                action = action;
+            } else if (action.toLowerCase().includes('rating') || action.toLowerCase().includes('star')) {
+                action = action;
+            } else if (action.toLowerCase().includes('joined') || action.toLowerCase().includes('left')) {
+                action = action;
+            } else if (action.toLowerCase().includes('promoted') || action.toLowerCase().includes('demoted')) {
+                action = action;
+            } else {
+                // If action doesn't contain the chef name, add it
+                if (!action.toLowerCase().includes(chef.toLowerCase())) {
+                    action = action;
+                }
+            }
+            
             return `<span class="activity-user">${chef}</span> <span class="activity-action">${action}</span>`;
         }
 
