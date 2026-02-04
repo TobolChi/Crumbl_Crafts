@@ -217,8 +217,8 @@
             border: 2px solid rgba(255, 107, 53, 0.3);
             transition: all 0.3s ease;
             backdrop-filter: blur(15px);
-            position: static !important;
-            overflow: hidden;
+            position: relative;
+            overflow: visible;
             z-index: auto;
             float: none;
             margin: 0;
@@ -606,6 +606,8 @@
             flex-direction: column;
             align-items: center;
             gap: 12px;
+            transform-origin: center bottom;
+            backface-visibility: hidden;
         }
         
         .podium-card::before {
@@ -783,6 +785,7 @@
         .podium-card:hover {
             transform: translateY(-8px) scale(1.03);
             box-shadow: 0 25px 60px rgba(255, 107, 53, 0.5);
+            z-index: 5;
         }
 
         .podium-card.first-place:hover {
@@ -1537,12 +1540,12 @@
                         <span>SIGN UP</span>
                     </button>
                     
-                    <div id="userProfile" class="user-profile-display cooking-theme" onclick="toggleProfileDropdown()" style="display: none;">
+                    <div id="userProfile" class="user-profile-display cooking-theme" onclick="toggleProfileDropdown(event)" style="display: none;">
                         <img id="userAvatar" class="user-avatar" src="" alt="Avatar">
                         <span id="userName" class="user-name"></span>
                         <i class="fas fa-chevron-down" style="margin-left: 4px; font-size: 0.7rem;"></i>
                         
-                        <div id="profileDropdown" class="profile-dropdown">
+                        <div id="profileDropdown" class="profile-dropdown" onclick="event.stopPropagation()">
                             <div class="profile-dropdown-item" onclick="showProfileEdit()">
                                 <i class="fas fa-user-edit"></i>
                                 Edit Profile
@@ -1686,9 +1689,10 @@
         // Use local JSON file for chef data (hosted on GitHub Pages)
         // GitHub raw URL for bot-updated JSON data
         window.COOKING_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/chef-data.json';
-        window.MENU_OLD_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/menu-old.json';
-        window.MENU_NEW_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/menu-new.json';
-        window.ACTIVITY_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/cooking-activity.json';
+        // Menu/activity are now bundled in chef-data.json
+        window.MENU_OLD_ENDPOINT = '';
+        window.MENU_NEW_ENDPOINT = '';
+        window.ACTIVITY_ENDPOINT = '';
         
         // Fallback for local development or testing
         const urlParams = new URLSearchParams(window.location.search);
@@ -1700,9 +1704,9 @@
     <script>
         // Configuration for real data from your database
         const REMOTE_COOKING_ENDPOINT = window.COOKING_ENDPOINT || 'https://tobolchi.github.io/Crumbl_Crafts/chef-data.json';
-        const REMOTE_MENU_OLD_ENDPOINT = window.MENU_OLD_ENDPOINT || 'https://tobolchi.github.io/Crumbl_Crafts/menu-old.json';
-        const REMOTE_MENU_NEW_ENDPOINT = window.MENU_NEW_ENDPOINT || 'https://tobolchi.github.io/Crumbl_Crafts/menu-new.json';
-        const REMOTE_ACTIVITY_ENDPOINT = window.ACTIVITY_ENDPOINT || 'https://tobolchi.github.io/Crumbl_Crafts/cooking-activity.json';
+        const REMOTE_MENU_OLD_ENDPOINT = window.MENU_OLD_ENDPOINT || null;
+        const REMOTE_MENU_NEW_ENDPOINT = window.MENU_NEW_ENDPOINT || null;
+        const REMOTE_ACTIVITY_ENDPOINT = window.ACTIVITY_ENDPOINT || null;
         const CONFIG = {
             dataUrl: REMOTE_COOKING_ENDPOINT,
             refreshInterval: 30000, // 30 seconds
@@ -2059,13 +2063,14 @@
             
             // Try multiple possible menu data sources with better error handling
             let menuData = data.menu || data.menuItems || data.menu_items || null;
+            const menuSnapshots = data.menu_snapshots || data.menuSnapshots || null;
             
             // If no menu data found, try to create from other sources
             if (!menuData && data.items) {
                 menuData = data.items;
             }
             
-            await loadMenuSnapshots(menuData);
+            await loadMenuSnapshots(menuData, menuSnapshots);
         }
 
         function showEmptyState() {
@@ -2236,6 +2241,7 @@
 
         async function fetchMenuSnapshot(url) {
             try {
+                if (!url) return null;
                 const response = await fetchWithTimeout(withCacheBust(url));
                 if (!response.ok) {
                     return null;
@@ -2247,10 +2253,20 @@
             }
         }
 
-        async function loadMenuSnapshots(fallbackMenu) {
+        async function loadMenuSnapshots(fallbackMenu, menuSnapshots = null) {
+            const providedNew = normalizeMenuData(menuSnapshots && menuSnapshots.new);
+            const providedOld = normalizeMenuData(menuSnapshots && menuSnapshots.old);
+            const providedNewHasItems = providedNew && Object.keys(providedNew).length > 0;
+            const providedOldHasItems = providedOld && Object.keys(providedOld).length > 0;
+
+            if (providedNewHasItems) {
+                updateMenuData(providedNew, providedOld, true);
+                return;
+            }
+
             const [oldSnapshotRaw, newSnapshotRaw] = await Promise.all([
-                fetchMenuSnapshot(REMOTE_MENU_OLD_ENDPOINT),
-                fetchMenuSnapshot(REMOTE_MENU_NEW_ENDPOINT)
+                REMOTE_MENU_OLD_ENDPOINT ? fetchMenuSnapshot(REMOTE_MENU_OLD_ENDPOINT) : Promise.resolve(null),
+                REMOTE_MENU_NEW_ENDPOINT ? fetchMenuSnapshot(REMOTE_MENU_NEW_ENDPOINT) : Promise.resolve(null)
             ]);
 
             const oldSnapshot = normalizeMenuData(oldSnapshotRaw);
@@ -2271,6 +2287,7 @@
 
         async function fetchActivitySnapshot() {
             try {
+                if (!REMOTE_ACTIVITY_ENDPOINT) return null;
                 const response = await fetchWithTimeout(withCacheBust(REMOTE_ACTIVITY_ENDPOINT));
                 if (!response.ok) {
                     return null;
@@ -2283,13 +2300,18 @@
         }
 
         async function loadActivitySnapshot(fallbackActivities) {
+            const fallbackArray = Array.isArray(fallbackActivities) ? fallbackActivities : [];
+            if (fallbackArray.length > 0) {
+                updateActivityLog(fallbackArray);
+                return;
+            }
+
             const snapshot = await fetchActivitySnapshot();
             if (snapshot && snapshot.length > 0) {
                 updateActivityLog(snapshot);
                 return;
             }
 
-            const fallbackArray = Array.isArray(fallbackActivities) ? fallbackActivities : [];
             updateActivityLog(fallbackArray);
         }
 
