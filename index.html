@@ -316,6 +316,10 @@
       z-index: 10000;
     }
     
+    .user-profile-display {
+      position: relative;
+    }
+    
     .profile-dropdown.show {
       display: block;
       animation: dropdownSlide 0.2s ease-out;
@@ -1045,12 +1049,12 @@
           <span>SIGN UP</span>
         </button>
         
-        <div id="userProfile" class="user-profile-display" onclick="toggleProfileDropdown()" style="display: none;">
+        <div id="userProfile" class="user-profile-display" onclick="toggleProfileDropdown(event)" style="display: none;">
           <img id="userAvatar" class="user-avatar" src="" alt="Avatar">
           <span id="userName" class="user-name"></span>
           <i class="fas fa-chevron-down" style="margin-left: 4px; font-size: 0.7rem;"></i>
           
-          <div id="profileDropdown" class="profile-dropdown">
+          <div id="profileDropdown" class="profile-dropdown" onclick="event.stopPropagation()">
             <div class="profile-dropdown-item" onclick="showProfileEdit()">
               <i class="fas fa-user-edit"></i>
               Edit Profile
