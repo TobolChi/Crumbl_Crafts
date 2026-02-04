@@ -123,129 +123,7 @@ function injectAuthStyles() {
     const styles = document.createElement('style');
     styles.id = 'universal-auth-styles';
     styles.textContent = `
-        /* Universal Auth Container */
-        .universal-auth-container {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        
-        /* Sign Up Button */
-        .auth-signup-btn {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 18px;
-            background: linear-gradient(135deg, #FF1744, #ff5252);
-            border: 3px solid rgba(255,255,255,0.3);
-            border-radius: 12px;
-            color: white;
-            font-weight: 800;
-            font-size: 0.85rem;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            box-shadow: 0 4px 0 #c41c3a, 0 6px 16px rgba(255,23,68,0.5), inset 0 2px 0 rgba(255,255,255,0.3);
-            text-decoration: none;
-            border: none;
-        }
-        
-        .auth-signup-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 0 #c41c3a, 0 8px 20px rgba(255,23,68,0.6), inset 0 2px 0 rgba(255,255,255,0.3);
-        }
-        
-        /* User Profile Display */
-        .user-profile-display {
-            display: none;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-            padding: 8px 12px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-        
-        .user-profile-display:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-        
-        .user-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 3px solid #FF1744;
-            box-shadow: 0 0 12px rgba(255,23,68,0.5);
-            object-fit: cover;
-        }
-        
-        .user-name {
-            font-weight: 700;
-            color: white;
-            font-size: 0.9rem;
-        }
-        
-        /* Profile Dropdown */
-        .profile-dropdown {
-            display: none;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            margin-top: 8px;
-            background: rgba(20, 20, 40, 0.95);
-            backdrop-filter: blur(15px);
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-            padding: 12px 0;
-            min-width: 200px;
-            z-index: 10000;
-        }
-        
-        .profile-dropdown.show {
-            display: block;
-            animation: dropdownSlide 0.2s ease-out;
-        }
-        
-        @keyframes dropdownSlide {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .profile-dropdown-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px 16px;
-            color: white;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-weight: 600;
-            font-size: 0.85rem;
-        }
-        
-        .profile-dropdown-item:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-        
-        .profile-dropdown-item.danger {
-            color: #ff4757;
-        }
-        
-        .profile-dropdown-divider {
-            height: 1px;
-            background: rgba(255, 255, 255, 0.1);
-            margin: 8px 0;
-        }
+        /* Auth Modal Styles Only - Positioning handled by HTML/CSS */
         
         /* Auth Modal */
         .auth-modal {
@@ -529,9 +407,28 @@ function injectAuthStyles() {
         
         /* Mobile Responsive */
         @media (max-width: 768px) {
-            .universal-auth-container {
-                top: 10px;
-                right: 10px;
+            .universal-auth-container.floating {
+                --auth-top-offset: 12px;
+                --auth-right-offset: 12px;
+                gap: 8px;
+            }
+            
+            .universal-auth-container.floating.header-present {
+                --auth-top-offset: 70px;
+            }
+            
+            .universal-auth-container.floating.cooking-page {
+                --auth-top-offset: 80px;
+                --auth-right-offset: 16px;
+            }
+            
+            .universal-auth-container.floating.building-page {
+                --auth-top-offset: 60px;
+                --auth-right-offset: 12px;
+            }
+            
+            .universal-auth-container.dedicated-space {
+                gap: 8px;
             }
             
             .auth-modal-content {
@@ -546,14 +443,31 @@ function injectAuthStyles() {
         }
         
         @media (max-width: 480px) {
-            .universal-auth-container {
-                position: relative;
-                top: 0;
-                right: 0;
-                width: 100%;
-                justify-content: center;
-                padding: 10px;
-                background: rgba(0, 0, 0, 0.3);
+            .universal-auth-container.floating {
+                --auth-top-offset: 8px;
+                --auth-right-offset: 8px;
+                position: fixed;
+                left: auto;
+                width: auto;
+                justify-content: flex-end;
+                background: none;
+            }
+            
+            .universal-auth-container.floating.header-present {
+                --auth-top-offset: 50px;
+            }
+            
+            .universal-auth-container.floating.cooking-page {
+                --auth-top-offset: 60px;
+            }
+            
+            .universal-auth-container.floating.building-page {
+                --auth-top-offset: 45px;
+            }
+            
+            .universal-auth-container.dedicated-space {
+                gap: 6px;
+                flex-wrap: wrap;
             }
         }
     `;
@@ -562,43 +476,11 @@ function injectAuthStyles() {
 }
 
 function createAuthContainer() {
-    if (document.getElementById('universalAuthContainer')) return;
-    
-    const container = document.createElement('div');
-    container.id = 'universalAuthContainer';
-    container.className = 'universal-auth-container';
-    
-    container.innerHTML = `
-        <button id="authButton" class="auth-signup-btn" onclick="showSignUp()">
-            <i class="fas fa-user-plus"></i>
-            <span>SIGN UP</span>
-        </button>
-        
-        <div id="userProfile" class="user-profile-display" onclick="toggleProfileDropdown()">
-            <img id="userAvatar" class="user-avatar" src="" alt="Avatar">
-            <span id="userName" class="user-name"></span>
-            <i class="fas fa-chevron-down" style="margin-left: 4px; font-size: 0.7rem;"></i>
-            
-            <div id="profileDropdown" class="profile-dropdown">
-                <div class="profile-dropdown-item" onclick="showProfileEdit()">
-                    <i class="fas fa-user-edit"></i>
-                    Edit Profile
-                </div>
-                <div class="profile-dropdown-item" onclick="viewAccount()">
-                    <i class="fas fa-cog"></i>
-                    Account Settings
-                </div>
-                <div class="profile-dropdown-divider"></div>
-                <div class="profile-dropdown-item danger" onclick="handleSignOut()">
-                    <i class="fas fa-sign-out-alt"></i>
-                    Sign Out
-                </div>
-            </div>
-        </div>
-    `;
-    
-    document.body.appendChild(container);
+    // Auth elements are now hardcoded in HTML, this function only handles modal creation
+    createAuthModal();
 }
+
+// No longer needed - auth elements are hardcoded in HTML
 
 function updateAllAuthUI(user) {
     const authBtn = document.getElementById('authButton');
@@ -1401,6 +1283,8 @@ async function initUniversalAuth() {
             localStorage.removeItem('crumblAuthState');
         }
     }
+    
+    // No positioning logic needed since auth elements are hardcoded in HTML
     
     console.log('✅ Universal Authentication System initialized successfully');
 }
