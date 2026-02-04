@@ -10,6 +10,10 @@ permissions:
   pages: write      # needed to deploy to Pages
   id-token: write   # needed for OIDC authentication
 
+concurrency:        # prevent overlapping deployments
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -41,8 +45,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-        name: github-pages # <-- REQUIRED
+      name: github-pages   # REQUIRED
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4   # <-- version added
