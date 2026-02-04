@@ -11,7 +11,7 @@
       "average_rating": 4.5,
       "total_ratings": 6,
       "avatar": "https://cdn.discordapp.com/avatars/1098992055272878081/3d5587425a502f14a7fbf5cfaaa493a1.png?size=1024",
-      "status": "offline",
+      "status": "dnd",
       "joinDate": "2026-01-24"
     },
     {
@@ -35,14 +35,14 @@
       "action": "Completed order \u00b7 2 tickets",
       "time": "5 minutes ago",
       "type": "completion",
-      "timestamp": 1770182057.198548
+      "timestamp": 1770182358.2273293
     },
     {
       "chef": "Sam",
       "action": "Completed order \u00b7 1 tickets",
       "time": "10 minutes ago",
       "type": "completion",
-      "timestamp": 1770181757.1985512
+      "timestamp": 1770182058.227332
     }
   ],
   "menu": [],
@@ -53,8 +53,8 @@
     "avgRating": 4.8
   },
   "meta": {
-    "timestamp": "2026-02-04T07:19:17.198567",
-    "last_updated": 1770182357.1987123,
+    "timestamp": "2026-02-04T07:24:18.227341",
+    "last_updated": 1770182658.2273486,
     "cached": false,
     "data_source": "discord_bot"
   }
