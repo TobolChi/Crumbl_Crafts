@@ -2214,9 +2214,19 @@
             padding: 8px 0;
             min-width: 150px;
             display: none;
-            z-index: 1000;
+            z-index: 10000;
             backdrop-filter: blur(10px);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        .profile-dropdown.show {
+            display: block !important;
+            animation: profileDropdownSlide 0.2s ease-out;
+        }
+        
+        @keyframes profileDropdownSlide {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         .profile-dropdown-item {
             padding: 10px 16px;
@@ -2602,12 +2612,12 @@
                         <span>SIGN UP</span>
                     </button>
                     
-                    <div id="userProfile" class="user-profile-display building-theme" onclick="toggleProfileDropdown()" style="display: none;">
+                    <div id="userProfile" class="user-profile-display building-theme" onclick="toggleProfileDropdown(event)" style="display: none;">
                         <img id="userAvatar" class="user-avatar" src="" alt="Avatar">
                         <span id="userName" class="user-name"></span>
                         <i class="fas fa-chevron-down" style="margin-left: 4px; font-size: 0.7rem;"></i>
                         
-                        <div id="profileDropdown" class="profile-dropdown">
+                        <div id="profileDropdown" class="profile-dropdown" onclick="event.stopPropagation()">
                             <div class="profile-dropdown-item" onclick="showProfileEdit()">
                                 <i class="fas fa-user-edit"></i>
                                 Edit Profile
