@@ -1813,13 +1813,11 @@
                     const placeClass = rank === 1 ? 'first-place' : rank === 2 ? 'second-place' : 'third-place';
                     const medalEmoji = rank === 1 ? '🥇' : rank === 2 ? '🥈' : '🥉';
                     const avatarUrl = getChefAvatar(chef);
-                    const statusClass = normalizeStatus(chef.status);
 
                     html += `
                         <div class="podium-card ${placeClass}">
                             <div class="chef-avatar ${placeClass}">
                                 <img src="${avatarUrl}" alt="${chef.name}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(chef.name || 'Chef')}&background=random&size=128&bold=true'">
-                                <div class="chef-status ${statusClass}"></div>
                                 <div class="chef-badge">${medalEmoji}</div>
                             </div>
                             <div class="podium-chef-name">${chef.name || 'Chef'}</div>
@@ -1847,7 +1845,6 @@
                 sorted.slice(3).forEach((chef, index) => {
                     const rank = index + 4;
                     const avatarUrl = getChefAvatar(chef);
-                    const statusClass = normalizeStatus(chef.status);
                     const discordTag = chef.discord_tag ? `<div class="discord-tag">${chef.discord_tag}</div>` : '';
 
                     html += `
@@ -1855,7 +1852,6 @@
                             <div class="compact-rank">${rank}</div>
                             <div class="compact-chef-avatar">
                                 <img src="${avatarUrl}" alt="${chef.name}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(chef.name || 'Chef')}&background=random&size=128&bold=true'">
-                                <div class="compact-status ${statusClass}"></div>
                             </div>
                             <div class="compact-info">
                                 <div class="compact-name">${chef.name || 'Chef'}</div>
