@@ -425,6 +425,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "bloxburg valentine update just dropped\ud83d\udc40 #bloxburgupdate #bloxburg #bloxburgnewleaks #valentinesday",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770305735.0,
+      "url": "https://www.youtube.com/watch?v=SCHjtS1pks8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Faite percer #bloxburg #bloxburg #brookhaven #brookhaven #edit #roblox #robloxedit",
       "description": "...",
       "source": "YouTube",
@@ -457,15 +466,6 @@
       "source": "YouTube",
       "timestamp": 1770290893.0,
       "url": "https://www.youtube.com/watch?v=ATjpUAPzjOY",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "New island \ud83c\udfdd\ufe0f and NPC easily \ud83d\ude0e\ud83d\ude4f plz subscribe|| #viral #bloxfruits #bloxburg #trending #shorts \ud83d\ude4f\ud83d\ude4f\u2665\ufe0f",
-      "description": "New island \ud83c\udfdd\ufe0f and NPC easily plz subscribe|| #viral #bloxfruits #bloxburg #trending #shorts \u2665\ufe0f #tren...",
-      "source": "YouTube",
-      "timestamp": 1770261374.0,
-      "url": "https://www.youtube.com/watch?v=Pnh7nxU0mMM",
       "icon": "fa-youtube"
     },
     {
@@ -506,7 +506,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770307240.7021055,
+    "generated_at": 1770308440.3181374,
     "mode": "memory",
     "refresh_interval": 2000
   }
