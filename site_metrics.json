@@ -389,6 +389,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "MY DAUGHTERS WINTER DANCE COMPETITION! *SHE WON?* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "source": "YouTube",
+      "timestamp": 1770325206.0,
+      "url": "https://www.youtube.com/watch?v=sxaCy-3dcyI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Sua casa dos sonhos no Bloxburg em MINUTOS \ud83d\ude31\ud83c\udfe1 | Auto Build BLOXBURG #bloxburg #roblox",
       "description": "bloxburg, roblox, autobuild, bloxburg house, roblox bloxburg, roblox br, casa bloxburg, roblox build...",
       "source": "YouTube",
@@ -461,15 +470,6 @@
     },
     {
       "type": "trend",
-      "title": "channeling my inner grease with the new bloxburg cadillac car #bloxburg #bloxburgupdate",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770302727.0,
-      "url": "https://www.youtube.com/watch?v=Jlt2dLT0zUc",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "BLOXBURG VALENTINES UPDATE 2026! NEW CAR, ITEMS AND MORE!",
       "description": "BUY MY MERCH: https://acggoods.com/store/glossbossboutique OPEN ME FOR SOCIALS, MERCH & MORE! \u0c68\u09ce hey...",
       "source": "YouTube",
@@ -479,7 +479,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770326440.3208802,
+    "generated_at": 1770327640.3285398,
     "mode": "memory",
     "refresh_interval": 2000
   }
