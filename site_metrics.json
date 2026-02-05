@@ -7,8 +7,8 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 367,
-    "joined_today": 0,
+    "total_members": 368,
+    "joined_today": 1,
     "active_shops": 2,
     "avg_response_time": 2627.7
   },
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_join",
+      "shop_name": "Server",
+      "message": "lovedherfirst joined the server",
+      "timestamp": 1770332369,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/971225630941265950"
+    },
     {
       "type": "member_leave",
       "shop_name": "Server",
@@ -470,7 +479,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770331240.323495,
+    "generated_at": 1770332371.9670749,
     "mode": "memory",
     "refresh_interval": 2000
   }
