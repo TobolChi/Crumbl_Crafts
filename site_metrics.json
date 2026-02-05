@@ -434,6 +434,15 @@
     },
     {
       "type": "trend",
+      "title": "The Sims\u2122 2 Legacy Collection",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770246014.0,
+      "url": "https://www.youtube.com/watch?v=5RvV6FWIeYc",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "LLEOPATRIC ES EXHIBICIONISTA ?? #bloxburg #lleopatric #roblox",
       "description": "...",
       "source": "YouTube",
@@ -448,15 +457,6 @@
       "source": "YouTube",
       "timestamp": 1770237430.0,
       "url": "https://www.youtube.com/watch?v=cayoYZ60LnA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I WENT UNDERCOVER AS A DOG TO SPY IN A BLOXBURG MANSION",
-      "description": "bloxburg #roblox #robloxbloxburg I went undercover as a dog to spy on a rich bloxburg family...you w...",
-      "source": "YouTube",
-      "timestamp": 1770235214.0,
-      "url": "https://www.youtube.com/watch?v=I9q7jrpA6_k",
       "icon": "fa-youtube"
     },
     {
@@ -497,7 +497,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770272440.3188164,
+    "generated_at": 1770273640.322191,
     "mode": "memory",
     "refresh_interval": 2000
   }
