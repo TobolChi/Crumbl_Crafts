@@ -425,6 +425,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "new Valentine item coming soon to Bloxburg | #valentinesday #valentine #bloxburg #bloxburg #cute",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770247948.0,
+      "url": "https://www.youtube.com/watch?v=9mQkAedTTxM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "LLEOPATRIC ES EXHIBICIONISTA ?? #bloxburg #lleopatric #roblox",
       "description": "...",
       "source": "YouTube",
@@ -494,19 +503,10 @@
       "timestamp": 1770183148.0,
       "url": "https://www.youtube.com/watch?v=vn-lVBjKCNs",
       "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#newmusic #music #roblox #minecraftparodies #bloxburg #bloxburg #theothersideofmakebelieve #minecraf",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770166582.0,
-      "url": "https://www.youtube.com/watch?v=zjXPEuai01M",
-      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770249640.321663,
+    "generated_at": 1770250840.321168,
     "mode": "memory",
     "refresh_interval": 2000
   }
