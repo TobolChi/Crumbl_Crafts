@@ -503,19 +503,10 @@
       "timestamp": 1770183148.0,
       "url": "https://www.youtube.com/watch?v=vn-lVBjKCNs",
       "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#newmusic #music #roblox #minecraftparodies #bloxburg #bloxburg #theothersideofmakebelieve #minecraf",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770166582.0,
-      "url": "https://www.youtube.com/watch?v=zjXPEuai01M",
-      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770254440.319261,
+    "generated_at": 1770255640.32189,
     "mode": "memory",
     "refresh_interval": 2000
   }
