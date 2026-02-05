@@ -7,7 +7,7 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 368,
+    "total_members": 367,
     "joined_today": 3,
     "active_shops": 2,
     "avg_response_time": 2627.7
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_leave",
+      "shop_name": "Server",
+      "message": "yummii_p0pc0rn left the server",
+      "timestamp": 1770316662,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/1459096963705475153"
+    },
     {
       "type": "member_join",
       "shop_name": "Server",
@@ -365,15 +374,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/919103854367375391",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "butter_fly_2 joined the server",
-      "timestamp": 1769711812,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1415548905466105896",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -425,11 +425,29 @@
   "news": [
     {
       "type": "trend",
+      "title": "Touring Bloxburg\u2019s NEW Limited Valentine&#39;s Prebuilt! \ud83c\udf37 #shorts #roblox #bloxburg",
+      "description": "roblox #gaming #robloxgaming \u2014 links\u2014 tiktok \u2192 https://www.tiktok.com/@kachunkie roblox group + outf...",
+      "source": "YouTube",
+      "timestamp": 1770314851.0,
+      "url": "https://www.youtube.com/watch?v=nd-CkSX2YKQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Yall I think I overdid it with the ikea furniture\u2026.. #bloxburg #roblox",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1770312283.0,
       "url": "https://www.youtube.com/watch?v=QxNUMceqoCg",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "The Bloxburg VALENTINE&#39;S UPDATE is HERE  \ud83d\udc97\u2728 #shorts #roblox #bloxburg",
+      "description": "roblox #gaming #robloxgaming \u2014 links\u2014 tiktok \u2192 https://www.tiktok.com/@kachunkie roblox group + outf...",
+      "source": "YouTube",
+      "timestamp": 1770309411.0,
+      "url": "https://www.youtube.com/watch?v=mPCVMeSMppQ",
       "icon": "fa-youtube"
     },
     {
@@ -448,24 +466,6 @@
       "source": "YouTube",
       "timestamp": 1770304972.0,
       "url": "https://www.youtube.com/watch?v=2h7-LPbpMKQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "NO MISSES. \ud83c\udfbe #stumbleguys  #games #gaming #roblox #bloxburg #robloxnoob #newgameinroblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770303962.0,
-      "url": "https://www.youtube.com/watch?v=uszPUNP8l0k",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Pls play #music #robloxedit #memes #roblox #stealabrainrot #bloxburg #bloxburg #plsdonate #game",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770303484.0,
-      "url": "https://www.youtube.com/watch?v=-ymUhBlg0sc",
       "icon": "fa-youtube"
     },
     {
@@ -506,7 +506,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770315640.3250709,
+    "generated_at": 1770316664.6111362,
     "mode": "memory",
     "refresh_interval": 2000
   }
