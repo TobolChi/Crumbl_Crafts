@@ -425,6 +425,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Faite percer #bloxburg #bloxburg #brookhaven #brookhaven #edit #roblox #robloxedit",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770304972.0,
+      "url": "https://www.youtube.com/watch?v=2h7-LPbpMKQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Pls play #music #robloxedit #memes #roblox #stealabrainrot #bloxburg #bloxburg #plsdonate #game",
       "description": "...",
       "source": "YouTube",
@@ -460,62 +469,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "Your reminder to stock up!! #fyp #viral #trending #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770260213.0,
-      "url": "https://www.youtube.com/watch?v=LL7OioeXt9Y",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "new Valentine item coming soon to Bloxburg | #valentinesday #valentine #bloxburg #bloxburg #cute",
-      "description": "...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1770247948.0,
-      "url": "https://www.youtube.com/watch?v=9mQkAedTTxM",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "The Sims\u2122 2 Legacy Collection",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770246014.0,
-      "url": "https://www.youtube.com/watch?v=5RvV6FWIeYc",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "LLEOPATRIC ES EXHIBICIONISTA ?? #bloxburg #lleopatric #roblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770241657.0,
-      "url": "https://www.youtube.com/watch?v=0Ks2q5x7wOs",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "When was the last time you played BLOXBURG on ROBLOX \ud83d\udc99",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770237002.0,
-      "url": "https://www.youtube.com/watch?v=8EJM6bl_3Qs",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I WENT UNDERCOVER AS A DOG TO SPY IN A BLOXBURG MANSION",
-      "description": "bloxburg #roblox #robloxbloxburg I went undercover as a dog to spy on a rich bloxburg family...you w...",
-      "source": "YouTube",
-      "timestamp": 1770235214.0,
-      "url": "https://www.youtube.com/watch?v=I9q7jrpA6_k",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1770304840.3238232,
+    "generated_at": 1770306040.3313212,
     "mode": "memory",
     "refresh_interval": 2000
   }
