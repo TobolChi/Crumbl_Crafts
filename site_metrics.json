@@ -416,6 +416,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "CAN YOU DRAW A PERFECT CIRCLE \u2b55 IN ROBLOX BUT #roblox #brookhave #robloxfunny #bloxburg #blookhaven",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770290935.0,
+      "url": "https://www.youtube.com/watch?v=q82c-Q2dhQ4",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Your reminder to stock up!! #fyp #viral #trending #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -448,15 +457,6 @@
       "source": "YouTube",
       "timestamp": 1770241657.0,
       "url": "https://www.youtube.com/watch?v=0Ks2q5x7wOs",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Valentine Update Checklist \ud83d\udc8c\ud83d\udc98 #roblox #bloxburg #bloxburgupdate #bloxburgbuild #bloxburgfyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770237430.0,
-      "url": "https://www.youtube.com/watch?v=cayoYZ60LnA",
       "icon": "fa-youtube"
     },
     {
@@ -497,7 +497,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770291040.6231823,
+    "generated_at": 1770291640.3182423,
     "mode": "memory",
     "refresh_interval": 2000
   }
