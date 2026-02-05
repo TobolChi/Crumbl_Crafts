@@ -478,15 +478,6 @@
       "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "W TRADE???? + VOUCH!!! #roblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770209197.0,
-      "url": "https://www.youtube.com/watch?v=Fcc8M07OQXg",
-      "icon": "fa-youtube"
-    },
-    {
       "type": "community",
       "title": "Weekly Build Contest",
       "description": "Submit your best holiday-themed builds to win prizes!",
@@ -497,7 +488,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770265240.3208003,
+    "generated_at": 1770266440.3197525,
     "mode": "memory",
     "refresh_interval": 2000
   }
