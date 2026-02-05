@@ -407,6 +407,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Your reminder to stock up!! #fyp #viral #trending #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770260213.0,
+      "url": "https://www.youtube.com/watch?v=LL7OioeXt9Y",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "new Valentine item coming soon to Bloxburg | #valentinesday #valentine #bloxburg #bloxburg #cute",
       "description": "...",
       "source": "YouTube",
@@ -476,28 +485,10 @@
       "timestamp": 1770206433.7867053,
       "url": "#",
       "icon": "fa-trophy"
-    },
-    {
-      "type": "trend",
-      "title": "Naughty Elf Off the Shelf",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770183148.0,
-      "url": "https://www.youtube.com/watch?v=vn-lVBjKCNs",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#newmusic #music #roblox #minecraftparodies #bloxburg #bloxburg #theothersideofmakebelieve #minecraf",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770166582.0,
-      "url": "https://www.youtube.com/watch?v=zjXPEuai01M",
-      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770261640.3193123,
+    "generated_at": 1770262840.3188598,
     "mode": "memory",
     "refresh_interval": 2000
   }
