@@ -7,8 +7,8 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 367,
-    "joined_today": 2,
+    "total_members": 368,
+    "joined_today": 3,
     "active_shops": 2,
     "avg_response_time": 2627.7
   },
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_join",
+      "shop_name": "Server",
+      "message": "haroldmacmillan joined the server",
+      "timestamp": 1770297553,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/480326233318490112"
+    },
     {
       "type": "member_join",
       "shop_name": "Server",
@@ -434,6 +443,15 @@
     },
     {
       "type": "trend",
+      "title": "New island \ud83c\udfdd\ufe0f and NPC easily \ud83d\ude0e\ud83d\ude4f plz subscribe|| #viral #bloxfruits #bloxburg #trending #shorts \ud83d\ude4f\ud83d\ude4f\u2665\ufe0f",
+      "description": "New island \ud83c\udfdd\ufe0f and NPC easily plz subscribe|| #viral #bloxfruits #bloxburg #trending #shorts \u2665\ufe0f #tren...",
+      "source": "YouTube",
+      "timestamp": 1770261374.0,
+      "url": "https://www.youtube.com/watch?v=Pnh7nxU0mMM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Your reminder to stock up!! #fyp #viral #trending #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -451,51 +469,6 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "The Sims\u2122 2 Legacy Collection",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770246014.0,
-      "url": "https://www.youtube.com/watch?v=5RvV6FWIeYc",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "LLEOPATRIC ES EXHIBICIONISTA ?? #bloxburg #lleopatric #roblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770241657.0,
-      "url": "https://www.youtube.com/watch?v=0Ks2q5x7wOs",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "When was the last time you played BLOXBURG on ROBLOX \ud83d\udc99",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770237002.0,
-      "url": "https://www.youtube.com/watch?v=8EJM6bl_3Qs",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I WENT UNDERCOVER AS A DOG TO SPY IN A BLOXBURG MANSION",
-      "description": "bloxburg #roblox #robloxbloxburg I went undercover as a dog to spy on a rich bloxburg family...you w...",
-      "source": "YouTube",
-      "timestamp": 1770235214.0,
-      "url": "https://www.youtube.com/watch?v=I9q7jrpA6_k",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "How to make a GAZEBO in Heartopia! \ud83c\udf31\ud83c\udfe0 #heartopia #cozy #bloxburg #thesims4 #explore",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770217846.0,
-      "url": "https://www.youtube.com/watch?v=qNJLab48pLE",
-      "icon": "fa-youtube"
-    },
-    {
       "type": "game_update",
       "title": "New Winter Update Available!",
       "description": "Explore new winter-themed furniture and decorations",
@@ -503,10 +476,37 @@
       "timestamp": 1770217233.7867024,
       "url": "https://twitter.com/BloxburgGame",
       "icon": "fa-gamepad"
+    },
+    {
+      "type": "trend",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
+      "source": "YouTube",
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
+    },
+    {
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
+    },
+    {
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1770296440.6599805,
+    "generated_at": 1770297555.564109,
     "mode": "memory",
     "refresh_interval": 2000
   }
