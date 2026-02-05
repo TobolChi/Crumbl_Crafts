@@ -58,6 +58,11 @@
         "selling_price": 3.0,
         "ingredients": "Fresh ingredients prepared by our chefs",
         "cost_price": 1.2
+      },
+      "Christmas Cookies": {
+        "selling_price": 15.99,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 6.4
       }
     },
     "non-seasonal": {
@@ -80,8 +85,8 @@
     "avgRating": 4.8
   },
   "meta": {
-    "timestamp": "2026-02-04T18:52:19.731631",
-    "last_updated": 1770223939.731638,
+    "timestamp": "2026-02-05T23:02:01.420097",
+    "last_updated": 1770325321.420102,
     "cached": false,
     "data_source": "discord_bot"
   },
@@ -137,6 +142,11 @@
           "selling_price": 3.0,
           "ingredients": "Fresh ingredients prepared by our chefs",
           "cost_price": 1.2
+        },
+        "Christmas Cookies": {
+          "selling_price": 15.99,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 6.4
         }
       },
       "non-seasonal": {
