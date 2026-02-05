@@ -338,24 +338,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/847035379466633226",
       "thread_id": null
-    },
-    {
-      "type": "new_request_thread",
-      "shop_name": "Large Modern Luxury Villa",
-      "message": "<@1462790532118876319> posted a new request titled: Large Modern Luxury Villa",
-      "timestamp": 1769717828,
-      "thread_id": 1466527605472624765,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/channels/1301988304279048275/1466527605472624765"
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "1ifegoodbedream. joined the server",
-      "timestamp": 1769717479,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1462790532118876319",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -407,6 +389,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Sua casa dos sonhos no Bloxburg em MINUTOS \ud83d\ude31\ud83c\udfe1 | Auto Build BLOXBURG #bloxburg #roblox",
+      "description": "bloxburg, roblox, autobuild, bloxburg house, roblox bloxburg, roblox br, casa bloxburg, roblox build...",
+      "source": "YouTube",
+      "timestamp": 1770320726.0,
+      "url": "https://www.youtube.com/watch?v=tOt-mCYbfKM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Touring Bloxburg\u2019s NEW Limited Valentine&#39;s Prebuilt! \ud83c\udf37 #shorts #roblox #bloxburg",
       "description": "roblox #gaming #robloxgaming \u2014 links\u2014 tiktok \u2192 https://www.tiktok.com/@kachunkie roblox group + outf...",
       "source": "YouTube",
@@ -439,15 +430,6 @@
       "source": "YouTube",
       "timestamp": 1770305735.0,
       "url": "https://www.youtube.com/watch?v=SCHjtS1pks8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Faite percer #bloxburg #bloxburg #brookhaven #brookhaven #edit #roblox #robloxedit",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770304972.0,
-      "url": "https://www.youtube.com/watch?v=2h7-LPbpMKQ",
       "icon": "fa-youtube"
     },
     {
@@ -488,7 +470,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770321640.3267822,
+    "generated_at": 1770322840.3289614,
     "mode": "memory",
     "refresh_interval": 2000
   }
