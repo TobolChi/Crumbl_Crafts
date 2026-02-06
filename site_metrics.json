@@ -7,7 +7,7 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 370,
+    "total_members": 369,
     "joined_today": 7,
     "active_shops": 2,
     "avg_response_time": 2627.7
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_leave",
+      "shop_name": "Server",
+      "message": "maleyawrld left the server",
+      "timestamp": 1770410062,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/686064012311527429"
+    },
     {
       "type": "member_leave",
       "shop_name": "Server",
@@ -487,53 +496,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "#funny #cool #brainrot #draw #giveaway #this #cat #bloxburg #music",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770369138.0,
-      "url": "https://www.youtube.com/watch?v=hjzB-3NBRHo",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "#roblox #trending #robloxedit #tiktok #relatable #bloxburg #wiliewanka",
-      "description": "...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1770368428.0,
-      "url": "https://www.youtube.com/watch?v=LdJjTPI1DUg",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "#cute #funny #robloxbloxburgspeedbuild #bloxburg #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770356795.0,
-      "url": "https://www.youtube.com/watch?v=zEv9DUjXPiM",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "let&#39;s revenge for hitting me \ud83d\ude20\ud83d\ude08 #roblox ##stealabrainrot",
-      "description": "POV: You tried to be pro but Roblox physics said no. \" \"Wait for it... the ending actually broke me....",
-      "source": "YouTube",
-      "timestamp": 1770349901.0,
-      "url": "https://www.youtube.com/watch?v=qWT6tcpuWYg",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#musik roblox #helpmemakethismakesense #roblox bloxburg bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770349005.0,
-      "url": "https://www.youtube.com/watch?v=l0w3oz4WPC4",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1770409840.7464006,
+    "generated_at": 1770410065.4456449,
     "mode": "memory",
     "refresh_interval": 2000
   }
