@@ -470,6 +470,15 @@
     },
     {
       "type": "trend",
+      "title": "NEW BLOXBURG UPDATE TEASERS...VALENTINES PART 2!",
+      "description": "BUY MY MERCH: https://acggoods.com/store/glossbossboutique OPEN ME FOR SOCIALS, MERCH & MORE! \u0c68\u09ce hey...",
+      "source": "YouTube",
+      "timestamp": 1770392103.0,
+      "url": "https://www.youtube.com/watch?v=wqfMxYOycZs",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "N\u00e3o tava mais aguentando aquela neve kakaka #bloxburg #bloxburgupdate #roblox",
       "description": "...",
       "source": "YouTube",
@@ -484,15 +493,6 @@
       "source": "YouTube",
       "timestamp": 1770375159.0,
       "url": "https://www.youtube.com/watch?v=tGlKd7RADPE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "My third time posting this lol#roblox#bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770369827.0,
-      "url": "https://www.youtube.com/watch?v=_sKru_3tf6E",
       "icon": "fa-youtube"
     },
     {
@@ -533,7 +533,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770411640.327564,
+    "generated_at": 1770412840.3208802,
     "mode": "memory",
     "refresh_interval": 2000
   }
