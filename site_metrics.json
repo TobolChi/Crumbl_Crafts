@@ -7,8 +7,8 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 368,
-    "joined_today": 1,
+    "total_members": 369,
+    "joined_today": 2,
     "active_shops": 2,
     "avg_response_time": 2627.7
   },
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_join",
+      "shop_name": "Server",
+      "message": "sore.zs joined the server",
+      "timestamp": 1770372579,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/1224285509900173365"
+    },
     {
       "type": "member_join",
       "shop_name": "Server",
@@ -398,6 +407,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "#roblox #trending #robloxedit #tiktok #relatable #bloxburg #wiliewanka",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770368428.0,
+      "url": "https://www.youtube.com/watch?v=LdJjTPI1DUg",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#cute #funny #robloxbloxburgspeedbuild #bloxburg #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -430,15 +448,6 @@
       "source": "YouTube",
       "timestamp": 1770346722.0,
       "url": "https://www.youtube.com/watch?v=DaSlxfxGAXU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I built a 3-4 bedroom house on Bloxburg #trending #viral #fyp #roblox #shorts #tiktok #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770346273.0,
-      "url": "https://www.youtube.com/watch?v=kynXLCY--wI",
       "icon": "fa-youtube"
     },
     {
@@ -479,7 +488,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770372040.6358118,
+    "generated_at": 1770372581.7054656,
     "mode": "memory",
     "refresh_interval": 2000
   }
