@@ -1,19 +1,6 @@
 {
   "chefs": [
     {
-      "name": "Hidenori",
-      "discord_id": 1098992055272878081,
-      "discord_tag": "hid3nori",
-      "points": 10,
-      "tickets": 2,
-      "role_name": "Chef",
-      "role_stars": 0,
-      "average_rating": 4.5,
-      "total_ratings": 6,
-      "avatar": "https://cdn.discordapp.com/avatars/1098992055272878081/3d5587425a502f14a7fbf5cfaaa493a1.png?size=1024",
-      "joinDate": "2026-01-24"
-    },
-    {
       "name": "Sam",
       "discord_id": 1358340564046712957,
       "discord_tag": "s4m.xx.",
@@ -79,14 +66,14 @@
     }
   },
   "stats": {
-    "totalOrders": 13,
-    "activeChefs": 2,
-    "totalChefs": 2,
-    "avgRating": 4.8
+    "totalOrders": 3,
+    "activeChefs": 1,
+    "totalChefs": 1,
+    "avgRating": 5.0
   },
   "meta": {
-    "timestamp": "2026-02-05T23:02:01.420097",
-    "last_updated": 1770325321.420102,
+    "timestamp": "2026-02-06T14:42:15.598700",
+    "last_updated": 1770381735.5987065,
     "cached": false,
     "data_source": "discord_bot"
   },
