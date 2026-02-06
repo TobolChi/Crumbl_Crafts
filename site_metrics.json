@@ -434,6 +434,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "building is so fun #roblox #bloxburg #relatable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770415837.0,
+      "url": "https://www.youtube.com/watch?v=PSMNngIkI60",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Let&#39;s tour a Budget Roleplay House in BLOXBURG with me \ud83e\udeb7 #bloxburgbuild #bloxburg #roblox",
+      "description": "Thank you for watching. In this short, I'm touring my favorite view from the budget roleplay house b...",
+      "source": "YouTube",
+      "timestamp": 1770415413.0,
+      "url": "https://www.youtube.com/watch?v=qZWvQxH6Skk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "POV you haven\u2019t finished your bloxburg room! \ud83e\udd23 #popular #beautifulhorseyside #bloxburg #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -457,24 +475,6 @@
       "source": "YouTube",
       "timestamp": 1770403776.0,
       "url": "https://www.youtube.com/watch?v=TGFOGvR-9o8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "like and sub #shortvideo #kpop #djdjdjdjdj #funny #bloxburg #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770402146.0,
-      "url": "https://www.youtube.com/watch?v=v6n_0eGG-nE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "NEW BLOXBURG UPDATE TEASERS...VALENTINES PART 2!",
-      "description": "BUY MY MERCH: https://acggoods.com/store/glossbossboutique OPEN ME FOR SOCIALS, MERCH & MORE! \u0c68\u09ce hey...",
-      "source": "YouTube",
-      "timestamp": 1770392103.0,
-      "url": "https://www.youtube.com/watch?v=wqfMxYOycZs",
       "icon": "fa-youtube"
     },
     {
@@ -515,7 +515,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770416440.3297224,
+    "generated_at": 1770417640.3216147,
     "mode": "memory",
     "refresh_interval": 2000
   }
