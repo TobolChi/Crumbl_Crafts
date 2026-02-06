@@ -407,6 +407,33 @@
   "news": [
     {
       "type": "trend",
+      "title": "EXCLUSIVE LOOK IN THE BLOXBURG TEST SERVER...#bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770375159.0,
+      "url": "https://www.youtube.com/watch?v=tGlKd7RADPE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "My third time posting this lol#roblox#bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770369827.0,
+      "url": "https://www.youtube.com/watch?v=_sKru_3tf6E",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "#funny #cool #brainrot #draw #giveaway #this #cat #bloxburg #music",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770369138.0,
+      "url": "https://www.youtube.com/watch?v=hjzB-3NBRHo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#roblox #trending #robloxedit #tiktok #relatable #bloxburg #wiliewanka",
       "description": "...",
       "source": "YouTube",
@@ -421,33 +448,6 @@
       "source": "YouTube",
       "timestamp": 1770356795.0,
       "url": "https://www.youtube.com/watch?v=zEv9DUjXPiM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "let&#39;s revenge for hitting me \ud83d\ude20\ud83d\ude08 #roblox ##stealabrainrot",
-      "description": "POV: You tried to be pro but Roblox physics said no. \" \"Wait for it... the ending actually broke me....",
-      "source": "YouTube",
-      "timestamp": 1770349901.0,
-      "url": "https://www.youtube.com/watch?v=qWT6tcpuWYg",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#musik roblox #helpmemakethismakesense #roblox bloxburg bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770349005.0,
-      "url": "https://www.youtube.com/watch?v=l0w3oz4WPC4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Valentine\u2019s Update in Bloxburg - 2026",
-      "description": "bloxburg #roblox #robloxbloxburg #bloxburgupdate #shorts #explorepage #fyp....",
-      "source": "YouTube",
-      "timestamp": 1770346722.0,
-      "url": "https://www.youtube.com/watch?v=DaSlxfxGAXU",
       "icon": "fa-youtube"
     },
     {
@@ -488,7 +488,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770375640.3283389,
+    "generated_at": 1770376840.3242166,
     "mode": "memory",
     "refresh_interval": 2000
   }
