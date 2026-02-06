@@ -407,6 +407,15 @@
     },
     {
       "type": "trend",
+      "title": "\ud83c\udf38 Coquette Valentines Blush | Bloxburg House Build \ud801\ude5a",
+      "description": "\u0f18\u2661 \u00b7\u02da \u2661 OPEN ME \u00b7\u02da \u0f18\u2661 \u00b7\u02da \u2661 Join my Roblox Group! https://www.roblox.com/groups/8948903/Daniellerys-T...",
+      "source": "YouTube",
+      "timestamp": 1770323548.0,
+      "url": "https://www.youtube.com/watch?v=aXh-susvrGU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Sua casa dos sonhos no Bloxburg em MINUTOS \ud83d\ude31\ud83c\udfe1 | Auto Build BLOXBURG #bloxburg #roblox",
       "description": "bloxburg, roblox, autobuild, bloxburg house, roblox bloxburg, roblox br, casa bloxburg, roblox build...",
       "source": "YouTube",
@@ -433,62 +442,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "The Bloxburg VALENTINE&#39;S UPDATE is HERE  \ud83d\udc97\u2728 #shorts #roblox #bloxburg",
-      "description": "roblox #gaming #robloxgaming \u2014 links\u2014 tiktok \u2192 https://www.tiktok.com/@kachunkie roblox group + outf...",
-      "source": "YouTube",
-      "timestamp": 1770309411.0,
-      "url": "https://www.youtube.com/watch?v=mPCVMeSMppQ",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "NEW BLOXBURG VALENTINES UPDATE is HERE! NEW CAR, ITEMS, TOWN DECORATIONS AND MORE!",
-      "description": "the new bloxburg valentine's update is officially here! well at least part one of it is... we got an...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1770306140.0,
-      "url": "https://www.youtube.com/watch?v=wM2sxP6NTjU",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "bloxburg valentine update just dropped\ud83d\udc40 #bloxburgupdate #bloxburg #bloxburgnewleaks #valentinesday",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770305735.0,
-      "url": "https://www.youtube.com/watch?v=SCHjtS1pks8",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "Faite percer #bloxburg #bloxburg #brookhaven #brookhaven #edit #roblox #robloxedit",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770304972.0,
-      "url": "https://www.youtube.com/watch?v=2h7-LPbpMKQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "NO MISSES. \ud83c\udfbe #stumbleguys  #games #gaming #roblox #bloxburg #robloxnoob #newgameinroblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770303962.0,
-      "url": "https://www.youtube.com/watch?v=uszPUNP8l0k",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Pls play #music #robloxedit #memes #roblox #stealabrainrot #bloxburg #bloxburg #plsdonate #game",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770303484.0,
-      "url": "https://www.youtube.com/watch?v=-ymUhBlg0sc",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1770345040.6005328,
+    "generated_at": 1770345640.318919,
     "mode": "memory",
     "refresh_interval": 2000
   }
