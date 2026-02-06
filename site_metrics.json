@@ -398,6 +398,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "#musik roblox #helpmemakethismakesense #roblox bloxburg bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770349005.0,
+      "url": "https://www.youtube.com/watch?v=l0w3oz4WPC4",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Valentine\u2019s Update in Bloxburg - 2026",
       "description": "bloxburg #roblox #robloxbloxburg #bloxburgupdate #shorts #explorepage #fyp....",
       "source": "YouTube",
@@ -430,15 +439,6 @@
       "source": "YouTube",
       "timestamp": 1770325206.0,
       "url": "https://www.youtube.com/watch?v=sxaCy-3dcyI",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "\ud83c\udf38 Coquette Valentines Blush | Bloxburg House Build \ud801\ude5a",
-      "description": "\u0f18\u2661 \u00b7\u02da \u2661 OPEN ME \u00b7\u02da \u0f18\u2661 \u00b7\u02da \u2661 Join my Roblox Group! https://www.roblox.com/groups/8948903/Daniellerys-T...",
-      "source": "YouTube",
-      "timestamp": 1770323548.0,
-      "url": "https://www.youtube.com/watch?v=aXh-susvrGU",
       "icon": "fa-youtube"
     },
     {
@@ -479,7 +479,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770350440.6186457,
+    "generated_at": 1770351640.3189607,
     "mode": "memory",
     "refresh_interval": 2000
   }
