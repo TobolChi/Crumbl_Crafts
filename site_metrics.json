@@ -7,8 +7,8 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 369,
-    "joined_today": 2,
+    "total_members": 370,
+    "joined_today": 3,
     "active_shops": 2,
     "avg_response_time": 2627.7
   },
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_join",
+      "shop_name": "Server",
+      "message": "nvq. joined the server",
+      "timestamp": 1770381056,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/313303519136448512"
+    },
     {
       "type": "member_join",
       "shop_name": "Server",
@@ -320,24 +329,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/622943649814151200",
       "thread_id": null
-    },
-    {
-      "type": "new_request_thread",
-      "shop_name": "Hey I am looking for this budget 500k I'll pay 250k or dm price",
-      "message": "<@1127005993612627968> posted a new request titled: Hey I am looking for this budget 500k I'll pay 250k or dm price",
-      "timestamp": 1769775986,
-      "thread_id": 1466771538379411688,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/channels/1301988304279048275/1466771538379411688"
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "neighborhoodvillan joined the server",
-      "timestamp": 1769775832,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1127005993612627968",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -470,7 +461,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770380440.3188965,
+    "generated_at": 1770381059.0224614,
     "mode": "memory",
     "refresh_interval": 2000
   }
