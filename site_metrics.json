@@ -7,8 +7,8 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 370,
-    "joined_today": 6,
+    "total_members": 371,
+    "joined_today": 7,
     "active_shops": 2,
     "avg_response_time": 2627.7
   },
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_join",
+      "shop_name": "Server",
+      "message": "neoclutxh joined the server",
+      "timestamp": 1770407741,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/872386500225024030"
+    },
     {
       "type": "member_leave",
       "shop_name": "Server",
@@ -506,7 +515,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770406840.34294,
+    "generated_at": 1770407744.4540348,
     "mode": "memory",
     "refresh_interval": 2000
   }
