@@ -398,6 +398,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "#cute #funny #robloxbloxburgspeedbuild #bloxburg #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770356795.0,
+      "url": "https://www.youtube.com/watch?v=zEv9DUjXPiM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "let&#39;s revenge for hitting me \ud83d\ude20\ud83d\ude08 #roblox ##stealabrainrot",
+      "description": "POV: You tried to be pro but Roblox physics said no. \" \"Wait for it... the ending actually broke me....",
+      "source": "YouTube",
+      "timestamp": 1770349901.0,
+      "url": "https://www.youtube.com/watch?v=qWT6tcpuWYg",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#musik roblox #helpmemakethismakesense #roblox bloxburg bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -424,71 +442,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "\ud83d\udc98Bloxburg VALENTINE\u2019S UPDATE! All NEW Build Items! #bloxburg #roblox #shorts #robloxbloxburg",
-      "description": "the bloxburg valentine's day update is here and i review all new build items & more! #bloxburg #robl...",
-      "source": "YouTube",
-      "timestamp": 1770345912.0,
-      "url": "https://www.youtube.com/watch?v=rXiRoXE6Ers",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "MY DAUGHTERS WINTER DANCE COMPETITION! *SHE WON?* Roblox Bloxburg Voiced RP Roleplay",
-      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1770325206.0,
-      "url": "https://www.youtube.com/watch?v=sxaCy-3dcyI",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "\ud83c\udf38 Coquette Valentines Blush | Bloxburg House Build \ud801\ude5a",
-      "description": "\u0f18\u2661 \u00b7\u02da \u2661 OPEN ME \u00b7\u02da \u0f18\u2661 \u00b7\u02da \u2661 Join my Roblox Group! https://www.roblox.com/groups/8948903/Daniellerys-T...",
-      "source": "YouTube",
-      "timestamp": 1770323548.0,
-      "url": "https://www.youtube.com/watch?v=aXh-susvrGU",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "Touring Bloxburg\u2019s NEW Limited Valentine&#39;s Prebuilt! \ud83d\udc9e\ud83c\udf37 #shorts #roblox #bloxburg",
-      "description": "roblox #gaming #robloxgaming \u2014 links\u2014 tiktok \u2192 https://www.tiktok.com/@kachunkie roblox group + outf...",
-      "source": "YouTube",
-      "timestamp": 1770314851.0,
-      "url": "https://www.youtube.com/watch?v=nd-CkSX2YKQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Yall I think I overdid it with the ikea furniture\u2026.. #bloxburg #roblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770312283.0,
-      "url": "https://www.youtube.com/watch?v=QxNUMceqoCg",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "The Bloxburg VALENTINE&#39;S UPDATE is HERE \u2728 #shorts #roblox #bloxburg",
-      "description": "roblox #gaming #robloxgaming \u2014 links\u2014 tiktok \u2192 https://www.tiktok.com/@kachunkie roblox group + outf...",
-      "source": "YouTube",
-      "timestamp": 1770309411.0,
-      "url": "https://www.youtube.com/watch?v=mPCVMeSMppQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "NEW BLOXBURG VALENTINES UPDATE is HERE! NEW CAR, ITEMS, TOWN DECORATIONS AND MORE!",
-      "description": "the new bloxburg valentine's update is officially here! well at least part one of it is... we got an...",
-      "source": "YouTube",
-      "timestamp": 1770306140.0,
-      "url": "https://www.youtube.com/watch?v=wM2sxP6NTjU",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1770357640.3230329,
+    "generated_at": 1770358840.3248222,
     "mode": "memory",
     "refresh_interval": 2000
   }
