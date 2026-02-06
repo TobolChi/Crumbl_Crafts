@@ -407,6 +407,24 @@
     },
     {
       "type": "trend",
+      "title": "I built a 3-4 bedroom house on Bloxburg #trending #viral #fyp #roblox #shorts #tiktok #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770346273.0,
+      "url": "https://www.youtube.com/watch?v=kynXLCY--wI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "\ud83d\udc98Bloxburg VALENTINE\u2019S UPDATE! All NEW Build Items! #bloxburg #roblox #shorts #robloxbloxburg",
+      "description": "the bloxburg valentine's day update is here and i review all new build items & more! #bloxburg #robl...",
+      "source": "YouTube",
+      "timestamp": 1770345912.0,
+      "url": "https://www.youtube.com/watch?v=rXiRoXE6Ers",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "MY DAUGHTERS WINTER DANCE COMPETITION! *SHE WON?* Roblox Bloxburg Voiced RP Roleplay",
       "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
@@ -421,24 +439,6 @@
       "source": "YouTube",
       "timestamp": 1770323548.0,
       "url": "https://www.youtube.com/watch?v=aXh-susvrGU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Sua casa dos sonhos no Bloxburg em MINUTOS \ud83d\ude31\ud83c\udfe1 | Auto Build BLOXBURG #bloxburg #roblox",
-      "description": "bloxburg, roblox, autobuild, bloxburg house, roblox bloxburg, roblox br, casa bloxburg, roblox build...",
-      "source": "YouTube",
-      "timestamp": 1770320726.0,
-      "url": "https://www.youtube.com/watch?v=tOt-mCYbfKM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Touring Bloxburg\u2019s NEW Limited Valentine&#39;s Prebuilt! \ud83d\udc9e\ud83c\udf37 #shorts #roblox #bloxburg",
-      "description": "roblox #gaming #robloxgaming \u2014 links\u2014 tiktok \u2192 https://www.tiktok.com/@kachunkie roblox group + outf...",
-      "source": "YouTube",
-      "timestamp": 1770314851.0,
-      "url": "https://www.youtube.com/watch?v=nd-CkSX2YKQ",
       "icon": "fa-youtube"
     },
     {
@@ -479,7 +479,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770348040.3222446,
+    "generated_at": 1770349240.318296,
     "mode": "memory",
     "refresh_interval": 2000
   }
