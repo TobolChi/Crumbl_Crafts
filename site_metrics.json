@@ -443,6 +443,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "#dlaciebie #roblox #lov #bloxburg #bloxburg #amnewbutnottheleast #wybijsi\u0119 #roleplay #edit #song #ly",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770491779.0,
+      "url": "https://www.youtube.com/watch?v=SIlJZwffLj8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "BLOXBURG: No-Gamepass Luxury European Villa Speedbuild (interior + full tour) Roblox House Build",
       "description": "Hello builders! In this video i am building a BLOXBURG: No-Gamepass Luxury European Villa Speedbuild...",
       "source": "YouTube",
@@ -475,15 +484,6 @@
       "source": "YouTube",
       "timestamp": 1770469266.0,
       "url": "https://www.youtube.com/watch?v=bK_-ph_QKtA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#dlaciebie #amnewbutnottheleast #roblox #lov #lov #bloxburg #bloxburg #lyrics   #song #wybijsi\u0119",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770462635.0,
-      "url": "https://www.youtube.com/watch?v=zC1tN55CsMo",
       "icon": "fa-youtube"
     },
     {
@@ -524,7 +524,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770492040.3370106,
+    "generated_at": 1770493240.3246279,
     "mode": "memory",
     "refresh_interval": 2000
   }
