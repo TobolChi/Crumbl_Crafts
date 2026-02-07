@@ -434,6 +434,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "\ud83e\udee9 #schoolife #memes #funny #relatable #school #bloxburg #roblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770432101.0,
+      "url": "https://www.youtube.com/watch?v=s2nYiJxuiPI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "sub for more chaos i guess \ud83e\udd14#shorts #roblox #robloxedit #rblx #bloxburg #bloxburgbuilds",
       "description": "shorts #roblox #robloxedit #rblx #bloxburg #bloxburgbuilds....",
       "source": "YouTube",
@@ -466,15 +475,6 @@
       "source": "YouTube",
       "timestamp": 1770415413.0,
       "url": "https://www.youtube.com/watch?v=qZWvQxH6Skk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "POV you haven\u2019t finished your bloxburg room! \ud83e\udd23 #popular #beautifulhorseyside #bloxburg #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770413928.0,
-      "url": "https://www.youtube.com/watch?v=joLpYWVb1Pw",
       "icon": "fa-youtube"
     },
     {
@@ -515,7 +515,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770433240.3200707,
+    "generated_at": 1770434440.3225224,
     "mode": "memory",
     "refresh_interval": 2000
   }
