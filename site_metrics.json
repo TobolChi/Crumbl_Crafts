@@ -452,6 +452,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Bloxburg Whispering Ghost TRAPS Me! \ud83d\ude31#bloxburg #roblox #bloxburgstory #robloxrp #scary #gaming",
+      "description": "Survive Roblox Bloxburg's haunted house\u2014child whispers say \"Stay forever\"! AlexBlox's 6s nightmare b...",
+      "source": "YouTube",
+      "timestamp": 1770475869.0,
+      "url": "https://www.youtube.com/watch?v=Ee0oAEEg8gY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "\ud83d\udd25#roblox #stealabrainrot \ud83d\udcaf #robloxshort #youtubeshorts #robloxgameplay \ud83d\udc90",
       "description": "roblox #stealabrainrot #robloxshort #youtubeshorts #robloxgameplay agar aapko video achha lage to li...",
       "source": "YouTube",
@@ -484,15 +493,6 @@
       "source": "YouTube",
       "timestamp": 1770460098.0,
       "url": "https://www.youtube.com/watch?v=gefyDaDncUs",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "DAISY&#39;S SHOPLIFTS A DRESS FROM A DESIGNER SHOP! #shorts #roblox #roleplay #bloxburg #shoplifting",
-      "description": "DAISY'S SHOPLIFTS A DRESS FROM A DESIGNER SHOP! Make sure to like and check out the full video in th...",
-      "source": "YouTube",
-      "timestamp": 1770458489.0,
-      "url": "https://www.youtube.com/watch?v=u7NJ_4nJLtM",
       "icon": "fa-youtube"
     },
     {
@@ -533,7 +533,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770476440.362237,
+    "generated_at": 1770477640.3229363,
     "mode": "memory",
     "refresh_interval": 2000
   }
