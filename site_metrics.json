@@ -392,15 +392,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1429499840835879003",
       "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "lovingrosemary0 left the server",
-      "timestamp": 1769886084,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1345635223668396055",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -533,7 +524,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770490840.6717672,
+    "generated_at": 1770492040.3370106,
     "mode": "memory",
     "refresh_interval": 2000
   }
