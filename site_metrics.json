@@ -452,6 +452,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "#musica #roblox #art #butifyoucloseyoureyes #bloxburg #bloxburg #helpmemakethismakesense kommt alle!",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770460098.0,
+      "url": "https://www.youtube.com/watch?v=gefyDaDncUs",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "DAISY&#39;S SHOPLIFTS A DRESS FROM A DESIGNER SHOP! #shorts #roblox #roleplay #bloxburg #shoplifting",
+      "description": "DAISY'S SHOPLIFTS A DRESS FROM A DESIGNER SHOP! Make sure to like and check out the full video in th...",
+      "source": "YouTube",
+      "timestamp": 1770458489.0,
+      "url": "https://www.youtube.com/watch?v=u7NJ_4nJLtM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "*NEW* Welcome to Bloxburg Script (PASTEBIN 2026) (INFINITE MONEY, AUTOFARM ,AUTO MOOD )",
       "description": "Thanks for watching my video, i hope you enjoyed. Like and Subscribe for more videos! Get BEST PC/BR...",
       "source": "YouTube",
@@ -475,24 +493,6 @@
       "source": "YouTube",
       "timestamp": 1770432101.0,
       "url": "https://www.youtube.com/watch?v=s2nYiJxuiPI",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "NEW BLOXBURG PART TWO FURNITURE UPDATE TEASER FOR NEXT WEEK!",
-      "description": "yesterday was part one of the bloxburg valentine's update.. so afterwards I bet we're all wondering ...",
-      "source": "YouTube",
-      "timestamp": 1770426857.0,
-      "url": "https://www.youtube.com/watch?v=6qq3vJWmkWY",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "moonwalking in bloxburg | #bloxburg #bloxburg #roblox #bloxburgcontentcreator #edit  #moonwalk",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770426002.0,
-      "url": "https://www.youtube.com/watch?v=1x9gBB-o3Pk",
       "icon": "fa-youtube"
     },
     {
@@ -533,7 +533,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770459640.3216457,
+    "generated_at": 1770460840.3181293,
     "mode": "memory",
     "refresh_interval": 2000
   }
