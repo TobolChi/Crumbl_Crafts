@@ -434,6 +434,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "moonwalking in bloxburg | #bloxburg #bloxburg #roblox #bloxburgcontentcreator #edit  #moonwalk",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770426002.0,
+      "url": "https://www.youtube.com/watch?v=1x9gBB-o3Pk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "building is so fun #roblox #bloxburg #relatable #bloxburgbuild #fyp",
       "description": "...",
       "source": "YouTube",
@@ -466,15 +475,6 @@
       "source": "YouTube",
       "timestamp": 1770408003.0,
       "url": "https://www.youtube.com/watch?v=1_u9RMgMOMg",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "\ud83d\udd34BUILDING BERRY AVENUE HOUSES IN BLOXBURG! *WITH FACE CAM*",
-      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE PEACH when buying robux or premium!\u2b50\ufe0f \ud83c\udf99\ufe0fBe sure to SUBSCRIBE   to ...",
-      "source": "YouTube",
-      "timestamp": 1770403776.0,
-      "url": "https://www.youtube.com/watch?v=TGFOGvR-9o8",
       "icon": "fa-youtube"
     },
     {
@@ -515,7 +515,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770426040.6722865,
+    "generated_at": 1770427240.3195171,
     "mode": "memory",
     "refresh_interval": 2000
   }
