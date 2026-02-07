@@ -7,8 +7,8 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 367,
-    "joined_today": 2,
+    "total_members": 368,
+    "joined_today": 3,
     "active_shops": 2,
     "avg_response_time": 2627.7
   },
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_join",
+      "shop_name": "Server",
+      "message": "madeatylerperry joined the server",
+      "timestamp": 1770498178,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/655576954678018069"
+    },
     {
       "type": "member_leave",
       "shop_name": "Server",
@@ -452,6 +461,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Just Bloxburg things \u2764\ufe0f #roblox #bloxburg #relatable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770496268.0,
+      "url": "https://www.youtube.com/watch?v=cou3gCwd31M",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#dlaciebie #roblox #lov #bloxburg #bloxburg #amnewbutnottheleast #wybijsi\u0119 #roleplay #edit #song #ly",
       "description": "...",
       "source": "YouTube",
@@ -484,15 +502,6 @@
       "source": "YouTube",
       "timestamp": 1770472821.0,
       "url": "https://www.youtube.com/watch?v=SnTLudldsNQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I Adopted a Brainrot Baby in Bloxburg (Big Mistake)",
-      "description": "I thought I was just adopting a normal Bloxburg baby to finally finish my perfect family roleplay, b...",
-      "source": "YouTube",
-      "timestamp": 1770469266.0,
-      "url": "https://www.youtube.com/watch?v=bK_-ph_QKtA",
       "icon": "fa-youtube"
     },
     {
@@ -533,7 +542,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770498040.3258245,
+    "generated_at": 1770498181.3144972,
     "mode": "memory",
     "refresh_interval": 2000
   }
