@@ -434,6 +434,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "SpongeBob\u2019s house party Patchy the pirate Bloxburg reenactment!",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770440682.0,
+      "url": "https://www.youtube.com/watch?v=_0PiSdj_8R0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "\ud83e\udee9 #schoolife #memes #funny #relatable #school #bloxburg #roblox",
       "description": "...",
       "source": "YouTube",
@@ -469,62 +478,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "building is so fun #roblox #bloxburg #relatable #bloxburgbuild #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770415837.0,
-      "url": "https://www.youtube.com/watch?v=PSMNngIkI60",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "Let&#39;s tour a Budget Roleplay House in BLOXBURG with me \ud83e\udeb7 #bloxburgbuild #bloxburg #roblox",
-      "description": "Thank you for watching. In this short, I'm touring my favorite view from the budget roleplay house b...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1770415413.0,
-      "url": "https://www.youtube.com/watch?v=qZWvQxH6Skk",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "POV you haven\u2019t finished your bloxburg room! \ud83e\udd23 #popular #beautifulhorseyside #bloxburg #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770413928.0,
-      "url": "https://www.youtube.com/watch?v=joLpYWVb1Pw",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "Building a High School BASKETBALL COURT in Bloxburg!",
-      "description": "Building a High School BASKETBALL COURT in Bloxburg! Subscribe to my channel: ......",
-      "source": "YouTube",
-      "timestamp": 1770413403.0,
-      "url": "https://www.youtube.com/watch?v=5u-FivX2aJ4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Bloxburg: Mega Mansion Modern House | House Build | Roblox | Part Three",
-      "description": "HEWOO EARLIESSS! Welcome to my MEGA BLOXBURG MANSION BUILD a massive modern house perfect for rolepl...",
-      "source": "YouTube",
-      "timestamp": 1770411258.0,
-      "url": "https://www.youtube.com/watch?v=frRS4RlHMko",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "\ud83d\ude29 #roblox #bloxburg #relatable #bloxburgbuild #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770410621.0,
-      "url": "https://www.youtube.com/watch?v=MXQR9pQa0LA",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1770442240.6354055,
+    "generated_at": 1770442840.3260114,
     "mode": "memory",
     "refresh_interval": 2000
   }
