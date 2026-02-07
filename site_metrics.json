@@ -434,6 +434,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "sub for more chaos i guess \ud83e\udd14#shorts #roblox #robloxedit #rblx #bloxburg #bloxburgbuilds",
+      "description": "shorts #roblox #robloxedit #rblx #bloxburg #bloxburgbuilds....",
+      "source": "YouTube",
+      "timestamp": 1770427839.0,
+      "url": "https://www.youtube.com/watch?v=bRz05ysWbp0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "moonwalking in bloxburg | #bloxburg #bloxburg #roblox #bloxburgcontentcreator #edit  #moonwalk",
       "description": "...",
       "source": "YouTube",
@@ -466,15 +475,6 @@
       "source": "YouTube",
       "timestamp": 1770413928.0,
       "url": "https://www.youtube.com/watch?v=joLpYWVb1Pw",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I RENOVATED MY FIRST BLOXBURG MANSION",
-      "description": "bloxburg #roblox #robloxbloxburg ABC to renovate my first bloxburg mansion...well today I did...do y...",
-      "source": "YouTube",
-      "timestamp": 1770408003.0,
-      "url": "https://www.youtube.com/watch?v=1_u9RMgMOMg",
       "icon": "fa-youtube"
     },
     {
@@ -515,7 +515,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770427240.3195171,
+    "generated_at": 1770428440.3229375,
     "mode": "memory",
     "refresh_interval": 2000
   }
