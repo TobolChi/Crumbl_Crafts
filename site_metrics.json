@@ -7,7 +7,7 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 368,
+    "total_members": 367,
     "joined_today": 3,
     "active_shops": 2,
     "avg_response_time": 2627.7
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_leave",
+      "shop_name": "Server",
+      "message": "madeatylerperry left the server",
+      "timestamp": 1770498274,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/655576954678018069"
+    },
     {
       "type": "member_join",
       "shop_name": "Server",
@@ -542,7 +551,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770498181.3144972,
+    "generated_at": 1770498276.7497659,
     "mode": "memory",
     "refresh_interval": 2000
   }
