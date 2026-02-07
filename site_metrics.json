@@ -452,6 +452,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "\ud83d\udd25#roblox #stealabrainrot \ud83d\udcaf #robloxshort #youtubeshorts #robloxgameplay \ud83d\udc90",
+      "description": "roblox #stealabrainrot #robloxshort #youtubeshorts #robloxgameplay agar aapko video achha lage to li...",
+      "source": "YouTube",
+      "timestamp": 1770472821.0,
+      "url": "https://www.youtube.com/watch?v=SnTLudldsNQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "I Adopted a Brainrot Baby in Bloxburg (Big Mistake)",
       "description": "I thought I was just adopting a normal Bloxburg baby to finally finish my perfect family roleplay, b...",
       "source": "YouTube",
@@ -484,15 +493,6 @@
       "source": "YouTube",
       "timestamp": 1770458489.0,
       "url": "https://www.youtube.com/watch?v=u7NJ_4nJLtM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "*NEW* Welcome to Bloxburg Script (PASTEBIN 2026) (INFINITE MONEY, AUTOFARM ,AUTO MOOD )",
-      "description": "Thanks for watching my video, i hope you enjoyed. Like and Subscribe for more videos! Get BEST PC/BR...",
-      "source": "YouTube",
-      "timestamp": 1770442808.0,
-      "url": "https://www.youtube.com/watch?v=UGxDr0NeU14",
       "icon": "fa-youtube"
     },
     {
@@ -533,7 +533,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770472840.3218286,
+    "generated_at": 1770474040.3185964,
     "mode": "memory",
     "refresh_interval": 2000
   }
