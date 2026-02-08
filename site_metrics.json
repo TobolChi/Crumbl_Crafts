@@ -398,6 +398,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "DAISY\u2019S DAY ROUTINE AT COMMUNITY SERVICE! *LITTER PICKING WITH CRIMINALS* Roblox Bloxburg RP Ro",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "source": "YouTube",
+      "timestamp": 1770584406.0,
+      "url": "https://www.youtube.com/watch?v=zb34mXaWpME",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "\ud83c\udf38 Blush Valentines Mansion | Bloxburg House Build \ud801\ude5a",
       "description": "\u0f18\u2661 \u00b7\u02da \u2661 OPEN ME \u00b7\u02da \u0f18\u2661 \u00b7\u02da \u2661 Join my Roblox Group! https://www.roblox.com/groups/8948903/Daniellerys-T...",
       "source": "YouTube",
@@ -430,15 +439,6 @@
       "source": "YouTube",
       "timestamp": 1770569679.0,
       "url": "https://www.youtube.com/watch?v=-prYAPabHUk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "\ud83d\udd25#roblox #stealabrainrot \ud83d\udc90#robloxshort #youtubeshorts #games \ud83d\ude4f",
-      "description": "roblox #stealabrainrot #robloxshort #youtubeshorts #games agar aapko video achha lage to like and su...",
-      "source": "YouTube",
-      "timestamp": 1770558332.0,
-      "url": "https://www.youtube.com/watch?v=C7z7UUh_q2I",
       "icon": "fa-youtube"
     },
     {
@@ -479,7 +479,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770585640.340149,
+    "generated_at": 1770586840.3305333,
     "mode": "memory",
     "refresh_interval": 2000
   }
