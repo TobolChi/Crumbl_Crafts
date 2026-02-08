@@ -398,6 +398,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "I BUILT A VALENTINES DAY MANSION IN BLOXBURG",
+      "description": "bloxburg #roblox #robloxbloxburg Valentines day is approaching so I built a house where each room is...",
+      "source": "YouTube",
+      "timestamp": 1770580804.0,
+      "url": "https://www.youtube.com/watch?v=2QIzqN1Rit8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "WE WENT SHOPPING FOR THE BABY!! *DECORATING THE NURSERY!?* | Bloxburg Family Roleplay",
       "description": "Hey ZeeFam! It's \"Zaryee\" here! Don't forget to join the family! All you have to do is like, comment...",
       "source": "YouTube",
@@ -430,15 +439,6 @@
       "source": "YouTube",
       "timestamp": 1770552013.0,
       "url": "https://www.youtube.com/watch?v=93fY94hNIFM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#spongebob trade my ps",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770514028.0,
-      "url": "https://www.youtube.com/watch?v=EjBqpaTIfiU",
       "icon": "fa-youtube"
     },
     {
@@ -479,7 +479,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770582640.6714532,
+    "generated_at": 1770583240.3271065,
     "mode": "memory",
     "refresh_interval": 2000
   }
