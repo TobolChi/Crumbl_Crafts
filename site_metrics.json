@@ -1,27 +1,18 @@
 {
   "summary": {
-    "builder_count": 2,
+    "builder_count": 1,
     "total_completed": 0,
     "total_requests": 11,
-    "total_ratings": 1,
+    "total_ratings": 0,
     "request_completion_ratio": 0.0
   },
   "server": {
     "total_members": 367,
     "joined_today": 1,
-    "active_shops": 2,
-    "avg_response_time": 2627.7
+    "active_shops": 1,
+    "avg_response_time": 395.25
   },
   "topBuilders": [
-    {
-      "shop_name": "Hidenori's Shop",
-      "completed_projects": 0,
-      "average_rating": 5.0,
-      "thread_id": 1446931774826610790,
-      "avatar_url": "https://cdn.discordapp.com/avatars/1098992055272878081/3d5587425a502f14a7fbf5cfaaa493a1.png?size=1024",
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/channels/1301988304279048275/1446931774826610790"
-    },
     {
       "shop_name": "ULuvOllie's Shop",
       "completed_projects": 0,
@@ -401,34 +392,25 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1309553122787594270",
       "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "oakss. left the server",
-      "timestamp": 1769953370,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/367126771017187331",
-      "thread_id": null
     }
   ],
   "pipeline": [
     {
       "label": "Pending Requests",
       "value": 0,
-      "trend": "0 new today \u00b7 10 responded",
+      "trend": "0 new today \u00b7 4 responded",
       "max": 50
     },
     {
       "label": "Active Shops",
-      "value": 2,
-      "trend": "1 open \u00b7 1 limited \u00b7 0 24/7",
+      "value": 1,
+      "trend": "1 open \u00b7 0 limited \u00b7 0 24/7",
       "max": 20
     },
     {
       "label": "Requests (7d)",
       "value": 0,
-      "trend": "5 accepted \u00b7 5 rejected",
+      "trend": "1 accepted \u00b7 3 rejected",
       "max": 100
     }
   ],
@@ -441,13 +423,13 @@
     },
     {
       "title": "Acceptance Rate",
-      "detail": "50.0% of requests accepted (5 accepted, 5 rejected)",
+      "detail": "25.0% of requests accepted (1 accepted, 3 rejected)",
       "score": "Monitor",
       "status": "warning"
     },
     {
       "title": "Live Shops",
-      "detail": "2 shops currently accepting commissions",
+      "detail": "1 shops currently accepting commissions",
       "score": "Healthy",
       "status": "good"
     },
@@ -542,7 +524,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770558040.3199968,
+    "generated_at": 1770559115.849413,
     "mode": "memory",
     "refresh_interval": 2000
   }
