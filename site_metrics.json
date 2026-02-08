@@ -496,44 +496,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "BLOXBURG: No-Gamepass Luxury European Villa Speedbuild (interior + full tour) Roblox House Build",
+      "description": "Hello builders! In this video i am building a BLOXBURG: No-Gamepass Luxury European Villa Speedbuild...",
+      "source": "YouTube",
+      "timestamp": 1770487227.0,
+      "url": "https://www.youtube.com/watch?v=6cTd14xnNCM",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "25k Valentine&#39;s Bloxburg House Build: 2 Story Tutorial *VOICE*",
+      "description": "hiii! today i show how to build a coquette house in bloxburg! this is a 2 story house build for the ...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1770480066.0,
+      "url": "https://www.youtube.com/watch?v=lFPz8-tNF_A",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "Creepy Bacon Found  Uncoveringt he Mystery!#robloxchallenge #roblox #gaming #bloxburg #newrobloxgame",
+      "description": "Roblox #RobloxGameplay #Roblox2026 #RobloxGaming #BestRobloxVideos #RobloxFunnyMoments #RobloxChalle...",
+      "source": "YouTube",
+      "timestamp": 1770479938.0,
+      "url": "https://www.youtube.com/watch?v=QsOF0RiVkWs",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "Bloxburg Whispering Ghost TRAPS Me! \ud83d\ude31#bloxburg #roblox #bloxburgstory #robloxrp #scary #gaming",
+      "description": "Survive Roblox Bloxburg's haunted house\u2014child whispers say \"Stay forever\"! AlexBlox's 6s nightmare b...",
+      "source": "YouTube",
+      "timestamp": 1770475869.0,
+      "url": "https://www.youtube.com/watch?v=Ee0oAEEg8gY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "\ud83d\udd25#roblox #stealabrainrot \ud83d\udcaf #robloxshort #youtubeshorts #robloxgameplay \ud83d\udc90",
+      "description": "roblox #stealabrainrot #robloxshort #youtubeshorts #robloxgameplay agar aapko video achha lage to li...",
+      "source": "YouTube",
+      "timestamp": 1770472821.0,
+      "url": "https://www.youtube.com/watch?v=SnTLudldsNQ",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770530440.320498,
+    "generated_at": 1770531640.323931,
     "mode": "memory",
     "refresh_interval": 2000
   }
