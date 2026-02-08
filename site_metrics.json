@@ -398,6 +398,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "\ud83c\udf38 Blush Valentines Mansion | Bloxburg House Build \ud801\ude5a",
+      "description": "\u0f18\u2661 \u00b7\u02da \u2661 OPEN ME \u00b7\u02da \u0f18\u2661 \u00b7\u02da \u2661 Join my Roblox Group! https://www.roblox.com/groups/8948903/Daniellerys-T...",
+      "source": "YouTube",
+      "timestamp": 1770583185.0,
+      "url": "https://www.youtube.com/watch?v=nlBDV7SdsVw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "I BUILT A VALENTINES DAY MANSION IN BLOXBURG",
       "description": "bloxburg #roblox #robloxbloxburg Valentines day is approaching so I built a house where each room is...",
       "source": "YouTube",
@@ -430,15 +439,6 @@
       "source": "YouTube",
       "timestamp": 1770558332.0,
       "url": "https://www.youtube.com/watch?v=C7z7UUh_q2I",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Sneak Past Zombies To Check Parked Cars For Keys!",
-      "description": "Watch more PZ here https://tinyurl.com/4cp5pzdc Be the first to watch upcoming videos https://tinyur...",
-      "source": "YouTube",
-      "timestamp": 1770552013.0,
-      "url": "https://www.youtube.com/watch?v=93fY94hNIFM",
       "icon": "fa-youtube"
     },
     {
@@ -479,7 +479,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770584440.3198044,
+    "generated_at": 1770585640.340149,
     "mode": "memory",
     "refresh_interval": 2000
   }
