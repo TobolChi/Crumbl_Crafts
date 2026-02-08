@@ -451,44 +451,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Fuzzy Bow Boots UGC \ud83c\udf80  #roblox #robloxugc",
+      "description": "Search \"Plushstop\" in communities to buy! Click the link in my bio for more! \ud83d\udecd\ufe0f Shop my other UGC: ....",
+      "source": "YouTube",
+      "timestamp": 1770506195.0,
+      "url": "https://www.youtube.com/watch?v=1vfm26g1z-E",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "DAISY GETS CAUGHT SHOPLIFTING! *POLICE ARREST HER* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1770498006.0,
+      "url": "https://www.youtube.com/watch?v=eszbZUHWqO8",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "Just Bloxburg things \u2764\ufe0f #roblox #bloxburg #relatable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770496268.0,
+      "url": "https://www.youtube.com/watch?v=cou3gCwd31M",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "#dlaciebie #roblox #lov #bloxburg #bloxburg #amnewbutnottheleast #wybijsi\u0119 #roleplay #edit #song #ly",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770491779.0,
+      "url": "https://www.youtube.com/watch?v=SIlJZwffLj8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "BLOXBURG: No-Gamepass Luxury European Villa Speedbuild (interior + full tour) Roblox House Build",
+      "description": "Hello builders! In this video i am building a BLOXBURG: No-Gamepass Luxury European Villa Speedbuild...",
+      "source": "YouTube",
+      "timestamp": 1770487227.0,
+      "url": "https://www.youtube.com/watch?v=6cTd14xnNCM",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770578440.3256497,
+    "generated_at": 1770579640.3237956,
     "mode": "memory",
     "refresh_interval": 2000
   }
