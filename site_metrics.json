@@ -514,53 +514,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "Bloxburg Whispering Ghost TRAPS Me! \ud83d\ude31#bloxburg #roblox #bloxburgstory #robloxrp #scary #gaming",
-      "description": "Survive Roblox Bloxburg's haunted house\u2014child whispers say \"Stay forever\"! AlexBlox's 6s nightmare b...",
-      "source": "YouTube",
-      "timestamp": 1770475869.0,
-      "url": "https://www.youtube.com/watch?v=Ee0oAEEg8gY",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "\ud83d\udd25#roblox #stealabrainrot \ud83d\udcaf #robloxshort #youtubeshorts #robloxgameplay \ud83d\udc90",
-      "description": "roblox #stealabrainrot #robloxshort #youtubeshorts #robloxgameplay agar aapko video achha lage to li...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1770472821.0,
-      "url": "https://www.youtube.com/watch?v=SnTLudldsNQ",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "I Adopted a Brainrot Baby in Bloxburg (Big Mistake)",
-      "description": "I thought I was just adopting a normal Bloxburg baby to finally finish my perfect family roleplay, b...",
-      "source": "YouTube",
-      "timestamp": 1770469266.0,
-      "url": "https://www.youtube.com/watch?v=bK_-ph_QKtA",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "#dlaciebie #amnewbutnottheleast #roblox #lov #lov #bloxburg #bloxburg #lyrics   #song #wybijsi\u0119",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770462635.0,
-      "url": "https://www.youtube.com/watch?v=zC1tN55CsMo",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#musica #roblox #art #butifyoucloseyoureyes #bloxburg #bloxburg #helpmemakethismakesense kommt alle!",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770460098.0,
-      "url": "https://www.youtube.com/watch?v=gefyDaDncUs",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1770510040.3207116,
+    "generated_at": 1770511240.3239455,
     "mode": "memory",
     "refresh_interval": 2000
   }
