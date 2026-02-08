@@ -383,15 +383,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1236654127531036733",
       "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "fredi32__43551 left the server",
-      "timestamp": 1769960112,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1309553122787594270",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -524,7 +515,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770564040.3220763,
+    "generated_at": 1770565240.3251085,
     "mode": "memory",
     "refresh_interval": 2000
   }
