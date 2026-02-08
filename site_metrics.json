@@ -470,15 +470,6 @@
   "news": [
     {
       "type": "trend",
-      "title": "go delete it now!! \ud83d\udea8 #roblox #bloxburg #relatable #bloxburgbuild #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770508020.0,
-      "url": "https://www.youtube.com/watch?v=GY822-9oKww",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "DAISY GETS CAUGHT SHOPLIFTING! *POLICE ARREST HER* Roblox Bloxburg Voiced RP Roleplay",
       "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
@@ -511,6 +502,15 @@
       "source": "YouTube",
       "timestamp": 1770487227.0,
       "url": "https://www.youtube.com/watch?v=6cTd14xnNCM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Creepy Bacon Found  Uncoveringt he Mystery!#robloxchallenge #roblox #gaming #bloxburg #newrobloxgame",
+      "description": "Roblox #RobloxGameplay #Roblox2026 #RobloxGaming #BestRobloxVideos #RobloxFunnyMoments #RobloxChalle...",
+      "source": "YouTube",
+      "timestamp": 1770479938.0,
+      "url": "https://www.youtube.com/watch?v=QsOF0RiVkWs",
       "icon": "fa-youtube"
     },
     {
@@ -551,7 +551,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770517840.6400352,
+    "generated_at": 1770518440.3176136,
     "mode": "memory",
     "refresh_interval": 2000
   }
