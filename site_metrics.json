@@ -470,6 +470,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Sneak Past Zombies To Check Parked Cars For Keys!",
+      "description": "Watch more PZ here https://tinyurl.com/4cp5pzdc Be the first to watch upcoming videos https://tinyur...",
+      "source": "YouTube",
+      "timestamp": 1770552013.0,
+      "url": "https://www.youtube.com/watch?v=93fY94hNIFM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox bloxburg videos",
       "description": "info: tc: @M4dzy ib: @ehoneydew ft: me game: ttd3 emote: two editing software: After effects filming...",
       "source": "YouTube",
@@ -502,15 +511,6 @@
       "source": "YouTube",
       "timestamp": 1770503593.0,
       "url": "https://www.youtube.com/watch?v=fC9XL1Uql9M",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#roblox with my friend",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770501100.0,
-      "url": "https://www.youtube.com/watch?v=hrm_MvC81KA",
       "icon": "fa-youtube"
     },
     {
@@ -551,7 +551,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770552079.2259285,
+    "generated_at": 1770553240.322958,
     "mode": "memory",
     "refresh_interval": 2000
   }
