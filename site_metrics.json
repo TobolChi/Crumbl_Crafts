@@ -452,6 +452,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox bloxburg videos",
+      "description": "info: tc: @M4dzy ib: @ehoneydew ft: me game: ttd3 emote: two editing software: After effects filming...",
+      "source": "YouTube",
+      "timestamp": 1770530421.0,
+      "url": "https://www.youtube.com/watch?v=SUEH5e5Mknk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Breaking into peoples bloxburg house day 3 #roblox #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -484,15 +493,6 @@
       "source": "YouTube",
       "timestamp": 1770496268.0,
       "url": "https://www.youtube.com/watch?v=cou3gCwd31M",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Empezando mi PROYECTO MAS CARO de Bloxburg (+$1M)",
-      "description": "\u00danete a mi grupo de Roblox: https://www.roblox.com/groups/5045574/grupo-oficial-de-fessy#!/about S\u00edg...",
-      "source": "YouTube",
-      "timestamp": 1770492621.0,
-      "url": "https://www.youtube.com/watch?v=oW782sJdtig",
       "icon": "fa-youtube"
     },
     {
@@ -533,7 +533,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770539440.6438072,
+    "generated_at": 1770540040.3253238,
     "mode": "memory",
     "refresh_interval": 2000
   }
