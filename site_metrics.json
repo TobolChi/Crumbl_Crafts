@@ -410,15 +410,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/367126771017187331",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "oakss. joined the server",
-      "timestamp": 1769953230,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/367126771017187331",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -470,11 +461,11 @@
   "news": [
     {
       "type": "trend",
-      "title": "Breaking into peoples bloxburg house day 3 #roblox #bloxburg",
-      "description": "...",
+      "title": "Sneak Past Zombies To Check Parked Cars For Keys!",
+      "description": "Watch more PZ here https://tinyurl.com/4cp5pzdc Be the first to watch upcoming videos https://tinyur...",
       "source": "YouTube",
-      "timestamp": 1770517560.0,
-      "url": "https://www.youtube.com/watch?v=vEnsXrBniWo",
+      "timestamp": 1770552013.0,
+      "url": "https://www.youtube.com/watch?v=93fY94hNIFM",
       "icon": "fa-youtube"
     },
     {
@@ -497,20 +488,20 @@
     },
     {
       "type": "trend",
-      "title": "Transform tool in bloxburg be like:  #welcometobloxburg #roblox #buildhacks #bloxburgbuilds",
-      "description": "Has this ever happened to you?...",
-      "source": "YouTube",
-      "timestamp": 1770503593.0,
-      "url": "https://www.youtube.com/watch?v=fC9XL1Uql9M",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "DAISY GETS CAUGHT SHOPLIFTING! *POLICE ARREST HER* Roblox Bloxburg Voiced RP Roleplay",
       "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
       "timestamp": 1770498006.0,
       "url": "https://www.youtube.com/watch?v=eszbZUHWqO8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Just Bloxburg things \u2764\ufe0f #roblox #bloxburg #relatable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770496268.0,
+      "url": "https://www.youtube.com/watch?v=cou3gCwd31M",
       "icon": "fa-youtube"
     },
     {
@@ -551,7 +542,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770556840.3248734,
+    "generated_at": 1770558040.3199968,
     "mode": "memory",
     "refresh_interval": 2000
   }
