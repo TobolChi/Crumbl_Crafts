@@ -443,6 +443,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "\ud83d\udd25#roblox #stealabrainrot \ud83d\udc90#robloxshort #youtubeshorts #games \ud83d\ude4f",
+      "description": "roblox #stealabrainrot #robloxshort #youtubeshorts #games agar aapko video achha lage to like and su...",
+      "source": "YouTube",
+      "timestamp": 1770558332.0,
+      "url": "https://www.youtube.com/watch?v=C7z7UUh_q2I",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Sneak Past Zombies To Check Parked Cars For Keys!",
       "description": "Watch more PZ here https://tinyurl.com/4cp5pzdc Be the first to watch upcoming videos https://tinyur...",
       "source": "YouTube",
@@ -475,15 +484,6 @@
       "source": "YouTube",
       "timestamp": 1770498006.0,
       "url": "https://www.youtube.com/watch?v=eszbZUHWqO8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Just Bloxburg things \u2764\ufe0f #roblox #bloxburg #relatable #bloxburgbuild #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770496268.0,
-      "url": "https://www.youtube.com/watch?v=cou3gCwd31M",
       "icon": "fa-youtube"
     },
     {
@@ -524,7 +524,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770559240.3257341,
+    "generated_at": 1770560440.3185456,
     "mode": "memory",
     "refresh_interval": 2000
   }
