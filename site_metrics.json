@@ -356,33 +356,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1245537625746571303",
       "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "supermario_9071 left the server",
-      "timestamp": 1769965102,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1236654127531036733",
-      "thread_id": null
-    },
-    {
-      "type": "new_request_thread",
-      "shop_name": "LF a Builder!",
-      "message": "<@1236654127531036733> posted a new request titled: LF a Builder!",
-      "timestamp": 1769964930,
-      "thread_id": 1467564027940175883,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/channels/1301988304279048275/1467564027940175883"
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "supermario_9071 joined the server",
-      "timestamp": 1769964703,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1236654127531036733",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -524,7 +497,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770568840.323801,
+    "generated_at": 1770570040.3223171,
     "mode": "memory",
     "refresh_interval": 2000
   }
