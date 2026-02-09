@@ -320,15 +320,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1236654127531036733",
       "thread_id": null
-    },
-    {
-      "type": "new_request_thread",
-      "shop_name": "LF Builder",
-      "message": "<@1236654127531036733> posted a new request titled: LF Builder",
-      "timestamp": 1770061452,
-      "thread_id": 1467968870290690148,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/channels/1301988304279048275/1467968870290690148"
     }
   ],
   "pipeline": [
@@ -470,7 +461,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770666040.3370242,
+    "generated_at": 1770667240.32558,
     "mode": "memory",
     "refresh_interval": 2000
   }
