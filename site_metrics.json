@@ -398,6 +398,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "ART 3.X DECOR |\ud83c\udfad #troll #decor #shorts",
+      "description": "Moment Before Disaster, Troll Face, Troll Face Edit,. #trollface #troll #trollfaceedit #funny #tikto...",
+      "source": "YouTube",
+      "timestamp": 1770600640.0,
+      "url": "https://www.youtube.com/watch?v=dWiuVzbko50",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "NEW CAR MODELS!? #oxford #leak #roblox  #fyp",
       "description": "...",
       "source": "YouTube",
@@ -430,15 +439,6 @@
       "source": "YouTube",
       "timestamp": 1770583185.0,
       "url": "https://www.youtube.com/watch?v=nlBDV7SdsVw",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Someone Typed \u201cDON\u2019T MOVE\u201d \ud83d\ude28 #roblox #robloxshorts",
-      "description": "The lobby was empty\u2026 then a warning appeared. #brookhaven #mm2 #bladeball #bloxburg #adoptme #roblox...",
-      "source": "YouTube",
-      "timestamp": 1770581605.0,
-      "url": "https://www.youtube.com/watch?v=BwM1hSbHnFY",
       "icon": "fa-youtube"
     },
     {
@@ -479,7 +479,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770628840.320059,
+    "generated_at": 1770630040.3236783,
     "mode": "memory",
     "refresh_interval": 2000
   }
