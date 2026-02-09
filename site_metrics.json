@@ -311,15 +311,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1314364355759833169",
       "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "supermario_9071 left the server",
-      "timestamp": 1770063719,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1236654127531036733",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -452,7 +443,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770668440.322954,
+    "generated_at": 1770669040.6575963,
     "mode": "memory",
     "refresh_interval": 2000
   }
