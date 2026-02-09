@@ -452,15 +452,6 @@
     },
     {
       "type": "trend",
-      "title": "#spongebob trade my ps",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770514028.0,
-      "url": "https://www.youtube.com/watch?v=EjBqpaTIfiU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "Fuzzy Bow Boots UGC \ud83c\udf80  #roblox #robloxugc",
       "description": "Search \"Plushstop\" in communities to buy! Click the link in my bio for more! \ud83d\udecd\ufe0f Shop my other UGC: ....",
       "source": "YouTube",
@@ -485,10 +476,19 @@
       "timestamp": 1770491779.0,
       "url": "https://www.youtube.com/watch?v=SIlJZwffLj8",
       "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "BLOXBURG: No-Gamepass Luxury European Villa Speedbuild (interior + full tour) Roblox House Build",
+      "description": "Hello builders! In this video i am building a BLOXBURG: No-Gamepass Luxury European Villa Speedbuild...",
+      "source": "YouTube",
+      "timestamp": 1770487227.0,
+      "url": "https://www.youtube.com/watch?v=6cTd14xnNCM",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770596440.320085,
+    "generated_at": 1770597640.3245227,
     "mode": "memory",
     "refresh_interval": 2000
   }
