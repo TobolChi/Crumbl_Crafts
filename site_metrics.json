@@ -380,6 +380,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "KESERUAN BERKEBUN ALA BIMALA FAMILY | BLOXBURG RP",
+      "description": "Terimakasiih adik-adik udah nonton video ini sampai akhirr, lup yu all -----------   -Tags  - #roblo...",
+      "source": "YouTube",
+      "timestamp": 1770696000.0,
+      "url": "https://www.youtube.com/watch?v=9IZpKFgvraI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Hear me now  #roblox #trolllife #edit #trolledit #robloxedit #bloxburgnewleaks #ttd3 #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -415,62 +424,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "#bloxburg #bloxberg #welcometobloxburg #robloxvr \ud83d\udcc8 #bloxberg \ud83d\udcc8 #\ud83d\ude80#bloxburg #bloxberg \ud83d\ude80\ud83d\udcc8\ud83d\ude80#570",
-      "description": "bloxburg #bloxberg #welcometobloxburg #robloxvr #bloxberg #  #bloxburg #bloxberg #570....",
-      "source": "YouTube",
-      "timestamp": 1770671844.0,
-      "url": "https://www.youtube.com/watch?v=oE6F3heiNrw",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "3115 Days To Build A Best Base (Making Unlimited Food)  #roblox #99nightintheforest",
-      "description": "I survived 3115 days in 99 Nights in the Forest. This is part of my survival series. Watch the full ...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1770657231.0,
-      "url": "https://www.youtube.com/watch?v=MotVvetIANw",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "This is very expensive \ud83e\udef0 \u231a   #shortvideos #reddit #bloxburg #quotes",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770638367.0,
-      "url": "https://www.youtube.com/watch?v=F6oyw5hIgpA",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "It\u2019s a sad world #roblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770616504.0,
-      "url": "https://www.youtube.com/watch?v=6655Shr7pHE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "K5 the slimiest in Downtown LA #roblox #dahood #fivemrp #rp #viral #roblox #fyp #ybnv3",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770608084.0,
-      "url": "https://www.youtube.com/watch?v=rUfEKLeeres",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "ART 3.X DECOR |\ud83c\udfad #troll #decor #shorts",
-      "description": "Moment Before Disaster, Troll Face, Troll Face Edit,. #trollface #troll #trollfaceedit #funny #tikto...",
-      "source": "YouTube",
-      "timestamp": 1770600640.0,
-      "url": "https://www.youtube.com/watch?v=dWiuVzbko50",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1770712240.6738238,
+    "generated_at": 1770712840.3210132,
     "mode": "memory",
     "refresh_interval": 2000
   }
