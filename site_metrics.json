@@ -433,44 +433,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "You\u2019re sign to play in my Bloxburg build battle",
+      "description": "bloxburg #roblox #fyp....",
+      "source": "YouTube",
+      "timestamp": 1770688974.0,
+      "url": "https://www.youtube.com/watch?v=hTLbapFj0YQ",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "Building a TINY coffee shop in Bloxburg\u2026 #bloxburg #roblox #robloxedit #robloxgames #robloxshorts",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1770680001.0,
+      "url": "https://www.youtube.com/watch?v=m4Ink-XZV-Y",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "Cybercleats #fyp #vr #vrfs #boots #cybercleats",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770675560.0,
+      "url": "https://www.youtube.com/watch?v=vCjGsPGnnI0",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "3115 Days To Build A Best Base (Making Unlimited Food)  #roblox #99nightintheforest",
+      "description": "I survived 3115 days in 99 Nights in the Forest. This is part of my survival series. Watch the full ...",
+      "source": "YouTube",
+      "timestamp": 1770657231.0,
+      "url": "https://www.youtube.com/watch?v=MotVvetIANw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "This is very expensive \ud83e\udef0 \u231a   #shortvideos #reddit #bloxburg #quotes",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770638367.0,
+      "url": "https://www.youtube.com/watch?v=F6oyw5hIgpA",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770744640.7044103,
+    "generated_at": 1770745240.3275414,
     "mode": "memory",
     "refresh_interval": 2000
   }
