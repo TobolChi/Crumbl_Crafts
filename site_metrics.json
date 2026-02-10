@@ -380,6 +380,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Hear me now  #roblox #trolllife #edit #trolledit #robloxedit #bloxburgnewleaks #ttd3 #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770690852.0,
+      "url": "https://www.youtube.com/watch?v=tG9J3JovIMc",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -412,15 +421,6 @@
       "source": "YouTube",
       "timestamp": 1770671844.0,
       "url": "https://www.youtube.com/watch?v=oE6F3heiNrw",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "This is very expensive \ud83e\udef0 \u231a   #shortvideos #reddit #bloxburg #quotes",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770638367.0,
-      "url": "https://www.youtube.com/watch?v=F6oyw5hIgpA",
       "icon": "fa-youtube"
     },
     {
@@ -461,7 +461,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770692440.3180568,
+    "generated_at": 1770693640.3294826,
     "mode": "memory",
     "refresh_interval": 2000
   }
