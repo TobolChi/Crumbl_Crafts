@@ -311,15 +311,6 @@
       "thread_id": 1468654976803799162,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/channels/1301988304279048275/1468654976803799162"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "spacecat14601 left the server",
-      "timestamp": 1770153734,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1371476732640755803",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -452,7 +443,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770758440.3194475,
+    "generated_at": 1770759640.3298736,
     "mode": "memory",
     "refresh_interval": 2000
   }
