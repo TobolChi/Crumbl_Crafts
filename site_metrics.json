@@ -362,11 +362,29 @@
   "news": [
     {
       "type": "trend",
+      "title": "Egirl reacts to ROBLOX \ud83d\udd25 Escape The Carnival of Terror Obby Edition (part 1)",
+      "description": "Reacting to Roblox Escape The Carnival Of Terror Obby Disclaimer: This Video festures AI-generated c...",
+      "source": "YouTube",
+      "timestamp": 1770760465.0,
+      "url": "https://www.youtube.com/watch?v=eVZF-kV6BJQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "MY BABY SON MAX TAKES HIS FIRST STEPS! *EMOTIONAL!!* Roblox Bloxburg Voiced RP Roleplay",
       "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
       "timestamp": 1770757206.0,
       "url": "https://www.youtube.com/watch?v=OULvvUJQTgA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "I Built a MEGA MANSION In Bloxburg!",
+      "description": "today i build my most realistic roblox bloxburg mansion yet.. enjoy! Copyrighted music licensed from...",
+      "source": "YouTube",
+      "timestamp": 1770742892.0,
+      "url": "https://www.youtube.com/watch?v=sn1WdxZXbMk",
       "icon": "fa-youtube"
     },
     {
@@ -385,24 +403,6 @@
       "source": "YouTube",
       "timestamp": 1770706082.0,
       "url": "https://www.youtube.com/watch?v=adyQhXhCt2Q",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "KESERUAN BERKEBUN ALA BIMALA FAMILY | BLOXBURG RP",
-      "description": "Terimakasiih adik-adik udah nonton video ini sampai akhirr, lup yu all -----------   -Tags  - #roblo...",
-      "source": "YouTube",
-      "timestamp": 1770696000.0,
-      "url": "https://www.youtube.com/watch?v=9IZpKFgvraI",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Hear me now  #roblox #trolllife #edit #trolledit #robloxedit #bloxburgnewleaks #ttd3 #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770690852.0,
-      "url": "https://www.youtube.com/watch?v=tG9J3JovIMc",
       "icon": "fa-youtube"
     },
     {
@@ -443,7 +443,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770760840.6023397,
+    "generated_at": 1770762040.3301218,
     "mode": "memory",
     "refresh_interval": 2000
   }
