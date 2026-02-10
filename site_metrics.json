@@ -380,6 +380,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Building a TINY coffee shop in Bloxburg\u2026 #bloxburg #roblox #robloxedit #robloxgames #robloxshorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770680001.0,
+      "url": "https://www.youtube.com/watch?v=m4Ink-XZV-Y",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#bloxburg #bloxberg #welcometobloxburg #robloxvr \ud83d\udcc8 #bloxberg \ud83d\udcc8 #\ud83d\ude80#bloxburg #bloxberg \ud83d\ude80\ud83d\udcc8\ud83d\ude80#570",
       "description": "bloxburg #bloxberg #welcometobloxburg #robloxvr #bloxberg #  #bloxburg #bloxberg #570....",
       "source": "YouTube",
@@ -412,15 +421,6 @@
       "source": "YouTube",
       "timestamp": 1770608084.0,
       "url": "https://www.youtube.com/watch?v=rUfEKLeeres",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "ART 3.X DECOR |\ud83c\udfad #troll #decor #shorts",
-      "description": "Moment Before Disaster, Troll Face, Troll Face Edit,. #trollface #troll #trollfaceedit #funny #tikto...",
-      "source": "YouTube",
-      "timestamp": 1770600640.0,
-      "url": "https://www.youtube.com/watch?v=dWiuVzbko50",
       "icon": "fa-youtube"
     },
     {
@@ -461,7 +461,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770688840.3212721,
+    "generated_at": 1770690040.3214316,
     "mode": "memory",
     "refresh_interval": 2000
   }
