@@ -380,6 +380,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "BUILDING A HIGHRISE APARTMENT in BLOXBURG",
+      "description": "BLOXBURG FINALLY ADDED APARTMENT!!! joking i wish instead I built a highrise apartment in bloxburg! ...",
+      "source": "YouTube",
+      "timestamp": 1770836454.0,
+      "url": "https://www.youtube.com/watch?v=sunNEPClviM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Reading Nook idea in Bloxburg - Bloxburg Builds Ideas - Roblox Bloxburg",
       "description": "Hello Bloxburgers! In this video, I am building reading nook in Bloxburg. If you have any empty spac...",
       "source": "YouTube",
@@ -415,62 +424,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "#roblox  #bloxburg #robloxedit #edit",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770765555.0,
-      "url": "https://www.youtube.com/watch?v=zWdR_iNLEXA",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "Would you? #roblox #helpmemakethismakesense #stacide",
-      "description": "...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1770764737.0,
-      "url": "https://www.youtube.com/watch?v=p24TQTwr0c8",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "ME CAMBIARON POR ALGUIEN MAS FAMOSA \ud83d\ude2d\ud83d\udc51 ACTUA BLOXBURG \u2764\ufe0f",
-      "description": "Hola amigos espero les gusto mi nuevo video! , aqu\u00ed mi redes para que me escribas Es una nueva idea,...",
-      "source": "YouTube",
-      "timestamp": 1770764406.0,
-      "url": "https://www.youtube.com/watch?v=yCpU3r_kaSc",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "BLOXBURG IS COOKING WITH THIS UPDATEE #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770762645.0,
-      "url": "https://www.youtube.com/watch?v=MrgyhyxtuF0",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "99 Nights in The Forest Cool Trick! \ud83d\ude0e",
-      "description": "roblox....",
-      "source": "YouTube",
-      "timestamp": 1770762610.0,
-      "url": "https://www.youtube.com/watch?v=h1GH81mhNxw",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Egirl reacts to ROBLOX \ud83d\udd25 Escape The Carnival of Terror Obby Edition (part 1)",
-      "description": "Reacting to Roblox Escape The Carnival Of Terror Obby Disclaimer: This Video festures AI-generated c...",
-      "source": "YouTube",
-      "timestamp": 1770760465.0,
-      "url": "https://www.youtube.com/watch?v=eVZF-kV6BJQ",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1770837640.3323905,
+    "generated_at": 1770838840.3220582,
     "mode": "memory",
     "refresh_interval": 2000
   }
