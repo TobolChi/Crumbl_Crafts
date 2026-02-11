@@ -389,6 +389,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "#robloxmemes #robloxedit #videogamememes #13million #bloxburg #funnygames #adoptme #funnyroblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770846972.0,
+      "url": "https://www.youtube.com/watch?v=zcc6u8UVil0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Se llama blox de tornado #roblox #memes #bloxburg",
       "description": "Es muy chulo....",
       "source": "YouTube",
@@ -421,15 +430,6 @@
       "source": "YouTube",
       "timestamp": 1770815613.0,
       "url": "https://www.youtube.com/watch?v=E_ldAtDp8Gc",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Reading Nook idea in Bloxburg - Bloxburg Builds Ideas - Roblox Bloxburg",
-      "description": "Hello Bloxburgers! In this video, I am building reading nook in Bloxburg. If you have any empty spac...",
-      "source": "YouTube",
-      "timestamp": 1770810433.0,
-      "url": "https://www.youtube.com/watch?v=1Q6Fu_HF1dQ",
       "icon": "fa-youtube"
     },
     {
@@ -470,7 +470,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770847240.6763163,
+    "generated_at": 1770848440.3224144,
     "mode": "memory",
     "refresh_interval": 2000
   }
