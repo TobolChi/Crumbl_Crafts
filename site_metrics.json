@@ -362,6 +362,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "NEW BLOXBURG PART TWO FANCY KITCHEN SET UPDATE TEASER...",
+      "description": "with the part two bloxburg valentines update coming this thursday, a teaser was definitely expected!...",
+      "source": "YouTube",
+      "timestamp": 1770768277.0,
+      "url": "https://www.youtube.com/watch?v=7dgBOzXaA00",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "WDYM this costs 400K?!?! #roblox #bloxburg #relatable #bloxburgbuild #fyp",
       "description": "...",
       "source": "YouTube",
@@ -406,44 +415,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "I RENOVATED THE INTERIOR OF MY FIRST BLOXBURG MANSION",
+      "description": "bloxburg #roblox #robloxbloxburg I renovated the interior of my 2020 bloxburg mansion taking it from...",
+      "source": "YouTube",
+      "timestamp": 1770753619.0,
+      "url": "https://www.youtube.com/watch?v=Cos5Hg9szXk",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "I Built a MEGA MANSION In Bloxburg!",
+      "description": "today i build my most realistic roblox bloxburg mansion yet.. enjoy! Copyrighted music licensed from...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1770742892.0,
+      "url": "https://www.youtube.com/watch?v=sn1WdxZXbMk",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "One Quest Changed Everything\u2026  | Part 2 #shorts s #roblox #bloxfruits #bloxburg #gaming",
+      "description": "Starix ka pehla quest complete ho chuka hai \u2694\ufe0f Bandit Boss defeat\u2026 aur mila Rocket Fruit Ye sirf beg...",
+      "source": "YouTube",
+      "timestamp": 1770730218.0,
+      "url": "https://www.youtube.com/watch?v=EAEfHC3HGzQ",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "let&#39;s try fusing machine wait for end... #roblox #funny #redditdown",
+      "description": "POV: You tried to be a pro in [ @VORTEX2-YT ] but Roblox physics said no. \" \"Wait for it... the endi...",
+      "source": "YouTube",
+      "timestamp": 1770706082.0,
+      "url": "https://www.youtube.com/watch?v=adyQhXhCt2Q",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770775240.3197093,
+    "generated_at": 1770776440.3186474,
     "mode": "memory",
     "refresh_interval": 2000
   }
