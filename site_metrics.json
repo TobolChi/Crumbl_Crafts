@@ -362,6 +362,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "WDYM this costs 400K?!?! #roblox #bloxburg #relatable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770766658.0,
+      "url": "https://www.youtube.com/watch?v=t4s4J3J6Tn4",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#roblox  #bloxburg #robloxedit #edit",
       "description": "...",
       "source": "YouTube",
@@ -394,15 +403,6 @@
       "source": "YouTube",
       "timestamp": 1770753619.0,
       "url": "https://www.youtube.com/watch?v=Cos5Hg9szXk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I Built a MEGA MANSION In Bloxburg!",
-      "description": "today i build my most realistic roblox bloxburg mansion yet.. enjoy! Copyrighted music licensed from...",
-      "source": "YouTube",
-      "timestamp": 1770742892.0,
-      "url": "https://www.youtube.com/watch?v=sn1WdxZXbMk",
       "icon": "fa-youtube"
     },
     {
@@ -443,7 +443,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770768040.3224895,
+    "generated_at": 1770769240.3195891,
     "mode": "memory",
     "refresh_interval": 2000
   }
