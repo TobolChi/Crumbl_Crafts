@@ -18,7 +18,7 @@
       "completed_projects": 0,
       "average_rating": 0.0,
       "thread_id": 1457057884968845373,
-      "avatar_url": "https://cdn.discordapp.com/avatars/794776553955131393/7a57ff483d680349a22e2f319d1059e3.png?size=1024",
+      "avatar_url": "https://cdn.discordapp.com/avatars/794776553955131393/48b08201c3f60f4b4b92b3984a64f568.png?size=1024",
       "server_id": 1301988304279048275,
       "url": "https://discord.com/channels/1301988304279048275/1457057884968845373"
     }
@@ -362,6 +362,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "#bloxberg #bloxburg #bloxburgMuhammad Ka Aisa karta hai mrada karke dekh liya Ek Bar Jay Bharat \ud83d\udc6a\ud83c\uddee\ud83c\uddf3",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770777663.0,
+      "url": "https://www.youtube.com/watch?v=pXP8zJWqK-0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "NEW BLOXBURG PART TWO FANCY KITCHEN SET UPDATE TEASER...",
       "description": "with the part two bloxburg valentines update coming this thursday, a teaser was definitely expected!...",
       "source": "YouTube",
@@ -394,15 +403,6 @@
       "source": "YouTube",
       "timestamp": 1770762645.0,
       "url": "https://www.youtube.com/watch?v=MrgyhyxtuF0",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Egirl reacts to ROBLOX \ud83d\udd25 Escape The Carnival of Terror Obby Edition (part 1)",
-      "description": "Reacting to Roblox Escape The Carnival Of Terror Obby Disclaimer: This Video festures AI-generated c...",
-      "source": "YouTube",
-      "timestamp": 1770760465.0,
-      "url": "https://www.youtube.com/watch?v=eVZF-kV6BJQ",
       "icon": "fa-youtube"
     },
     {
@@ -443,7 +443,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770778840.321092,
+    "generated_at": 1770780040.3188632,
     "mode": "memory",
     "refresh_interval": 2000
   }
