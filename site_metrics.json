@@ -380,6 +380,15 @@
     },
     {
       "type": "trend",
+      "title": "BLOXBURG IS COOKING WITH THIS UPDATEE #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770762645.0,
+      "url": "https://www.youtube.com/watch?v=MrgyhyxtuF0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Egirl reacts to ROBLOX \ud83d\udd25 Escape The Carnival of Terror Obby Edition (part 1)",
       "description": "Reacting to Roblox Escape The Carnival Of Terror Obby Disclaimer: This Video festures AI-generated c...",
       "source": "YouTube",
@@ -394,15 +403,6 @@
       "source": "YouTube",
       "timestamp": 1770757206.0,
       "url": "https://www.youtube.com/watch?v=OULvvUJQTgA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I RENOVATED THE INTERIOR OF MY FIRST BLOXBURG MANSION",
-      "description": "bloxburg #roblox #robloxbloxburg I renovated the interior of my 2020 bloxburg mansion taking it from...",
-      "source": "YouTube",
-      "timestamp": 1770753619.0,
-      "url": "https://www.youtube.com/watch?v=Cos5Hg9szXk",
       "icon": "fa-youtube"
     },
     {
@@ -443,7 +443,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770771640.826258,
+    "generated_at": 1770772840.31751,
     "mode": "memory",
     "refresh_interval": 2000
   }
