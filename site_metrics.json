@@ -389,6 +389,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "TRADING ESCAPE TSUNAMI BRAINROTS FOR ADOPT ME PETS #roblox #edit#fyp\u30b7\u309aviral #fyp #viral #robloxedit",
+      "description": "roblox #edit#fyp\u30b7\u309aviral #fyp #viral #robloxedit #bloxburg....",
+      "source": "YouTube",
+      "timestamp": 1770848719.0,
+      "url": "https://www.youtube.com/watch?v=7A1KUCkA6W0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Building miniature games on Bloxburg! #bloxburg #bloxburgbuilder",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770848321.0,
+      "url": "https://www.youtube.com/watch?v=IhZB4LAw7KU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#robloxmemes #robloxedit #videogamememes #13million #bloxburg #funnygames #adoptme #funnyroblox",
       "description": "...",
       "source": "YouTube",
@@ -412,24 +430,6 @@
       "source": "YouTube",
       "timestamp": 1770842984.0,
       "url": "https://www.youtube.com/watch?v=DaMfdstroNY",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "BUILDING A HIGHRISE APARTMENT in BLOXBURG",
-      "description": "BLOXBURG FINALLY ADDED APARTMENT!!! joking i wish instead I built a highrise apartment in bloxburg! ...",
-      "source": "YouTube",
-      "timestamp": 1770836454.0,
-      "url": "https://www.youtube.com/watch?v=sunNEPClviM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "LOOKING AT MY OLD IPAD!",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770815613.0,
-      "url": "https://www.youtube.com/watch?v=E_ldAtDp8Gc",
       "icon": "fa-youtube"
     },
     {
@@ -470,7 +470,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770848440.3224144,
+    "generated_at": 1770849640.3197055,
     "mode": "memory",
     "refresh_interval": 2000
   }
