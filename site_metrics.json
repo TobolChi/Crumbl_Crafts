@@ -389,6 +389,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "Se llama blox de tornado #roblox #memes #bloxburg",
+      "description": "Es muy chulo....",
+      "source": "YouTube",
+      "timestamp": 1770843161.0,
+      "url": "https://www.youtube.com/watch?v=Au7NpB7tfrs",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "The layout takes SO LONG #roblox #bloxburg #relatable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770842984.0,
+      "url": "https://www.youtube.com/watch?v=DaMfdstroNY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "BUILDING A HIGHRISE APARTMENT in BLOXBURG",
       "description": "BLOXBURG FINALLY ADDED APARTMENT!!! joking i wish instead I built a highrise apartment in bloxburg! ...",
       "source": "YouTube",
@@ -398,38 +416,20 @@
     },
     {
       "type": "trend",
+      "title": "LOOKING AT MY OLD IPAD!",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770815613.0,
+      "url": "https://www.youtube.com/watch?v=E_ldAtDp8Gc",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Reading Nook idea in Bloxburg - Bloxburg Builds Ideas - Roblox Bloxburg",
       "description": "Hello Bloxburgers! In this video, I am building reading nook in Bloxburg. If you have any empty spac...",
       "source": "YouTube",
       "timestamp": 1770810433.0,
       "url": "https://www.youtube.com/watch?v=1Q6Fu_HF1dQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#bloxberg #bloxburg #bloxburgMuhammad Ka Aisa karta hai mrada karke dekh liya Ek Bar Jay Bharat \ud83d\udc6a\ud83c\uddee\ud83c\uddf3",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770777663.0,
-      "url": "https://www.youtube.com/watch?v=pXP8zJWqK-0",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "NEW BLOXBURG PART TWO FANCY KITCHEN SET UPDATE TEASER...",
-      "description": "with the part two bloxburg valentines update coming this thursday, a teaser was definitely expected!...",
-      "source": "YouTube",
-      "timestamp": 1770768277.0,
-      "url": "https://www.youtube.com/watch?v=7dgBOzXaA00",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "WDYM this costs 400K?!?! #roblox #bloxburg #relatable #bloxburgbuild #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770766658.0,
-      "url": "https://www.youtube.com/watch?v=t4s4J3J6Tn4",
       "icon": "fa-youtube"
     },
     {
@@ -470,7 +470,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770843640.3244267,
+    "generated_at": 1770844840.319667,
     "mode": "memory",
     "refresh_interval": 2000
   }
