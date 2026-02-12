@@ -7,7 +7,7 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 363,
+    "total_members": 362,
     "joined_today": 1,
     "active_shops": 1,
     "avg_response_time": 395.25
@@ -24,6 +24,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_leave",
+      "shop_name": "Server",
+      "message": "tvkie left the server",
+      "timestamp": 1770930254,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/709783553277296780"
+    },
     {
       "type": "member_leave",
       "shop_name": "Server",
@@ -371,6 +380,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "DAISY HAS A SECRET ADMIRER AT SCHOOL! *PRANKED?* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "source": "YouTube",
+      "timestamp": 1770930006.0,
+      "url": "https://www.youtube.com/watch?v=ff90PwLQp30",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "TURNING MY HOUSE INTO A HOTEL | Bloxburg Poor To Rich Ep 2",
       "description": "bloxburg #roblox #robloxbloxburg I renovated the starter house into a hotel in order to make money i...",
       "source": "YouTube",
@@ -403,15 +421,6 @@
       "source": "YouTube",
       "timestamp": 1770866105.0,
       "url": "https://www.youtube.com/watch?v=j299uCY0JMk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Casa com 10 Quartos - 28 H\u00f3spedes - Piscina Privativa - Windsor Cay",
-      "description": "Sua Mans\u00e3o com 10 Quartos no Windsor Cay Resort: Sal\u00e3o de Jogos, Piscina Privativa e Espa\u00e7o para At\u00e9...",
-      "source": "YouTube",
-      "timestamp": 1770859525.0,
-      "url": "https://www.youtube.com/watch?v=ybWUbcDSnPI",
       "icon": "fa-youtube"
     },
     {
@@ -452,7 +461,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770930040.349452,
+    "generated_at": 1770930257.0719378,
     "mode": "memory",
     "refresh_interval": 2000
   }
