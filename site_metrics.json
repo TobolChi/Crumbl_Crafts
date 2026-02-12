@@ -415,44 +415,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "did you know the backroom in Roblox #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770872562.0,
+      "url": "https://www.youtube.com/watch?v=KkWmXqJbrvw",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "I played the &quot;Homer Ritual&quot; so you don\u2019t have to... \ud83c\udf69  #roblox #rblx #robloxrants #relatable",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1770872440.0,
+      "url": "https://www.youtube.com/watch?v=ZDPVAG0oYeI",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "karyawan baru di toko kue ini sangat rajin tapi #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770866105.0,
+      "url": "https://www.youtube.com/watch?v=j299uCY0JMk",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "Casa com 10 Quartos - 28 H\u00f3spedes - Piscina Privativa - Windsor Cay",
+      "description": "Sua Mans\u00e3o com 10 Quartos no Windsor Cay Resort: Sal\u00e3o de Jogos, Piscina Privativa e Espa\u00e7o para At\u00e9...",
+      "source": "YouTube",
+      "timestamp": 1770859525.0,
+      "url": "https://www.youtube.com/watch?v=ybWUbcDSnPI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Your welcome #bloxburg #roblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770851373.0,
+      "url": "https://www.youtube.com/watch?v=Z1XcGIGWHdA",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770937240.3223565,
+    "generated_at": 1770938440.3283694,
     "mode": "memory",
     "refresh_interval": 2000
   }
