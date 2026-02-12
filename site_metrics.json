@@ -380,6 +380,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "did you know the backroom in Roblox #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770872562.0,
+      "url": "https://www.youtube.com/watch?v=KkWmXqJbrvw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "I played the &quot;Homer Ritual&quot; so you don\u2019t have to... \ud83c\udf69  #roblox #rblx #robloxrants #relatable",
       "description": "...",
       "source": "YouTube",
@@ -412,15 +421,6 @@
       "source": "YouTube",
       "timestamp": 1770848719.0,
       "url": "https://www.youtube.com/watch?v=7A1KUCkA6W0",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Building miniature games on Bloxburg! #bloxburg #bloxburgbuilder",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770848321.0,
-      "url": "https://www.youtube.com/watch?v=IhZB4LAw7KU",
       "icon": "fa-youtube"
     },
     {
@@ -461,7 +461,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770906640.6120808,
+    "generated_at": 1770907240.327195,
     "mode": "memory",
     "refresh_interval": 2000
   }
