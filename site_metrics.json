@@ -329,15 +329,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1459096963705475153"
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "haroldmacmillan joined the server",
-      "timestamp": 1770297553,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/480326233318490112"
     }
   ],
   "pipeline": [
@@ -389,6 +380,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Doing the  homer ritual #roblox #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770872440.0,
+      "url": "https://www.youtube.com/watch?v=ZDPVAG0oYeI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Your welcome #bloxburg #roblox",
       "description": "...",
       "source": "YouTube",
@@ -433,44 +433,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Se llama blox de tornado #roblox #memes #bloxburg",
+      "description": "Es muy chulo....",
+      "source": "YouTube",
+      "timestamp": 1770843161.0,
+      "url": "https://www.youtube.com/watch?v=Au7NpB7tfrs",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "The layout takes SO LONG #roblox #bloxburg #relatable #bloxburgbuild #fyp",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1770842984.0,
+      "url": "https://www.youtube.com/watch?v=DaMfdstroNY",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "BUILDING A HIGHRISE APARTMENT in BLOXBURG",
+      "description": "BLOXBURG FINALLY ADDED APARTMENT!!! joking i wish instead I built a highrise apartment in bloxburg! ...",
+      "source": "YouTube",
+      "timestamp": 1770836454.0,
+      "url": "https://www.youtube.com/watch?v=sunNEPClviM",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "LOOKING AT MY OLD IPAD!",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770815613.0,
+      "url": "https://www.youtube.com/watch?v=E_ldAtDp8Gc",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770901240.8318834,
+    "generated_at": 1770902440.3283195,
     "mode": "memory",
     "refresh_interval": 2000
   }
