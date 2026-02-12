@@ -415,44 +415,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "We&#39;re MOVING Into Our NEW House! \ud83d\udce6 Bloxburg Family Roleplay",
+      "description": "today in this bloxburg family roleplay we're MOVING into our NEW dream house! we're arriving at our ...",
+      "source": "YouTube",
+      "timestamp": 1770850867.0,
+      "url": "https://www.youtube.com/watch?v=tS9UGuURwsQ",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "TRADING ESCAPE TSUNAMI BRAINROTS FOR ADOPT ME PETS #roblox #edit#fyp\u30b7\u309aviral #fyp #viral #robloxedit",
+      "description": "roblox #edit#fyp\u30b7\u309aviral #fyp #viral #robloxedit #bloxburg....",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1770848719.0,
+      "url": "https://www.youtube.com/watch?v=7A1KUCkA6W0",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "Building miniature games on Bloxburg! #bloxburg #bloxburgbuilder",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770848321.0,
+      "url": "https://www.youtube.com/watch?v=IhZB4LAw7KU",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "#robloxmemes #robloxedit #videogamememes #13million #bloxburg #funnygames #adoptme #funnyroblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770846972.0,
+      "url": "https://www.youtube.com/watch?v=zcc6u8UVil0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Se llama blox de tornado #roblox #memes #bloxburg",
+      "description": "Es muy chulo....",
+      "source": "YouTube",
+      "timestamp": 1770843161.0,
+      "url": "https://www.youtube.com/watch?v=Au7NpB7tfrs",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770926440.337526,
+    "generated_at": 1770927640.330666,
     "mode": "memory",
     "refresh_interval": 2000
   }
