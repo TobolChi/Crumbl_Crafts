@@ -398,6 +398,15 @@
     },
     {
       "type": "trend",
+      "title": "karyawan baru di toko kue ini sangat rajin tapi #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770866105.0,
+      "url": "https://www.youtube.com/watch?v=j299uCY0JMk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Your welcome #bloxburg #roblox",
       "description": "...",
       "source": "YouTube",
@@ -412,15 +421,6 @@
       "source": "YouTube",
       "timestamp": 1770850867.0,
       "url": "https://www.youtube.com/watch?v=tS9UGuURwsQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "TRADING ESCAPE TSUNAMI BRAINROTS FOR ADOPT ME PETS #roblox #edit#fyp\u30b7\u309aviral #fyp #viral #robloxedit",
-      "description": "roblox #edit#fyp\u30b7\u309aviral #fyp #viral #robloxedit #bloxburg....",
-      "source": "YouTube",
-      "timestamp": 1770848719.0,
-      "url": "https://www.youtube.com/watch?v=7A1KUCkA6W0",
       "icon": "fa-youtube"
     },
     {
@@ -461,7 +461,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770913240.3320503,
+    "generated_at": 1770914440.3206716,
     "mode": "memory",
     "refresh_interval": 2000
   }
