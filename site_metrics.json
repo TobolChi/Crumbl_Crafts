@@ -320,15 +320,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/480326233318490112"
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "maleyawrld joined the server",
-      "timestamp": 1770268325,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/686064012311527429"
     }
   ],
   "pipeline": [
@@ -461,7 +452,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770872440.3205068,
+    "generated_at": 1770873640.3245597,
     "mode": "memory",
     "refresh_interval": 2000
   }
