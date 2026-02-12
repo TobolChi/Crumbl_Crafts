@@ -424,44 +424,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Se llama blox de tornado #roblox #memes #bloxburg",
+      "description": "Es muy chulo....",
+      "source": "YouTube",
+      "timestamp": 1770843161.0,
+      "url": "https://www.youtube.com/watch?v=Au7NpB7tfrs",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "BUILDING A HIGHRISE APARTMENT in BLOXBURG",
+      "description": "BLOXBURG FINALLY ADDED APARTMENT!!! joking i wish instead I built a highrise apartment in bloxburg! ...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1770836454.0,
+      "url": "https://www.youtube.com/watch?v=sunNEPClviM",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "LOOKING AT MY OLD IPAD!",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770815613.0,
+      "url": "https://www.youtube.com/watch?v=E_ldAtDp8Gc",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "Reading Nook idea in Bloxburg - Bloxburg Builds Ideas - Roblox Bloxburg",
+      "description": "Hello Bloxburgers! In this video, I am building reading nook in Bloxburg. If you have any empty spac...",
+      "source": "YouTube",
+      "timestamp": 1770810433.0,
+      "url": "https://www.youtube.com/watch?v=1Q6Fu_HF1dQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "#bloxberg #bloxburg #bloxburgMuhammad Ka Aisa karta hai mrada karke dekh liya Ek Bar Jay Bharat \ud83d\udc6a\ud83c\uddee\ud83c\uddf3",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770777663.0,
+      "url": "https://www.youtube.com/watch?v=pXP8zJWqK-0",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770865240.3208802,
+    "generated_at": 1770866440.3206992,
     "mode": "memory",
     "refresh_interval": 2000
   }
