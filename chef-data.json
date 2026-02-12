@@ -1,7 +1,7 @@
 {
   "chefs": [
     {
-      "name": "Sam",
+      "name": "S4m.xx",
       "discord_id": 1358340564046712957,
       "discord_tag": "s4m.xx.",
       "points": 3,
@@ -72,8 +72,8 @@
     "avgRating": 5.0
   },
   "meta": {
-    "timestamp": "2026-02-06T14:42:15.598700",
-    "last_updated": 1770381735.5987065,
+    "timestamp": "2026-02-12T22:46:37.558980",
+    "last_updated": 1770929197.5589983,
     "cached": false,
     "data_source": "discord_bot"
   },
