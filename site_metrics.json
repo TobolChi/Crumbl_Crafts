@@ -398,15 +398,6 @@
     },
     {
       "type": "trend",
-      "title": "OMG! Getting a Strawberry Elephant in Bloxburg! #roblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770952052.0,
-      "url": "https://www.youtube.com/watch?v=YjfaxHX2PHA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "When Your Parent Won\u2019t Cook You Any Food! \ud83d\ude2d\ud83e\udd2c #bloxburg #bloxburgfamily #roblox #shorts",
       "description": "...",
       "source": "YouTube",
@@ -421,6 +412,15 @@
       "source": "YouTube",
       "timestamp": 1770940848.0,
       "url": "https://www.youtube.com/watch?v=dfI4TwbGOAo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "NEW FURNITURE! - Bloxburg #bloxburg #roblox #bloxburgbuild #bloxburgupdate #viral #fyp",
+      "description": "NEW FURNITURE! - Bloxburg #bloxburg #roblox #bloxburgbuild #bloxburgupdate #viral #fyp....",
+      "source": "YouTube",
+      "timestamp": 1770933917.0,
+      "url": "https://www.youtube.com/watch?v=suXAgocrIQI",
       "icon": "fa-youtube"
     },
     {
@@ -461,7 +461,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770980440.3209538,
+    "generated_at": 1770981640.3255885,
     "mode": "memory",
     "refresh_interval": 2000
   }
