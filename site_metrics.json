@@ -407,6 +407,15 @@
     },
     {
       "type": "trend",
+      "title": "OMG! Getting a Strawberry Elephant in Bloxburg! #roblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770952052.0,
+      "url": "https://www.youtube.com/watch?v=YjfaxHX2PHA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Bloxburg KITCHEN UPDATE! New Fancy Items #bloxburg #roblox #robloxbloxburg #shorts",
       "description": "the bloxburg valentine's update part 2 is here and i review all new build items! fancy kitchen furni...",
       "source": "YouTube",
@@ -421,15 +430,6 @@
       "source": "YouTube",
       "timestamp": 1770948726.0,
       "url": "https://www.youtube.com/watch?v=axQ5u5Q2t0U",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Leader Gives Tasks &amp; Outdoor Yoga Session Focuses on Journey",
-      "description": "Watch the whole season https://tinyurl.com/4yfu3th8 Watch the first season https://tinyurl.com/32f72...",
-      "source": "YouTube",
-      "timestamp": 1770940848.0,
-      "url": "https://www.youtube.com/watch?v=dfI4TwbGOAo",
       "icon": "fa-youtube"
     },
     {
@@ -470,7 +470,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770971440.6205623,
+    "generated_at": 1770972040.3265598,
     "mode": "memory",
     "refresh_interval": 2000
   }
