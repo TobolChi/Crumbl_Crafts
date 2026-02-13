@@ -371,6 +371,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "When Your Parent Won\u2019t Cook You Any Food! \ud83d\ude2d\ud83e\udd2c #bloxburg #bloxburgfamily #roblox #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770948726.0,
+      "url": "https://www.youtube.com/watch?v=axQ5u5Q2t0U",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Leader Gives Tasks &amp; Outdoor Yoga Session Focuses on Journey",
       "description": "Watch the whole season https://tinyurl.com/4yfu3th8 Watch the first season https://tinyurl.com/32f72...",
       "source": "YouTube",
@@ -403,15 +412,6 @@
       "source": "YouTube",
       "timestamp": 1770931740.0,
       "url": "https://www.youtube.com/watch?v=3dzzMUVDGck",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "BLOXBURG YOU LITERALLY ATEE WITH THIS SET #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1770930980.0,
-      "url": "https://www.youtube.com/watch?v=Kny36CvkoDk",
       "icon": "fa-youtube"
     },
     {
@@ -452,7 +452,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770949840.5972466,
+    "generated_at": 1770950440.3211653,
     "mode": "memory",
     "refresh_interval": 2000
   }
