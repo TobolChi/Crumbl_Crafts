@@ -389,6 +389,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "Introducing the (Russian Dance Center Of Ballet) Vaganova method in Roblox (Bloxburg) #bloxburg ",
+      "description": "Made by Cole Camhee smith in Bloxburg #roblox....",
+      "source": "YouTube",
+      "timestamp": 1770964281.0,
+      "url": "https://www.youtube.com/watch?v=m1WwFDcaDdI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "#roblox #bloxburg #fyp #robloxfyp #bloxburghouse #valentinesday #valentine",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770962460.0,
+      "url": "https://www.youtube.com/watch?v=3Trj9Z14NvU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Bloxburg KITCHEN UPDATE! New Fancy Items #bloxburg #roblox #robloxbloxburg #shorts",
       "description": "the bloxburg valentine's update part 2 is here and i review all new build items! fancy kitchen furni...",
       "source": "YouTube",
@@ -412,24 +430,6 @@
       "source": "YouTube",
       "timestamp": 1770940848.0,
       "url": "https://www.youtube.com/watch?v=dfI4TwbGOAo",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "NEW FURNITURE! - Bloxburg #bloxburg #roblox #bloxburgbuild #bloxburgupdate #viral #fyp",
-      "description": "NEW FURNITURE! - Bloxburg #bloxburg #roblox #bloxburgbuild #bloxburgupdate #viral #fyp....",
-      "source": "YouTube",
-      "timestamp": 1770933917.0,
-      "url": "https://www.youtube.com/watch?v=suXAgocrIQI",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "COZINHA FANCY NO BLOXBURG (Dia dos Namorados Parte 2)",
-      "description": "Nesse v\u00eddeo eu falo sobre a atualiza\u00e7\u00e3o Parte 2 do Dia dos Namorados que chegou! Com um novo conjunt...",
-      "source": "YouTube",
-      "timestamp": 1770931740.0,
-      "url": "https://www.youtube.com/watch?v=3dzzMUVDGck",
       "icon": "fa-youtube"
     },
     {
@@ -470,7 +470,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770963640.3261232,
+    "generated_at": 1770964840.319272,
     "mode": "memory",
     "refresh_interval": 2000
   }
