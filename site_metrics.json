@@ -7,8 +7,8 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 363,
-    "joined_today": 1,
+    "total_members": 364,
+    "joined_today": 2,
     "active_shops": 1,
     "avg_response_time": 395.25
   },
@@ -24,6 +24,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_join",
+      "shop_name": "Server",
+      "message": "newfxund. joined the server",
+      "timestamp": 1770996270,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/980275368483225670"
+    },
     {
       "type": "new_request_thread",
       "shop_name": "Looking For Builder To Make Me Great Gatsbys House / Castle",
@@ -398,7 +407,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1770996040.3312762,
+    "generated_at": 1770996272.7507207,
     "mode": "memory",
     "refresh_interval": 2000
   }
