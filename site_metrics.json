@@ -257,15 +257,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/702206591293718590"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "maleyawrld left the server",
-      "timestamp": 1770410062,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/686064012311527429"
     }
   ],
   "pipeline": [
@@ -317,6 +308,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "What I tell myself while working in bloxburg: #welcometobloxburg #roblox #bloxburg #relatable",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771006313.0,
+      "url": "https://www.youtube.com/watch?v=D-y1oOAhmJE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "tag the friend who needs their license revoked \ud83d\ude2d#roblox #bloxburg #robloxgames #robloxedit",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771005342.0,
+      "url": "https://www.youtube.com/watch?v=fDc1di7NdaA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#roblox #bloxburg #\u043c\u0430\u0439\u043d\u043a\u0440\u0430\u0444\u0442 #funny",
       "description": "...",
       "source": "YouTube",
@@ -361,44 +370,35 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Roblox HQ Looks soooo coool  \ud83d\udd25\ud83e\udd29",
+      "description": "usa....",
+      "source": "YouTube",
+      "timestamp": 1770944930.0,
+      "url": "https://www.youtube.com/watch?v=rm2wPDDRvvE",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "Parte 2 de la actualizaci\u00f3n de San Valent\u00edn de Bloxburg \ud83d\udc98\ud83d\ude0d\ud83d\ude0d\ud83d\udc98 #shorts #bloxburg #roblox #robloxshorts",
+      "description": "Actualizaci\u00f3n de San Valent\u00edn PARTE 2 de Bloxburg ma\u00f1ana -------------------------------------------...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1770941172.0,
+      "url": "https://www.youtube.com/watch?v=k7nm9r-58rw",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
-    },
-    {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "Leader Gives Tasks &amp; Outdoor Yoga Session Focuses on Journey",
+      "description": "Watch the whole season https://tinyurl.com/4yfu3th8 Watch the first season https://tinyurl.com/32f72...",
+      "source": "YouTube",
+      "timestamp": 1770940848.0,
+      "url": "https://www.youtube.com/watch?v=dfI4TwbGOAo",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1771014640.6144443,
+    "generated_at": 1771015240.3305275,
     "mode": "memory",
     "refresh_interval": 2000
   }
