@@ -352,53 +352,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "Bloxburg KITCHEN UPDATE! New Fancy Items #bloxburg #roblox #robloxbloxburg #shorts",
-      "description": "the bloxburg valentine's update part 2 is here and i review all new build items! fancy kitchen furni...",
-      "source": "YouTube",
-      "timestamp": 1770951000.0,
-      "url": "https://www.youtube.com/watch?v=Z1GYHzyEwMo",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "When Your Parent Won\u2019t Cook You Any Food! \ud83d\ude2d\ud83e\udd2c #bloxburg #bloxburgfamily #roblox #shorts",
-      "description": "...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1770948726.0,
-      "url": "https://www.youtube.com/watch?v=axQ5u5Q2t0U",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "Roblox HQ Looks soooo coool  \ud83d\udd25\ud83e\udd29",
-      "description": "usa....",
-      "source": "YouTube",
-      "timestamp": 1770944930.0,
-      "url": "https://www.youtube.com/watch?v=rm2wPDDRvvE",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "Parte 2 de la actualizaci\u00f3n de San Valent\u00edn de Bloxburg \ud83d\udc98\ud83d\ude0d\ud83d\ude0d\ud83d\udc98 #shorts #bloxburg #roblox #robloxshorts",
-      "description": "Actualizaci\u00f3n de San Valent\u00edn PARTE 2 de Bloxburg ma\u00f1ana -------------------------------------------...",
-      "source": "YouTube",
-      "timestamp": 1770941172.0,
-      "url": "https://www.youtube.com/watch?v=k7nm9r-58rw",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Leader Gives Tasks &amp; Outdoor Yoga Session Focuses on Journey",
-      "description": "Watch the whole season https://tinyurl.com/4yfu3th8 Watch the first season https://tinyurl.com/32f72...",
-      "source": "YouTube",
-      "timestamp": 1770940848.0,
-      "url": "https://www.youtube.com/watch?v=dfI4TwbGOAo",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1771016440.323684,
+    "generated_at": 1771017640.3188653,
     "mode": "memory",
     "refresh_interval": 2000
   }
