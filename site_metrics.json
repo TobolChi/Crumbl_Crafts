@@ -335,20 +335,20 @@
     },
     {
       "type": "trend",
+      "title": "FIZ A CASA DOS SONHOS no BLOXBURG!",
+      "description": "Bloxburg @CarolTVoficial Link do Jogo: https://www.roblox.com/join/8wvgd \ud83d\udd79\ufe0f Roblox: https://www.robl...",
+      "source": "YouTube",
+      "timestamp": 1770994849.0,
+      "url": "https://www.youtube.com/watch?v=QeCso28Bl3w",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#roblox #bloxburg #\u043c\u0430\u0439\u043d\u043a\u0440\u0430\u0444\u0442 #funny",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1770987716.0,
       "url": "https://www.youtube.com/watch?v=M7p1R_HnyFA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Introducing the (Russian Dance Center Of Ballet) Vaganova method in Roblox (Bloxburg) #bloxburg ",
-      "description": "Made by Cole Camhee smith in Bloxburg #roblox....",
-      "source": "YouTube",
-      "timestamp": 1770964281.0,
-      "url": "https://www.youtube.com/watch?v=m1WwFDcaDdI",
       "icon": "fa-youtube"
     },
     {
@@ -389,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771023640.3235068,
+    "generated_at": 1771024840.320826,
     "mode": "memory",
     "refresh_interval": 2000
   }
