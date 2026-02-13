@@ -415,44 +415,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "BLOXBURG YOU LITERALLY ATEE WITH THIS SET #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770930980.0,
+      "url": "https://www.youtube.com/watch?v=Kny36CvkoDk",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "DAISY HAS A SECRET ADMIRER AT SCHOOL! *PRANKED?* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1770930006.0,
+      "url": "https://www.youtube.com/watch?v=ff90PwLQp30",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "The new Fancy kitchen set!! #roblox #bloxburg #fyp #new #bloxburgkitchen",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770929188.0,
+      "url": "https://www.youtube.com/watch?v=BLwlaU1OYiM",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "TURNING MY HOUSE INTO A HOTEL | Bloxburg Poor To Rich Ep 2",
+      "description": "bloxburg #roblox #robloxbloxburg I renovated the starter house into a hotel in order to make money i...",
+      "source": "YouTube",
+      "timestamp": 1770926404.0,
+      "url": "https://www.youtube.com/watch?v=3fmoMFVWRck",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Combo doble slide jumper for rent !!",
+      "description": "Call for prices (951)259-4444 Make your day memorable with our jumpers #bouncers #partyrentals #boun...",
+      "source": "YouTube",
+      "timestamp": 1770879562.0,
+      "url": "https://www.youtube.com/watch?v=y0YLREID86g",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770956440.3262186,
+    "generated_at": 1770957640.3273852,
     "mode": "memory",
     "refresh_interval": 2000
   }
