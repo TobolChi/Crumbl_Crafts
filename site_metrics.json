@@ -379,44 +379,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "How to OVERLAP in Heartopia!? (PC Edition) #heartopia #cozygirl #thesims4 #bloxburg #building",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770934963.0,
+      "url": "https://www.youtube.com/watch?v=K7FNB4oR_hM",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "NEW FURNITURE! - Bloxburg #bloxburg #roblox #bloxburgbuild #bloxburgupdate #viral #fyp",
+      "description": "NEW FURNITURE! - Bloxburg #bloxburg #roblox #bloxburgbuild #bloxburgupdate #viral #fyp....",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1770933917.0,
+      "url": "https://www.youtube.com/watch?v=suXAgocrIQI",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "COZINHA FANCY NO BLOXBURG (Dia dos Namorados Parte 2)",
+      "description": "Nesse v\u00eddeo eu falo sobre a atualiza\u00e7\u00e3o Parte 2 do Dia dos Namorados que chegou! Com um novo conjunt...",
+      "source": "YouTube",
+      "timestamp": 1770931740.0,
+      "url": "https://www.youtube.com/watch?v=3dzzMUVDGck",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "BLOXBURG YOU LITERALLY ATEE WITH THIS SET #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770930980.0,
+      "url": "https://www.youtube.com/watch?v=Kny36CvkoDk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "DAISY HAS A SECRET ADMIRER AT SCHOOL! *PRANKED?* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "source": "YouTube",
+      "timestamp": 1770930006.0,
+      "url": "https://www.youtube.com/watch?v=ff90PwLQp30",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1770998440.736107,
+    "generated_at": 1770999640.321499,
     "mode": "memory",
     "refresh_interval": 2000
   }
