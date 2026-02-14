@@ -290,6 +290,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "the custom furniture \ud83d\udc94 #roblox #bloxburg #relatable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771089758.0,
+      "url": "https://www.youtube.com/watch?v=n2AeRMc0R-A",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "MY KIDS PARENT TEACHER CONFERENCE GONE WRONG! *THEY FAILED* ROBLOX BLOXBURG VOICED ROLEPLAY!",
       "description": "\uff9f\uff9f\uff65\uff61\uff65\uff9f\uff9f\uff61 \uff9f\u3002My kids parent teacher conference! \u22c6\uff61\u2027\u02da\u029a Roleplay Crew \u025e\u02da\u2027\uff61\u22c6 Nova played by @Itsmelulu16 ...",
       "source": "YouTube",
@@ -322,15 +331,6 @@
       "source": "YouTube",
       "timestamp": 1771079471.0,
       "url": "https://www.youtube.com/watch?v=rBVgfbqcqCs",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Mise \u00e0 jour du nouvel an lunaire sur Bloxburg !!!#bloxburg #roblox #hype",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771078176.0,
-      "url": "https://www.youtube.com/watch?v=SSeOOPNCMjU",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771090240.6890233,
+    "generated_at": 1771090840.3180811,
     "mode": "memory",
     "refresh_interval": 2000
   }
