@@ -263,6 +263,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "$1M VALENTINES DAY BUILD BATTLE in BLOXBURG",
+      "description": "LOVE IS IN THE AIR..for another build battle Become A Channel Member by pressing the 'JOIN' button n...",
+      "source": "YouTube",
+      "timestamp": 1771095604.0,
+      "url": "https://www.youtube.com/watch?v=2kbNjNb3qhk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "the custom furniture \ud83d\udc94 #roblox #bloxburg #relatable #bloxburgbuild #fyp",
       "description": "...",
       "source": "YouTube",
@@ -295,15 +304,6 @@
       "source": "YouTube",
       "timestamp": 1771081227.0,
       "url": "https://www.youtube.com/watch?v=IiYIILmKimE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Bloxburg winter+newyears #capcut #roblox #bloxburg #winter #2026 #mhaedit #tiktokdance #trending ",
-      "description": "Recorded on Jan 2 2026....",
-      "source": "YouTube",
-      "timestamp": 1771080576.0,
-      "url": "https://www.youtube.com/watch?v=dVnveizvVU4",
       "icon": "fa-youtube"
     },
     {
@@ -344,7 +344,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771096840.3247123,
+    "generated_at": 1771098040.3306322,
     "mode": "memory",
     "refresh_interval": 2000
   }
