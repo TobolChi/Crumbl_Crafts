@@ -203,15 +203,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/655576954678018069"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "xvfe left the server",
-      "timestamp": 1770494693,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/617002907333558309"
     }
   ],
   "pipeline": [
@@ -263,6 +254,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "I BUILT SPONGEBOBS HOUSE IN BLOXBURG",
+      "description": "bloxburg #roblox #robloxbloxburg Who live in a pineapple under the sea...truereeses square pants...h...",
+      "source": "YouTube",
+      "timestamp": 1771099206.0,
+      "url": "https://www.youtube.com/watch?v=7ev5CeYYVjk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "$1M VALENTINES DAY BUILD BATTLE in BLOXBURG",
       "description": "LOVE IS IN THE AIR..for another build battle Become A Channel Member by pressing the 'JOIN' button n...",
       "source": "YouTube",
@@ -295,15 +295,6 @@
       "source": "YouTube",
       "timestamp": 1771081409.0,
       "url": "https://www.youtube.com/watch?v=6u_Z9YfcK7M",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #horror #roblox #policetycoon #granny #edit #robloxedit #kpop #bloxburg #robloxgames",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771081227.0,
-      "url": "https://www.youtube.com/watch?v=IiYIILmKimE",
       "icon": "fa-youtube"
     },
     {
@@ -344,7 +335,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771099240.3339922,
+    "generated_at": 1771100440.3301282,
     "mode": "memory",
     "refresh_interval": 2000
   }
