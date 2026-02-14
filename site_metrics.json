@@ -239,15 +239,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/935363657305575534"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "0r4tt left the server",
-      "timestamp": 1770455216,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1302431686474334301"
     }
   ],
   "pipeline": [
@@ -299,6 +290,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox #horror #roblox #policetycoon #granny #edit #robloxedit #kpop #bloxburg #robloxgames",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771059300.0,
+      "url": "https://www.youtube.com/watch?v=FNbv6uRfLtI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Danke f\u00fcr die 800 abos #roblox #amnewbutnottheleast #amnewbutnottheleast #bloxburg #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771058385.0,
+      "url": "https://www.youtube.com/watch?v=c5GdATu4ieo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "\ud83d\udc8cHappy Valentines Day!! |  #roblox #foryou #bloxburg #valentinesday #suprise",
       "description": "...",
       "source": "YouTube",
@@ -322,24 +331,6 @@
       "source": "YouTube",
       "timestamp": 1771038071.0,
       "url": "https://www.youtube.com/watch?v=zsehHr29H24",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "When Your Sister Is Stupid! \ud83e\udd2c\ud83d\ude31 #bloxburg #bloxburgfamily #roblox #shorts",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771026648.0,
-      "url": "https://www.youtube.com/watch?v=YGOssu51Qp4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "WHAT TV SHOW SET SHOULD I BUILD NEXT? #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771023695.0,
-      "url": "https://www.youtube.com/watch?v=RcZyVPwyQJk",
       "icon": "fa-youtube"
     },
     {
@@ -380,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771059640.3332682,
+    "generated_at": 1771060840.3477356,
     "mode": "memory",
     "refresh_interval": 2000
   }
