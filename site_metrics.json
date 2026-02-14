@@ -317,6 +317,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "\ud83d\udc8cHappy Valentines Day!! |  #roblox #foryou #bloxburg #valentinesday #suprise",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771052404.0,
+      "url": "https://www.youtube.com/watch?v=3sL116C7ucU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "A Day In My Garden \ud83c\udf37 #roblox #bloxburg #garden #dayinmylife #bloxburgbuilds #",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771052279.0,
+      "url": "https://www.youtube.com/watch?v=3y-UFpe1Wyo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Strawberry Shortcake caf\u00e9 tour \ud83c\udf53\u2728#Bloxburg #Roblox #BloxburgBuild #Shorts",
       "description": "Take a tour of my cozy Strawberry Shortcake caf\u00e9 in Bloxburg \u2728 #Bloxburg #Roblox #BloxburgBuild #Sho...",
       "source": "YouTube",
@@ -340,24 +358,6 @@
       "source": "YouTube",
       "timestamp": 1771026648.0,
       "url": "https://www.youtube.com/watch?v=YGOssu51Qp4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "WHAT TV SHOW SET SHOULD I BUILD NEXT? #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771023695.0,
-      "url": "https://www.youtube.com/watch?v=RcZyVPwyQJk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "what corner?? \ud83e\udd2a #roblox #bloxburg #relatable #bloxburgbuild #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771022623.0,
-      "url": "https://www.youtube.com/watch?v=IsWjJlAToRA",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771053640.322753,
+    "generated_at": 1771054840.3221922,
     "mode": "memory",
     "refresh_interval": 2000
   }
