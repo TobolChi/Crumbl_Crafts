@@ -352,44 +352,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "FIZ A CASA DOS SONHOS no BLOXBURG!",
+      "description": "Bloxburg @CarolTVoficial Link do Jogo: https://www.roblox.com/join/8wvgd \ud83d\udd79\ufe0f Roblox: https://www.robl...",
+      "source": "YouTube",
+      "timestamp": 1770994849.0,
+      "url": "https://www.youtube.com/watch?v=QeCso28Bl3w",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "quais s\u00e3o os melhores carros do brook #roblox",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1770989547.0,
+      "url": "https://www.youtube.com/watch?v=GPQvB573HTM",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "PREPARING FOR A MAJOR SNOW STORM!! *CHAOTIC WALMART RUN* | Bloxburg Family Roleplay",
+      "description": "Hey ZeeFam! It's \"Zaryee\" here! Don't forget to join the family! All you have to do is like, comment...",
+      "source": "YouTube",
+      "timestamp": 1770989104.0,
+      "url": "https://www.youtube.com/watch?v=4XZDju5vEkA",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "#roblox #bloxburg #\u043c\u0430\u0439\u043d\u043a\u0440\u0430\u0444\u0442 #funny",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1770987716.0,
+      "url": "https://www.youtube.com/watch?v=M7p1R_HnyFA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Introducing the (Russian Dance Center Of Ballet) Vaganova method in Roblox (Bloxburg) #bloxburg ",
+      "description": "Made by Cole Camhee smith in Bloxburg #roblox....",
+      "source": "YouTube",
+      "timestamp": 1770964281.0,
+      "url": "https://www.youtube.com/watch?v=m1WwFDcaDdI",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1771030840.6323037,
+    "generated_at": 1771032040.320414,
     "mode": "memory",
     "refresh_interval": 2000
   }
