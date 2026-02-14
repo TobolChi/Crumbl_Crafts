@@ -290,11 +290,29 @@
   "news": [
     {
       "type": "trend",
+      "title": "\ufffcfr tho #roblox #viral #subscribe #relatable #funnygames #funny #funnyroblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771081416.0,
+      "url": "https://www.youtube.com/watch?v=iq-aiknbnZM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #horror #roblox #policetycoon #granny #edit #robloxedit #kpop #bloxburg #robloxgames",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1771081227.0,
       "url": "https://www.youtube.com/watch?v=IiYIILmKimE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Bloxburg winter+newyears #capcut #roblox #bloxburg #winter #2026 #mhaedit #tiktokdance #trending ",
+      "description": "Recorded on Jan 2 2026....",
+      "source": "YouTube",
+      "timestamp": 1771080576.0,
+      "url": "https://www.youtube.com/watch?v=dVnveizvVU4",
       "icon": "fa-youtube"
     },
     {
@@ -313,24 +331,6 @@
       "source": "YouTube",
       "timestamp": 1771078176.0,
       "url": "https://www.youtube.com/watch?v=SSeOOPNCMjU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #horror #roblox #policetycoon #granny #edit #robloxedit #kpop #bloxburg #robloxgames",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771059300.0,
-      "url": "https://www.youtube.com/watch?v=FNbv6uRfLtI",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Danke f\u00fcr die 800 abos #roblox #amnewbutnottheleast #amnewbutnottheleast #bloxburg #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771058385.0,
-      "url": "https://www.youtube.com/watch?v=c5GdATu4ieo",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771082440.3316455,
+    "generated_at": 1771083640.3354301,
     "mode": "memory",
     "refresh_interval": 2000
   }
