@@ -212,33 +212,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/617002907333558309"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "kitthething left the server",
-      "timestamp": 1770489348,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/933779619595817000"
-    },
-    {
-      "type": "new_request_thread",
-      "shop_name": "Backyard/Exterior Build!",
-      "message": "<@935363657305575534> posted a new request titled: Backyard/Exterior Build!",
-      "timestamp": 1770488776,
-      "thread_id": 1469761199703851170,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/channels/1301988304279048275/1469761199703851170"
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "cloe12128 joined the server",
-      "timestamp": 1770488466,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/935363657305575534"
     }
   ],
   "pipeline": [
@@ -308,6 +281,15 @@
     },
     {
       "type": "trend",
+      "title": "Wish I had free bloxburg yall\ud83e\udee9 #roblox #robloxmemes #amazingroblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771081409.0,
+      "url": "https://www.youtube.com/watch?v=6u_Z9YfcK7M",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #horror #roblox #policetycoon #granny #edit #robloxedit #kpop #bloxburg #robloxgames",
       "description": "...",
       "source": "YouTube",
@@ -322,15 +304,6 @@
       "source": "YouTube",
       "timestamp": 1771080576.0,
       "url": "https://www.youtube.com/watch?v=dVnveizvVU4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Watashi Wa Star! \u2b50\ufe0f #roblox #bloxburg #berryavenue #roleplay #shorts ",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771079471.0,
-      "url": "https://www.youtube.com/watch?v=rBVgfbqcqCs",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +344,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771093240.3314989,
+    "generated_at": 1771094440.3390398,
     "mode": "memory",
     "refresh_interval": 2000
   }
