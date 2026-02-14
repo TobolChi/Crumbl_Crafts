@@ -317,15 +317,6 @@
     },
     {
       "type": "trend",
-      "title": "Strawberry Shortcake caf\u00e9 tour \ud83c\udf53\u2728#Bloxburg #Roblox #BloxburgBuild #Shorts",
-      "description": "Take a tour of my cozy Strawberry Shortcake caf\u00e9 in Bloxburg \u2728 #Bloxburg #Roblox #BloxburgBuild #Sho...",
-      "source": "YouTube",
-      "timestamp": 1771042403.0,
-      "url": "https://www.youtube.com/watch?v=vNRDM3NaaSc",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "Roblox #horror #roblox #policetycoon #granny #edit #robloxedit #kpop #bloxburg #robloxgames",
       "description": "...",
       "source": "YouTube",
@@ -340,6 +331,15 @@
       "source": "YouTube",
       "timestamp": 1771026648.0,
       "url": "https://www.youtube.com/watch?v=YGOssu51Qp4",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "WHAT TV SHOW SET SHOULD I BUILD NEXT? #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771023695.0,
+      "url": "https://www.youtube.com/watch?v=RcZyVPwyQJk",
       "icon": "fa-youtube"
     },
     {
@@ -380,7 +380,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771057840.64971,
+    "generated_at": 1771058440.3278081,
     "mode": "memory",
     "refresh_interval": 2000
   }
