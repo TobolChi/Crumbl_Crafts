@@ -308,11 +308,29 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox #horror #roblox #policetycoon #granny #edit #robloxedit #kpop #bloxburg #robloxgames",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771038071.0,
+      "url": "https://www.youtube.com/watch?v=zsehHr29H24",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "When Your Sister Is Stupid! \ud83e\udd2c\ud83d\ude31 #bloxburg #bloxburgfamily #roblox #shorts",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1771026648.0,
       "url": "https://www.youtube.com/watch?v=YGOssu51Qp4",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "WHAT TV SHOW SET SHOULD I BUILD NEXT? #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771023695.0,
+      "url": "https://www.youtube.com/watch?v=RcZyVPwyQJk",
       "icon": "fa-youtube"
     },
     {
@@ -331,24 +349,6 @@
       "source": "YouTube",
       "timestamp": 1771018205.0,
       "url": "https://www.youtube.com/watch?v=Zv9wa3d1DrQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Guess what year!? #roblox #bloxburg #bloxburgbuild #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771013563.0,
-      "url": "https://www.youtube.com/watch?v=s2yfegUKEIY",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "\u203c\ufe0fONLY\u203c\ufe0f OG BLOXBURG RELATE\ud83d\ude33\ud83e\udd23\u203c\ufe0f #bloxburg #roblox #bloxburgroleplay #relatable #bloxburgbuild",
-      "description": "An unpaid and underappreciated job   #roblox #bloxburg #robloxmemes #robloxedit #robloxshorts #short...",
-      "source": "YouTube",
-      "timestamp": 1771011361.0,
-      "url": "https://www.youtube.com/watch?v=3NjbbuJOPb4",
       "icon": "fa-youtube"
     },
     {
@@ -389,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771038040.3172414,
+    "generated_at": 1771039240.324669,
     "mode": "memory",
     "refresh_interval": 2000
   }
