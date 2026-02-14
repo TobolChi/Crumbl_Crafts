@@ -334,44 +334,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Roblox #horror #roblox #policetycoon #granny #edit #robloxedit #kpop #bloxburg #robloxgames",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771038071.0,
+      "url": "https://www.youtube.com/watch?v=zsehHr29H24",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "When Your Sister Is Stupid! \ud83e\udd2c\ud83d\ude31 #bloxburg #bloxburgfamily #roblox #shorts",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1771026648.0,
+      "url": "https://www.youtube.com/watch?v=YGOssu51Qp4",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "WHAT TV SHOW SET SHOULD I BUILD NEXT? #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771023695.0,
+      "url": "https://www.youtube.com/watch?v=RcZyVPwyQJk",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "what corner?? \ud83e\udd2a #roblox #bloxburg #relatable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771022623.0,
+      "url": "https://www.youtube.com/watch?v=IsWjJlAToRA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "#bloxburg #funny #shorts #lasvegas #memes #trend",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771020144.0,
+      "url": "https://www.youtube.com/watch?v=gyIoW-D3KiQ",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1771075240.3226554,
+    "generated_at": 1771076440.319319,
     "mode": "memory",
     "refresh_interval": 2000
   }
