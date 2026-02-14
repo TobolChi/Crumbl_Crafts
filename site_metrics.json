@@ -308,6 +308,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "When Your Sister Is Stupid! \ud83e\udd2c\ud83d\ude31 #bloxburg #bloxburgfamily #roblox #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771026648.0,
+      "url": "https://www.youtube.com/watch?v=YGOssu51Qp4",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "what corner?? \ud83e\udd2a #roblox #bloxburg #relatable #bloxburgbuild #fyp",
       "description": "...",
       "source": "YouTube",
@@ -335,20 +344,11 @@
     },
     {
       "type": "trend",
-      "title": "tag the friend who needs their license revoked \ud83d\ude2d#roblox #bloxburg #robloxgames #robloxedit",
+      "title": "What I tell myself while working in bloxburg: #welcometobloxburg #roblox #bloxburg #relatable",
       "description": "...",
       "source": "YouTube",
-      "timestamp": 1771005342.0,
-      "url": "https://www.youtube.com/watch?v=fDc1di7NdaA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "FIZ A CASA DOS SONHOS no BLOXBURG!",
-      "description": "Bloxburg @CarolTVoficial Link do Jogo: https://www.roblox.com/join/8wvgd \ud83d\udd79\ufe0f Roblox: https://www.robl...",
-      "source": "YouTube",
-      "timestamp": 1770994849.0,
-      "url": "https://www.youtube.com/watch?v=QeCso28Bl3w",
+      "timestamp": 1771006313.0,
+      "url": "https://www.youtube.com/watch?v=D-y1oOAhmJE",
       "icon": "fa-youtube"
     },
     {
@@ -389,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771027240.3283932,
+    "generated_at": 1771028440.3154824,
     "mode": "memory",
     "refresh_interval": 2000
   }
