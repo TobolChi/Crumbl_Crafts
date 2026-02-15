@@ -227,6 +227,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "PREPARING FOR A MAJOR SNOW STORM!! *CHAOTIC WALMART RUN* | Bloxburg Family Roleplay",
+      "description": "Hey ZeeFam! It's \"Zaryee\" here! Don't forget to join the family! All you have to do is like, comment...",
+      "source": "YouTube",
+      "timestamp": 1771174806.0,
+      "url": "https://www.youtube.com/watch?v=4XZDju5vEkA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "I Tried Catching EVERY Bug in Bloxburg!",
       "description": "Join my neighborhood! Want your builds to be in a video? Show them off in my community! Neighborhood...",
       "source": "YouTube",
@@ -259,15 +268,6 @@
       "source": "YouTube",
       "timestamp": 1771166607.0,
       "url": "https://www.youtube.com/watch?v=j4kYkPPvz8A",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Yu dont have to answer these!! #roblox #safety #robloxedit #rblx #bloxburg #bloxroute #clubroblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771158510.0,
-      "url": "https://www.youtube.com/watch?v=pNaGcCLzEKw",
       "icon": "fa-youtube"
     },
     {
@@ -308,7 +308,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771174840.3203313,
+    "generated_at": 1771176040.3237865,
     "mode": "memory",
     "refresh_interval": 2000
   }
