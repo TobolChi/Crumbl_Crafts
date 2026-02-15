@@ -1,19 +1,5 @@
 {
-  "chefs": [
-    {
-      "name": "S4m.xx",
-      "discord_id": 1358340564046712957,
-      "discord_tag": "s4m.xx.",
-      "points": 3,
-      "tickets": 1,
-      "role_name": "Chef",
-      "role_stars": 0,
-      "average_rating": 5.0,
-      "total_ratings": 2,
-      "avatar": "https://cdn.discordapp.com/avatars/1358340564046712957/2fdd817f8381adcd31984bf14ba58547.png?size=1024",
-      "joinDate": "2026-01-02"
-    }
-  ],
+  "chefs": [],
   "activities": [
     {
       "type": "order_created",
@@ -66,14 +52,14 @@
     }
   },
   "stats": {
-    "totalOrders": 3,
-    "activeChefs": 1,
-    "totalChefs": 1,
-    "avgRating": 5.0
+    "totalOrders": 0,
+    "activeChefs": 0,
+    "totalChefs": 0,
+    "avgRating": 0
   },
   "meta": {
-    "timestamp": "2026-02-12T22:46:37.558980",
-    "last_updated": 1770929197.5589983,
+    "timestamp": "2026-02-15T18:48:45.936192",
+    "last_updated": 1771174125.9361985,
     "cached": false,
     "data_source": "discord_bot"
   },
