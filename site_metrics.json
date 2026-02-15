@@ -245,6 +245,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "emojis #bloxburg #bloxburg #warzone #bloxburgcontentcreator #funny #gaming #bloxburgnewleaks",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771135838.0,
+      "url": "https://www.youtube.com/watch?v=nNfd1c36HNk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Work With Me At My Bakery \ud83d\udc9d #youtubeshorts #bakery #bloxburg #bloxburgbuilds #roblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771134395.0,
+      "url": "https://www.youtube.com/watch?v=KNvMjQ4lVIM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Sneak peek at next Saturday! \ud83d\udc40  #roblox #bloxburgroleplay #robloxmemes #foryou #bloxburg #fyp",
       "description": "...",
       "source": "YouTube",
@@ -268,24 +286,6 @@
       "source": "YouTube",
       "timestamp": 1771124441.0,
       "url": "https://www.youtube.com/watch?v=_kyEbewxED8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #roblox #policetycoon #mm2 #robloxedit #bloxburg #funny #gaming #vlog #memes",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771124408.0,
-      "url": "https://www.youtube.com/watch?v=4ONTmdPmG5g",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#rblx #roblox #videogamememes #mm2 #funnygames #bloxburg #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771122722.0,
-      "url": "https://www.youtube.com/watch?v=Yne_Yy-ndmo",
       "icon": "fa-youtube"
     },
     {
@@ -326,7 +326,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771136440.3187728,
+    "generated_at": 1771137640.3170826,
     "mode": "memory",
     "refresh_interval": 2000
   }
