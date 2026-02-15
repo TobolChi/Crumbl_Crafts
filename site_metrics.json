@@ -245,6 +245,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "Sneak peek at next Saturday! \ud83d\udc40  #roblox #bloxburgroleplay #robloxmemes #foryou #bloxburg #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771129917.0,
+      "url": "https://www.youtube.com/watch?v=5Hl-ND_MZak",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "bloxburg house so far.. #em#is#me#bloxburg{emisme}",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771128908.0,
+      "url": "https://www.youtube.com/watch?v=huVYwghdYpI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #roblox #robloxbloxburgspeedbuild #funny #policetycoon #robloxgames #kpop #games #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -281,6 +299,15 @@
     },
     {
       "type": "trend",
+      "title": "#remix #rave #vrfs #roblox #roblox #hiphop #funny #bloxburg #spongebob #spongebob #homerave #vr",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771120052.0,
+      "url": "https://www.youtube.com/watch?v=AtOF-VZjuec",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "That didn\u2019t go as planned \ud83d\ude2d#roblox #bloxburg #robloxbloxburg #robloxshorts #robloxgames",
       "description": "...",
       "source": "YouTube",
@@ -289,44 +316,26 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Who can!? #roblox  #bloxburg #houses",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771115391.0,
+      "url": "https://www.youtube.com/watch?v=UC24wOHKQyw",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "one of the most iconic bloxburg NPC&#39;s who vanished... #roblox  #bloxburg",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
-    },
-    {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
-    },
-    {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "timestamp": 1771110476.0,
+      "url": "https://www.youtube.com/watch?v=WTohQsLAOyg",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1771131640.3198795,
+    "generated_at": 1771132840.3218992,
     "mode": "memory",
     "refresh_interval": 2000
   }
