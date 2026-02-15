@@ -236,6 +236,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "I built my favorite YouTubers house in bloxburg! #bloxburg #shorts #zamfam",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771185745.0,
+      "url": "https://www.youtube.com/watch?v=IBbIrx1Fuj0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "When you take off the roof... #bloxburg #roblox #welcometobloxburg #viral #fyp #bloxburgbuild",
       "description": "When you take off the roof... #bloxburg #roblox #welcometobloxburg #viral #fyp #bloxburgbuild....",
       "source": "YouTube",
@@ -268,15 +277,6 @@
       "source": "YouTube",
       "timestamp": 1771174806.0,
       "url": "https://www.youtube.com/watch?v=4XZDju5vEkA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I Tried Catching EVERY Bug in Bloxburg!",
-      "description": "Join my neighborhood! Want your builds to be in a video? Show them off in my community! Neighborhood...",
-      "source": "YouTube",
-      "timestamp": 1771171206.0,
-      "url": "https://www.youtube.com/watch?v=bOwIUzHV61c",
       "icon": "fa-youtube"
     },
     {
@@ -317,7 +317,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771187440.7749598,
+    "generated_at": 1771188040.3208976,
     "mode": "memory",
     "refresh_interval": 2000
   }
