@@ -236,6 +236,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "DAISY HAS A SLUMBER PARTY! *AWAKE AT 2AM! SCARY* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "source": "YouTube",
+      "timestamp": 1771189206.0,
+      "url": "https://www.youtube.com/watch?v=woQ6r38LfoE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #roblox #funny #policetycoon #robloxgames #kpop #games #granny #bloxburg #animation",
       "description": "Roblox....",
       "source": "YouTube",
@@ -268,15 +277,6 @@
       "source": "YouTube",
       "timestamp": 1771179266.0,
       "url": "https://www.youtube.com/watch?v=H0FGTu58u5Q",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox Cube Hunt  From Sausage Fails to Speed Run Glory! #robloxchallenge #bloxburg #newrobloxgame",
-      "description": "Roblox #RobloxGameplay #Roblox2026 #RobloxGaming #BestRobloxVideos #RobloxFunnyMoments #RobloxChalle...",
-      "source": "YouTube",
-      "timestamp": 1771179042.0,
-      "url": "https://www.youtube.com/watch?v=KH0Bfwb3wwg",
       "icon": "fa-youtube"
     },
     {
@@ -317,7 +317,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771190440.3235974,
+    "generated_at": 1771191640.327286,
     "mode": "memory",
     "refresh_interval": 2000
   }
