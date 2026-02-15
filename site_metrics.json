@@ -236,11 +236,29 @@
   "news": [
     {
       "type": "trend",
+      "title": "When you take off the roof... #bloxburg #roblox #welcometobloxburg #viral #fyp #bloxburgbuild",
+      "description": "When you take off the roof... #bloxburg #roblox #welcometobloxburg #viral #fyp #bloxburgbuild....",
+      "source": "YouTube",
+      "timestamp": 1771179266.0,
+      "url": "https://www.youtube.com/watch?v=H0FGTu58u5Q",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox Cube Hunt  From Sausage Fails to Speed Run Glory! #robloxchallenge #bloxburg #newrobloxgame",
       "description": "Roblox #RobloxGameplay #Roblox2026 #RobloxGaming #BestRobloxVideos #RobloxFunnyMoments #RobloxChalle...",
       "source": "YouTube",
       "timestamp": 1771179042.0,
       "url": "https://www.youtube.com/watch?v=KH0Bfwb3wwg",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Bloxburg || Large Family House Interior + Full Tour || Speed Build",
+      "description": "welcometobloxburg #bloxburgspeedbuilds - 4 bedrooms - 1 nursery - 2 bathrooms - living room - kitche...",
+      "source": "YouTube",
+      "timestamp": 1771178262.0,
+      "url": "https://www.youtube.com/watch?v=7PR16EfM-G4",
       "icon": "fa-youtube"
     },
     {
@@ -259,24 +277,6 @@
       "source": "YouTube",
       "timestamp": 1771171206.0,
       "url": "https://www.youtube.com/watch?v=bOwIUzHV61c",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #roblox #policetycoon #mm2 #robloxedit #bloxburg #funny #gaming #vlog #memes",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771167692.0,
-      "url": "https://www.youtube.com/watch?v=xD8hj4VmSKE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #roblox #funny #policetycoon #robloxgames #kpop #games #bloxburg #granny #animation",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771167600.0,
-      "url": "https://www.youtube.com/watch?v=-9AyPyzNqhE",
       "icon": "fa-youtube"
     },
     {
@@ -317,7 +317,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771182040.7402358,
+    "generated_at": 1771184440.3213735,
     "mode": "memory",
     "refresh_interval": 2000
   }
