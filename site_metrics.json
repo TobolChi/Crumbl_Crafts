@@ -245,6 +245,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "#roblox #rblx #videogamememes #amazingroblox #funnygames #newupdateinrobloxbedwars #bloxburg #mm2",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771122738.0,
+      "url": "https://www.youtube.com/watch?v=WYbhu3DjRLs",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "#rblx #roblox #videogamememes #mm2 #funnygames #bloxburg #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771122722.0,
+      "url": "https://www.youtube.com/watch?v=Yne_Yy-ndmo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "bmf #roblox #dothingsyoudontwanttodo #bloxburg #lifeisbutadream #roleplay",
       "description": "...",
       "source": "YouTube",
@@ -268,24 +286,6 @@
       "source": "YouTube",
       "timestamp": 1771110055.0,
       "url": "https://www.youtube.com/watch?v=r54e50j0BKU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "music to my ears #roblox #bloxburg #nostalgia #lovelyjules #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771104762.0,
-      "url": "https://www.youtube.com/watch?v=cvJp5LlF6k4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Pass the phone with the girls\u2728\ud83d\udc40 #berryave #roblox #roleplay #bloxburg #shorts #viral ",
-      "description": "More content with the girls!   @Alaia-k8s @SadieDreamPlays @EllaBerry-Ave @Zuri_berryave @Nat_berrya...",
-      "source": "YouTube",
-      "timestamp": 1771104759.0,
-      "url": "https://www.youtube.com/watch?v=MsSMgj0csRY",
       "icon": "fa-youtube"
     },
     {
@@ -326,7 +326,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771122640.6555634,
+    "generated_at": 1771123240.3220725,
     "mode": "memory",
     "refresh_interval": 2000
   }
