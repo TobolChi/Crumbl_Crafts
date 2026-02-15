@@ -176,15 +176,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/853052707732324352"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "th.lvliest_ethel left the server",
-      "timestamp": 1770552076,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1032256040516988980"
     }
   ],
   "pipeline": [
@@ -236,6 +227,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "Goodbye old Bloxburg #bloxburg #roblox #fyp #shorts #nostalgia",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771156894.0,
+      "url": "https://www.youtube.com/watch?v=w9716-0bnwU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "SUPER CHEAP FAMILY MANSION LAYOUT IN ROBLOX BLOXBURG #bloxburg #roblox #robloxbloxburgspeedbuild",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771156599.0,
+      "url": "https://www.youtube.com/watch?v=GCNTW4slBzw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #roblox #robloxbloxburgspeedbuild #funny #policetycoon #robloxgames #kpop #games #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -259,24 +268,6 @@
       "source": "YouTube",
       "timestamp": 1771143640.0,
       "url": "https://www.youtube.com/watch?v=yFMKvut75W4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "emojis #bloxburg #bloxburg #warzone #bloxburgcontentcreator #funny #gaming #bloxburgnewleaks",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771135838.0,
-      "url": "https://www.youtube.com/watch?v=nNfd1c36HNk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Work With Me At My Bakery \ud83d\udc9d #youtubeshorts #bakery #bloxburg #bloxburgbuilds #roblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771134395.0,
-      "url": "https://www.youtube.com/watch?v=KNvMjQ4lVIM",
       "icon": "fa-youtube"
     },
     {
@@ -317,7 +308,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771156840.3304715,
+    "generated_at": 1771158040.3211572,
     "mode": "memory",
     "refresh_interval": 2000
   }
