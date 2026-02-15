@@ -245,15 +245,6 @@
   "news": [
     {
       "type": "trend",
-      "title": "THE WIFI\ud83d\udcc9\ud83d\udcc9\ud83d\ude2c\ud83d\ude2c #fyp #bloxburg #roblox #mello #like",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771111989.0,
-      "url": "https://www.youtube.com/watch?v=L18f-khM8aE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "one of the most iconic bloxburg NPC&#39;s who vanished... #roblox  #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -268,6 +259,15 @@
       "source": "YouTube",
       "timestamp": 1771110055.0,
       "url": "https://www.youtube.com/watch?v=r54e50j0BKU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Don\u2019t feel embarrassed!\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d #schoollife #roblox #helpmemakethismakesense #robloxfunny #bloxburg \ufffc",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771108520.0,
+      "url": "https://www.youtube.com/watch?v=2vIclUAHsmE",
       "icon": "fa-youtube"
     },
     {
@@ -326,7 +326,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771117240.6015372,
+    "generated_at": 1771118440.3198574,
     "mode": "memory",
     "refresh_interval": 2000
   }
