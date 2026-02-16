@@ -7,8 +7,8 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 365,
-    "joined_today": 4,
+    "total_members": 366,
+    "joined_today": 5,
     "active_shops": 1,
     "avg_response_time": 395.25
   },
@@ -24,6 +24,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_join",
+      "shop_name": "Server",
+      "message": "hechosenn joined the server",
+      "timestamp": 1771272765,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/1069885054781755463"
+    },
     {
       "type": "member_leave",
       "shop_name": "Server",
@@ -299,6 +308,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "I BUILT A FANCY MANSION IN BLOXBURG",
+      "description": "bloxburg #roblox #robloxbloxburg Everyone needs a bit of luxury in their life...so I built a massive...",
+      "source": "YouTube",
+      "timestamp": 1771272021.0,
+      "url": "https://www.youtube.com/watch?v=IPzovIL3xLU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "ningu\u00e9m: &quot; vce decidiu sair do bloxburg&quot; #roblox #rp  #bloxburg  #roleplay #fyp #viralshorts",
       "description": "...",
       "source": "YouTube",
@@ -331,15 +349,6 @@
       "source": "YouTube",
       "timestamp": 1771261309.0,
       "url": "https://www.youtube.com/watch?v=BDrtemkkuU4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Like lol #roblox #trend #amnewbutnottheleast #vecna #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771259896.0,
-      "url": "https://www.youtube.com/watch?v=l_oZYLB7LM0",
       "icon": "fa-youtube"
     },
     {
@@ -380,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771272040.3175387,
+    "generated_at": 1771272767.7063732,
     "mode": "memory",
     "refresh_interval": 2000
   }
