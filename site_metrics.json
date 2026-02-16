@@ -299,20 +299,29 @@
   "news": [
     {
       "type": "trend",
+      "title": "\u2728\ud83c\udf19My Night Routine\ud83d\udcab\ud83c\udf1f| Bloxburg RP #roblox #roleplay #welcometobloxburg #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771255428.0,
+      "url": "https://www.youtube.com/watch?v=-XiXp-yqfuo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Hii I\u2019m Jenn! #roblox #helpmemakethismakesense #robloxedit #amnewbutnottheleast #edit #bloxburg #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771255426.0,
+      "url": "https://www.youtube.com/watch?v=5ZFbMneRSCM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "credits to @itz_zoey_editz #roblox #mm2 #adoptme #bloxburg #99nightintheforest #ytshorts #viral",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1771254163.0,
       "url": "https://www.youtube.com/watch?v=bPgo1VknVtg",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "the whole thing is WILD #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771252671.0,
-      "url": "https://www.youtube.com/watch?v=Bb3cH8jPFjQ",
       "icon": "fa-youtube"
     },
     {
@@ -331,15 +340,6 @@
       "source": "YouTube",
       "timestamp": 1771210753.0,
       "url": "https://www.youtube.com/watch?v=X6gEV6cRpuo",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "What do you think this?\ud83d\ude00 #schoollife #roblox #helpmemakethismakesense #robloxfunny #bloxburg \ufffc",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771196937.0,
-      "url": "https://www.youtube.com/watch?v=zBLFzRZVhdE",
       "icon": "fa-youtube"
     },
     {
@@ -380,7 +380,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771257640.7510085,
+    "generated_at": 1771258840.321463,
     "mode": "memory",
     "refresh_interval": 2000
   }
