@@ -308,6 +308,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "Bloxburg\u2019s First Lunar New Year Update!! \ud83e\udde7\ud83d\udc09 #Roblox #Bloxburg #BloxburgUpdate #LunarNewYear #Fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771275419.0,
+      "url": "https://www.youtube.com/watch?v=MgC64PeAjL4",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "bloxburg really tried to fix the active player count but failed once again... #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771274391.0,
+      "url": "https://www.youtube.com/watch?v=VoVwORpUSqk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "I BUILT A FANCY MANSION IN BLOXBURG",
       "description": "bloxburg #roblox #robloxbloxburg Everyone needs a bit of luxury in their life...so I built a massive...",
       "source": "YouTube",
@@ -331,24 +349,6 @@
       "source": "YouTube",
       "timestamp": 1771269640.0,
       "url": "https://www.youtube.com/watch?v=-B7CSj-N-Ow",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Stock up before the event ends!  #roblox #bloxburg #robloxfyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771265830.0,
-      "url": "https://www.youtube.com/watch?v=F2IYInByWnQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Yeah #roblox #bloxburg #helpmemakethismakesense",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771263406.0,
-      "url": "https://www.youtube.com/watch?v=oA8vj_uoqY0",
       "icon": "fa-youtube"
     },
     {
@@ -389,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771275640.3484905,
+    "generated_at": 1771276840.3185568,
     "mode": "memory",
     "refresh_interval": 2000
   }
