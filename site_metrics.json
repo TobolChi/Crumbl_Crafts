@@ -299,6 +299,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "credits to @itz_zoey_editz #roblox #mm2 #adoptme #bloxburg #99nightintheforest #ytshorts #viral",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771254163.0,
+      "url": "https://www.youtube.com/watch?v=bPgo1VknVtg",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "the whole thing is WILD #roblox #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -313,15 +322,6 @@
       "source": "YouTube",
       "timestamp": 1771247826.0,
       "url": "https://www.youtube.com/watch?v=YWuMLqlMDrk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#roblox #bloxburg #preppy #slay",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771238304.0,
-      "url": "https://www.youtube.com/watch?v=y3AqBz_2G7Q",
       "icon": "fa-youtube"
     },
     {
@@ -380,7 +380,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771255240.3206832,
+    "generated_at": 1771256440.3228118,
     "mode": "memory",
     "refresh_interval": 2000
   }
