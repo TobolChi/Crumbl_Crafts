@@ -7,8 +7,8 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 365,
-    "joined_today": 3,
+    "total_members": 366,
+    "joined_today": 4,
     "active_shops": 1,
     "avg_response_time": 395.25
   },
@@ -24,6 +24,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_join",
+      "shop_name": "Server",
+      "message": "akz_yktv joined the server",
+      "timestamp": 1771255006,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/1353210918716051558"
+    },
     {
       "type": "member_leave",
       "shop_name": "Server",
@@ -281,6 +290,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "the whole thing is WILD #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771252671.0,
+      "url": "https://www.youtube.com/watch?v=Bb3cH8jPFjQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "16 \u092b\u093c\u0930\u0935\u0930\u0940 2026 #bloxburg #sims4 #17\u0917\u094b\u0924\u0915\u093f18\u092e\u0941\u0924\u092d\u094b\u0932\u093e\u0930\u093e\u092e\u0928\u093f\u092e\u0932\u0940 #roblox #ekmotahathighumechal #thesims4 li",
       "description": "...",
       "source": "YouTube",
@@ -316,62 +334,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "POV Your BLOXBURG House Is On Fire",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771196406.0,
-      "url": "https://www.youtube.com/watch?v=4B1MblzWMZ8",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "my fans are the BEST builders #roblox #bloxburg #bloxburgbuild #bloxburgbuilds #fyp",
-      "description": "...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1771195445.0,
-      "url": "https://www.youtube.com/watch?v=eVDfkIJefp0",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "Giant Farmhouse Mansion Bloxburg Speedbuild",
-      "description": "Hey guys! Welcome back! Dm me on instagram for a build I charge cash app, venmo, paypal, or amazon g...",
-      "source": "YouTube",
-      "timestamp": 1771192036.0,
-      "url": "https://www.youtube.com/watch?v=Q-IQiRvElj8",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "DAISY HAS A SLUMBER PARTY! *AWAKE AT 2AM! SCARY* Roblox Bloxburg Voiced RP Roleplay",
-      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
-      "source": "YouTube",
-      "timestamp": 1771189206.0,
-      "url": "https://www.youtube.com/watch?v=woQ6r38LfoE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #roblox #policetycoon #mm2 #robloxedit #bloxburg #funny #gaming #vlog #memes",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771188301.0,
-      "url": "https://www.youtube.com/watch?v=70s4bYt8Tcs",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I built my favorite YouTubers house in bloxburg! #bloxburg #shorts #zamfam",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771185745.0,
-      "url": "https://www.youtube.com/watch?v=IBbIrx1Fuj0",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1771254040.3215895,
+    "generated_at": 1771255008.93725,
     "mode": "memory",
     "refresh_interval": 2000
   }
