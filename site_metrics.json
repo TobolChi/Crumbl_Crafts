@@ -299,6 +299,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "ningu\u00e9m: &quot; vce decidiu sair do bloxburg&quot; #roblox #rp  #bloxburg  #roleplay #fyp #viralshorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771269640.0,
+      "url": "https://www.youtube.com/watch?v=-B7CSj-N-Ow",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Yeah #roblox #bloxburg #helpmemakethismakesense",
       "description": "...",
       "source": "YouTube",
@@ -317,79 +326,61 @@
     },
     {
       "type": "trend",
-      "title": "\u2728\ud83c\udf19My Night Routine\ud83d\udcab\ud83c\udf1f| Bloxburg RP #roblox #roleplay #welcometobloxburg #bloxburg",
+      "title": "Sm didn\u2019t get any food #rblx #robloxedit #roblox #itzcutieplayzrobloxedits #bloxburg #robloxclothing",
       "description": "...",
       "source": "YouTube",
-      "timestamp": 1771255428.0,
-      "url": "https://www.youtube.com/watch?v=-XiXp-yqfuo",
+      "timestamp": 1771261309.0,
+      "url": "https://www.youtube.com/watch?v=BDrtemkkuU4",
       "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Hii I\u2019m Jenn! #roblox #helpmemakethismakesense #robloxedit #amnewbutnottheleast #edit #bloxburg #fyp",
+      "title": "Like lol #roblox #trend #amnewbutnottheleast #vecna #bloxburg",
       "description": "...",
       "source": "YouTube",
-      "timestamp": 1771255426.0,
-      "url": "https://www.youtube.com/watch?v=5ZFbMneRSCM",
+      "timestamp": 1771259896.0,
+      "url": "https://www.youtube.com/watch?v=l_oZYLB7LM0",
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "worm tower for short #roblox #newgameinroblox #robloxnoob #gaming #games #bloxburgnewleaks #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771248140.0,
-      "url": "https://www.youtube.com/watch?v=ghm-z6YSci4",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "16 \u092b\u093c\u0930\u0935\u0930\u0940 2026 #bloxburg #sims4 #17\u0917\u094b\u0924\u0915\u093f18\u092e\u0941\u0924\u092d\u094b\u0932\u093e\u0930\u093e\u092e\u0928\u093f\u092e\u0932\u0940 #roblox #ekmotahathighumechal #thesims4 li",
-      "description": "...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1771247826.0,
-      "url": "https://www.youtube.com/watch?v=YWuMLqlMDrk",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "#roblox #bloxburg #preppy #slay",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771238304.0,
-      "url": "https://www.youtube.com/watch?v=y3AqBz_2G7Q",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "Barbie&#39;s A Smidge of Midge in Bloxburg",
-      "description": "heyy guys! I'm so happy that the episode is finally out after so many delays because of the files ge...",
-      "source": "YouTube",
-      "timestamp": 1771210753.0,
-      "url": "https://www.youtube.com/watch?v=X6gEV6cRpuo",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "What do you think this?\ud83d\ude00 #schoollife #roblox #helpmemakethismakesense #robloxfunny #bloxburg \ufffc",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771196937.0,
-      "url": "https://www.youtube.com/watch?v=zBLFzRZVhdE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "POV Your BLOXBURG House Is On Fire",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771196406.0,
-      "url": "https://www.youtube.com/watch?v=4B1MblzWMZ8",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1771269640.317968,
+    "generated_at": 1771270840.322018,
     "mode": "memory",
     "refresh_interval": 2000
   }
