@@ -317,47 +317,47 @@
   "news": [
     {
       "type": "trend",
+      "title": "The Silver Secret | SEASON II, EPISODE III | Roblox Bloxburg Series by Illumination Theatre",
+      "description": "Celestia Silver, a girl born half vampire & half human, whose kingdom believes in peace with humans ...",
+      "source": "YouTube",
+      "timestamp": 1771279206.0,
+      "url": "https://www.youtube.com/watch?v=4c5slRtOfrQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "How to make a realistic door in bloxburg\u2728\ud83d\udeaa #bloxburg #viral #shortsviral #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771278979.0,
+      "url": "https://www.youtube.com/watch?v=m4EDHa5LvTk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "How i feel after getting  a little bit used to the keyboard i got #welcometobloxburg #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771278324.0,
+      "url": "https://www.youtube.com/watch?v=wH56iyw3N_g",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "\ud83d\udd34BUILDING A HUGE TOWN IN BLOXBURG FOR MY ROLEPLAY SERIES...",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE PEACH when buying robux or premium!\u2b50\ufe0f \ud83c\udf99\ufe0fBe sure to SUBSCRIBE   to ...",
+      "source": "YouTube",
+      "timestamp": 1771276578.0,
+      "url": "https://www.youtube.com/watch?v=p7mDtoNVDuY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Bloxburg\u2019s First Lunar New Year Update!! \ud83e\udde7\ud83d\udc09 #Roblox #Bloxburg #BloxburgUpdate #LunarNewYear #Fyp",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1771275419.0,
       "url": "https://www.youtube.com/watch?v=MgC64PeAjL4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "AHH OMG \ud83d\ude31\ud83d\udc96 #shorts #roblox #stealabrainrot #bloxburg #mm2 #dresstoimpress",
-      "description": "CHEAP ROBUX CHEAP HEADLESS CHEAP KORBLOX ROBLOX #roblox #robloxedit #mm2 #brookhaven #adoptme #mm2 ....",
-      "source": "YouTube",
-      "timestamp": 1771275087.0,
-      "url": "https://www.youtube.com/watch?v=ia7W90jj8IU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "bloxburg really tried to fix the active player count but failed once again... #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771274391.0,
-      "url": "https://www.youtube.com/watch?v=VoVwORpUSqk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I BUILT A FANCY MANSION IN BLOXBURG",
-      "description": "bloxburg #roblox #robloxbloxburg Everyone needs a bit of luxury in their life...so I built a massive...",
-      "source": "YouTube",
-      "timestamp": 1771272021.0,
-      "url": "https://www.youtube.com/watch?v=IPzovIL3xLU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "the BEST full time job \u263a\ufe0f #roblox #bloxburg #bloxburgbuild #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771271223.0,
-      "url": "https://www.youtube.com/watch?v=U-9JPTLm1gc",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771279240.600678,
+    "generated_at": 1771280440.3177567,
     "mode": "memory",
     "refresh_interval": 2000
   }
