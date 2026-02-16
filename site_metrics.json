@@ -299,6 +299,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Yeah #roblox #bloxburg #helpmemakethismakesense",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771263406.0,
+      "url": "https://www.youtube.com/watch?v=oA8vj_uoqY0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "kuzenlerle edit #football #memes #edit #roblox #bloxburg #funny #goat #sad",
       "description": "...",
       "source": "YouTube",
@@ -331,15 +340,6 @@
       "source": "YouTube",
       "timestamp": 1771255426.0,
       "url": "https://www.youtube.com/watch?v=5ZFbMneRSCM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "credits to @itz_zoey_editz #roblox #mm2 #adoptme #bloxburg #99nightintheforest #ytshorts #viral",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771254163.0,
-      "url": "https://www.youtube.com/watch?v=bPgo1VknVtg",
       "icon": "fa-youtube"
     },
     {
@@ -380,7 +380,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771264840.3230093,
+    "generated_at": 1771266040.329047,
     "mode": "memory",
     "refresh_interval": 2000
   }
