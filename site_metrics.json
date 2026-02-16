@@ -263,15 +263,6 @@
   "news": [
     {
       "type": "trend",
-      "title": "Main ke rumah pengusaha bakery || Bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771227421.0,
-      "url": "https://www.youtube.com/watch?v=9iJFYp3x46Q",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "Bloxburg build details #roblox #bloxburg #bloxburgbuild",
       "description": "roblox #bloxburgcontentcreator #bloxburg....",
       "source": "YouTube",
@@ -304,6 +295,15 @@
       "source": "YouTube",
       "timestamp": 1771196406.0,
       "url": "https://www.youtube.com/watch?v=4B1MblzWMZ8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Giant Farmhouse Mansion Bloxburg Speedbuild",
+      "description": "Hey guys! Welcome back! Dm me on instagram for a build I charge cash app, venmo, paypal, or amazon g...",
+      "source": "YouTube",
+      "timestamp": 1771192036.0,
+      "url": "https://www.youtube.com/watch?v=Q-IQiRvElj8",
       "icon": "fa-youtube"
     },
     {
@@ -344,7 +344,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771230640.634514,
+    "generated_at": 1771231240.3204796,
     "mode": "memory",
     "refresh_interval": 2000
   }
