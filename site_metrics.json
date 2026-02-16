@@ -281,24 +281,6 @@
     },
     {
       "type": "trend",
-      "title": "#roblox #bloxburg #fyp #relatable #bloxburgcontentcreator",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771233000.0,
-      "url": "https://www.youtube.com/watch?v=pzDdQAwyZRA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Barbie&#39;s A Smidge of Midge in Bloxburg",
-      "description": "\"Barbie's old best-friend Midge Hadley moves from Willows Wisconsin to Malibu. Midge arrived in Blac...",
-      "source": "YouTube",
-      "timestamp": 1771210753.0,
-      "url": "https://www.youtube.com/watch?v=X6gEV6cRpuo",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "What do you think this?\ud83d\ude00 #schoollife #roblox #helpmemakethismakesense #robloxfunny #bloxburg \ufffc",
       "description": "...",
       "source": "YouTube",
@@ -313,6 +295,24 @@
       "source": "YouTube",
       "timestamp": 1771196406.0,
       "url": "https://www.youtube.com/watch?v=4B1MblzWMZ8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "my fans are the BEST builders #roblox #bloxburg #bloxburgbuild #bloxburgbuilds #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771195445.0,
+      "url": "https://www.youtube.com/watch?v=eVDfkIJefp0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Giant Farmhouse Mansion Bloxburg Speedbuild",
+      "description": "Hey guys! Welcome back! Dm me on instagram for a build I charge cash app, venmo, paypal, or amazon g...",
+      "source": "YouTube",
+      "timestamp": 1771192036.0,
+      "url": "https://www.youtube.com/watch?v=Q-IQiRvElj8",
       "icon": "fa-youtube"
     },
     {
@@ -353,7 +353,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771244440.3210664,
+    "generated_at": 1771245640.3217432,
     "mode": "memory",
     "refresh_interval": 2000
   }
