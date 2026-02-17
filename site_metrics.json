@@ -317,11 +317,29 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #automobile #bloxburg",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1771351236.0,
+      "url": "https://www.youtube.com/watch?v=UBRLE99KVQ8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Summer Coastal Beach House \ud83c\udf0a | Bloxburg House Build \ud801\ude5a",
       "description": "\u0f18\u2661 \u00b7\u02da \u2661 OPEN ME \u00b7\u02da \u0f18\u2661 \u00b7\u02da \u2661 Join my Roblox Group! https://www.roblox.com/groups/8948903/Daniellerys-T...",
       "source": "YouTube",
       "timestamp": 1771344266.0,
       "url": "https://www.youtube.com/watch?v=TJpYmfkGLC8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Barry&#39;s Prison RUN Obby\ud83d\ude02\ud83d\ude31#roblox#robloxnoob\u200b #bloxburg\u200b #bloxflip\u200b #rlox #bloxburghacks #robloxmemes",
+      "description": "Barry's Prison RUN Obby    #roblox#robloxnoob #bloxburg #bloxflip #rlox #bloxburghacks #robloxmemes ...",
+      "source": "YouTube",
+      "timestamp": 1771342211.0,
+      "url": "https://www.youtube.com/watch?v=C6X0aNvUeME",
       "icon": "fa-youtube"
     },
     {
@@ -340,24 +358,6 @@
       "source": "YouTube",
       "timestamp": 1771339997.0,
       "url": "https://www.youtube.com/watch?v=KTJBIJSw3ZU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "BLOXBURG LUNAR NEW YEARS UPDATE! NEW ITEMS + EVENT AREA",
-      "description": "BUY MY MERCH: https://acggoods.com/store/glossbossboutique OPEN ME FOR SOCIALS, MERCH & MORE! \u0c68\u09ce hey...",
-      "source": "YouTube",
-      "timestamp": 1771336724.0,
-      "url": "https://www.youtube.com/watch?v=Tpt2lwRKZak",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "the new bloxburg lunar new year update! #bloxburg #bloxburgupdate #bloxburglunarnewyear",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771336279.0,
-      "url": "https://www.youtube.com/watch?v=5qQBInKL4xo",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771351240.4119668,
+    "generated_at": 1771352440.3239398,
     "mode": "memory",
     "refresh_interval": 2000
   }
