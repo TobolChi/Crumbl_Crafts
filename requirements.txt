@@ -1,4 +1,4 @@
-mysqlclient==2.2.4        # MySQL/MariaDB driver for Python
+
 Flask==3.0.2              # Web framework (if your API uses Flask)
 requests==2.31.0          # For HTTP requests
 pandas==2.2.1             # For data handling/metrics
