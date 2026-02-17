@@ -541,6 +541,10 @@
             border-radius: var(--border-radius) var(--border-radius) 0 0;
             border-bottom: none;
             padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
         }
 
         .section-header h2 {
@@ -1069,60 +1073,30 @@
             border-radius: 0;
         }
 
-        /* Active Season Indicator - Chat Head Style */
+        /* Active Season Indicator - Compact Professional Style */
         .active-season-indicator {
-            position: relative;
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.95), rgba(247, 147, 30, 0.95));
-            padding: 12px 20px;
-            margin: 15px 20px 10px 20px;
-            border-radius: 25px;
-            box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-            border: 2px solid rgba(255, 215, 0, 0.6);
-            display: flex;
+            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            gap: 12px;
-            animation: pulse-glow 2s ease-in-out infinite;
+            gap: 8px;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(247, 147, 30, 0.1));
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1.5px solid rgba(255, 107, 53, 0.3);
+            font-size: 0.9rem;
+            color: var(--text-color);
+            box-shadow: 0 2px 8px rgba(255, 107, 53, 0.15);
+            transition: all 0.3s ease;
+            white-space: nowrap;
         }
-
-        @keyframes pulse-glow {
-            0%, 100% {
-                box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-            }
-            50% {
-                box-shadow: 0 4px 30px rgba(255, 107, 53, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.4);
-            }
+        
+        .active-season-indicator:hover {
+            border-color: rgba(255, 107, 53, 0.5);
+            box-shadow: 0 3px 12px rgba(255, 107, 53, 0.25);
         }
 
         .active-season-indicator .season-icon {
-            font-size: 1.8rem;
-            animation: rotate-bounce 3s ease-in-out infinite;
-        }
-
-        @keyframes rotate-bounce {
-            0%, 100% { transform: rotate(0deg) scale(1); }
-            25% { transform: rotate(-10deg) scale(1.1); }
-            75% { transform: rotate(10deg) scale(1.1); }
-        }
-
-        .active-season-indicator .season-text {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-        }
-
-        .active-season-indicator .season-label {
-            font-size: 0.75rem;
-            opacity: 0.9;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .active-season-indicator .season-name {
             font-size: 1.2rem;
-            font-weight: 700;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
         }
 
         /* Seasonal Sub-tabs */
@@ -1805,13 +1779,10 @@
             <section class="menu-section">
                 <div class="section-header">
                     <h2><i class="fas fa-book-open"></i> Menu Items</h2>
-                </div>
-                <!-- Active Season Indicator (Chat Head) -->
-                <div class="active-season-indicator" id="activeSeasonIndicator" style="display: none;">
-                    <div class="season-icon" id="activeSeasonIcon">🎃</div>
-                    <div class="season-text">
-                        <div class="season-label">Now Serving</div>
-                        <div class="season-name" id="activeSeasonName">Halloween</div>
+                    <!-- Active Season Indicator - Compact Badge -->
+                    <div class="active-season-indicator" id="activeSeasonIndicator" style="display: none;">
+                        <span class="season-icon" id="activeSeasonIcon">🎉</span>
+                        <span id="activeSeasonName">Active Season</span>
                     </div>
                 </div>
                 <div class="menu-tabs">
@@ -2022,27 +1993,19 @@
             
             // Only show indicator if we have valid active seasons
             if (elements.activeSeasonIndicator && validSeasons.length > 0) {
-                // Use the first active season for the indicator
-                const firstSeason = validSeasons[0];
-                const seasonKey = firstSeason.toLowerCase().replace(/\s+/g, '');
-                const seasonInfo = SEASONAL_CATEGORIES[seasonKey];
+                console.log('✅ Showing active season indicator for', validSeasons.length, 'season(s)');
+                elements.activeSeasonIndicator.style.display = 'inline-flex';
                 
-                console.log('🔍 Season key:', seasonKey, 'Season info found:', !!seasonInfo);
+                // Build seasons display
+                const seasonElements = validSeasons.map(season => {
+                    const seasonKey = season.toLowerCase().replace(/\s+/g, '');
+                    const seasonInfo = SEASONAL_CATEGORIES[seasonKey];
+                    return seasonInfo ? `${seasonInfo.emoji} ${seasonInfo.name}` : season;
+                }).join(' • ');
                 
-                if (seasonInfo) {
-                    console.log('✅ Showing active season indicator:', seasonInfo.name);
-                    elements.activeSeasonIndicator.style.display = 'flex';
-                    elements.activeSeasonIcon.textContent = seasonInfo.emoji;
-                    // Show count if multiple seasons
-                    if (validSeasons.length > 1) {
-                        elements.activeSeasonName.textContent = `${seasonInfo.name} +${validSeasons.length - 1}`;
-                    } else {
-                        elements.activeSeasonName.textContent = seasonInfo.name;
-                    }
-                } else {
-                    console.log('🚫 Hiding indicator (season not in SEASONAL_CATEGORIES)');
-                    elements.activeSeasonIndicator.style.display = 'none';
-                }
+                const label = validSeasons.length > 1 ? 'Active Seasons' : 'Active Season';
+                elements.activeSeasonIcon.textContent = '🎉';
+                elements.activeSeasonName.textContent = `${label}: ${seasonElements}`;
             } else if (elements.activeSeasonIndicator) {
                 console.log('🚫 Hiding active season indicator (no active season or elements missing)');
                 elements.activeSeasonIndicator.style.display = 'none';
