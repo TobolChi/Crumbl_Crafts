@@ -308,6 +308,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Chinese player rates Bloxburg&#39;s lunar update #roblox #bloxburg",
+      "description": "Happy Lunar new year to all that celebrates it, and wish you all with good fortune for 2026! \u606d\u559c\u53d1\u8d22 !!...",
+      "source": "YouTube",
+      "timestamp": 1771334801.0,
+      "url": "https://www.youtube.com/watch?v=faNBSJ-HNqA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Tour pela minha casa no bloxburg | Roblox",
       "description": "...",
       "source": "YouTube",
@@ -331,15 +340,6 @@
       "source": "YouTube",
       "timestamp": 1771326000.0,
       "url": "https://www.youtube.com/watch?v=XJT9vXDmFrM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Crackship trend w/ @noahcarrot #digitalart #collab #watamote #bloxburg #anime #trending #shorts",
-      "description": "idk why youtube is suggesting me these tags but sure why not #mizzle #imagic #imagia #nimmy #ibal #m...",
-      "source": "YouTube",
-      "timestamp": 1771313838.0,
-      "url": "https://www.youtube.com/watch?v=ZM7dfJ-4gyo",
       "icon": "fa-youtube"
     },
     {
@@ -389,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771336840.3301616,
+    "generated_at": 1771338040.3185327,
     "mode": "memory",
     "refresh_interval": 2000
   }
