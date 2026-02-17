@@ -1860,10 +1860,11 @@
             'christmas': { name: 'Christmas', emoji: '🎄' },
             'newyear': { name: 'New Year', emoji: '🎆' },
             'valentines': { name: 'Valentines', emoji: '💝' },
-            'winter': { name: 'Winter', emoji: '❄️' }
+            'winter': { name: 'Winter', emoji: '❄️' },
+            'noactiveseason': { name: 'No Active Season', emoji: '🚫' }
         };
         
-        let activeSeason = 'Unavailable';
+        let activeSeason = 'No Active Season';
         let currentSeasonalView = 'halloween'; // Default view for seasonal subtabs
         let seasonalMenuData = {}; // Store all seasonal categories
         
@@ -1970,13 +1971,13 @@
                 const response = await fetch(CONFIG.activeSeasonUrl + '?_=' + Date.now());
                 if (response.ok) {
                     const data = await response.json();
-                    activeSeason = data.active_season || 'Unavailable';
+                    activeSeason = data.active_season || 'No Active Season';
                     console.log('🎃 Active Season:', activeSeason);
                     updateActiveSeasonIndicator();
                 }
             } catch (error) {
                 console.error('Error fetching active season:', error);
-                activeSeason = 'Unavailable';
+                activeSeason = 'No Active Season';
             }
         }
 
@@ -1984,7 +1985,7 @@
             const seasonKey = activeSeason.toLowerCase().replace(/\s+/g, '');
             const seasonInfo = SEASONAL_CATEGORIES[seasonKey];
             
-            if (elements.activeSeasonIndicator && activeSeason !== 'Unavailable' && seasonInfo) {
+            if (elements.activeSeasonIndicator && activeSeason !== 'No Active Season' && seasonInfo) {
                 elements.activeSeasonIndicator.style.display = 'flex';
                 elements.activeSeasonIcon.textContent = seasonInfo.emoji;
                 elements.activeSeasonName.textContent = seasonInfo.name;
