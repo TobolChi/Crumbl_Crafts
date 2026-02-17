@@ -1,7 +1,7 @@
 title: Crumbl Crafts
 description: Cooking Department Dashboard
 baseurl: "" # leave empty unless site is served from a subpath
-url: "https://tobolchi.github.io/Crumbl_Crafts" # must be absolute
+url: "https://tobolchi.github.io/Crumbl_Crafts" # must be absolute.
 
 theme: minima
 
