@@ -344,20 +344,20 @@
     },
     {
       "type": "trend",
+      "title": "BLOXBURG LUNAR NEW YEARS UPDATE! NEW ITEMS + EVENT AREA",
+      "description": "BUY MY MERCH: https://acggoods.com/store/glossbossboutique OPEN ME FOR SOCIALS, MERCH & MORE! \u0c68\u09ce hey...",
+      "source": "YouTube",
+      "timestamp": 1771336724.0,
+      "url": "https://www.youtube.com/watch?v=Tpt2lwRKZak",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "the new bloxburg lunar new year update! #bloxburg #bloxburgupdate #bloxburglunarnewyear",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1771336279.0,
       "url": "https://www.youtube.com/watch?v=5qQBInKL4xo",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Chinese player rates Bloxburg&#39;s lunar update #roblox #bloxburg",
-      "description": "Happy Lunar new year to all that celebrates it, and wish you all with good fortune for 2026! \u606d\u559c\u53d1\u8d22 !!...",
-      "source": "YouTube",
-      "timestamp": 1771334801.0,
-      "url": "https://www.youtube.com/watch?v=faNBSJ-HNqA",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771349440.657561,
+    "generated_at": 1771350040.3235824,
     "mode": "memory",
     "refresh_interval": 2000
   }
