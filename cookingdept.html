@@ -1069,6 +1069,108 @@
             border-radius: 0;
         }
 
+        /* Active Season Indicator - Chat Head Style */
+        .active-season-indicator {
+            position: relative;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.95), rgba(247, 147, 30, 0.95));
+            padding: 12px 20px;
+            margin: 15px 20px 10px 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            border: 2px solid rgba(255, 215, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            }
+            50% {
+                box-shadow: 0 4px 30px rgba(255, 107, 53, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            }
+        }
+
+        .active-season-indicator .season-icon {
+            font-size: 1.8rem;
+            animation: rotate-bounce 3s ease-in-out infinite;
+        }
+
+        @keyframes rotate-bounce {
+            0%, 100% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(-10deg) scale(1.1); }
+            75% { transform: rotate(10deg) scale(1.1); }
+        }
+
+        .active-season-indicator .season-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .active-season-indicator .season-label {
+            font-size: 0.75rem;
+            opacity: 0.9;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .active-season-indicator .season-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Seasonal Sub-tabs */
+        .seasonal-subtabs {
+            display: none;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(25, 25, 35, 0.9);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            flex-wrap: wrap;
+        }
+
+        .seasonal-subtabs.active {
+            display: flex;
+        }
+
+        .season-tab {
+            background: rgba(35, 35, 45, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--text-color);
+            padding: 8px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .season-tab:hover {
+            background: rgba(45, 45, 55, 0.9);
+            border-color: rgba(255, 255, 255, 0.25);
+            transform: translateY(-1px);
+        }
+
+        .season-tab.active {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.9), rgba(247, 147, 30, 0.9));
+            border-color: var(--accent-color);
+            color: white;
+            box-shadow: 0 2px 10px rgba(255, 107, 53, 0.4);
+        }
+
+        .season-tab .season-emoji {
+            font-size: 1.1rem;
+        }
+
         .menu-content {
             flex: 1;
             overflow-y: auto;
@@ -1693,9 +1795,27 @@
                 <div class="section-header">
                     <h2><i class="fas fa-book-open"></i> Menu Items</h2>
                 </div>
+                <!-- Active Season Indicator (Chat Head) -->
+                <div class="active-season-indicator" id="activeSeasonIndicator" style="display: none;">
+                    <div class="season-icon" id="activeSeasonIcon">🎃</div>
+                    <div class="season-text">
+                        <div class="season-label">Now Serving</div>
+                        <div class="season-name" id="activeSeasonName">Halloween</div>
+                    </div>
+                </div>
                 <div class="menu-tabs">
                     <button class="menu-tab active" data-category="seasonal">🍂 Seasonal</button>
                     <button class="menu-tab" data-category="non-seasonal">🍽️ Non-Seasonal</button>
+                    <button class="menu-tab" data-category="catering">🎉 Catering</button>
+                    <button class="menu-tab" data-category="unavailable">🚫 Unavailable</button>
+                </div>
+                <!-- Seasonal Sub-tabs -->
+                <div class="seasonal-subtabs" id="seasonalSubtabs">
+                    <button class="season-tab" data-season="halloween"><span class="season-emoji">🎃</span> Halloween</button>
+                    <button class="season-tab" data-season="christmas"><span class="season-emoji">🎄</span> Christmas</button>
+                    <button class="season-tab" data-season="newyear"><span class="season-emoji">🎆</span> New Year</button>
+                    <button class="season-tab" data-season="valentines"><span class="season-emoji">💝</span> Valentines</button>
+                    <button class="season-tab" data-season="winter"><span class="season-emoji">❄️</span> Winter</button>
                 </div>
                 <div class="menu-content" id="menuContainer">
                     <div class="loading">Loading menu data...</div>
@@ -1713,6 +1833,7 @@
         // Use local JSON file for chef data (hosted on GitHub Pages)
         // GitHub raw URL for bot-updated JSON data
         window.COOKING_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/chef-data.json';
+        window.ACTIVE_SEASON_ENDPOINT = 'https://tobolchi.github.io/Crumbl_Crafts/active_season.json';
         // Menu/activity are now bundled in chef-data.json
         window.MENU_OLD_ENDPOINT = '';
         window.MENU_NEW_ENDPOINT = '';
@@ -1728,11 +1849,27 @@
     <script>
         // Configuration for real data from your database
         const REMOTE_COOKING_ENDPOINT = window.COOKING_ENDPOINT || 'https://tobolchi.github.io/Crumbl_Crafts/chef-data.json';
+        const REMOTE_ACTIVE_SEASON_ENDPOINT = window.ACTIVE_SEASON_ENDPOINT || 'https://tobolchi.github.io/Crumbl_Crafts/active_season.json';
         const REMOTE_MENU_OLD_ENDPOINT = window.MENU_OLD_ENDPOINT || null;
         const REMOTE_MENU_NEW_ENDPOINT = window.MENU_NEW_ENDPOINT || null;
         const REMOTE_ACTIVITY_ENDPOINT = window.ACTIVITY_ENDPOINT || null;
+        
+        // Seasonal menu configuration
+        const SEASONAL_CATEGORIES = {
+            'halloween': { name: 'Halloween', emoji: '🎃' },
+            'christmas': { name: 'Christmas', emoji: '🎄' },
+            'newyear': { name: 'New Year', emoji: '🎆' },
+            'valentines': { name: 'Valentines', emoji: '💝' },
+            'winter': { name: 'Winter', emoji: '❄️' }
+        };
+        
+        let activeSeason = 'Unavailable';
+        let currentSeasonalView = 'halloween'; // Default view for seasonal subtabs
+        let seasonalMenuData = {}; // Store all seasonal categories
+        
         const CONFIG = {
             dataUrl: REMOTE_COOKING_ENDPOINT,
+            activeSeasonUrl: REMOTE_ACTIVE_SEASON_ENDPOINT,
             refreshInterval: 30000, // 30 seconds
             maxVisibleActivities: 20,
             requestTimeout: 8000,
@@ -1774,7 +1911,11 @@
             chefRankings: document.getElementById('chefRankings'),
             menuContainer: document.getElementById('menuContainer'),
             activityLog: document.getElementById('activityLog'),
-            menuTabs: document.querySelector('.menu-tabs')
+            menuTabs: document.querySelector('.menu-tabs'),
+            seasonalSubtabs: document.getElementById('seasonalSubtabs'),
+            activeSeasonIndicator: document.getElementById('activeSeasonIndicator'),
+            activeSeasonIcon: document.getElementById('activeSeasonIcon'),
+            activeSeasonName: document.getElementById('activeSeasonName')
         };
 
         let refreshTimer = null;
@@ -1818,9 +1959,111 @@
                 });
             }
             
+            fetchActiveSeason(); // Fetch active season first
             loadDashboardData();
             startRefresh();
+            setupMenuEventListeners();
         });
+
+        async function fetchActiveSeason() {
+            try {
+                const response = await fetch(CONFIG.activeSeasonUrl + '?_=' + Date.now());
+                if (response.ok) {
+                    const data = await response.json();
+                    activeSeason = data.active_season || 'Unavailable';
+                    console.log('🎃 Active Season:', activeSeason);
+                    updateActiveSeasonIndicator();
+                }
+            } catch (error) {
+                console.error('Error fetching active season:', error);
+                activeSeason = 'Unavailable';
+            }
+        }
+
+        function updateActiveSeasonIndicator() {
+            const seasonKey = activeSeason.toLowerCase().replace(/\s+/g, '');
+            const seasonInfo = SEASONAL_CATEGORIES[seasonKey];
+            
+            if (elements.activeSeasonIndicator && activeSeason !== 'Unavailable' && seasonInfo) {
+                elements.activeSeasonIndicator.style.display = 'flex';
+                elements.activeSeasonIcon.textContent = seasonInfo.emoji;
+                elements.activeSeasonName.textContent = seasonInfo.name;
+            } else if (elements.activeSeasonIndicator) {
+                elements.activeSeasonIndicator.style.display = 'none';
+            }
+        }
+
+        function setupMenuEventListeners() {
+            // Main category tabs
+            const tabs = document.querySelectorAll('.menu-tab');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const category = tab.getAttribute('data-category');
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    
+                    // Show/hide seasonal subtabs
+                    if (category === 'seasonal') {
+                        elements.seasonalSubtabs?.classList.add('active');
+                    } else {
+                        elements.seasonalSubtabs?.classList.remove('active');
+                    }
+                    
+                    displayMenuCategory(category);
+                }, { passive: true });
+            });
+
+            // Seasonal subtabs
+            const seasonTabs = document.querySelectorAll('.season-tab');
+            seasonTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const season = tab.getAttribute('data-season');
+                    seasonTabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    currentSeasonalView = season;
+                    displaySeasonalMenu(season);
+                }, { passive: true });
+            });
+        }
+
+        function displayMenuCategory(category) {
+            const categories = document.querySelectorAll('.menu-category');
+            categories.forEach(c => {
+                c.classList.remove('active');
+                if (c.getAttribute('data-category') === category) {
+                    c.classList.add('active');
+                }
+            });
+        }
+
+        function displaySeasonalMenu(season) {
+            const seasonData = seasonalMenuData[season] || {};
+            const categoryDiv = document.querySelector('.menu-category[data-category="seasonal"]');
+            
+            if (!categoryDiv) return;
+            
+            if (Object.keys(seasonData).length === 0) {
+                categoryDiv.innerHTML = '<div class="menu-item"><div class="menu-item-info">No items available for this season</div></div>';
+            } else {
+                let html = '';
+                Object.entries(seasonData).forEach(([itemName, itemData]) => {
+                    const price = itemData.selling_price != null ? Number(itemData.selling_price).toFixed(2) : '—';
+                    const costPrice = itemData.cost_price ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` : '';
+                    
+                    html += `
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <div class="menu-item-name">${itemName}</div>
+                                <div class="menu-item-description">${itemData.ingredients || 'Seasonal specialty item'}</div>
+                                ${costPrice}
+                            </div>
+                            <div class="menu-item-price">$${price}</div>
+                        </div>
+                    `;
+                });
+                categoryDiv.innerHTML = html;
+            }
+        }
 
         function startRefresh() {
             if (refreshTimer) clearInterval(refreshTimer);
@@ -2293,89 +2536,141 @@
 
             console.log('Final menu data to display:', normalizedMenu);
             
-            // Show tabs and generate content
+            // Extract seasonal data if it's nested
+            if (normalizedMenu.seasonal && typeof normalizedMenu.seasonal === 'object') {
+                // Check if seasonal menu is nested with categories (Halloween, Christmas, etc.)
+                const firstKey = Object.keys(normalizedMenu.seasonal)[0];
+                const firstValue = normalizedMenu.seasonal[firstKey];
+                
+                // If first value is an object with selling_price, it's NOT nested
+                // If first value is an object without selling_price, it IS nested (seasonal categories)
+                if (firstValue && typeof firstValue === 'object' && !firstValue.hasOwnProperty('selling_price')) {
+                    // This is nested seasonal structure
+                    seasonalMenuData = normalizedMenu.seasonal;
+                    
+                    // Set default view to active season if available
+                    const activeSeasonKey = activeSeason.toLowerCase().replace(/\s+/g, '');
+                    if (seasonalMenuData[activeSeasonKey]) {
+                        currentSeasonalView = activeSeasonKey;
+                        // Highlight active season in subtabs
+                        setTimeout(() => {
+                            const seasonTabs = document.querySelectorAll('.season-tab');
+                            seasonTabs.forEach(tab => {
+                                if (tab.getAttribute('data-season') === activeSeasonKey) {
+                                    tab.classList.add('active');
+                                }
+                            });
+                        }, 100);
+                    }
+                    
+                    // Replace seasonal in menu with active season items for initial display
+                    normalizedMenu.seasonal = seasonalMenuData[currentSeasonalView] || {};
+                } else {
+                    // Flat structure - no nested seasons
+                    seasonalMenuData = { [currentSeasonalView]: normalizedMenu.seasonal };
+                }
+            }
+            
+            // Show tabs
             if (elements.menuTabs) elements.menuTabs.style.display = 'flex';
             
-            // Create tabs dynamically
-            const categories = Object.keys(normalizedMenu);
-            let tabsHtml = '';
+            // Always show seasonal subtabs for seasonal category
+            elements.seasonalSubtabs?.classList.add('active');
             
-            categories.forEach((category, index) => {
-                const isActive = index === 0 ? 'active' : '';
-                const icon = getMenuCategoryIcon(category);
-                const label = formatCategoryLabel(category);
-                tabsHtml += `<button class="menu-tab ${isActive}" data-category="${category}">${icon} ${label}</button>`;
-            });
-            
-            if (elements.menuTabs) {
-                elements.menuTabs.innerHTML = tabsHtml;
-            }
-
-            // Generate menu content
+            // Generate menu content for all categories
             let html = '';
-            categories.forEach((category, index) => {
-                const isActive = index === 0 ? 'active' : '';
-                const items = normalizedMenu[category];
-                
-                html += `<div class="menu-category ${isActive}" data-category="${category}">`;
-                
-                if (!items || Object.keys(items).length === 0) {
-                    html += '<div class="menu-item"><div class="menu-item-info">No items in this category</div></div>';
-                } else {
-                    Object.entries(items).forEach(([itemName, itemData]) => {
-                        const priceValue = itemData.selling_price != null ? Number(itemData.selling_price) : null;
-                        const price = priceValue != null ? priceValue.toFixed(2) : null;
-                        const costPrice = itemData.cost_price ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` : '';
-
-                        const oldItem = normalizedOldMenu?.[category]?.[itemName];
-                        const oldPriceValue = oldItem && oldItem.selling_price != null ? Number(oldItem.selling_price) : null;
-                        
-                        // Check if item is truly new (not in old menu AND added within last 7 days)
-                        const itemAddedTimestamp = itemData.added_at || itemData.created_at || itemData.timestamp;
-                        const isRecentlyAdded = itemAddedTimestamp ? 
-                            (Date.now() - (itemAddedTimestamp < 1e12 ? itemAddedTimestamp * 1000 : itemAddedTimestamp)) < (7 * 24 * 60 * 60 * 1000) : 
-                            false;
-                        const isNewItem = usingNewMenu && !oldItem && isRecentlyAdded;
-                        
-                        // Only show price change if item had a previous price (existed before)
-                        const hasPriceChange = usingNewMenu && oldItem && oldPriceValue != null && priceValue != null && oldPriceValue !== priceValue;
-
-                        let priceDisplay = price ? `$${price}` : '—';
-                        if (hasPriceChange) {
-                            const changeIndicator = priceValue > oldPriceValue ? '📈' : '📉';
-                            priceDisplay = `
-                                <div class="price-change">
-                                    <span class="old-price">$${oldPriceValue.toFixed(2)}</span>
-                                    <span class="current-price">$${price} ${changeIndicator}</span>
-                                </div>
-                            `;
-                        }
-
-                        const itemLabel = isNewItem ? `${itemName} <span class="new-badge">NEW</span>` : itemName;
-
-                        html += `
-                            <div class="menu-item">
-                                <div class="menu-item-info">
-                                    <div class="menu-item-name">${itemLabel}</div>
-                                    <div class="menu-item-ingredients">${itemData.ingredients || 'No description available'}</div>
-                                </div>
-                                <div class="menu-item-prices">
-                                    ${costPrice}
-                                    <div class="selling-price">${priceDisplay}</div>
-                                </div>
-                            </div>
-                        `;
-                    });
-                }
-                
-                html += '</div>';
-            });
+            
+            // Seasonal category with current season view
+            html += `<div class="menu-category active" data-category="seasonal">`;
+            const seasonalItems = normalizedMenu.seasonal || {};
+            if (Object.keys(seasonalItems).length === 0) {
+                html += '<div class="menu-item"><div class="menu-item-info">No items available for this season</div></div>';
+            } else {
+                html += generateMenuItems(seasonalItems, normalizedOldMenu.seasonal, usingNewMenu);
+            }
+            html += '</div>';
+            
+            // Non-seasonal category
+            html += `<div class="menu-category" data-category="non-seasonal">`;
+            const nonSeasonalItems = normalizedMenu['non-seasonal'] || {};
+            if (Object.keys(nonSeasonalItems).length === 0) {
+                html += '<div class="menu-item"><div class="menu-item-info">No items in this category</div></div>';
+            } else {
+                html += generateMenuItems(nonSeasonalItems, normalizedOldMenu['non-seasonal'], usingNewMenu);
+            }
+            html += '</div>';
+            
+            // Catering category
+            html += `<div class="menu-category" data-category="catering">`;
+            const cateringItems = normalizedMenu.catering || {};
+            if (Object.keys(cateringItems).length === 0) {
+                html += '<div class="menu-item"><div class="menu-item-info">No items in this category</div></div>';
+            } else {
+                html += generateMenuItems(cateringItems, normalizedOldMenu.catering, usingNewMenu);
+            }
+            html += '</div>';
+            
+            // Unavailable category
+            html += `<div class="menu-category" data-category="unavailable">`;
+            const unavailableItems = normalizedMenu.unavailable || {};
+            if (Object.keys(unavailableItems).length === 0) {
+                html += '<div class="menu-item"><div class="menu-item-info">No items in this category</div></div>';
+            } else {
+                html += generateMenuItems(unavailableItems, normalizedOldMenu.unavailable, usingNewMenu);
+            }
+            html += '</div>';
 
             elements.menuContainer.innerHTML = html;
-            setupMenuTabs();
             
-            const totalItems = Object.values(normalizedMenu).reduce((total, cat) => total + Object.keys(cat || {}).length, 0);
-            console.log(`✅ Menu data loaded: ${categories.length} categories with ${totalItems} items`);
+            console.log(`✅ Menu data loaded with seasonal categories`);
+        }
+        
+        function generateMenuItems(items, oldItems = {}, usingNewMenu = false) {
+            let html = '';
+            Object.entries(items).forEach(([itemName, itemData]) => {
+                const priceValue = itemData.selling_price != null ? Number(itemData.selling_price) : null;
+                const price = priceValue != null ? priceValue.toFixed(2) : null;
+                const costPrice = itemData.cost_price ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` : '';
+
+                const oldItem = oldItems?.[itemName];
+                const oldPriceValue = oldItem && oldItem.selling_price != null ? Number(oldItem.selling_price) : null;
+                
+                // Check if item is truly new
+                const itemAddedTimestamp = itemData.added_at || itemData.created_at || itemData.timestamp;
+                const isRecentlyAdded = itemAddedTimestamp ? 
+                    (Date.now() - (itemAddedTimestamp < 1e12 ? itemAddedTimestamp * 1000 : itemAddedTimestamp)) < (7 * 24 * 60 * 60 * 1000) : 
+                    false;
+                const isNewItem = usingNewMenu && !oldItem && isRecentlyAdded;
+                
+                const hasPriceChange = usingNewMenu && oldItem && oldPriceValue != null && priceValue != null && oldPriceValue !== priceValue;
+
+                let priceDisplay = price ? `$${price}` : '—';
+                if (hasPriceChange) {
+                    const changeIndicator = priceValue > oldPriceValue ? '📈' : '📉';
+                    priceDisplay = `
+                        <div class="price-change">
+                            <span class="old-price">$${oldPriceValue.toFixed(2)}</span>
+                            <span class="current-price">$${price} ${changeIndicator}</span>
+                        </div>
+                    `;
+                }
+
+                const itemLabel = isNewItem ? `${itemName} <span class="new-badge">NEW</span>` : itemName;
+
+                html += `
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">${itemLabel}</div>
+                            <div class="menu-item-ingredients">${itemData.ingredients || 'No description available'}</div>
+                        </div>
+                        <div class="menu-item-prices">
+                            ${costPrice}
+                            <div class="selling-price">${priceDisplay}</div>
+                        </div>
+                    </div>
+                `;
+            });
+            return html;
         }
         
         function getMenuCategoryIcon(category) {
