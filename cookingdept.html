@@ -2638,16 +2638,27 @@
                 const firstKey = Object.keys(normalizedMenu.seasonal)[0];
                 const firstValue = normalizedMenu.seasonal[firstKey];
                 
-                // If first value is an object with selling_price, it's NOT nested
+                console.log('🔍 Analyzing seasonal structure:', {
+                    firstKey,
+                    firstValueType: typeof firstValue,
+                    hasSellingPrice: firstValue?.hasOwnProperty?.('selling_price'),
+                    firstValueSample: firstValue
+                });
+                
+                // If first value is an object with selling_price, it's NOT nested (flat items)
                 // If first value is an object without selling_price, it IS nested (seasonal categories)
-                if (firstValue && typeof firstValue === 'object' && !firstValue.hasOwnProperty('selling_price')) {
+                const isNestedStructure = firstValue && typeof firstValue === 'object' && !firstValue.hasOwnProperty('selling_price');
+                
+                if (isNestedStructure) {
                     // This is nested seasonal structure from bot: { Halloween: {...}, Christmas: {...} }
                     seasonalMenuData = normalizedMenu.seasonal;
-                    console.log('🎃 Found nested seasonal structure:', Object.keys(seasonalMenuData));
+                    console.log('🎃 Found nested seasonal structure with seasons:', Object.keys(seasonalMenuData));
                     
                     // Merge ALL active seasonal menus into one display
                     const mergedSeasonalItems = {};
                     const activeSeasons = Array.isArray(activeSeason) ? activeSeason : [activeSeason];
+                    
+                    console.log('🎃 Active seasons to merge:', activeSeasons);
                     
                     activeSeasons.forEach(season => {
                         if (season === 'No Active Season') return;
@@ -2658,23 +2669,29 @@
                             if (key.toLowerCase() === season.toLowerCase() || 
                                 key.toLowerCase().replace(/\s+/g, '') === season.toLowerCase().replace(/\s+/g, '')) {
                                 seasonItems = items;
+                                console.log(`✅ Found matching season data for "${season}": ${key}, items:`, Object.keys(items || {}).length);
                                 break;
                             }
                         }
                         
-                        if (seasonItems) {
-                            console.log(`🎃 Merging items from ${season}:`, Object.keys(seasonItems));
+                        if (seasonItems && typeof seasonItems === 'object') {
+                            console.log(`🎃 Merging ${Object.keys(seasonItems).length} items from ${season}`);
                             Object.assign(mergedSeasonalItems, seasonItems);
+                        } else {
+                            console.warn(`⚠️ No items found for season: ${season}`);
                         }
                     });
                     
                     // Replace seasonal in menu with merged active season items
                     normalizedMenu.seasonal = mergedSeasonalItems;
-                    console.log('🎃 Merged seasonal menu:', Object.keys(mergedSeasonalItems));
+                    console.log('🎃 Final merged seasonal menu has', Object.keys(mergedSeasonalItems).length, 'items');
                 } else {
                     // Flat structure - no nested seasons
+                    console.log('📋 Using flat seasonal structure (not nested by season)');
                     seasonalMenuData = { [currentSeasonalView]: normalizedMenu.seasonal };
                 }
+            } else {
+                console.log('⚠️ No seasonal menu data found');
             }
             
             // Show tabs
@@ -2734,6 +2751,10 @@
         function generateMenuItems(items, oldItems = {}, usingNewMenu = false) {
             let html = '';
             Object.entries(items).forEach(([itemName, itemData]) => {
+                // Get sales count
+                const soldCount = itemData.sold || 0;
+                const salesBadge = soldCount > 0 ? `<span style="color: #4CAF50; font-size: 0.8em;"> • ${soldCount} sold</span>` : '';
+                
                 // Handle N/A prices
                 let priceDisplay;
                 if (itemData.selling_price === null || itemData.selling_price === undefined) {
@@ -2782,7 +2803,7 @@
                 html += `
                     <div class="menu-item">
                         <div class="menu-item-info">
-                            <div class="menu-item-name">${itemLabel}</div>
+                            <div class="menu-item-name">${itemLabel}${salesBadge}</div>
                             <div class="menu-item-ingredients">${itemData.ingredients || 'No description available'}</div>
                         </div>
                         <div class="menu-item-prices">
