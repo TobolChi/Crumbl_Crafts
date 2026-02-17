@@ -317,6 +317,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Bloxburg holiday cookies build hack! #shorts #bloxburg",
+      "description": "A Bloxburg building hack tutorial on how to make these custom holiday cookies in the month of Februa...",
+      "source": "YouTube",
+      "timestamp": 1771291611.0,
+      "url": "https://www.youtube.com/watch?v=JWxPkuYGKog",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Berry Avenue 2 Toddler Outfit Codes || Bloxburg Brookhaven Berry Avenue #shorts #berryavenueoutfits",
       "description": "\ua540 thank you for watching this video! \u02da these outfits work for brookhaven, berry avenue, and bloxburg...",
       "source": "YouTube",
@@ -349,15 +358,6 @@
       "source": "YouTube",
       "timestamp": 1771279206.0,
       "url": "https://www.youtube.com/watch?v=4c5slRtOfrQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "How to make a realistic door in bloxburg\u2728\ud83d\udeaa #bloxburg #viral #shortsviral #shorts",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771278979.0,
-      "url": "https://www.youtube.com/watch?v=m4EDHa5LvTk",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771293744.508214,
+    "generated_at": 1771294840.3208163,
     "mode": "memory",
     "refresh_interval": 2000
   }
