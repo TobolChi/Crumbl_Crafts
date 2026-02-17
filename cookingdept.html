@@ -58,15 +58,14 @@
             color: var(--text-color);
             min-height: 100vh;
             overflow-x: hidden;
+            overflow-y: auto;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             font-display: swap;
-            contain: layout style;
             /* Smooth scrolling optimizations */
             overscroll-behavior-y: contain;
             scroll-behavior: smooth;
-            transform: translate3d(0, 0, 0);
-            will-change: scroll-position;
+            -webkit-overflow-scrolling: touch;
         }
 
         /* Smooth scrolling and performance optimizations */
