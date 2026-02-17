@@ -317,6 +317,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Bloxburg vs  Salario M\u00ednimo \ud83d\udcb8\ud83c\udf55#curiosidades #eeuu #shorts",
+      "description": "Repartir pizza en Bloxburg paga mejor que un trabajo real? Comparamos la econom\u00eda de Roblox con el s...",
+      "source": "YouTube",
+      "timestamp": 1771303259.0,
+      "url": "https://www.youtube.com/watch?v=Jp6x4Rc9Upw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Bloxburg holiday cookies build hack! #shorts #bloxburg",
       "description": "A Bloxburg building hack tutorial on how to make these custom holiday cookies in the month of Februa...",
       "source": "YouTube",
@@ -349,15 +358,6 @@
       "source": "YouTube",
       "timestamp": 1771279913.0,
       "url": "https://www.youtube.com/watch?v=4IUqETYChyg",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "The Silver Secret | SEASON II, EPISODE III | Roblox Bloxburg Series by Illumination Theatre",
-      "description": "Celestia Silver, a girl born half vampire & half human, whose kingdom believes in peace with humans ...",
-      "source": "YouTube",
-      "timestamp": 1771279206.0,
-      "url": "https://www.youtube.com/watch?v=4c5slRtOfrQ",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771304440.3176477,
+    "generated_at": 1771305640.3194768,
     "mode": "memory",
     "refresh_interval": 2000
   }
