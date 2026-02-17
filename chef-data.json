@@ -8,8 +8,8 @@
       "tickets": 3,
       "role_name": "Apprentice Chef",
       "role_stars": 1,
-      "average_rating": 4.5,
-      "total_ratings": 6,
+      "average_rating": 4.4,
+      "total_ratings": 7,
       "avatar": "https://cdn.discordapp.com/avatars/1098992055272878081/3d5587425a502f14a7fbf5cfaaa493a1.png?size=1024",
       "joinDate": "2026-02-06"
     },
@@ -28,6 +28,17 @@
     }
   ],
   "activities": [
+    {
+      "type": "rating_received",
+      "chef": "Hidenori",
+      "user": "Hidenori",
+      "message": "received 4-star rating from Hidenori",
+      "action": "received 4-star rating from Hidenori",
+      "timestamp": 1771351507,
+      "user_id": 1098992055272878081,
+      "id": "cooking_1771351507_14",
+      "source": "live"
+    },
     {
       "type": "order_completed",
       "chef": "Hidenori",
@@ -1026,15 +1037,15 @@
     "totalOrders": 15,
     "activeChefs": 2,
     "totalChefs": 2,
-    "avgRating": 4.8
+    "avgRating": 4.7
   },
   "active_seasons": [
     "Valentines",
     "New Year"
   ],
   "meta": {
-    "timestamp": "2026-02-17T20:05:04.389809",
-    "last_updated": 1771351504.3898156,
+    "timestamp": "2026-02-17T20:06:13.719089",
+    "last_updated": 1771351573.7191,
     "cached": false,
     "data_source": "discord_bot"
   },
