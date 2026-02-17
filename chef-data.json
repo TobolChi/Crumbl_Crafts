@@ -16,6 +16,17 @@
   ],
   "activities": [
     {
+      "type": "order_created",
+      "chef": "Hidenori",
+      "user": "Hidenori",
+      "message": "submitted a new Seasonal Request order",
+      "action": "submitted a new Seasonal Request order",
+      "timestamp": 1771350226,
+      "user_id": 1098992055272878081,
+      "id": "cooking_1771350226_11",
+      "source": "live"
+    },
+    {
       "type": "ticket_created",
       "chef": "Hidenori",
       "user": "Hidenori",
@@ -968,8 +979,8 @@
     "New Year"
   ],
   "meta": {
-    "timestamp": "2026-02-17T19:39:23.245417",
-    "last_updated": 1771349963.245425,
+    "timestamp": "2026-02-17T19:43:55.389871",
+    "last_updated": 1771350235.3898773,
     "cached": false,
     "data_source": "discord_bot"
   },
