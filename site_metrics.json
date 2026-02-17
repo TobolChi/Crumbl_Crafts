@@ -317,6 +317,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "deleting Bloxburg houses was sooo fun C; #roblox #taigamingroblox #lisagamingroblox #lisagaming #fyp",
+      "description": "like and sub for more! watch the video here: https://www.youtube.com/watch?v=-3H3DtjOvBE....",
+      "source": "YouTube",
+      "timestamp": 1771368897.0,
+      "url": "https://www.youtube.com/watch?v=Fe-vjoDZXmI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Lunar New Year Update!! \ud83e\udde7 #roblox #bloxburg #bloxburgupdate #lunarnewyear #fyp",
       "description": "...",
       "source": "YouTube",
@@ -352,62 +361,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "i finish a collab #bloxburg #bloxburg #duet #willowrblx",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771359189.0,
-      "url": "https://www.youtube.com/watch?v=9mpQ2rKvI-I",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "this could have ended bloxburg forever... #roblox #bloxburg",
-      "description": "...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1771357767.0,
-      "url": "https://www.youtube.com/watch?v=jjJkSw3qi3U",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "BLOXBURG Lunar New Year update is out NOW! \ud83e\udd6e#bloxburg #roblox #bloxburgupdate",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771357448.0,
-      "url": "https://www.youtube.com/watch?v=x5jN02ZRanM",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #automobile #bloxburg",
-      "description": "Roblox....",
-      "source": "YouTube",
-      "timestamp": 1771351236.0,
-      "url": "https://www.youtube.com/watch?v=UBRLE99KVQ8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "$8 ben &amp; jerry&#39;s icecream vs free Roblox icecream #roblox #usa #america",
-      "description": "Comparing $8 Ben & Jerry's ice cream in America to a FREE Roblox ice cream. Is it worth paying real ...",
-      "source": "YouTube",
-      "timestamp": 1771348332.0,
-      "url": "https://www.youtube.com/watch?v=HvfcXtyBZro",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Bloxburg Home Pt. 1 \ud83d\udc97 #bloxburg #roblox #speedbuild #timelapse #building #layout",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771347637.0,
-      "url": "https://www.youtube.com/watch?v=M2S6UphYcQU",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1771371040.5990076,
+    "generated_at": 1771371640.3273435,
     "mode": "memory",
     "refresh_interval": 2000
   }
