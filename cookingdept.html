@@ -2079,24 +2079,44 @@
         });
 
         async function fetchActiveSeason() {
+            // Primary: try the dedicated active-season endpoint
             try {
                 console.log('🎃 Fetching active season from:', CONFIG.activeSeasonUrl);
                 const response = await fetch(CONFIG.activeSeasonUrl + '?_=' + Date.now());
+
                 if (response.ok) {
                     const data = await response.json();
-                    activeSeason = data.active_season || 'No Active Season';
-                    console.log('✅ Active Season fetched:', activeSeason);
+                    // accept either `active_season` (string) or `active_seasons` (array)
+                    activeSeason = data.active_season ?? data.active_seasons ?? 'No Active Season';
+                    console.log('✅ Active Season fetched (endpoint):', activeSeason);
                     updateActiveSeasonIndicator();
-                } else {
-                    console.warn('⚠️ Failed to fetch active season, status:', response.status);
-                    activeSeason = 'No Active Season';
-                    updateActiveSeasonIndicator();
+                    return;
                 }
+
+                console.warn('⚠️ Failed to fetch active season (endpoint), status:', response.status);
             } catch (error) {
-                console.error('❌ Error fetching active season:', error);
-                activeSeason = 'No Active Season';
-                updateActiveSeasonIndicator();
+                console.warn('⚠️ Error fetching active season endpoint:', error);
             }
+
+            // Fallback: try to read active season(s) from the main cooking payload
+            try {
+                console.log('🔁 Falling back to main data endpoint for active season:', CONFIG.dataUrl);
+                const mainResp = await fetch(CONFIG.dataUrl + '?_=' + Date.now());
+                if (mainResp.ok) {
+                    const mainData = await mainResp.json();
+                    activeSeason = mainData.active_seasons ?? mainData.active_season ?? 'No Active Season';
+                    console.log('✅ Active Season fetched (main payload):', activeSeason);
+                    updateActiveSeasonIndicator();
+                    return;
+                }
+                console.warn('⚠️ Main payload fetch failed, status:', mainResp.status);
+            } catch (err) {
+                console.warn('⚠️ Error fetching main payload for active season fallback:', err);
+            }
+
+            // Last-resort default
+            activeSeason = 'No Active Season';
+            updateActiveSeasonIndicator();
         }
 
         function updateActiveSeasonIndicator() {
@@ -2624,7 +2644,30 @@
             }
 
             if (typeof menuItems === 'object') {
-                return menuItems;
+                // Normalize common provider keys to the UI's expected keys.
+                // Handles payloads like "Seasonal Request", "Non-Seasonal request", "Catering Request", etc.
+                const mapped = {};
+                const canonical = k => (k || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+                Object.entries(menuItems).forEach(([k, v]) => {
+                    const ck = canonical(k);
+                    if (ck.includes('seasonal')) {
+                        mapped['seasonal'] = v;
+                    } else if (ck.includes('nonseasonal') || ck.includes('non-seasonal') || ck.includes('nonseasonalrequest')) {
+                        mapped['non-seasonal'] = v;
+                    } else if (ck.includes('catering')) {
+                        mapped['catering'] = v;
+                    } else if (ck.includes('unavailable')) {
+                        mapped['unavailable'] = v;
+                    } else {
+                        // fallback: kebab-case the original key so it can still be used by UI
+                        const safeKey = k.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                        mapped[safeKey || k] = v;
+                    }
+                });
+
+                console.debug('normalizeMenuData: incoming object keys mapped to', Object.keys(mapped));
+                return mapped;
             }
 
             return null;
