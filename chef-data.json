@@ -21,6 +21,17 @@
       "user": "Hidenori",
       "message": "opened a new Seasonal Request ticket",
       "action": "opened a new Seasonal Request ticket",
+      "timestamp": 1771347302,
+      "user_id": 1098992055272878081,
+      "id": "cooking_1771347302_9",
+      "source": "live"
+    },
+    {
+      "type": "ticket_created",
+      "chef": "Hidenori",
+      "user": "Hidenori",
+      "message": "opened a new Seasonal Request ticket",
+      "action": "opened a new Seasonal Request ticket",
       "timestamp": 1771346304,
       "user_id": 1098992055272878081,
       "id": "cooking_1771346304_8",
@@ -936,8 +947,8 @@
     "Valentines"
   ],
   "meta": {
-    "timestamp": "2026-02-17T18:53:17.851123",
-    "last_updated": 1771347197.8511307,
+    "timestamp": "2026-02-17T18:55:04.698095",
+    "last_updated": 1771347304.6981018,
     "cached": false,
     "data_source": "discord_bot"
   },
