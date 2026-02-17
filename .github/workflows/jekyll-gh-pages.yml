@@ -2,8 +2,13 @@ name: Jekyll Build & Deploy
 
 on:
   push:
-    branches: [ "main" ]   # build when pushing to main
-  workflow_dispatch:        # allow manual trigger
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+      - 'docs/**'
+      - '.github/**'
+  workflow_dispatch:
 
 permissions:
   contents: write   # needed to upload artifacts
