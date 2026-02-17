@@ -38,7 +38,6 @@ jobs:
             ${{ runner.os }}-pip-
 
       - name: Install Python dependencies
-        id: install_deps
         run: |
           set -euo pipefail
           if [ -f requirements.txt ]; then
@@ -56,30 +55,18 @@ jobs:
           echo "pip list (top 50):"
           pip list --format=columns | head -n 50
           python - <<'PY'
-import importlib, sys
-try:
-    importlib.import_module("aiohttp")
-    print("aiohttp import OK")
-except Exception as e:
-    print("aiohttp import FAILED:", e)
-    sys.exit(2)
-PY
 
       - name: Run leaderboard update script
         id: run_update
         run: |
-          # metrics_api.py should write site_metrics.json at repo root (adjust if different)
           python metrics_api.py
 
       - name: Prepare data branch
-        id: prepare_branch
         run: |
           set -euo pipefail
           DATA_BRANCH="data-updates"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          # Use GITHUB_TOKEN for authenticated remote operations
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
           if git ls-remote --heads origin $DATA_BRANCH | grep -q $DATA_BRANCH; then
@@ -93,21 +80,16 @@ PY
           fi
 
       - name: Copy generated data
-        id: copy_data
         run: |
           set -euo pipefail
           mkdir -p data
           if [ -f site_metrics.json ]; then
             cp -f site_metrics.json data/site_metrics.json
             cp -f site_metrics.json .last_backend_data
-          else
-            echo "Warning: site_metrics.json not found; nothing to copy"
           fi
-
           git add data/site_metrics.json .last_backend_data || true
 
           if git diff --staged --quiet; then
-            echo "No data changes to commit"
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             git commit -m "chore: update leaderboard data [skip ci]" || true
