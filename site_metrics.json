@@ -326,15 +326,6 @@
     },
     {
       "type": "trend",
-      "title": "5 likes for me to get them all #roblox #bloxburg #fyp #shorts",
-      "description": "im adding a secret comment word for every video so if you see this comment \"BUGS I LIKE BUGS\" and no...",
-      "source": "YouTube",
-      "timestamp": 1771282826.0,
-      "url": "https://www.youtube.com/watch?v=TI5CEJ1XDec",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "#rivals #roblox #fry #memes #funny #gaming #bloxburg #greenscreen",
       "description": "...",
       "source": "YouTube",
@@ -349,6 +340,15 @@
       "source": "YouTube",
       "timestamp": 1771279206.0,
       "url": "https://www.youtube.com/watch?v=4c5slRtOfrQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "How to make a realistic door in bloxburg\u2728\ud83d\udeaa #bloxburg #viral #shortsviral #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771278979.0,
+      "url": "https://www.youtube.com/watch?v=m4EDHa5LvTk",
       "icon": "fa-youtube"
     },
     {
@@ -389,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771290040.6067345,
+    "generated_at": 1771291240.3193216,
     "mode": "memory",
     "refresh_interval": 2000
   }
