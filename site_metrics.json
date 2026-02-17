@@ -7,8 +7,8 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 366,
-    "joined_today": 1,
+    "total_members": 367,
+    "joined_today": 2,
     "active_shops": 1,
     "avg_response_time": 395.25
   },
@@ -24,6 +24,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_join",
+      "shop_name": "Server",
+      "message": "lyk_.1 joined the server",
+      "timestamp": 1771339214,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/1473324370100486255"
+    },
     {
       "type": "member_leave",
       "shop_name": "Server",
@@ -308,6 +317,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "the new bloxburg lunar new year update! #bloxburg #bloxburgupdate #bloxburglunarnewyear",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771336279.0,
+      "url": "https://www.youtube.com/watch?v=5qQBInKL4xo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Chinese player rates Bloxburg&#39;s lunar update #roblox #bloxburg",
       "description": "Happy Lunar new year to all that celebrates it, and wish you all with good fortune for 2026! \u606d\u559c\u53d1\u8d22 !!...",
       "source": "YouTube",
@@ -340,15 +358,6 @@
       "source": "YouTube",
       "timestamp": 1771326000.0,
       "url": "https://www.youtube.com/watch?v=XJT9vXDmFrM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Bloxburg holiday cookies build hack! #shorts #bloxburg",
-      "description": "A Bloxburg building hack tutorial on how to make these custom holiday cookies in the month of Februa...",
-      "source": "YouTube",
-      "timestamp": 1771291611.0,
-      "url": "https://www.youtube.com/watch?v=JWxPkuYGKog",
       "icon": "fa-youtube"
     },
     {
@@ -389,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771338640.62149,
+    "generated_at": 1771339217.284052,
     "mode": "memory",
     "refresh_interval": 2000
   }
