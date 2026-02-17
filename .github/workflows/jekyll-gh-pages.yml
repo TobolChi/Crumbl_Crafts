@@ -2,16 +2,16 @@ name: Backend Leaderboard Updates
 
 on:
   schedule:
-    - cron: '*/15 * * * *'   # every 15 minutes; adjust as needed
+    - cron: '*/15 * * * *'
   push:
     paths:
-      - 'backend/**'        # run when backend code changes
+      - 'backend/**'
       - 'metrics_api.py'
       - 'requirements.txt'
   workflow_dispatch:
 
 permissions:
-  contents: write           # needed to push data branch
+  contents: write
   id-token: write
 
 jobs:
@@ -37,15 +37,17 @@ jobs:
             ${{ runner.os }}-pip-
 
       - name: Install Python dependencies
-        if: exists('requirements.txt')
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          if [ -f requirements.txt ]; then
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+          else
+            echo "No requirements.txt found; skipping pip install"
+          fi
 
       - name: Run leaderboard update script
         id: run_update
         run: |
-          # Run your script; ensure it writes output to ./data/site_metrics.json (or similar)
           python metrics_api.py
 
       - name: Prepare data branch
@@ -54,7 +56,6 @@ jobs:
           DATA_BRANCH="data-updates"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Create or switch to data branch
           if git ls-remote --heads origin $DATA_BRANCH | grep -q $DATA_BRANCH; then
             git fetch origin $DATA_BRANCH:$DATA_BRANCH
             git checkout $DATA_BRANCH
@@ -67,7 +68,6 @@ jobs:
 
       - name: Copy generated data
         run: |
-          # Adjust paths to match your script output
           mkdir -p data
           cp -f site_metrics.json data/site_metrics.json || true
           cp -f site_metrics.json .last_backend_data || true
@@ -81,7 +81,7 @@ jobs:
           fi
 
       - name: Push data branch
-        if: steps.prepare_branch.outcome == 'success' && steps.run_update.outcome == 'success' && steps.prepare_branch.outputs.changed != 'false'
+        if: steps.run_update.outcome == 'success'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
