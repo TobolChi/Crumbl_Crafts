@@ -2207,7 +2207,9 @@
             // If no direct match, check for an 'all' bucket which may contain nested seasons or flat items with a season field
             if (!actualKey && seasonalMenuData['all']) {
                 const allBucket = seasonalMenuData['all'];
-                console.debug('displaySeasonalMenu: checking "all" bucket for nested seasons or items');
+                console.debug('displaySeasonalMenu: checking "all" bucket for nested seasons or items (sample keys):', Object.keys(allBucket).slice(0,8));
+                const sampleKey = Object.keys(allBucket)[0];
+                if (sampleKey) console.debug('displaySeasonalMenu: sample allBucket item for key=' + sampleKey + ':', allBucket[sampleKey]);
 
                 // 1) If allBucket itself contains season-named keys (Valentines, New Year, ...), use that
                 const nestedKey = Object.keys(allBucket).find(k => k.toLowerCase().replace(/\s+/g, '') === normalizedRequested) || null;
@@ -2226,6 +2228,8 @@
                         actualKey = normalizedRequested;
                         seasonData = filtered;
                         console.debug('displaySeasonalMenu: filtered items from all bucket for season ->', normalizedRequested);
+                    } else {
+                        console.debug('displaySeasonalMenu: all-bucket filtering returned 0 items for', normalizedRequested);
                     }
                 }
             } 
@@ -2854,6 +2858,35 @@
                         seasonalMenuData = { 'all': flat };
                         currentSeasonalView = 'all';
                         console.log('📋 Using flat seasonal structure; treating as single "all" bucket');
+
+                        // Defensive regrouping: if we have an old snapshot with nested seasons,
+                        // use it to rebuild nested seasonal groups from the flat `all` bucket.
+                        try {
+                            const oldSeasonal = normalizedOldMenu?.seasonal;
+                            if (oldSeasonal && typeof oldSeasonal === 'object' && Object.keys(oldSeasonal).length > 0) {
+                                const regrouped = {};
+                                const remaining = Object.assign({}, flat);
+
+                                Object.entries(oldSeasonal).forEach(([sName, sItems]) => {
+                                    Object.keys(sItems || {}).forEach(iName => {
+                                        if (remaining.hasOwnProperty(iName)) {
+                                            if (!regrouped[sName]) regrouped[sName] = {};
+                                            regrouped[sName][iName] = remaining[iName];
+                                            delete remaining[iName];
+                                        }
+                                    });
+                                });
+
+                                if (Object.keys(regrouped).length > 0) {
+                                    if (Object.keys(remaining).length > 0) regrouped['all'] = remaining;
+                                    seasonalMenuData = regrouped;
+                                    hasNestedSeasons = true;
+                                    console.debug('updateMenuData: regrouped flat "all" bucket using old snapshot into nested seasons:', Object.keys(seasonalMenuData));
+                                }
+                            }
+                        } catch (err) {
+                            console.warn('updateMenuData: regrouping fallback failed', err);
+                        }
                     }
                 }
             } else {
