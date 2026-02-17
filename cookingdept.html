@@ -2397,8 +2397,16 @@
 
                         const oldItem = normalizedOldMenu?.[category]?.[itemName];
                         const oldPriceValue = oldItem && oldItem.selling_price != null ? Number(oldItem.selling_price) : null;
-                        const isNewItem = usingNewMenu && !oldItem;
-                        const hasPriceChange = usingNewMenu && oldPriceValue != null && priceValue != null && oldPriceValue !== priceValue;
+                        
+                        // Check if item is truly new (not in old menu AND added within last 7 days)
+                        const itemAddedTimestamp = itemData.added_at || itemData.created_at || itemData.timestamp;
+                        const isRecentlyAdded = itemAddedTimestamp ? 
+                            (Date.now() - (itemAddedTimestamp < 1e12 ? itemAddedTimestamp * 1000 : itemAddedTimestamp)) < (7 * 24 * 60 * 60 * 1000) : 
+                            false;
+                        const isNewItem = usingNewMenu && !oldItem && isRecentlyAdded;
+                        
+                        // Only show price change if item had a previous price (existed before)
+                        const hasPriceChange = usingNewMenu && oldItem && oldPriceValue != null && priceValue != null && oldPriceValue !== priceValue;
 
                         let priceDisplay = price ? `$${price}` : '—';
                         if (hasPriceChange) {
