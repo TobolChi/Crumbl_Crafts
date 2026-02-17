@@ -576,6 +576,15 @@
           "season": "Valentines",
           "sold": 0
         }
+      },
+      "New Year": {
+        "New Year's Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "New Year",
+          "sold": 0
+        }
       }
     },
     "non-seasonal": {
@@ -944,11 +953,12 @@
     "avgRating": 5.0
   },
   "active_seasons": [
-    "Valentines"
+    "Valentines",
+    "New Year"
   ],
   "meta": {
-    "timestamp": "2026-02-17T19:37:19.066849",
-    "last_updated": 1771349839.0668557,
+    "timestamp": "2026-02-17T19:38:21.565547",
+    "last_updated": 1771349901.565558,
     "cached": false,
     "data_source": "discord_bot"
   },
@@ -1249,6 +1259,86 @@
           "selling_price": 210.0,
           "ingredients": "Fresh ingredients prepared by our chefs",
           "cost_price": 84.0
+        }
+      },
+      "seasonal": {
+        "Lovely Bacon and Eggs": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Envelope Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Lovely Chocolate Candy Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Heart Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Lovely Jam Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Heart Macorons": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Heart Cupcakes": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Heart Shaped Pizza": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Lovely Cake Pops": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Heart Cookie Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Strawberry Swirl Cheesecake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Valentine's Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Heart Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
         }
       },
       "non-seasonal": {
@@ -1925,6 +2015,12 @@
           "ingredients": "Fresh ingredients prepared by our chefs",
           "cost_price": 0.0,
           "season": "Valentines"
+        },
+        "New Year's Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "New Year"
         }
       },
       "non-seasonal": {
