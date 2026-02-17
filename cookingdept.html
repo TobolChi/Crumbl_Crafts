@@ -2797,17 +2797,18 @@
             const normalizedMenu = normalizeMenuData(menuItems) || {};
             const normalizedOldMenu = normalizeMenuData(oldMenu) || {};
 
-            console.log('🍽️ Processing menu data:', {
-                keys: Object.keys(normalizedMenu),
-                usingNewMenu,
-                hasOldMenu: Object.keys(normalizedOldMenu).length > 0
-            });
-
-            if (Object.keys(normalizedMenu).length === 0) {
-                elements.menuContainer.innerHTML = '<div class="loading">No menu data available</div>';
+            // TEMPORARY: hide the entire menu UI per user request (quick fallback)
+            console.info('updateMenuData: menu rendering disabled — showing placeholder');
+            try {
+                if (elements.menuContainer) elements.menuContainer.innerHTML = '<div class="loading">Menu temporarily unavailable</div>';
                 if (elements.menuTabs) elements.menuTabs.style.display = 'none';
-                return;
+                if (elements.seasonalSubtabs) elements.seasonalSubtabs.classList.remove('active');
+            } catch (err) {
+                console.warn('updateMenuData: failed to apply menu-hidden UI', err);
             }
+            // Keep internal seasonal data empty to avoid accidental matches elsewhere
+            seasonalMenuData = {};
+            return;
 
             console.log('Final menu data to display:', normalizedMenu);
             
