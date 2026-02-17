@@ -1,86 +1,91 @@
-name: Jekyll Build & Deploy
+name: Backend Leaderboard Updates
 
 on:
+  schedule:
+    - cron: '*/15 * * * *'   # every 15 minutes; adjust as needed
   push:
-    branches:
-      - main
-    paths-ignore:
-      - 'README.md'
-      - 'docs/**'
-      - '.github/**'
+    paths:
+      - 'backend/**'        # run when backend code changes
+      - 'metrics_api.py'
+      - 'requirements.txt'
   workflow_dispatch:
 
 permissions:
-  contents: write   # needed to upload artifacts
-  pages: write      # needed to deploy to Pages
-  id-token: write   # needed for OIDC authentication
-
-concurrency:        # prevent overlapping deployments
-  group: pages
-  cancel-in-progress: true
+  contents: write           # needed to push data branch
+  id-token: write
 
 jobs:
-  build:
+  update-leaderboard:
     runs-on: ubuntu-latest
-    outputs:
-      skip_deploy: ${{ steps.check_site.outputs.skip_deploy }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
-          bundler-cache: true
+          fetch-depth: 0
 
-      - name: Cache Ruby gems
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Cache pip
         uses: actions/cache@v3
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
-            ${{ runner.os }}-gems-
+            ${{ runner.os }}-pip-
 
-      - name: Install dependencies
+      - name: Install Python dependencies
+        if: exists('requirements.txt')
         run: |
-          bundle config set --local path 'vendor/bundle'
-          bundle install --jobs 4 --retry 3
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Validate Jekyll site
-        run: bundle exec jekyll doctor
-
-      - name: Build Jekyll site
-        run: bundle exec jekyll build --destination ./_site
-
-      - name: Check for _site changes
-        id: check_site
+      - name: Run leaderboard update script
+        id: run_update
         run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
-          # Stage generated site and check if there are any changes to deploy
-          git add -A _site || true
-          if git diff --quiet --cached; then
-            echo "No changes in _site; skipping upload"
-            echo "skip_deploy=true" >> $GITHUB_OUTPUT
+          # Run your script; ensure it writes output to ./data/site_metrics.json (or similar)
+          python metrics_api.py
+
+      - name: Prepare data branch
+        id: prepare_branch
+        run: |
+          DATA_BRANCH="data-updates"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Create or switch to data branch
+          if git ls-remote --heads origin $DATA_BRANCH | grep -q $DATA_BRANCH; then
+            git fetch origin $DATA_BRANCH:$DATA_BRANCH
+            git checkout $DATA_BRANCH
           else
-            echo "Changes detected in _site; will upload artifact"
-            echo "skip_deploy=false" >> $GITHUB_OUTPUT
+            git checkout --orphan $DATA_BRANCH
+            git rm -rf .
+            git commit --allow-empty -m "Initialize data branch"
+            git push origin $DATA_BRANCH
           fi
 
-      - name: Upload Pages artifact
-        if: steps.check_site.outputs.skip_deploy != 'true'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
+      - name: Copy generated data
+        run: |
+          # Adjust paths to match your script output
+          mkdir -p data
+          cp -f site_metrics.json data/site_metrics.json || true
+          cp -f site_metrics.json .last_backend_data || true
+          git add data/site_metrics.json .last_backend_data || true
+          if git diff --staged --quiet; then
+            echo "No data changes to commit"
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            git commit -m "chore: update leaderboard data [skip ci]" || true
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    if: needs.build.outputs.skip_deploy != 'true'
-    environment:
-      name: github-pages   # REQUIRED
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Push data branch
+        if: steps.prepare_branch.outcome == 'success' && steps.run_update.outcome == 'success' && steps.prepare_branch.outputs.changed != 'false'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin HEAD:data-updates --force
+
+      - name: Finish
+        run: echo "Backend update job completed"
