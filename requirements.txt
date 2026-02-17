@@ -5,3 +5,4 @@ pandas==2.2.1             # For data handling/metrics
 numpy==1.26.4             # For numerical calculations
 gunicorn==21.2.0          # Production WSGI server (Render expects this)
 aiohttp
+dotenv
