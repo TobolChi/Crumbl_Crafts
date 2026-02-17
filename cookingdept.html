@@ -2722,6 +2722,17 @@
             const providedNewHasItems = providedNew && Object.keys(providedNew).length > 0;
             const providedOldHasItems = providedOld && Object.keys(providedOld).length > 0;
 
+            // Prefer explicit live `menu` payload when available — snapshots should be used for diffing only.
+            const normalizedFallback = normalizeMenuData(fallbackMenu);
+            const fallbackHasItems = normalizedFallback && Object.keys(normalizedFallback).length > 0;
+
+            if (fallbackHasItems) {
+                // Use live menu for rendering; provide the old snapshot for diffing when present.
+                updateMenuData(normalizedFallback, providedOldHasItems ? providedOld : null, !!providedNewHasItems);
+                return;
+            }
+
+            // No live menu available — fall back to snapshots (prefer new -> old)
             if (providedNewHasItems) {
                 updateMenuData(providedNew, providedOld, true);
                 return;
