@@ -1787,74 +1787,10 @@
         let isOnline = navigator.onLine;
         let lastSuccessfulFetch = Date.now();
         
-        // Activity management for audio notifications - FIXED
+        // Activity management for notifications
         let activityCache = new Map(); // Use Map for better tracking
         let lastActivityCount = 0;
         let lastActivityIds = new Set();
-        
-        // Audio notification optimization
-        let audioContext = null;
-        let audioUnlocked = false;
-        
-        const unlockAudio = () => {
-            if (!audioUnlocked && !audioContext) {
-                try {
-                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                    audioUnlocked = true;
-                    console.log('✓ Audio unlocked for notifications');
-                } catch (e) {
-                    console.warn('Audio context not supported:', e.message);
-                }
-            }
-        };
-        
-        const playNotificationSound = () => {
-            try {
-                if (!audioContext || !audioUnlocked) {
-                    console.log('🔇 Audio not available for notification');
-                    return;
-                }
-                
-                // Resume context if suspended (browser autoplay policy)
-                if (audioContext.state === 'suspended') {
-                    audioContext.resume();
-                }
-                
-                const oscillator = audioContext.createOscillator();
-                const gainNode = audioContext.createGain();
-                
-                oscillator.connect(gainNode);
-                gainNode.connect(audioContext.destination);
-                
-                oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
-                oscillator.type = 'sine';
-                
-                gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
-                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
-                
-                oscillator.start(audioContext.currentTime);
-                oscillator.stop(audioContext.currentTime + 0.3);
-                
-                console.log('🔔 Activity notification played');
-                
-                // Visual notification too
-                if (document.title.indexOf('🔔') === -1) {
-                    const originalTitle = document.title;
-                    document.title = '🔔 ' + originalTitle;
-                    setTimeout(() => {
-                        document.title = originalTitle;
-                    }, 3000);
-                }
-                
-            } catch (e) {
-                console.warn('Sound failed:', e.message);
-            }
-        };
-        
-        // Unlock audio on first user interaction
-        document.addEventListener('click', unlockAudio, { once: true });
-        document.addEventListener('keydown', unlockAudio, { once: true });
-        document.addEventListener('touchstart', unlockAudio, { once: true });
         
         // Fallback data structure - Rich Demo Data
         const placeholderData = {
@@ -2572,8 +2508,15 @@
             
             if (newActivityIds.length > 0 && lastActivityIds.size > 0) {
                 console.log(`🔔 NEW ACTIVITIES DETECTED: ${newActivityIds.length} new activities`);
-                console.log('🔔 Playing notification sound...');
-                playNotificationSound();
+                
+                // Visual notification - title change
+                if (document.title.indexOf('🔔') === -1) {
+                    const originalTitle = document.title;
+                    document.title = '🔔 ' + originalTitle;
+                    setTimeout(() => {
+                        document.title = originalTitle;
+                    }, 3000);
+                }
                 
                 // Show browser notification if permission granted
                 if (Notification.permission === 'granted') {
