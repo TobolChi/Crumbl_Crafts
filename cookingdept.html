@@ -2198,8 +2198,11 @@
             }
 
             const normalizedRequested = (season || currentSeasonalView || '').toLowerCase().replace(/\s+/g, '');
+            console.debug('displaySeasonalMenu: requested="' + (season || currentSeasonalView) + '", normalizedRequested="' + normalizedRequested + '"');
+            console.debug('displaySeasonalMenu: available seasonal keys=', Object.keys(seasonalMenuData));
             const actualKey = Object.keys(seasonalMenuData).find(k => k.toLowerCase().replace(/\s+/g, '') === normalizedRequested) || null;
-            const seasonData = actualKey ? seasonalMenuData[actualKey] : {};
+            console.debug('displaySeasonalMenu: matched actualKey =', actualKey);
+            const seasonData = actualKey ? seasonalMenuData[actualKey] : {}; 
 
             // sync UI tabs
             const normKey = actualKey ? actualKey.toLowerCase().replace(/\s+/g, '') : normalizedRequested;
@@ -2908,9 +2911,33 @@
                     if (!parent) return;
                     const ds = parent.getAttribute('data-season');
                     if (!ds) return;
-                    // Show only this seasonal menu
+
+                    console.debug('seasonal subcategory click:', ds, '— attempting DOM-level show/hide');
+
+                    // First, try to find the matching season data in memory
+                    const matchedKey = Object.keys(seasonalMenuData || {}).find(k => k.toLowerCase().replace(/\s+/g, '') === ds) || null;
+
+                    if (matchedKey && seasonalMenuData[matchedKey] && Object.keys(seasonalMenuData[matchedKey]).length > 0) {
+                        // Show only this seasonal-subcategory element and hide the others (DOM-level quick path)
+                        document.querySelectorAll('.seasonal-subcategory').forEach(s => {
+                            s.style.display = (s === parent) ? 'grid' : 'none';
+                        });
+
+                        // Mark the top season tab active as well
+                        document.querySelectorAll('.season-tab').forEach(t => t.classList.remove('active'));
+                        const tab = document.querySelector(`.season-tab[data-season="${ds}"]`);
+                        if (tab) tab.classList.add('active');
+
+                        currentSeasonalView = ds;
+                        console.debug('seasonal subcategory displayed via DOM fallback for', matchedKey);
+                        return;
+                    }
+
+                    // Fallback to the canonical renderer (keeps behavior consistent)
+                    console.debug('seasonal subcategory DOM fallback failed — calling displaySeasonalMenu(', ds, ')');
                     displaySeasonalMenu(ds);
-                    // Mark the top season tab active as well
+
+                    // Ensure the top season tab is marked active even after renderer fallback
                     document.querySelectorAll('.season-tab').forEach(t => t.classList.remove('active'));
                     const tab = document.querySelector(`.season-tab[data-season="${ds}"]`);
                     if (tab) tab.classList.add('active');
