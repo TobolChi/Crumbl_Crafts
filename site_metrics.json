@@ -317,6 +317,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Tour pela minha casa no bloxburg | Roblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771326000.0,
+      "url": "https://www.youtube.com/watch?v=XJT9vXDmFrM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Crackship trend w/ @noahcarrot #digitalart #collab #watamote #bloxburg #anime #trending #shorts",
       "description": "idk why youtube is suggesting me these tags but sure why not #mizzle #imagic #imagia #nimmy #ibal #m...",
       "source": "YouTube",
@@ -349,15 +358,6 @@
       "source": "YouTube",
       "timestamp": 1771284627.0,
       "url": "https://www.youtube.com/watch?v=f9jbFPGXFA8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#rivals #roblox #fry #memes #funny #gaming #bloxburg #greenscreen",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771279913.0,
-      "url": "https://www.youtube.com/watch?v=4IUqETYChyg",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771326040.3205307,
+    "generated_at": 1771327240.3174093,
     "mode": "memory",
     "refresh_interval": 2000
   }
