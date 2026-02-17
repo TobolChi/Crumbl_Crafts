@@ -257,15 +257,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/689401994934353932"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "unclebensriceee. left the server",
-      "timestamp": 1770723702,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/659359876736352266"
     }
   ],
   "pipeline": [
@@ -398,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771328440.31823,
+    "generated_at": 1771329640.3208506,
     "mode": "memory",
     "refresh_interval": 2000
   }
