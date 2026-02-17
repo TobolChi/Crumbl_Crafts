@@ -325,23 +325,7 @@
         "cost_price": 152.0
       }
     },
-    "seasonal": {
-      "Pumpkin Pie": {
-        "selling_price": 5.99,
-        "ingredients": "Fresh ingredients prepared by our chefs",
-        "cost_price": 2.4
-      },
-      "burger": {
-        "selling_price": 3.0,
-        "ingredients": "Fresh ingredients prepared by our chefs",
-        "cost_price": 1.2
-      },
-      "Christmas Cookies": {
-        "selling_price": 15.99,
-        "ingredients": "Fresh ingredients prepared by our chefs",
-        "cost_price": 6.4
-      }
-    },
+    "seasonal": {},
     "non-seasonal": {
       "Baby Food": {
         "selling_price": 203.0,
@@ -647,51 +631,13 @@
     "avgRating": 5.0
   },
   "meta": {
-    "timestamp": "2026-02-17T14:14:54.806879",
-    "last_updated": 1771330494.806887,
+    "timestamp": "2026-02-17T15:49:10.031207",
+    "last_updated": 1771336150.0312138,
     "cached": false,
     "data_source": "discord_bot"
   },
   "menu_snapshots": {
     "old": {
-      "catering": {
-        "lemonade": {
-          "selling_price": 70.0,
-          "ingredients": "Fresh ingredients prepared by our chefs",
-          "cost_price": 28.0
-        }
-      },
-      "seasonal": {
-        "Pumpkin Pie": {
-          "selling_price": 5.99,
-          "ingredients": "Fresh ingredients prepared by our chefs",
-          "cost_price": 2.4
-        },
-        "burger": {
-          "selling_price": 3.0,
-          "ingredients": "Fresh ingredients prepared by our chefs",
-          "cost_price": 1.2
-        },
-        "Christmas Cookies": {
-          "selling_price": 15.99,
-          "ingredients": "Fresh ingredients prepared by our chefs",
-          "cost_price": 6.4
-        }
-      },
-      "non-seasonal": {
-        "Pumpkin Pie": {
-          "selling_price": 5.99,
-          "ingredients": "Fresh ingredients prepared by our chefs",
-          "cost_price": 2.4
-        },
-        "Burger": {
-          "selling_price": 5.0,
-          "ingredients": "Fresh ingredients prepared by our chefs",
-          "cost_price": 2.0
-        }
-      }
-    },
-    "new": {
       "catering": {
         "Baby Food": {
           "selling_price": 203.0,
@@ -1006,6 +952,603 @@
           "cost_price": 6.4
         }
       },
+      "non-seasonal": {
+        "Baby Food": {
+          "selling_price": 203.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 81.2
+        },
+        "Garden Salad": {
+          "selling_price": 204.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 81.6
+        },
+        "Hot Dogs": {
+          "selling_price": 205.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.0
+        },
+        "Fruit Salad": {
+          "selling_price": 205.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.0
+        },
+        "Vegetable Soup": {
+          "selling_price": 205.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.0
+        },
+        "Corn on the Cob": {
+          "selling_price": 205.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.0
+        },
+        "Mini Corndogs": {
+          "selling_price": 206.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.4
+        },
+        "Bacon and Eggs": {
+          "selling_price": 206.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.4
+        },
+        "Chicken Nuggets": {
+          "selling_price": 207.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.8
+        },
+        "Fish Sticks": {
+          "selling_price": 208.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 83.2
+        },
+        "Pancakes": {
+          "selling_price": 208.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 83.2
+        },
+        "French Fries": {
+          "selling_price": 209.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 83.6
+        },
+        "Gelatin Cake": {
+          "selling_price": 210.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 84.0
+        },
+        "Grilled Banana": {
+          "selling_price": 210.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 84.0
+        },
+        "Chili": {
+          "selling_price": 210.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 84.0
+        },
+        "Plate of Langos": {
+          "selling_price": 210.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 84.0
+        },
+        "Veggie Skewers": {
+          "selling_price": 210.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 84.0
+        },
+        "Tacos": {
+          "selling_price": 212.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 84.8
+        },
+        "Cookies": {
+          "selling_price": 213.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 85.2
+        },
+        "Meat Skewers": {
+          "selling_price": 215.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 86.0
+        },
+        "Hamburgers": {
+          "selling_price": 218.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 87.2
+        },
+        "Rice Pudding": {
+          "selling_price": 218.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 87.2
+        },
+        "BBQ Ribs": {
+          "selling_price": 219.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 87.6
+        },
+        "Loaf of Breaf": {
+          "selling_price": 220.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 88.0
+        },
+        "Mandazi": {
+          "selling_price": 220.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 88.0
+        },
+        "Blueberry Muffins": {
+          "selling_price": 220.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 88.0
+        },
+        "Empanadas": {
+          "selling_price": 222.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 88.8
+        },
+        "Pizza": {
+          "selling_price": 224.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 89.6
+        },
+        "Vada Pav": {
+          "selling_price": 224.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 89.6
+        },
+        "Chocolate Cupcakes": {
+          "selling_price": 225.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 90.0
+        },
+        "Sphagetti Pomodoro": {
+          "selling_price": 226.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 90.4
+        },
+        "Ceasar Salad": {
+          "selling_price": 228.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 91.2
+        },
+        "Red Velvet Cupcakes": {
+          "selling_price": 228.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 91.2
+        },
+        "Suger Donuts": {
+          "selling_price": 228.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 91.2
+        },
+        "Challah Bread": {
+          "selling_price": 228.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 91.2
+        },
+        "Plain Cheesecake": {
+          "selling_price": 230.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 92.0
+        },
+        "Sprinkle Donuts": {
+          "selling_price": 230.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 92.0
+        },
+        "Spaghetti and Meatballs": {
+          "selling_price": 232.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 92.8
+        },
+        "Serving of Baklava": {
+          "selling_price": 235.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 94.0
+        },
+        "Porkchops": {
+          "selling_price": 236.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 94.4
+        },
+        "Apple Pie": {
+          "selling_price": 238.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 95.2
+        },
+        "Birthday Cupcakes": {
+          "selling_price": 240.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 96.0
+        },
+        "Pot of Curry": {
+          "selling_price": 240.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 96.0
+        },
+        "Pecan Pie": {
+          "selling_price": 242.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 96.8
+        },
+        "Fruit Cake": {
+          "selling_price": 244.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 97.6
+        },
+        "Strawberry Cream Cake": {
+          "selling_price": 244.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 97.6
+        },
+        "Mixed Berry Pie": {
+          "selling_price": 245.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 98.0
+        },
+        "Bunny Chow": {
+          "selling_price": 245.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 98.0
+        },
+        "Birthday Cake": {
+          "selling_price": 246.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 98.4
+        },
+        "Lasagna": {
+          "selling_price": 246.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 98.4
+        },
+        "Cake": {
+          "selling_price": 246.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 98.4
+        },
+        "Salmon": {
+          "selling_price": 248.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 99.2
+        },
+        "Turkey": {
+          "selling_price": 250.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 100.0
+        },
+        "Kimchi Grilled Cheese Sandwich": {
+          "selling_price": 252.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 100.8
+        },
+        "Meatloaf": {
+          "selling_price": 252.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 100.8
+        },
+        "Braised Ham": {
+          "selling_price": 260.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 104.0
+        },
+        "Sushi Rolls": {
+          "selling_price": 362.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 144.8
+        },
+        "Steak": {
+          "selling_price": 374.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 149.6
+        },
+        "Lobster": {
+          "selling_price": 380.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 152.0
+        }
+      }
+    },
+    "new": {
+      "catering": {
+        "Baby Food": {
+          "selling_price": 203.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 81.2
+        },
+        "Garden Salad": {
+          "selling_price": 204.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 81.6
+        },
+        "Hot Dogs": {
+          "selling_price": 205.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.0
+        },
+        "Fruit Salad": {
+          "selling_price": 205.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.0
+        },
+        "Vegetable Soup": {
+          "selling_price": 205.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.0
+        },
+        "Corn on the Cob": {
+          "selling_price": 205.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.0
+        },
+        "Mini Corndogs": {
+          "selling_price": 206.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.4
+        },
+        "Bacon and Eggs": {
+          "selling_price": 206.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.4
+        },
+        "Chicken Nuggets": {
+          "selling_price": 207.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 82.8
+        },
+        "Fish Sticks": {
+          "selling_price": 208.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 83.2
+        },
+        "Pancakes": {
+          "selling_price": 208.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 83.2
+        },
+        "French Fries": {
+          "selling_price": 209.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 83.6
+        },
+        "Gelatin Cake": {
+          "selling_price": 210.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 84.0
+        },
+        "Grilled Banana": {
+          "selling_price": 210.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 84.0
+        },
+        "Chili": {
+          "selling_price": 210.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 84.0
+        },
+        "Plate of Langos": {
+          "selling_price": 210.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 84.0
+        },
+        "Veggie Skewers": {
+          "selling_price": 210.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 84.0
+        },
+        "Tacos": {
+          "selling_price": 212.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 84.8
+        },
+        "Cookies": {
+          "selling_price": 213.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 85.2
+        },
+        "Meat Skewers": {
+          "selling_price": 215.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 86.0
+        },
+        "Hamburgers": {
+          "selling_price": 218.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 87.2
+        },
+        "Rice Pudding": {
+          "selling_price": 218.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 87.2
+        },
+        "BBQ Ribs": {
+          "selling_price": 219.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 87.6
+        },
+        "Loaf of Breaf": {
+          "selling_price": 220.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 88.0
+        },
+        "Mandazi": {
+          "selling_price": 220.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 88.0
+        },
+        "Blueberry Muffins": {
+          "selling_price": 220.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 88.0
+        },
+        "Empanadas": {
+          "selling_price": 222.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 88.8
+        },
+        "Pizza": {
+          "selling_price": 224.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 89.6
+        },
+        "Vada Pav": {
+          "selling_price": 224.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 89.6
+        },
+        "Chocolate Cupcakes": {
+          "selling_price": 225.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 90.0
+        },
+        "Sphagetti Pomodoro": {
+          "selling_price": 226.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 90.4
+        },
+        "Ceasar Salad": {
+          "selling_price": 228.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 91.2
+        },
+        "Red Velvet Cupcakes": {
+          "selling_price": 228.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 91.2
+        },
+        "Suger Donuts": {
+          "selling_price": 228.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 91.2
+        },
+        "Challah Bread": {
+          "selling_price": 228.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 91.2
+        },
+        "Plain Cheesecake": {
+          "selling_price": 230.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 92.0
+        },
+        "Sprinkle Donuts": {
+          "selling_price": 230.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 92.0
+        },
+        "Spaghetti and Meatballs": {
+          "selling_price": 232.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 92.8
+        },
+        "Serving of Baklava": {
+          "selling_price": 235.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 94.0
+        },
+        "Porkchops": {
+          "selling_price": 236.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 94.4
+        },
+        "Apple Pie": {
+          "selling_price": 238.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 95.2
+        },
+        "Birthday Cupcakes": {
+          "selling_price": 240.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 96.0
+        },
+        "Pot of Curry": {
+          "selling_price": 240.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 96.0
+        },
+        "Pecan Pie": {
+          "selling_price": 242.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 96.8
+        },
+        "Fruit Cake": {
+          "selling_price": 244.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 97.6
+        },
+        "Strawberry Cream Cake": {
+          "selling_price": 244.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 97.6
+        },
+        "Mixed Berry Pie": {
+          "selling_price": 245.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 98.0
+        },
+        "Bunny Chow": {
+          "selling_price": 245.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 98.0
+        },
+        "Birthday Cake": {
+          "selling_price": 246.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 98.4
+        },
+        "Lasagna": {
+          "selling_price": 246.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 98.4
+        },
+        "Cake": {
+          "selling_price": 246.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 98.4
+        },
+        "Salmon": {
+          "selling_price": 248.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 99.2
+        },
+        "Turkey": {
+          "selling_price": 250.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 100.0
+        },
+        "Kimchi Grilled Cheese Sandwich": {
+          "selling_price": 252.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 100.8
+        },
+        "Meatloaf": {
+          "selling_price": 252.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 100.8
+        },
+        "Braised Ham": {
+          "selling_price": 260.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 104.0
+        },
+        "Sushi Rolls": {
+          "selling_price": 362.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 144.8
+        },
+        "Steak": {
+          "selling_price": 374.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 149.6
+        },
+        "Lobster": {
+          "selling_price": 380.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 152.0
+        }
+      },
+      "seasonal": {},
       "non-seasonal": {
         "Baby Food": {
           "selling_price": 203.0,
