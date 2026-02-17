@@ -2104,7 +2104,10 @@
         }
 
         function displaySeasonalMenu(season) {
-            const seasonData = seasonalMenuData[season] || {};
+            // season parameter is the normalized key (e.g. 'halloween' or 'newyear')
+            // find the actual season key in seasonalMenuData (which uses original names like 'New Year')
+            const actualKey = Object.keys(seasonalMenuData).find(k => k.toLowerCase().replace(/\s+/g, '') === season) || null;
+            const seasonData = actualKey ? (seasonalMenuData[actualKey] || {}) : {};
             const categoryDiv = document.querySelector('.menu-category[data-category="seasonal"]');
             
             if (!categoryDiv) return;
@@ -2697,11 +2700,13 @@
                 for (const [seasonName, seasonItems] of Object.entries(seasonalMenuData)) {
                     if (!seasonItems || typeof seasonItems !== 'object') continue;
                     
+                    const seasonKey = seasonName.toLowerCase().replace(/\s+/g, '');
                     const isActive = activeSeasonSet.has(seasonName);
                     const seasonClass = isActive ? 'active-season' : '';
-                    const seasonEmoji = SEASON_EMOJI_MAP[seasonName.toLowerCase().replace(/\s+/g, '')] || '🎉';
+                    const seasonEmoji = SEASON_EMOJI_MAP[seasonKey] || '🎉';
                     
-                    html += `<div class="seasonal-subcategory ${seasonClass}">`;
+                    // Attach normalized data-season so JS can reliably match tabs -> subcategories
+                    html += `<div class="seasonal-subcategory ${seasonClass}" data-season="${seasonKey}">`;
                     html += `<h3 class="subcategory-title">${seasonEmoji} ${seasonName}</h3>`;
                     
                     if (Object.keys(seasonItems).length === 0) {
