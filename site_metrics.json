@@ -326,6 +326,15 @@
     },
     {
       "type": "trend",
+      "title": "NEW BLOXBURG LUNAR NEW YEARS UPDATE IS HERE! NEW FOOD, ITEMS, FESTIVAL AND MORE!",
+      "description": "Happy Lunar New Years to those who celebrate it today! It's update day here in Bloxburg as well, as ...",
+      "source": "YouTube",
+      "timestamp": 1771341534.0,
+      "url": "https://www.youtube.com/watch?v=g1E7tNzIpCI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #automobile #bloxburg",
       "description": "Roblox....",
       "source": "YouTube",
@@ -349,15 +358,6 @@
       "source": "YouTube",
       "timestamp": 1771334801.0,
       "url": "https://www.youtube.com/watch?v=faNBSJ-HNqA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Tour pela minha casa no bloxburg | Roblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771333200.0,
-      "url": "https://www.youtube.com/watch?v=-EHm86tkjV0",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771345240.3221457,
+    "generated_at": 1771346440.3232694,
     "mode": "memory",
     "refresh_interval": 2000
   }
