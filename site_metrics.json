@@ -311,6 +311,24 @@
       "title": "Tour pela minha casa no bloxburg | Roblox",
       "description": "...",
       "source": "YouTube",
+      "timestamp": 1771333200.0,
+      "url": "https://www.youtube.com/watch?v=-EHm86tkjV0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Adoro questo stile!\ud83c\udf39\u2764\ufe0f",
+      "description": "roblox #bloxburg #bloxburgbuilder #forniture #vintage #fun #showcase #shorts....",
+      "source": "YouTube",
+      "timestamp": 1771332769.0,
+      "url": "https://www.youtube.com/watch?v=SiXJ8eQRPfE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Tour pela minha casa no bloxburg | Roblox",
+      "description": "...",
+      "source": "YouTube",
       "timestamp": 1771326000.0,
       "url": "https://www.youtube.com/watch?v=XJT9vXDmFrM",
       "icon": "fa-youtube"
@@ -331,24 +349,6 @@
       "source": "YouTube",
       "timestamp": 1771291611.0,
       "url": "https://www.youtube.com/watch?v=JWxPkuYGKog",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Berry Avenue 2 Toddler Outfit Codes || Bloxburg Brookhaven Berry Avenue #shorts #berryavenueoutfits",
-      "description": "\ua540 thank you for watching this video! \u02da these outfits work for brookhaven, berry avenue, and bloxburg...",
-      "source": "YouTube",
-      "timestamp": 1771286017.0,
-      "url": "https://www.youtube.com/watch?v=k0umy3d6iyA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "rookie to greenville players #roblox #bloxburg #greenvilleroblox #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771284627.0,
-      "url": "https://www.youtube.com/watch?v=f9jbFPGXFA8",
       "icon": "fa-youtube"
     },
     {
@@ -389,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771333240.6632433,
+    "generated_at": 1771334440.3261423,
     "mode": "memory",
     "refresh_interval": 2000
   }
