@@ -317,6 +317,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "BLOXBURG Lunar New Year update is out NOW! \ud83e\udd6e#bloxburg #roblox #bloxburgupdate",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771357448.0,
+      "url": "https://www.youtube.com/watch?v=x5jN02ZRanM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "ideia de sala #bloxburg #roblox #bloxburgnewleaks #fy #shorts #viral #naofloppa",
       "description": "...",
       "source": "YouTube",
@@ -349,15 +358,6 @@
       "source": "YouTube",
       "timestamp": 1771344528.0,
       "url": "https://www.youtube.com/watch?v=MYaTi1V-Vhs",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Summer Coastal Beach House \ud83c\udf0a | Bloxburg House Build \ud801\ude5a",
-      "description": "\u0f18\u2661 \u00b7\u02da \u2661 OPEN ME \u00b7\u02da \u0f18\u2661 \u00b7\u02da \u2661 Join my Roblox Group! https://www.roblox.com/groups/8948903/Daniellerys-T...",
-      "source": "YouTube",
-      "timestamp": 1771344266.0,
-      "url": "https://www.youtube.com/watch?v=TJpYmfkGLC8",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771358440.3206482,
+    "generated_at": 1771359640.3241723,
     "mode": "memory",
     "refresh_interval": 2000
   }
