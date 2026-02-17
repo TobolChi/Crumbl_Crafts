@@ -1912,23 +1912,8 @@
             document.head.appendChild(smoothscroll);
         }
 
-        // Cache DOM elements for better performance
-        const elements = {
-            totalChefs: document.getElementById('totalChefs'),
-            totalOrders: document.getElementById('totalOrders'),
-            avgRating: document.getElementById('avgRating'),
-            activeChefs: document.getElementById('activeChefs'),
-            activeSeasons: document.getElementById('activeSeasons'),
-            lastUpdate: document.getElementById('lastUpdate'),
-            chefRankings: document.getElementById('chefRankings'),
-            menuContainer: document.getElementById('menuContainer'),
-            activityLog: document.getElementById('activityLog'),
-            menuTabs: document.querySelector('.menu-tabs'),
-            seasonalSubtabs: document.getElementById('seasonalSubtabs'),
-            activeSeasonIndicator: document.getElementById('activeSeasonIndicator'),
-            activeSeasonIcon: document.getElementById('activeSeasonIcon'),
-            activeSeasonName: document.getElementById('activeSeasonName')
-        };
+        // Cache DOM elements for better performance (will be initialized after DOM loads)
+        let elements = {};
 
         let refreshTimer = null;
         let lastPayloadHash = '';
@@ -1962,6 +1947,36 @@
             console.log('Expected bot JSON format:', {
                 url: CONFIG.dataUrl,
                 expectedStructure: 'See console for full format'
+            });
+            
+            // Initialize DOM elements AFTER DOM is ready
+            elements = {
+                totalChefs: document.getElementById('totalChefs'),
+                totalOrders: document.getElementById('totalOrders'),
+                avgRating: document.getElementById('avgRating'),
+                activeChefs: document.getElementById('activeChefs'),
+                activeSeasons: document.getElementById('activeSeasons'),
+                lastUpdate: document.getElementById('lastUpdate'),
+                chefRankings: document.getElementById('chefRankings'),
+                menuContainer: document.getElementById('menuContainer'),
+                activityLog: document.getElementById('activityLog'),
+                menuTabs: document.querySelector('.menu-tabs'),
+                seasonalSubtabs: document.getElementById('seasonalSubtabs'),
+                activeSeasonIndicator: document.getElementById('activeSeasonIndicator'),
+                activeSeasonIcon: document.getElementById('activeSeasonIcon'),
+                activeSeasonName: document.getElementById('activeSeasonName')
+            };
+            
+            // Log elements to verify they're found
+            console.log('📦 DOM Elements loaded:', {
+                totalChefs: !!elements.totalChefs,
+                totalOrders: !!elements.totalOrders,
+                avgRating: !!elements.avgRating,
+                activeChefs: !!elements.activeChefs,
+                activeSeasons: !!elements.activeSeasons,
+                chefRankings: !!elements.chefRankings,
+                activityLog: !!elements.activityLog,
+                menuContainer: !!elements.menuContainer
             });
             
             // Request notification permission
