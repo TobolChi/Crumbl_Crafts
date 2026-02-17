@@ -13,7 +13,7 @@ on:
 permissions:
   contents: write   # needed to upload artifacts
   pages: write      # needed to deploy to Pages
-  id-token: write   # needed for OIDC authentication.
+  id-token: write   # needed for OIDC authentication
 
 concurrency:        # prevent overlapping deployments
   group: pages
