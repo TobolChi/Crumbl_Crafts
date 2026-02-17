@@ -1,6 +1,6 @@
 {
   "summary": {
-    "builder_count": 2,
+    "builder_count": 1,
     "total_completed": 0,
     "total_requests": 11,
     "total_ratings": 0,
@@ -21,15 +21,6 @@
       "avatar_url": "https://cdn.discordapp.com/avatars/794776553955131393/48b08201c3f60f4b4b92b3984a64f568.png?size=1024",
       "server_id": 1301988304279048275,
       "url": "https://discord.com/channels/1301988304279048275/1457057884968845373"
-    },
-    {
-      "shop_name": "test",
-      "completed_projects": 0,
-      "average_rating": 0.0,
-      "thread_id": 1473255205016571904,
-      "avatar_url": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/channels/1301988304279048275/1473255205016571904"
     }
   ],
   "activityLog": [
@@ -407,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771321816.555064,
+    "generated_at": 1771322069.8687537,
     "mode": "memory",
     "refresh_interval": 2000
   }
