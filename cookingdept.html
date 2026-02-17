@@ -2016,18 +2016,33 @@
         function updateActiveSeasonIndicator() {
             console.log('🔍 Updating active season indicator. Current season:', activeSeason);
             
-            // Convert season name to key format
-            const seasonKey = activeSeason.toLowerCase().replace(/\s+/g, '');
-            const seasonInfo = SEASONAL_CATEGORIES[seasonKey];
+            // Handle both single season (string) and multiple seasons (array)
+            const seasons = Array.isArray(activeSeason) ? activeSeason : [activeSeason];
+            const validSeasons = seasons.filter(s => s !== 'No Active Season');
             
-            console.log('🔍 Season key:', seasonKey, 'Season info found:', !!seasonInfo);
-            
-            // Only show indicator if we have a valid active season (not "No Active Season")
-            if (elements.activeSeasonIndicator && seasonInfo && activeSeason !== 'No Active Season') {
-                console.log('✅ Showing active season indicator:', seasonInfo.name);
-                elements.activeSeasonIndicator.style.display = 'flex';
-                elements.activeSeasonIcon.textContent = seasonInfo.emoji;
-                elements.activeSeasonName.textContent = seasonInfo.name;
+            // Only show indicator if we have valid active seasons
+            if (elements.activeSeasonIndicator && validSeasons.length > 0) {
+                // Use the first active season for the indicator
+                const firstSeason = validSeasons[0];
+                const seasonKey = firstSeason.toLowerCase().replace(/\s+/g, '');
+                const seasonInfo = SEASONAL_CATEGORIES[seasonKey];
+                
+                console.log('🔍 Season key:', seasonKey, 'Season info found:', !!seasonInfo);
+                
+                if (seasonInfo) {
+                    console.log('✅ Showing active season indicator:', seasonInfo.name);
+                    elements.activeSeasonIndicator.style.display = 'flex';
+                    elements.activeSeasonIcon.textContent = seasonInfo.emoji;
+                    // Show count if multiple seasons
+                    if (validSeasons.length > 1) {
+                        elements.activeSeasonName.textContent = `${seasonInfo.name} +${validSeasons.length - 1}`;
+                    } else {
+                        elements.activeSeasonName.textContent = seasonInfo.name;
+                    }
+                } else {
+                    console.log('🚫 Hiding indicator (season not in SEASONAL_CATEGORIES)');
+                    elements.activeSeasonIndicator.style.display = 'none';
+                }
             } else if (elements.activeSeasonIndicator) {
                 console.log('🚫 Hiding active season indicator (no active season or elements missing)');
                 elements.activeSeasonIndicator.style.display = 'none';
@@ -2214,9 +2229,11 @@
                 
             } catch (err) {
                 consecutiveFailures++;
-                console.error(`❌ Failed to load cooking data (attempt ${consecutiveFailures}):`, {
-                    error: err.message,
+                console.error(`❌ Failed to load cooking data (attempt ${consecutiveFailures}):`, err);
+                console.error('Error details:', {
+                    message: err.message,
                     stack: err.stack,
+                    name: err.name,
                     endpoint: CONFIG.dataUrl,
                     timestamp: new Date().toISOString()
                 });
@@ -2336,6 +2353,20 @@
         }
 
         function updateLiveStats(stats) {
+            console.log('📊 updateLiveStats called with:', stats);
+            console.log('📦 Elements available:', {
+                totalChefs: !!elements.totalChefs,
+                totalOrders: !!elements.totalOrders,
+                avgRating: !!elements.avgRating,
+                activeChefs: !!elements.activeChefs,
+                activeSeasons: !!elements.activeSeasons
+            });
+            
+            if (!elements.totalChefs || !elements.totalOrders || !elements.avgRating || !elements.activeChefs) {
+                console.error('❌ Critical: Required stat elements not found in DOM!');
+                return;
+            }
+            
             elements.totalChefs.textContent = stats.total_chefs ?? 0;
             elements.totalOrders.textContent = stats.total_orders ?? 0;
             elements.avgRating.textContent = stats.avg_rating ? `${stats.avg_rating.toFixed(1)}⭐` : '—';
