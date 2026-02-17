@@ -1757,7 +1757,7 @@
                         </div>
                         <div class="stat-info">
                             <div class="stat-label">Active Seasons</div>
-                            <div class="stat-value" id="activeSeasons">Loading...</div>
+                            <div class="stat-value" id="activeSeasons">None</div>
                         </div>
                     </div>
                 </div>
@@ -2073,18 +2073,8 @@
             } else {
                 let html = '';
                 Object.entries(seasonData).forEach(([itemName, itemData]) => {
-                    // Handle N/A prices
-                    let priceDisplay;
-                    if (itemData.selling_price === null || itemData.selling_price === undefined || 
-                        (typeof itemData.selling_price === 'string' && itemData.selling_price.toUpperCase() === 'N/A')) {
-                        priceDisplay = 'N/A';
-                    } else {
-                        priceDisplay = `$${Number(itemData.selling_price).toFixed(2)}`;
-                    }
-                    
-                    const costPrice = (itemData.cost_price && itemData.cost_price !== null) 
-                        ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` 
-                        : '';
+                    const price = itemData.selling_price != null ? Number(itemData.selling_price).toFixed(2) : '—';
+                    const costPrice = itemData.cost_price ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` : '';
                     
                     html += `
                         <div class="menu-item">
@@ -2093,7 +2083,7 @@
                                 <div class="menu-item-description">${itemData.ingredients || 'Seasonal specialty item'}</div>
                                 ${costPrice}
                             </div>
-                            <div class="menu-item-price">${priceDisplay}</div>
+                            <div class="menu-item-price">$${price}</div>
                         </div>
                     `;
                 });
@@ -2266,19 +2256,15 @@
         }
 
         async function applyDashboardData(data) {
-            console.log('📊 Applying dashboard data:', {
-                chefs: Array.isArray(data?.chefs) ? data.chefs.length : 0,
-                hasActiveSeasons: !!data.active_seasons,
-                activeSeasons: data.active_seasons
-            });
-            
-            // Update active seasons if provided
+            // Extract active seasons from payload
             if (data.active_seasons && Array.isArray(data.active_seasons)) {
                 activeSeason = data.active_seasons;
                 updateActiveSeasonIndicator();
             }
             
-            console.log('📊 Continued processing:', {
+            console.log('📊 Applying dashboard data:', {
+                chefs: Array.isArray(data?.chefs) ? data.chefs.length : 0,
+                activeSeasons: data.active_seasons,
                 activities: Array.isArray(data?.activities) ? data.activities.length : 0,
                 activity: Array.isArray(data?.activity) ? data.activity.length : 0,
                 logs: Array.isArray(data?.logs) ? data.logs.length : 0,
@@ -2346,12 +2332,11 @@
                 const displaySeasons = seasons.filter(s => s !== 'No Active Season');
                 if (displaySeasons.length === 0) {
                     elements.activeSeasons.textContent = 'None';
-                } else if (displaySeasons.length === 1) {
-                    const emoji = SEASONAL_CATEGORIES[displaySeasons[0].toLowerCase()]?.emoji || '🎃';
-                    elements.activeSeasons.textContent = `${emoji} ${displaySeasons[0]}`;
                 } else {
-                    elements.activeSeasons.textContent = `${displaySeasons.length} Active`;
-                    elements.activeSeasons.title = displaySeasons.join(', ');
+                    const emojis = displaySeasons.map(s => SEASONAL_CATEGORIES[s.toLowerCase()]?.emoji || '🎃');
+                    const seasonText = displaySeasons.map((s, i) => `${emojis[i]} ${s}`).join(' & ');
+                    elements.activeSeasons.textContent = seasonText;
+                    elements.activeSeasons.title = `Active: ${displaySeasons.join(', ')}`;
                 }
             }
         }
@@ -2610,37 +2595,36 @@
                 // If first value is an object with selling_price, it's NOT nested
                 // If first value is an object without selling_price, it IS nested (seasonal categories)
                 if (firstValue && typeof firstValue === 'object' && !firstValue.hasOwnProperty('selling_price')) {
-                    // This is nested seasonal structure: { Halloween: {...}, Christmas: {...} }
+                    // This is nested seasonal structure from bot: { Halloween: {...}, Christmas: {...} }
                     seasonalMenuData = normalizedMenu.seasonal;
+                    console.log('🎃 Found nested seasonal structure:', Object.keys(seasonalMenuData));
                     
-                    // Get active seasons from data or default
-                    const activeSeasons = Array.isArray(activeSeason) ? activeSeason : [activeSeason];
-                    const activeSeasonKey = activeSeasons.find(s => {
-                        const key = s.toLowerCase().replace(/\s+/g, '');
-                        return seasonalMenuData[key] || seasonalMenuData[s];
-                    });
-                    
-                    // Set default view to first active season if available
-                    if (activeSeasonKey) {
-                        const normalizedKey = activeSeasonKey.toLowerCase().replace(/\s+/g, '');
-                        if (seasonalMenuData[normalizedKey] || seasonalMenuData[activeSeasonKey]) {
-                            currentSeasonalView = seasonalMenuData[normalizedKey] ? normalizedKey : activeSeasonKey;
-                        }
-                    }
-                    
-                    // Merge all active seasonal menus into one view
+                    // Merge ALL active seasonal menus into one display
                     const mergedSeasonalItems = {};
+                    const activeSeasons = Array.isArray(activeSeason) ? activeSeason : [activeSeason];
+                    
                     activeSeasons.forEach(season => {
                         if (season === 'No Active Season') return;
-                        const seasonKey = season.toLowerCase().replace(/\s+/g, '');
-                        const seasonItems = seasonalMenuData[seasonKey] || seasonalMenuData[season] || {};
-                        Object.assign(mergedSeasonalItems, seasonItems);
+                        
+                        // Try to find the season data (handle case variations)
+                        let seasonItems = null;
+                        for (const [key, items] of Object.entries(seasonalMenuData)) {
+                            if (key.toLowerCase() === season.toLowerCase() || 
+                                key.toLowerCase().replace(/\s+/g, '') === season.toLowerCase().replace(/\s+/g, '')) {
+                                seasonItems = items;
+                                break;
+                            }
+                        }
+                        
+                        if (seasonItems) {
+                            console.log(`🎃 Merging items from ${season}:`, Object.keys(seasonItems));
+                            Object.assign(mergedSeasonalItems, seasonItems);
+                        }
                     });
                     
-                    // Replace seasonal in menu with merged active season items for display
-                    normalizedMenu.seasonal = Object.keys(mergedSeasonalItems).length > 0 
-                        ? mergedSeasonalItems 
-                        : (seasonalMenuData[currentSeasonalView] || {});
+                    // Replace seasonal in menu with merged active season items
+                    normalizedMenu.seasonal = mergedSeasonalItems;
+                    console.log('🎃 Merged seasonal menu:', Object.keys(mergedSeasonalItems));
                 } else {
                     // Flat structure - no nested seasons
                     seasonalMenuData = { [currentSeasonalView]: normalizedMenu.seasonal };
@@ -2706,14 +2690,16 @@
             Object.entries(items).forEach(([itemName, itemData]) => {
                 // Handle N/A prices
                 let priceDisplay;
-                if (itemData.selling_price === null || itemData.selling_price === undefined || 
-                    (typeof itemData.selling_price === 'string' && itemData.selling_price.toUpperCase() === 'N/A')) {
+                if (itemData.selling_price === null || itemData.selling_price === undefined) {
+                    priceDisplay = '—';
+                } else if (typeof itemData.selling_price === 'string' && itemData.selling_price.toUpperCase() === 'N/A') {
                     priceDisplay = 'N/A';
                 } else {
-                    priceDisplay = `$${Number(itemData.selling_price).toFixed(2)}`;
+                    const priceValue = Number(itemData.selling_price);
+                    priceDisplay = `$${priceValue.toFixed(2)}`;
                 }
                 
-                const costPrice = (itemData.cost_price && itemData.cost_price !== null) 
+                const costPrice = (itemData.cost_price && itemData.cost_price !== null && itemData.cost_price !== 'N/A') 
                     ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` 
                     : '';
 
@@ -2726,13 +2712,13 @@
                     false;
                 const isNewItem = usingNewMenu && !oldItem && isRecentlyAdded;
                 
-                // Check for price change (only if both prices are numeric)
+                // Check for price changes (only for numeric prices)
                 const hasPriceChange = usingNewMenu && oldItem && 
                     oldItem.selling_price != null && itemData.selling_price != null &&
-                    priceDisplay !== 'N/A' && 
-                    Number(oldItem.selling_price) !== Number(itemData.selling_price);
+                    priceDisplay.startsWith('$') && 
+                    typeof itemData.selling_price === 'number' && typeof oldItem.selling_price === 'number' &&
+                    oldItem.selling_price !== itemData.selling_price;
 
-                // Update price display if there's a change
                 if (hasPriceChange) {
                     const oldPrice = Number(oldItem.selling_price);
                     const newPrice = Number(itemData.selling_price);
@@ -2740,7 +2726,7 @@
                     priceDisplay = `
                         <div class="price-change">
                             <span class="old-price">$${oldPrice.toFixed(2)}</span>
-                            <span class="current-price">${priceDisplay} ${changeIndicator}</span>
+                            <span class="current-price">$${newPrice.toFixed(2)} ${changeIndicator}</span>
                         </div>
                     `;
                 }
