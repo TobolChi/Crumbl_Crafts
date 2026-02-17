@@ -317,6 +317,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #automobile #bloxburg",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1771339997.0,
+      "url": "https://www.youtube.com/watch?v=KTJBIJSw3ZU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "the new bloxburg lunar new year update! #bloxburg #bloxburgupdate #bloxburglunarnewyear",
       "description": "...",
       "source": "YouTube",
@@ -361,44 +370,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Bloxburg holiday cookies build hack! #shorts #bloxburg",
+      "description": "A Bloxburg building hack tutorial on how to make these custom holiday cookies in the month of Februa...",
+      "source": "YouTube",
+      "timestamp": 1771291611.0,
+      "url": "https://www.youtube.com/watch?v=JWxPkuYGKog",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "Berry Avenue 2 Toddler Outfit Codes || Bloxburg Brookhaven Berry Avenue #shorts #berryavenueoutfits",
+      "description": "\ua540 thank you for watching this video! \u02da these outfits work for brookhaven, berry avenue, and bloxburg...",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1771286017.0,
+      "url": "https://www.youtube.com/watch?v=k0umy3d6iyA",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "rookie to greenville players #roblox #bloxburg #greenvilleroblox #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771284627.0,
+      "url": "https://www.youtube.com/watch?v=f9jbFPGXFA8",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "#rivals #roblox #fry #memes #funny #gaming #bloxburg #greenscreen",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771279913.0,
+      "url": "https://www.youtube.com/watch?v=4IUqETYChyg",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1771340440.3290956,
+    "generated_at": 1771341640.3303633,
     "mode": "memory",
     "refresh_interval": 2000
   }
