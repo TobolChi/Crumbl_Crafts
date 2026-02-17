@@ -4,8 +4,8 @@
       "name": "Hidenori",
       "discord_id": 1098992055272878081,
       "discord_tag": "hid3nori",
-      "points": 10,
-      "tickets": 2,
+      "points": 12,
+      "tickets": 3,
       "role_name": "Apprentice Chef",
       "role_stars": 1,
       "average_rating": 4.5,
@@ -28,6 +28,17 @@
     }
   ],
   "activities": [
+    {
+      "type": "order_completed",
+      "chef": "Hidenori",
+      "user": "Hidenori",
+      "message": "completed order for Hidenori - $0.00",
+      "action": "completed order for Hidenori - $0.00",
+      "timestamp": 1771351495,
+      "user_id": 1098992055272878081,
+      "id": "cooking_1771351495_13",
+      "source": "live"
+    },
     {
       "type": "order_started",
       "chef": "Hidenori",
@@ -536,7 +547,7 @@
           "ingredients": "Fresh ingredients prepared by our chefs",
           "cost_price": 0.0,
           "season": "Valentines",
-          "sold": 0
+          "sold": 33
         },
         "Envelope Cookies": {
           "selling_price": 0.0,
@@ -557,7 +568,7 @@
           "ingredients": "Fresh ingredients prepared by our chefs",
           "cost_price": 0.0,
           "season": "Valentines",
-          "sold": 0
+          "sold": 55
         },
         "Lovely Jam Cookies": {
           "selling_price": 0.0,
@@ -629,7 +640,7 @@
           "ingredients": "Fresh ingredients prepared by our chefs",
           "cost_price": 0.0,
           "season": "New Year",
-          "sold": 0
+          "sold": 33
         }
       }
     },
@@ -990,10 +1001,29 @@
       }
     }
   },
-  "trending": [],
+  "trending": [
+    {
+      "name": "Heart Cookies",
+      "sold": 55,
+      "price": 0.0,
+      "category": "Seasonal Request"
+    },
+    {
+      "name": "Lovely Bacon and Eggs",
+      "sold": 33,
+      "price": 0.0,
+      "category": "Seasonal Request"
+    },
+    {
+      "name": "New Year's Cake",
+      "sold": 33,
+      "price": 0.0,
+      "category": "Seasonal Request"
+    }
+  ],
   "unavailable": [],
   "stats": {
-    "totalOrders": 13,
+    "totalOrders": 15,
     "activeChefs": 2,
     "totalChefs": 2,
     "avgRating": 4.8
@@ -1003,8 +1033,8 @@
     "New Year"
   ],
   "meta": {
-    "timestamp": "2026-02-17T20:01:02.079001",
-    "last_updated": 1771351262.0790098,
+    "timestamp": "2026-02-17T20:05:04.389809",
+    "last_updated": 1771351504.3898156,
     "cached": false,
     "data_source": "discord_bot"
   },
