@@ -1180,23 +1180,29 @@
             box-shadow: 0 0 6px rgba(255, 107, 53, 0.35);
         }
 
-        /* Make non-seasonal/catering/unavailable categories display as a compact grid */
-        .menu-category[data-category="non-seasonal"],
-        .menu-category[data-category="catering"],
-        .menu-category[data-category="unavailable"] {
+        /* Hide categories by default; only the active category is visible */
+        .menu-category {
+            display: none;
+        }
+
+        .menu-category.active {
+            animation: fadeIn 0.3s ease;
+        }
+
+        /* Grid layout for specific categories when they are active (prevents inactive categories from showing)
+           Use the `.active` modifier so non-active sections remain hidden. */
+        .menu-category.active[data-category="non-seasonal"],
+        .menu-category.active[data-category="catering"],
+        .menu-category.active[data-category="unavailable"] {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
             gap: 12px;
             align-items: start;
         }
 
-        .menu-category {
-            display: none;
-        }
-
-        .menu-category.active {
-            display: block; /* seasonal handled separately */
-            animation: fadeIn 0.3s ease;
+        /* Seasonal category remains a block container (its internal subcategories use grids) */
+        .menu-category.active[data-category="seasonal"] {
+            display: block;
         }
 
         /* Seasonal subcategory shows items in a responsive grid to reduce vertical scrolling */
@@ -1302,6 +1308,7 @@
             display: flex;
             align-items: center;
             gap: 6px;
+            flex-wrap: wrap; /* allow badge or long names to wrap cleanly */
         }
 
         .menu-item-name::before {
@@ -1318,6 +1325,15 @@
             border-radius: 10px;
             letter-spacing: 0.3px;
             text-transform: uppercase;
+        }
+
+        .sales-badge {
+            color: #4CAF50;
+            font-size: 0.8rem;
+            margin-left: 6px;
+            font-weight: 600;
+            white-space: nowrap;
+            opacity: 0.95;
         }
 
         .menu-item-ingredients {
@@ -1948,7 +1964,7 @@
         };
         
         let activeSeason = ['No Active Season'];
-        let currentSeasonalView = 'halloween'; // Default view for seasonal subtabs
+        let currentSeasonalView = null; // Current selected seasonal subtab (null = show all)
         let seasonalMenuData = {}; // Store all seasonal categories
         
         const CONFIG = {
@@ -2147,42 +2163,54 @@
         }
 
         function displaySeasonalMenu(season) {
-            // season parameter is the normalized key (e.g. 'halloween' or 'newyear')
-            // find the actual season key in seasonalMenuData (which uses original names like 'New Year')
-            const actualKey = Object.keys(seasonalMenuData).find(k => k.toLowerCase().replace(/\s+/g, '') === season) || null;
-            const seasonData = actualKey ? (seasonalMenuData[actualKey] || {}) : {};
+            // season may be a normalized key (e.g. 'halloween') or null — prefer explicit selection
             const categoryDiv = document.querySelector('.menu-category[data-category="seasonal"]');
-            
             if (!categoryDiv) return;
-            
-            // Persist and reflect the selected seasonal tab in the UI
-            const seasonKeyNorm = actualKey ? actualKey.toLowerCase().replace(/\s+/g, '') : season;
-            document.querySelectorAll('.season-tab').forEach(t => t.classList.remove('active'));
-            const tabToActivate = document.querySelector(`.season-tab[data-season="${seasonKeyNorm}"]`);
-            if (tabToActivate) tabToActivate.classList.add('active');
-            currentSeasonalView = seasonKeyNorm;
 
-            if (Object.keys(seasonData).length === 0) {
-                categoryDiv.innerHTML = '<div class="menu-item"><div class="menu-item-info">No items available for this season</div></div>';
-            } else {
-                let html = '';
-                Object.entries(seasonData).forEach(([itemName, itemData]) => {
-                    const price = itemData.selling_price != null ? Number(itemData.selling_price).toFixed(2) : '—';
-                    const costPrice = itemData.cost_price ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` : '';
-                    
-                    html += `
-                        <div class="menu-item">
-                            <div class="menu-item-info">
-                                <div class="menu-item-name">${itemName}</div>
-                                <div class="menu-item-description">${itemData.ingredients || 'Seasonal specialty item'}</div>
-                                ${costPrice}
-                            </div>
-                            <div class="menu-item-price">$${price}</div>
-                        </div>
-                    `;
-                });
-                categoryDiv.innerHTML = html;
+            // remember requested view so refresh keeps showing it
+            if (season) currentSeasonalView = season;
+
+            // If seasonalMenuData is not ready, show a friendly loading state
+            if (!seasonalMenuData || Object.keys(seasonalMenuData).length === 0) {
+                categoryDiv.innerHTML = '<div class="menu-item"><div class="menu-item-info">Loading seasonal items…</div></div>';
+                console.debug('displaySeasonalMenu: seasonalMenuData empty — waiting for updateMenuData to populate it');
+                return;
             }
+
+            const normalizedRequested = (season || currentSeasonalView || '').toLowerCase().replace(/\s+/g, '');
+            const actualKey = Object.keys(seasonalMenuData).find(k => k.toLowerCase().replace(/\s+/g, '') === normalizedRequested) || null;
+            const seasonData = actualKey ? seasonalMenuData[actualKey] : {};
+
+            // sync UI tabs
+            const normKey = actualKey ? actualKey.toLowerCase().replace(/\s+/g, '') : normalizedRequested;
+            document.querySelectorAll('.season-tab').forEach(t => t.classList.remove('active'));
+            const tabToActivate = document.querySelector(`.season-tab[data-season="${normKey}"]`);
+            if (tabToActivate) tabToActivate.classList.add('active');
+            currentSeasonalView = normKey;
+
+            if (!seasonData || Object.keys(seasonData).length === 0) {
+                categoryDiv.innerHTML = '<div class="menu-item"><div class="menu-item-info">No items available for this season</div></div>';
+                console.debug(`displaySeasonalMenu: no items for '${actualKey || normKey}'`);
+                return;
+            }
+
+            // Render only the selected season's items
+            let html = '';
+            Object.entries(seasonData).forEach(([itemName, itemData]) => {
+                const price = itemData?.selling_price != null ? Number(itemData.selling_price).toFixed(2) : '—';
+                const costPrice = itemData?.cost_price ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` : '';
+                html += `
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">${itemName}</div>
+                            <div class="menu-item-description">${itemData.ingredients || 'Seasonal specialty item'}</div>
+                            ${costPrice}
+                        </div>
+                        <div class="menu-item-price">$${price}</div>
+                    </div>
+                `;
+            });
+            categoryDiv.innerHTML = html;
         }
 
         function startRefresh() {
@@ -2697,8 +2725,8 @@
             console.log('Final menu data to display:', normalizedMenu);
             
             // Extract seasonal data if it's nested by season
+            let hasNestedSeasons = false;
             if (normalizedMenu.seasonal && typeof normalizedMenu.seasonal === 'object') {
-                // Check if seasonal menu is nested with categories (Halloween, Christmas, etc.)
                 const firstKey = Object.keys(normalizedMenu.seasonal)[0];
                 const firstValue = normalizedMenu.seasonal[firstKey];
                 
@@ -2709,32 +2737,31 @@
                     firstValueSample: firstValue
                 });
                 
-                // If first value is an object with selling_price, it's NOT nested (flat items)
-                // If first value is an object without selling_price, it IS nested (seasonal categories)
                 const isNestedStructure = firstValue && typeof firstValue === 'object' && !firstValue.hasOwnProperty('selling_price');
-                
+                hasNestedSeasons = !!isNestedStructure;
+
                 if (isNestedStructure) {
                     // This is nested seasonal structure from bot: { Halloween: {...}, Christmas: {...} }
                     seasonalMenuData = normalizedMenu.seasonal;
                     console.log('🎃 Found nested seasonal structure with seasons:', Object.keys(seasonalMenuData));
-                    
-                    // DON'T merge - keep ALL seasons separated for display
-                    // Just store the full nested structure
-                    console.log('🎃 Keeping all seasonal subcategories for display');
                 } else {
-                    // Flat structure - no nested seasons
-                    console.log('📋 Using flat seasonal structure (not nested by season)');
-                    seasonalMenuData = { [currentSeasonalView]: normalizedMenu.seasonal };
+                    // Flat seasonal list — present as a single 'all' bucket and hide season tabs
+                    seasonalMenuData = { 'all': normalizedMenu.seasonal };
+                    currentSeasonalView = 'all';
+                    console.log('📋 Using flat seasonal structure; treating as single "all" bucket');
                 }
             } else {
                 console.log('⚠️ No seasonal menu data found');
             }
             
-            // Show tabs
+            // Show main menu tabs (top-level)
             if (elements.menuTabs) elements.menuTabs.style.display = 'flex';
-            
-            // Always show seasonal subtabs for seasonal category
-            elements.seasonalSubtabs?.classList.add('active');
+            // Show or hide seasonal subtabs only if we have nested seasonal categories
+            if (hasNestedSeasons) {
+                elements.seasonalSubtabs?.classList.add('active');
+            } else {
+                elements.seasonalSubtabs?.classList.remove('active');
+            }
             
             // Generate menu content for all categories
             let html = '';
@@ -2742,9 +2769,9 @@
             // Seasonal category - if the user has a selected seasonal tab, show ONLY that season's items
             html += `<div class="menu-category active" data-category="seasonal">`;
 
-            // Determine currently selected season (from active tab or currentSeasonalView)
+            // Prefer the user's explicit selection (currentSeasonalView) — fallback to the active tab
             const activeTab = document.querySelector('.season-tab.active');
-            const selectedSeasonNorm = activeTab ? activeTab.getAttribute('data-season') : currentSeasonalView;
+            const selectedSeasonNorm = currentSeasonalView || (activeTab ? activeTab.getAttribute('data-season') : null);
 
             // Find actual season key in seasonalMenuData that matches the normalized selection
             let selectedActualKey = null;
@@ -2853,9 +2880,9 @@
         function generateMenuItems(items, oldItems = {}, usingNewMenu = false) {
             let html = '';
             Object.entries(items).forEach(([itemName, itemData]) => {
-                // Get sales count
-                const soldCount = itemData.sold || 0;
-                const salesBadge = soldCount > 0 ? `<span style="color: #4CAF50; font-size: 0.8em;"> • ${soldCount} sold</span>` : '';
+                // Get sales count (accept multiple possible payload keys for robustness)
+                const soldCount = Number(itemData?.sold ?? itemData?.sold_count ?? itemData?.soldCount ?? itemData?.sales ?? 0) || 0;
+                const salesBadge = soldCount > 0 ? `<span class="sales-badge"> • ${soldCount} sold</span>` : '';
                 
                 // Handle N/A prices
                 let priceDisplay;
