@@ -2844,17 +2844,65 @@
         function setupMenuTabs() {
             const tabs = document.querySelectorAll('.menu-tab');
             const categories = document.querySelectorAll('.menu-category');
+            const seasonalSubtabs = document.getElementById('seasonalSubtabs');
+            const seasonTabs = document.querySelectorAll('.season-tab');
+            
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     const category = tab.getAttribute('data-category');
                     tabs.forEach(t => t.classList.remove('active'));
                     tab.classList.add('active');
-                    categories.forEach(c => {
-                        c.classList.remove('active');
-                        if (c.getAttribute('data-category') === category) {
-                            c.classList.add('active');
+                    
+                    // Show/hide seasonal subtabs
+                    if (category === 'seasonal' && seasonalSubtabs) {
+                        seasonalSubtabs.classList.add('active');
+                        // Click the first season tab by default
+                        const firstSeasonTab = seasonTabs[0];
+                        if (firstSeasonTab) {
+                            firstSeasonTab.click();
+                        }
+                    } else {
+                        if (seasonalSubtabs) seasonalSubtabs.classList.remove('active');
+                        // Show regular category
+                        categories.forEach(c => {
+                            c.classList.remove('active');
+                            if (c.getAttribute('data-category') === category) {
+                                c.classList.add('active');
+                            }
+                        });
+                    }
+                }, { passive: true });
+            });
+            
+            // Setup seasonal subtab handlers
+            seasonTabs.forEach(seasonTab => {
+                seasonTab.addEventListener('click', () => {
+                    const season = seasonTab.getAttribute('data-season');
+                    
+                    // Update active state for season tabs
+                    seasonTabs.forEach(st => st.classList.remove('active'));
+                    seasonTab.classList.add('active');
+                    
+                    // Show only the selected seasonal subcategory
+                    const seasonalSubcategories = document.querySelectorAll('.seasonal-subcategory');
+                    seasonalSubcategories.forEach(subcat => {
+                        const subcatTitle = subcat.querySelector('.subcategory-title');
+                        if (subcatTitle) {
+                            const subcatName = subcatTitle.textContent.toLowerCase().trim();
+                            // Match season name (e.g., "halloween" matches "🎃 halloween")
+                            if (subcatName.includes(season)) {
+                                subcat.style.display = 'block';
+                            } else {
+                                subcat.style.display = 'none';
+                            }
                         }
                     });
+                    
+                    // Make sure the seasonal category is visible
+                    const seasonalCategory = document.querySelector('.menu-category[data-category="seasonal"]');
+                    if (seasonalCategory) {
+                        seasonalCategory.classList.add('active');
+                    }
                 }, { passive: true });
             });
         }
