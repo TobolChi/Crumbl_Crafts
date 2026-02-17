@@ -2848,6 +2848,20 @@
             } else {
                 console.log('⚠️ No seasonal menu data found');
             }
+
+            // If seasonalMenuData is a single "all" bucket that actually contains nested season keys,
+            // unwrap it so the UI shows proper seasonal subcategories (handles legacy snapshot shapes).
+            if (seasonalMenuData && Object.keys(seasonalMenuData).length === 1 && seasonalMenuData['all']) {
+                const candidate = seasonalMenuData['all'];
+                const firstKey = Object.keys(candidate)[0];
+                const firstVal = candidate[firstKey];
+                const looksNested = firstVal && typeof firstVal === 'object' && !firstVal.hasOwnProperty('selling_price');
+                if (looksNested) {
+                    seasonalMenuData = candidate;
+                    hasNestedSeasons = true;
+                    console.debug('updateMenuData: unwrapped "all" bucket into nested seasonal categories:', Object.keys(seasonalMenuData));
+                }
+            }
             
             // Show main menu tabs (top-level)
             if (elements.menuTabs) elements.menuTabs.style.display = 'flex';
@@ -2999,54 +3013,66 @@
         function generateMenuItems(items, oldItems = {}, usingNewMenu = false) {
             let html = '';
             Object.entries(items).forEach(([itemName, itemData]) => {
+                // Normalize item shape: accept primitive price values (number/string) or full item objects
+                let itemObj = itemData;
+                if (typeof itemData === 'number' || typeof itemData === 'string') {
+                    itemObj = { selling_price: itemData };
+                }
+
+                // Normalize oldItem (snapshot) which may also be a primitive
+                let oldItem = oldItems?.[itemName];
+                if (typeof oldItem === 'number' || typeof oldItem === 'string') {
+                    oldItem = { selling_price: oldItem };
+                }
+
                 // Get sales count (accept multiple possible payload keys for robustness)
-                const soldCount = Number(itemData?.sold ?? itemData?.sold_count ?? itemData?.soldCount ?? itemData?.sales ?? 0) || 0;
+                const soldCount = Number(itemObj?.sold ?? itemObj?.sold_count ?? itemObj?.soldCount ?? itemObj?.sales ?? 0) || 0;
                 const salesBadge = soldCount > 0 ? `<span class="sales-badge"> • ${soldCount} served</span>` : '';
-                
-                // Handle N/A prices
+
+                // Handle N/A or primitive prices
                 let priceDisplay;
-                if (itemData.selling_price === null || itemData.selling_price === undefined) {
+                const sellingVal = itemObj.selling_price;
+                if (sellingVal === null || sellingVal === undefined) {
                     priceDisplay = '—';
-                } else if (typeof itemData.selling_price === 'string' && itemData.selling_price.toUpperCase() === 'N/A') {
+                } else if (typeof sellingVal === 'string' && sellingVal.toUpperCase() === 'N/A') {
                     priceDisplay = 'N/A';
                 } else {
-                    const priceValue = Number(itemData.selling_price);
+                    const priceValue = Number(sellingVal);
                     priceDisplay = `$${priceValue.toFixed(2)}`;
                 }
-                
-                const costPrice = (itemData.cost_price && itemData.cost_price !== null && itemData.cost_price !== 'N/A') 
-                    ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` 
+
+                const costPrice = (itemObj.cost_price && itemObj.cost_price !== null && itemObj.cost_price !== 'N/A')
+                    ? `<div class="cost-price">Cost: $${Number(itemObj.cost_price).toFixed(2)}</div>`
                     : '';
 
-                const oldItem = oldItems?.[itemName];
                 
                 // Check if item is truly new
-                const itemAddedTimestamp = itemData.added_at || itemData.created_at || itemData.timestamp;
+                const itemAddedTimestamp = itemObj.added_at || itemObj.created_at || itemObj.timestamp;
                 const isRecentlyAdded = itemAddedTimestamp ? 
                     (Date.now() - (itemAddedTimestamp < 1e12 ? itemAddedTimestamp * 1000 : itemAddedTimestamp)) < (7 * 24 * 60 * 60 * 1000) : 
                     false;
                 const isNewItem = usingNewMenu && !oldItem && isRecentlyAdded;
-                
+
                 // Check for price changes (only for numeric prices)
                 // Price change detection: prefer explicit `previous_price` from server if present,
                 // otherwise fall back to comparing with the `oldItems` snapshot when `usingNewMenu` is true.
                 let hasPriceChange = false;
                 let oldPriceValue = null;
 
-                if (itemData?.previous_price != null && typeof itemData.previous_price === 'number' && typeof itemData.selling_price === 'number') {
-                    if (itemData.previous_price !== itemData.selling_price) {
+                if (itemObj?.previous_price != null && typeof itemObj.previous_price === 'number' && typeof itemObj.selling_price === 'number') {
+                    if (itemObj.previous_price !== itemObj.selling_price) {
                         hasPriceChange = true;
-                        oldPriceValue = Number(itemData.previous_price);
+                        oldPriceValue = Number(itemObj.previous_price);
                     }
-                } else if (usingNewMenu && oldItem && oldItem.selling_price != null && itemData.selling_price != null && typeof oldItem.selling_price === 'number') {
-                    if (oldItem.selling_price !== itemData.selling_price) {
+                } else if (usingNewMenu && oldItem && oldItem.selling_price != null && itemObj.selling_price != null && typeof oldItem.selling_price === 'number') {
+                    if (oldItem.selling_price !== itemObj.selling_price) {
                         hasPriceChange = true;
                         oldPriceValue = Number(oldItem.selling_price);
                     }
                 }
 
                 if (hasPriceChange && oldPriceValue != null) {
-                    const newPrice = Number(itemData.selling_price);
+                    const newPrice = Number(itemObj.selling_price);
                     const changeIndicator = newPrice > oldPriceValue ? '📈' : '📉';
                     priceDisplay = `
                         <div class="price-change">
@@ -3062,7 +3088,7 @@
                     <div class="menu-item">
                         <div class="menu-item-info">
                             <div class="menu-item-name">${itemLabel}${salesBadge}</div>
-                            <div class="menu-item-ingredients">${itemData.ingredients || 'No description available'}</div>
+                            <div class="menu-item-ingredients">${itemObj.ingredients || 'No description available'}</div>
                         </div>
                         <div class="menu-item-prices">
                             ${costPrice}
