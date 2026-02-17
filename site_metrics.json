@@ -317,6 +317,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Crackship trend w/ @noahcarrot #digitalart #collab #watamote #bloxburg #anime #trending #shorts",
+      "description": "idk why youtube is suggesting me these tags but sure why not #mizzle #imagic #imagia #nimmy #ibal #m...",
+      "source": "YouTube",
+      "timestamp": 1771313838.0,
+      "url": "https://www.youtube.com/watch?v=ZM7dfJ-4gyo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Bloxburg vs  Salario M\u00ednimo \ud83d\udcb8\ud83c\udf55#curiosidades #eeuu #shorts",
       "description": "Repartir pizza en Bloxburg paga mejor que un trabajo real? Comparamos la econom\u00eda de Roblox con el s...",
       "source": "YouTube",
@@ -349,15 +358,6 @@
       "source": "YouTube",
       "timestamp": 1771279913.0,
       "url": "https://www.youtube.com/watch?v=4IUqETYChyg",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "The Silver Secret | SEASON II, EPISODE III | Roblox Bloxburg Series by Illumination Theatre",
-      "description": "Celestia Silver, a girl born half vampire & half human, whose kingdom believes in peace with humans ...",
-      "source": "YouTube",
-      "timestamp": 1771279206.0,
-      "url": "https://www.youtube.com/watch?v=4c5slRtOfrQ",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771315240.3211532,
+    "generated_at": 1771316440.3180344,
     "mode": "memory",
     "refresh_interval": 2000
   }
