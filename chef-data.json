@@ -325,7 +325,6 @@
         "cost_price": 152.0
       }
     },
-    "seasonal": {},
     "non-seasonal": {
       "Baby Food": {
         "selling_price": 203.0,
@@ -631,8 +630,8 @@
     "avgRating": 5.0
   },
   "meta": {
-    "timestamp": "2026-02-17T15:49:10.031207",
-    "last_updated": 1771336150.0312138,
+    "timestamp": "2026-02-17T16:02:40.156713",
+    "last_updated": 1771336960.1567206,
     "cached": false,
     "data_source": "discord_bot"
   },
@@ -935,23 +934,7 @@
           "cost_price": 152.0
         }
       },
-      "seasonal": {
-        "Pumpkin Pie": {
-          "selling_price": 5.99,
-          "ingredients": "Fresh ingredients prepared by our chefs",
-          "cost_price": 2.4
-        },
-        "burger": {
-          "selling_price": 3.0,
-          "ingredients": "Fresh ingredients prepared by our chefs",
-          "cost_price": 1.2
-        },
-        "Christmas Cookies": {
-          "selling_price": 15.99,
-          "ingredients": "Fresh ingredients prepared by our chefs",
-          "cost_price": 6.4
-        }
-      },
+      "seasonal": {},
       "non-seasonal": {
         "Baby Food": {
           "selling_price": 203.0,
@@ -1548,7 +1531,6 @@
           "cost_price": 152.0
         }
       },
-      "seasonal": {},
       "non-seasonal": {
         "Baby Food": {
           "selling_price": 203.0,
