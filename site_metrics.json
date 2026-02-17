@@ -317,6 +317,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "i finish a collab #bloxburg #bloxburg #duet #willowrblx",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771359189.0,
+      "url": "https://www.youtube.com/watch?v=9mpQ2rKvI-I",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "BLOXBURG Lunar New Year update is out NOW! \ud83e\udd6e#bloxburg #roblox #bloxburgupdate",
       "description": "...",
       "source": "YouTube",
@@ -344,20 +353,11 @@
     },
     {
       "type": "trend",
-      "title": "Bloxburg Home Pt. 1 \ud83d\udc97 #bloxburg #roblox #speedbuild #timelapse #building #layout",
+      "title": "no gamepass bloxburg cafe #bloxburg #roblox #bloxburgbuilds #cafe",
       "description": "...",
       "source": "YouTube",
-      "timestamp": 1771347637.0,
-      "url": "https://www.youtube.com/watch?v=M2S6UphYcQU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "\ud83d\udc32WHEN Bloxburg Celebrates lunar New years better than you do IRL",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771344528.0,
-      "url": "https://www.youtube.com/watch?v=MYaTi1V-Vhs",
+      "timestamp": 1771350851.0,
+      "url": "https://www.youtube.com/watch?v=iAq-F0uqJ4A",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771360240.7820733,
+    "generated_at": 1771360840.3244662,
     "mode": "memory",
     "refresh_interval": 2000
   }
