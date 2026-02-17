@@ -2,7 +2,7 @@ name: Backend Leaderboard Updates
 
 on:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '*/15 * * * *'
   push:
     paths:
       - 'backend/**'
@@ -38,32 +38,50 @@ jobs:
             ${{ runner.os }}-pip-
 
       - name: Install Python dependencies
+        id: install_deps
         run: |
+          set -euo pipefail
           if [ -f requirements.txt ]; then
             python -m pip install --upgrade pip
             pip install -r requirements.txt
           else
-            echo "No requirements.txt found; skipping pip install"
+            echo "No requirements.txt found; installing aiohttp as fallback"
+            python -m pip install --upgrade pip
+            pip install aiohttp
           fi
+
+      - name: Debug pip environment
+        run: |
+          echo "Python version: $(python --version)"
+          echo "pip list (top 50):"
+          pip list --format=columns | head -n 50
+          python - <<'PY'
+import importlib, sys
+try:
+    importlib.import_module("aiohttp")
+    print("aiohttp import OK")
+except Exception as e:
+    print("aiohttp import FAILED:", e)
+    sys.exit(2)
+PY
 
       - name: Run leaderboard update script
         id: run_update
         run: |
-          # Ensure your script writes output to site_metrics.json (or adjust below)
+          # metrics_api.py should write site_metrics.json at repo root (adjust if different)
           python metrics_api.py
 
       - name: Prepare data branch
         id: prepare_branch
         run: |
-          set -e
+          set -euo pipefail
           DATA_BRANCH="data-updates"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Ensure we have remotes
+          # Use GITHUB_TOKEN for authenticated remote operations
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
-          # If branch exists, fetch and checkout; otherwise create orphan branch
           if git ls-remote --heads origin $DATA_BRANCH | grep -q $DATA_BRANCH; then
             git fetch origin $DATA_BRANCH:$DATA_BRANCH
             git checkout $DATA_BRANCH
@@ -77,10 +95,8 @@ jobs:
       - name: Copy generated data
         id: copy_data
         run: |
-          set -e
-          # Adjust paths to match your script output
+          set -euo pipefail
           mkdir -p data
-          # Example: metrics_api.py should create site_metrics.json in repo root
           if [ -f site_metrics.json ]; then
             cp -f site_metrics.json data/site_metrics.json
             cp -f site_metrics.json .last_backend_data
@@ -103,8 +119,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          set -e
-          # Push the current HEAD to the remote data branch
+          set -euo pipefail
           git push origin HEAD:data-updates
 
       - name: Finish
