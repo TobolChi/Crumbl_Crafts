@@ -2,7 +2,7 @@ name: Backend Leaderboard Updates
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/2 * * * *'
   push:
     paths:
       - 'backend/**'
