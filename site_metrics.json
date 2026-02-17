@@ -326,15 +326,6 @@
     },
     {
       "type": "trend",
-      "title": "Bloxburg vs  Salario M\u00ednimo \ud83d\udcb8\ud83c\udf55#curiosidades #eeuu #shorts",
-      "description": "Repartir pizza en Bloxburg paga mejor que un trabajo real? Comparamos la econom\u00eda de Roblox con el s...",
-      "source": "YouTube",
-      "timestamp": 1771303259.0,
-      "url": "https://www.youtube.com/watch?v=Jp6x4Rc9Upw",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "Bloxburg holiday cookies build hack! #shorts #bloxburg",
       "description": "A Bloxburg building hack tutorial on how to make these custom holiday cookies in the month of Februa...",
       "source": "YouTube",
@@ -349,6 +340,15 @@
       "source": "YouTube",
       "timestamp": 1771286017.0,
       "url": "https://www.youtube.com/watch?v=k0umy3d6iyA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "rookie to greenville players #roblox #bloxburg #greenvilleroblox #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771284627.0,
+      "url": "https://www.youtube.com/watch?v=f9jbFPGXFA8",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771323640.3214407,
+    "generated_at": 1771324840.3264143,
     "mode": "memory",
     "refresh_interval": 2000
   }
