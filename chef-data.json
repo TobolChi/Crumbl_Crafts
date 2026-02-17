@@ -552,6 +552,208 @@
       }
     },
     "seasonal": {
+      "Halloween": {
+        "Pumpkin Meat Burger": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        },
+        "Pumpkin Veggie Burger": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        },
+        "Pumpkin Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        },
+        "Ghost Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        },
+        "Witch Hat Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        },
+        "Plate of Pumpkin Macorons": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        },
+        "Pumpkin Muffins": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        },
+        "Halloween Cupcakes": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        },
+        "Pumpkin Chocolate Chip Bread": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        },
+        "Spooky Cake Pops": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        },
+        "Tombstone Brownies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        },
+        "Halloween Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        },
+        "Pumpkin Princess Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Halloween",
+          "sold": 0
+        }
+      },
+      "Christmas": {
+        "Reindeer Pancakes": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Holiday Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Gingerbread Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Iced Holiday Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Mince Pie": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Lussebuns": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Festive Cake Pops": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Holiday Pudding": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Festive Fudge": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Yule Log Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Gingerbread Outhouse": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Holiday Tree Brownies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Gingerbread House": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        },
+        "Modern Gingerbread House": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Christmas",
+          "sold": 0
+        }
+      },
+      "New Year": {
+        "New Year's Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "New Year",
+          "sold": 33
+        }
+      },
       "Valentines": {
         "Lovely Bacon and Eggs": {
           "selling_price": 0.0,
@@ -645,13 +847,20 @@
           "sold": 0
         }
       },
-      "New Year": {
-        "New Year's Cake": {
+      "Winter": {
+        "Snowflake Cupcakes": {
           "selling_price": 0.0,
           "ingredients": "Fresh ingredients prepared by our chefs",
           "cost_price": 0.0,
-          "season": "New Year",
-          "sold": 33
+          "season": "Winter",
+          "sold": 0
+        },
+        "Winter Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Winter",
+          "sold": 0
         }
       }
     },
@@ -1044,8 +1253,8 @@
     "New Year"
   ],
   "meta": {
-    "timestamp": "2026-02-17T20:13:58.824433",
-    "last_updated": 1771352038.82444,
+    "timestamp": "2026-02-17T20:55:18.492225",
+    "last_updated": 1771354518.4922407,
     "cached": false,
     "data_source": "discord_bot"
   },
