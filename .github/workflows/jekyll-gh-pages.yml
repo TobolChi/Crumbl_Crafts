@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write   # needed to upload artifacts
+  contents: write   # needed to upload artifacts.
   pages: write      # needed to deploy to Pages
   id-token: write   # needed for OIDC authentication
 
