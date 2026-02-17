@@ -308,6 +308,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "Berry Avenue 2 Toddler Outfit Codes || Bloxburg Brookhaven Berry Avenue #shorts #berryavenueoutfits",
+      "description": "\ua540 thank you for watching this video! \u02da these outfits work for brookhaven, berry avenue, and bloxburg...",
+      "source": "YouTube",
+      "timestamp": 1771286017.0,
+      "url": "https://www.youtube.com/watch?v=k0umy3d6iyA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "rookie to greenville players #roblox #bloxburg #greenvilleroblox #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771284627.0,
+      "url": "https://www.youtube.com/watch?v=f9jbFPGXFA8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "5 likes for me to get them all #roblox #bloxburg #fyp #shorts",
       "description": "im adding a secret comment word for every video so if you see this comment \"BUGS I LIKE BUGS\" and no...",
       "source": "YouTube",
@@ -334,71 +352,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "How i feel after getting  a little bit used to the keyboard i got #welcometobloxburg #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771278324.0,
-      "url": "https://www.youtube.com/watch?v=wH56iyw3N_g",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1770217233.7867024,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "A NEW BLOXBURG LUNAR NEW YEARS PART ONE UPDATE TEASER... TEA TRAY, MONEY TREE AND MORE!",
-      "description": "the first bloxburg lunar new years update is coming tomorrow and we have ourselves another new tease...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1771277639.0,
-      "url": "https://www.youtube.com/watch?v=7InNGpHoKII",
-      "icon": "fa-youtube"
+      "timestamp": 1770213633.7867038,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "\ud83d\udd34BUILDING A HUGE TOWN IN BLOXBURG FOR MY ROLEPLAY SERIES...",
-      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE PEACH when buying robux or premium!\u2b50\ufe0f \ud83c\udf99\ufe0fBe sure to SUBSCRIBE   to ...",
-      "source": "YouTube",
-      "timestamp": 1771276578.0,
-      "url": "https://www.youtube.com/watch?v=p7mDtoNVDuY",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1770210033.7867045,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "Bloxburg\u2019s First Lunar New Year Update!! \ud83e\udde7\ud83d\udc09 #Roblox #Bloxburg #BloxburgUpdate #LunarNewYear #Fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771275419.0,
-      "url": "https://www.youtube.com/watch?v=MgC64PeAjL4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Dancing in bloxburg! \u2764\ufe0f #roblox #bloxburg #lushlife #dance",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771275133.0,
-      "url": "https://www.youtube.com/watch?v=m5sFrIK7ypg",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "AHH OMG \ud83d\ude31\ud83d\udc96 #shorts #roblox #stealabrainrot #bloxburg #mm2 #dresstoimpress",
-      "description": "CHEAP ROBUX CHEAP HEADLESS CHEAP KORBLOX ROBLOX #roblox #robloxedit #mm2 #brookhaven #adoptme #mm2 ....",
-      "source": "YouTube",
-      "timestamp": 1771275087.0,
-      "url": "https://www.youtube.com/watch?v=ia7W90jj8IU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "bloxburg really tried to fix the active player count but failed once again... #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771274391.0,
-      "url": "https://www.youtube.com/watch?v=VoVwORpUSqk",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1770206433.7867053,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1771286440.3240564,
+    "generated_at": 1771287640.3231618,
     "mode": "memory",
     "refresh_interval": 2000
   }
