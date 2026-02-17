@@ -19,6 +19,17 @@
       "type": "menu_update",
       "chef": "Hidenori",
       "user": "Hidenori",
+      "message": "Bulk updated 1 items in New Year",
+      "action": "Bulk updated 1 items in New Year",
+      "timestamp": 1771339073,
+      "user_id": 1098992055272878081,
+      "id": "cooking_1771339073_4",
+      "source": "live"
+    },
+    {
+      "type": "menu_update",
+      "chef": "Hidenori",
+      "user": "Hidenori",
       "message": "Bulk updated 14 items in Christmas",
       "action": "Bulk updated 14 items in Christmas",
       "timestamp": 1771338932,
@@ -664,8 +675,8 @@
     "avgRating": 5.0
   },
   "meta": {
-    "timestamp": "2026-02-17T16:35:56.108543",
-    "last_updated": 1771338956.1085498,
+    "timestamp": "2026-02-17T16:37:57.963513",
+    "last_updated": 1771339077.9635203,
     "cached": false,
     "data_source": "discord_bot"
   },
