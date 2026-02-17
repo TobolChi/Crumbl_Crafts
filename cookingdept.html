@@ -1193,6 +1193,57 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        /* Seasonal Subcategory Styling */
+        .seasonal-subcategory {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 12px;
+            background: rgba(20, 20, 30, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .seasonal-subcategory.active-season {
+            background: rgba(255, 107, 53, 0.08);
+            border: 2px solid rgba(255, 107, 53, 0.4);
+            box-shadow: 0 0 20px rgba(255, 107, 53, 0.2);
+        }
+
+        .subcategory-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 0 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .seasonal-subcategory.active-season .subcategory-title {
+            color: var(--primary-color);
+            text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
+        }
+
+        .seasonal-subcategory.active-season .subcategory-title::after {
+            content: '🔥 ACTIVE';
+            font-size: 0.7rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            margin-left: auto;
+            box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
+            animation: pulse-badge 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-badge {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
         .menu-item {
             background: var(--item-bg);
             border-radius: 10px;
@@ -1842,6 +1893,15 @@
             'newyear': { name: 'New Year', emoji: '🎆' },
             'valentines': { name: 'Valentines', emoji: '💝' },
             'winter': { name: 'Winter', emoji: '❄️' }
+        };
+        
+        const SEASON_EMOJI_MAP = {
+            'halloween': '🎃',
+            'christmas': '🎄',
+            'newyear': '🎆',
+            'new year': '🎆',
+            'valentines': '💝',
+            'winter': '❄️'
         };
         
         let activeSeason = ['No Active Season'];
@@ -2605,37 +2665,9 @@
                     seasonalMenuData = normalizedMenu.seasonal;
                     console.log('🎃 Found nested seasonal structure with seasons:', Object.keys(seasonalMenuData));
                     
-                    // Merge ALL active seasonal menus into one display
-                    const mergedSeasonalItems = {};
-                    const activeSeasons = Array.isArray(activeSeason) ? activeSeason : [activeSeason];
-                    
-                    console.log('🎃 Active seasons to merge:', activeSeasons);
-                    
-                    activeSeasons.forEach(season => {
-                        if (season === 'No Active Season') return;
-                        
-                        // Try to find the season data (handle case variations)
-                        let seasonItems = null;
-                        for (const [key, items] of Object.entries(seasonalMenuData)) {
-                            if (key.toLowerCase() === season.toLowerCase() || 
-                                key.toLowerCase().replace(/\s+/g, '') === season.toLowerCase().replace(/\s+/g, '')) {
-                                seasonItems = items;
-                                console.log(`✅ Found matching season data for "${season}": ${key}, items:`, Object.keys(items || {}).length);
-                                break;
-                            }
-                        }
-                        
-                        if (seasonItems && typeof seasonItems === 'object') {
-                            console.log(`🎃 Merging ${Object.keys(seasonItems).length} items from ${season}`);
-                            Object.assign(mergedSeasonalItems, seasonItems);
-                        } else {
-                            console.warn(`⚠️ No items found for season: ${season}`);
-                        }
-                    });
-                    
-                    // Replace seasonal in menu with merged active season items
-                    normalizedMenu.seasonal = mergedSeasonalItems;
-                    console.log('🎃 Final merged seasonal menu has', Object.keys(mergedSeasonalItems).length, 'items');
+                    // DON'T merge - keep ALL seasons separated for display
+                    // Just store the full nested structure
+                    console.log('🎃 Keeping all seasonal subcategories for display');
                 } else {
                     // Flat structure - no nested seasons
                     console.log('📋 Using flat seasonal structure (not nested by season)');
@@ -2654,13 +2686,34 @@
             // Generate menu content for all categories
             let html = '';
             
-            // Seasonal category with current season view
+            // Seasonal category - show ALL subcategories with their items
             html += `<div class="menu-category active" data-category="seasonal">`;
-            const seasonalItems = normalizedMenu.seasonal || {};
-            if (Object.keys(seasonalItems).length === 0) {
-                html += '<div class="menu-item"><div class="menu-item-info">No items available for this season</div></div>';
+            if (seasonalMenuData && Object.keys(seasonalMenuData).length > 0) {
+                // Get active seasons list
+                const activeSeasons = Array.isArray(activeSeason) ? activeSeason : [activeSeason];
+                const activeSeasonSet = new Set(activeSeasons.filter(s => s !== 'No Active Season'));
+                
+                // Display each seasonal subcategory
+                for (const [seasonName, seasonItems] of Object.entries(seasonalMenuData)) {
+                    if (!seasonItems || typeof seasonItems !== 'object') continue;
+                    
+                    const isActive = activeSeasonSet.has(seasonName);
+                    const seasonClass = isActive ? 'active-season' : '';
+                    const seasonEmoji = SEASON_EMOJI_MAP[seasonName.toLowerCase().replace(/\s+/g, '')] || '🎉';
+                    
+                    html += `<div class="seasonal-subcategory ${seasonClass}">`;
+                    html += `<h3 class="subcategory-title">${seasonEmoji} ${seasonName}</h3>`;
+                    
+                    if (Object.keys(seasonItems).length === 0) {
+                        html += '<div class="menu-item"><div class="menu-item-info">No items in this category</div></div>';
+                    } else {
+                        html += generateMenuItems(seasonItems, normalizedOldMenu.seasonal?.[seasonName], usingNewMenu);
+                    }
+                    
+                    html += '</div>';
+                }
             } else {
-                html += generateMenuItems(seasonalItems, normalizedOldMenu.seasonal, usingNewMenu);
+                html += '<div class="menu-item"><div class="menu-item-info">No seasonal items available</div></div>';
             }
             html += '</div>';
             
