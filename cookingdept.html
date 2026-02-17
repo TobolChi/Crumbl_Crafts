@@ -1753,6 +1753,17 @@
                 <div class="stat-item">
                     <div class="stat-content">
                         <div class="stat-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Active Seasons</div>
+                            <div class="stat-value" id="activeSeasons">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-content">
+                        <div class="stat-icon">
                             <i class="fas fa-clock"></i>
                         </div>
                         <div class="stat-info">
@@ -1863,7 +1874,7 @@
             'winter': { name: 'Winter', emoji: '❄️' }
         };
         
-        let activeSeason = 'No Active Season';
+        let activeSeason = ['No Active Season'];
         let currentSeasonalView = 'halloween'; // Default view for seasonal subtabs
         let seasonalMenuData = {}; // Store all seasonal categories
         
@@ -1907,6 +1918,7 @@
             totalOrders: document.getElementById('totalOrders'),
             avgRating: document.getElementById('avgRating'),
             activeChefs: document.getElementById('activeChefs'),
+            activeSeasons: document.getElementById('activeSeasons'),
             lastUpdate: document.getElementById('lastUpdate'),
             chefRankings: document.getElementById('chefRankings'),
             menuContainer: document.getElementById('menuContainer'),
@@ -2061,8 +2073,18 @@
             } else {
                 let html = '';
                 Object.entries(seasonData).forEach(([itemName, itemData]) => {
-                    const price = itemData.selling_price != null ? Number(itemData.selling_price).toFixed(2) : '—';
-                    const costPrice = itemData.cost_price ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` : '';
+                    // Handle N/A prices
+                    let priceDisplay;
+                    if (itemData.selling_price === null || itemData.selling_price === undefined || 
+                        (typeof itemData.selling_price === 'string' && itemData.selling_price.toUpperCase() === 'N/A')) {
+                        priceDisplay = 'N/A';
+                    } else {
+                        priceDisplay = `$${Number(itemData.selling_price).toFixed(2)}`;
+                    }
+                    
+                    const costPrice = (itemData.cost_price && itemData.cost_price !== null) 
+                        ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` 
+                        : '';
                     
                     html += `
                         <div class="menu-item">
@@ -2071,7 +2093,7 @@
                                 <div class="menu-item-description">${itemData.ingredients || 'Seasonal specialty item'}</div>
                                 ${costPrice}
                             </div>
-                            <div class="menu-item-price">$${price}</div>
+                            <div class="menu-item-price">${priceDisplay}</div>
                         </div>
                     `;
                 });
@@ -2246,6 +2268,17 @@
         async function applyDashboardData(data) {
             console.log('📊 Applying dashboard data:', {
                 chefs: Array.isArray(data?.chefs) ? data.chefs.length : 0,
+                hasActiveSeasons: !!data.active_seasons,
+                activeSeasons: data.active_seasons
+            });
+            
+            // Update active seasons if provided
+            if (data.active_seasons && Array.isArray(data.active_seasons)) {
+                activeSeason = data.active_seasons;
+                updateActiveSeasonIndicator();
+            }
+            
+            console.log('📊 Continued processing:', {
                 activities: Array.isArray(data?.activities) ? data.activities.length : 0,
                 activity: Array.isArray(data?.activity) ? data.activity.length : 0,
                 logs: Array.isArray(data?.logs) ? data.logs.length : 0,
@@ -2306,6 +2339,21 @@
             elements.totalOrders.textContent = stats.total_orders ?? 0;
             elements.avgRating.textContent = stats.avg_rating ? `${stats.avg_rating.toFixed(1)}⭐` : '—';
             elements.activeChefs.textContent = stats.active_chefs ?? 0;
+            
+            // Update active seasons display
+            if (elements.activeSeasons) {
+                const seasons = Array.isArray(activeSeason) ? activeSeason : [activeSeason];
+                const displaySeasons = seasons.filter(s => s !== 'No Active Season');
+                if (displaySeasons.length === 0) {
+                    elements.activeSeasons.textContent = 'None';
+                } else if (displaySeasons.length === 1) {
+                    const emoji = SEASONAL_CATEGORIES[displaySeasons[0].toLowerCase()]?.emoji || '🎃';
+                    elements.activeSeasons.textContent = `${emoji} ${displaySeasons[0]}`;
+                } else {
+                    elements.activeSeasons.textContent = `${displaySeasons.length} Active`;
+                    elements.activeSeasons.title = displaySeasons.join(', ');
+                }
+            }
         }
 
         function updateChefRankings(chefs) {
@@ -2553,7 +2601,7 @@
 
             console.log('Final menu data to display:', normalizedMenu);
             
-            // Extract seasonal data if it's nested
+            // Extract seasonal data if it's nested by season
             if (normalizedMenu.seasonal && typeof normalizedMenu.seasonal === 'object') {
                 // Check if seasonal menu is nested with categories (Halloween, Christmas, etc.)
                 const firstKey = Object.keys(normalizedMenu.seasonal)[0];
@@ -2562,26 +2610,37 @@
                 // If first value is an object with selling_price, it's NOT nested
                 // If first value is an object without selling_price, it IS nested (seasonal categories)
                 if (firstValue && typeof firstValue === 'object' && !firstValue.hasOwnProperty('selling_price')) {
-                    // This is nested seasonal structure
+                    // This is nested seasonal structure: { Halloween: {...}, Christmas: {...} }
                     seasonalMenuData = normalizedMenu.seasonal;
                     
-                    // Set default view to active season if available
-                    const activeSeasonKey = activeSeason.toLowerCase().replace(/\s+/g, '');
-                    if (seasonalMenuData[activeSeasonKey]) {
-                        currentSeasonalView = activeSeasonKey;
-                        // Highlight active season in subtabs
-                        setTimeout(() => {
-                            const seasonTabs = document.querySelectorAll('.season-tab');
-                            seasonTabs.forEach(tab => {
-                                if (tab.getAttribute('data-season') === activeSeasonKey) {
-                                    tab.classList.add('active');
-                                }
-                            });
-                        }, 100);
+                    // Get active seasons from data or default
+                    const activeSeasons = Array.isArray(activeSeason) ? activeSeason : [activeSeason];
+                    const activeSeasonKey = activeSeasons.find(s => {
+                        const key = s.toLowerCase().replace(/\s+/g, '');
+                        return seasonalMenuData[key] || seasonalMenuData[s];
+                    });
+                    
+                    // Set default view to first active season if available
+                    if (activeSeasonKey) {
+                        const normalizedKey = activeSeasonKey.toLowerCase().replace(/\s+/g, '');
+                        if (seasonalMenuData[normalizedKey] || seasonalMenuData[activeSeasonKey]) {
+                            currentSeasonalView = seasonalMenuData[normalizedKey] ? normalizedKey : activeSeasonKey;
+                        }
                     }
                     
-                    // Replace seasonal in menu with active season items for initial display
-                    normalizedMenu.seasonal = seasonalMenuData[currentSeasonalView] || {};
+                    // Merge all active seasonal menus into one view
+                    const mergedSeasonalItems = {};
+                    activeSeasons.forEach(season => {
+                        if (season === 'No Active Season') return;
+                        const seasonKey = season.toLowerCase().replace(/\s+/g, '');
+                        const seasonItems = seasonalMenuData[seasonKey] || seasonalMenuData[season] || {};
+                        Object.assign(mergedSeasonalItems, seasonItems);
+                    });
+                    
+                    // Replace seasonal in menu with merged active season items for display
+                    normalizedMenu.seasonal = Object.keys(mergedSeasonalItems).length > 0 
+                        ? mergedSeasonalItems 
+                        : (seasonalMenuData[currentSeasonalView] || {});
                 } else {
                     // Flat structure - no nested seasons
                     seasonalMenuData = { [currentSeasonalView]: normalizedMenu.seasonal };
@@ -2645,12 +2704,20 @@
         function generateMenuItems(items, oldItems = {}, usingNewMenu = false) {
             let html = '';
             Object.entries(items).forEach(([itemName, itemData]) => {
-                const priceValue = itemData.selling_price != null ? Number(itemData.selling_price) : null;
-                const price = priceValue != null ? priceValue.toFixed(2) : null;
-                const costPrice = itemData.cost_price ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` : '';
+                // Handle N/A prices
+                let priceDisplay;
+                if (itemData.selling_price === null || itemData.selling_price === undefined || 
+                    (typeof itemData.selling_price === 'string' && itemData.selling_price.toUpperCase() === 'N/A')) {
+                    priceDisplay = 'N/A';
+                } else {
+                    priceDisplay = `$${Number(itemData.selling_price).toFixed(2)}`;
+                }
+                
+                const costPrice = (itemData.cost_price && itemData.cost_price !== null) 
+                    ? `<div class="cost-price">Cost: $${Number(itemData.cost_price).toFixed(2)}</div>` 
+                    : '';
 
                 const oldItem = oldItems?.[itemName];
-                const oldPriceValue = oldItem && oldItem.selling_price != null ? Number(oldItem.selling_price) : null;
                 
                 // Check if item is truly new
                 const itemAddedTimestamp = itemData.added_at || itemData.created_at || itemData.timestamp;
@@ -2659,15 +2726,21 @@
                     false;
                 const isNewItem = usingNewMenu && !oldItem && isRecentlyAdded;
                 
-                const hasPriceChange = usingNewMenu && oldItem && oldPriceValue != null && priceValue != null && oldPriceValue !== priceValue;
+                // Check for price change (only if both prices are numeric)
+                const hasPriceChange = usingNewMenu && oldItem && 
+                    oldItem.selling_price != null && itemData.selling_price != null &&
+                    priceDisplay !== 'N/A' && 
+                    Number(oldItem.selling_price) !== Number(itemData.selling_price);
 
-                let priceDisplay = price ? `$${price}` : '—';
+                // Update price display if there's a change
                 if (hasPriceChange) {
-                    const changeIndicator = priceValue > oldPriceValue ? '📈' : '📉';
+                    const oldPrice = Number(oldItem.selling_price);
+                    const newPrice = Number(itemData.selling_price);
+                    const changeIndicator = newPrice > oldPrice ? '📈' : '📉';
                     priceDisplay = `
                         <div class="price-change">
-                            <span class="old-price">$${oldPriceValue.toFixed(2)}</span>
-                            <span class="current-price">$${price} ${changeIndicator}</span>
+                            <span class="old-price">$${oldPrice.toFixed(2)}</span>
+                            <span class="current-price">${priceDisplay} ${changeIndicator}</span>
                         </div>
                     `;
                 }
