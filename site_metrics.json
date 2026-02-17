@@ -317,6 +317,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Summer Coastal Beach House \ud83c\udf0a | Bloxburg House Build \ud801\ude5a",
+      "description": "\u0f18\u2661 \u00b7\u02da \u2661 OPEN ME \u00b7\u02da \u0f18\u2661 \u00b7\u02da \u2661 Join my Roblox Group! https://www.roblox.com/groups/8948903/Daniellerys-T...",
+      "source": "YouTube",
+      "timestamp": 1771344266.0,
+      "url": "https://www.youtube.com/watch?v=TJpYmfkGLC8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #automobile #bloxburg",
       "description": "Roblox....",
       "source": "YouTube",
@@ -349,15 +358,6 @@
       "source": "YouTube",
       "timestamp": 1771333200.0,
       "url": "https://www.youtube.com/watch?v=-EHm86tkjV0",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Adoro questo stile!\ud83c\udf39\u2764\ufe0f",
-      "description": "roblox #bloxburg #bloxburgbuilder #forniture #vintage #fun #showcase #shorts....",
-      "source": "YouTube",
-      "timestamp": 1771332769.0,
-      "url": "https://www.youtube.com/watch?v=SiXJ8eQRPfE",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771344040.6673012,
+    "generated_at": 1771345240.3221457,
     "mode": "memory",
     "refresh_interval": 2000
   }
