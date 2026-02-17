@@ -392,17 +392,83 @@
       }
     },
     "seasonal": {
-      "Snowflake Cupcakes": {
+      "Lovely Bacon and Eggs": {
         "selling_price": 0.0,
         "ingredients": "Fresh ingredients prepared by our chefs",
         "cost_price": 0.0,
-        "season": "Winter"
+        "season": "Valentines"
       },
-      "Winter Cake": {
+      "Envelope Cookies": {
         "selling_price": 0.0,
         "ingredients": "Fresh ingredients prepared by our chefs",
         "cost_price": 0.0,
-        "season": "Winter"
+        "season": "Valentines"
+      },
+      "Lovely Chocolate Candy Cookies": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Valentines"
+      },
+      "Heart Cookies": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Valentines"
+      },
+      "Lovely Jam Cookies": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Valentines"
+      },
+      "Heart Macorons": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Valentines"
+      },
+      "Heart Cupcakes": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Valentines"
+      },
+      "Heart Shaped Pizza": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Valentines"
+      },
+      "Lovely Cake Pops": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Valentines"
+      },
+      "Heart Cookie Cake": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Valentines"
+      },
+      "Strawberry Swirl Cheesecake": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Valentines"
+      },
+      "Valentine's Cake": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Valentines"
+      },
+      "Heart Cake": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Valentines"
       }
     },
     "non-seasonal": {
@@ -710,8 +776,8 @@
     "avgRating": 5.0
   },
   "meta": {
-    "timestamp": "2026-02-17T16:38:59.340381",
-    "last_updated": 1771339139.340388,
+    "timestamp": "2026-02-17T16:47:46.821631",
+    "last_updated": 1771339666.8216374,
     "cached": false,
     "data_source": "discord_bot"
   },
@@ -1014,7 +1080,20 @@
           "cost_price": 84.0
         }
       },
-      "seasonal": {},
+      "seasonal": {
+        "Snowflake Cupcakes": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Winter"
+        },
+        "Winter Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Winter"
+        }
+      },
       "non-seasonal": {
         "Baby Food": {
           "selling_price": 203.0,
@@ -1612,17 +1691,83 @@
         }
       },
       "seasonal": {
-        "Snowflake Cupcakes": {
+        "Lovely Bacon and Eggs": {
           "selling_price": 0.0,
           "ingredients": "Fresh ingredients prepared by our chefs",
           "cost_price": 0.0,
-          "season": "Winter"
+          "season": "Valentines"
         },
-        "Winter Cake": {
+        "Envelope Cookies": {
           "selling_price": 0.0,
           "ingredients": "Fresh ingredients prepared by our chefs",
           "cost_price": 0.0,
-          "season": "Winter"
+          "season": "Valentines"
+        },
+        "Lovely Chocolate Candy Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Heart Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Lovely Jam Cookies": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Heart Macorons": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Heart Cupcakes": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Heart Shaped Pizza": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Lovely Cake Pops": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Heart Cookie Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Strawberry Swirl Cheesecake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Valentine's Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
+        },
+        "Heart Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Valentines"
         }
       },
       "non-seasonal": {
