@@ -317,6 +317,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "\ud83c\udf88Bloxburg Lunar New Year UPDATE! All New Build Items &amp; More! #bloxburg #bloxburgupdate #roblox",
+      "description": "the bloxburg lunar new year update is here! i review all new build items & more! #bloxburg #bloxburg...",
+      "source": "YouTube",
+      "timestamp": 1771363809.0,
+      "url": "https://www.youtube.com/watch?v=UWuGuzRvznU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "\u201cmotherlode\u201d #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771363627.0,
+      "url": "https://www.youtube.com/watch?v=-qS6LdLTF2I",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #automobile #bloxburg",
       "description": "Roblox....",
       "source": "YouTube",
@@ -340,24 +358,6 @@
       "source": "YouTube",
       "timestamp": 1771357448.0,
       "url": "https://www.youtube.com/watch?v=x5jN02ZRanM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "ideia de sala #bloxburg #roblox #bloxburgnewleaks #fy #shorts #viral #naofloppa",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771352854.0,
-      "url": "https://www.youtube.com/watch?v=_tfa-xEglDM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #automobile #bloxburg",
-      "description": "Roblox....",
-      "source": "YouTube",
-      "timestamp": 1771351236.0,
-      "url": "https://www.youtube.com/watch?v=UBRLE99KVQ8",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771365640.6165807,
+    "generated_at": 1771366840.3256602,
     "mode": "memory",
     "refresh_interval": 2000
   }
