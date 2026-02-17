@@ -344,20 +344,20 @@
     },
     {
       "type": "trend",
-      "title": "rookie to greenville players #roblox #bloxburg #greenvilleroblox #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771284627.0,
-      "url": "https://www.youtube.com/watch?v=f9jbFPGXFA8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "#rivals #roblox #fry #memes #funny #gaming #bloxburg #greenscreen",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1771279913.0,
       "url": "https://www.youtube.com/watch?v=4IUqETYChyg",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "The Silver Secret | SEASON II, EPISODE III | Roblox Bloxburg Series by Illumination Theatre",
+      "description": "Celestia Silver, a girl born half vampire & half human, whose kingdom believes in peace with humans ...",
+      "source": "YouTube",
+      "timestamp": 1771279206.0,
+      "url": "https://www.youtube.com/watch?v=4c5slRtOfrQ",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771312840.3285708,
+    "generated_at": 1771314040.3242807,
     "mode": "memory",
     "refresh_interval": 2000
   }
