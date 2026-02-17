@@ -19,6 +19,28 @@
       "type": "menu_update",
       "chef": "Hidenori",
       "user": "Hidenori",
+      "message": "Bulk updated 2 items in Winter",
+      "action": "Bulk updated 2 items in Winter",
+      "timestamp": 1771339135,
+      "user_id": 1098992055272878081,
+      "id": "cooking_1771339135_6",
+      "source": "live"
+    },
+    {
+      "type": "menu_update",
+      "chef": "Hidenori",
+      "user": "Hidenori",
+      "message": "Bulk updated 13 items in Valentines",
+      "action": "Bulk updated 13 items in Valentines",
+      "timestamp": 1771339110,
+      "user_id": 1098992055272878081,
+      "id": "cooking_1771339110_5",
+      "source": "live"
+    },
+    {
+      "type": "menu_update",
+      "chef": "Hidenori",
+      "user": "Hidenori",
       "message": "Bulk updated 1 items in New Year",
       "action": "Bulk updated 1 items in New Year",
       "timestamp": 1771339073,
@@ -369,7 +391,20 @@
         "cost_price": 84.0
       }
     },
-    "seasonal": {},
+    "seasonal": {
+      "Snowflake Cupcakes": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Winter"
+      },
+      "Winter Cake": {
+        "selling_price": 0.0,
+        "ingredients": "Fresh ingredients prepared by our chefs",
+        "cost_price": 0.0,
+        "season": "Winter"
+      }
+    },
     "non-seasonal": {
       "Baby Food": {
         "selling_price": 203.0,
@@ -675,8 +710,8 @@
     "avgRating": 5.0
   },
   "meta": {
-    "timestamp": "2026-02-17T16:37:57.963513",
-    "last_updated": 1771339077.9635203,
+    "timestamp": "2026-02-17T16:38:59.340381",
+    "last_updated": 1771339139.340388,
     "cached": false,
     "data_source": "discord_bot"
   },
@@ -979,6 +1014,7 @@
           "cost_price": 84.0
         }
       },
+      "seasonal": {},
       "non-seasonal": {
         "Baby Food": {
           "selling_price": 203.0,
@@ -1575,7 +1611,20 @@
           "cost_price": 84.0
         }
       },
-      "seasonal": {},
+      "seasonal": {
+        "Snowflake Cupcakes": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Winter"
+        },
+        "Winter Cake": {
+          "selling_price": 0.0,
+          "ingredients": "Fresh ingredients prepared by our chefs",
+          "cost_price": 0.0,
+          "season": "Winter"
+        }
+      },
       "non-seasonal": {
         "Baby Food": {
           "selling_price": 203.0,
