@@ -2200,9 +2200,35 @@
             const normalizedRequested = (season || currentSeasonalView || '').toLowerCase().replace(/\s+/g, '');
             console.debug('displaySeasonalMenu: requested="' + (season || currentSeasonalView) + '", normalizedRequested="' + normalizedRequested + '"');
             console.debug('displaySeasonalMenu: available seasonal keys=', Object.keys(seasonalMenuData));
-            const actualKey = Object.keys(seasonalMenuData).find(k => k.toLowerCase().replace(/\s+/g, '') === normalizedRequested) || null;
+            let actualKey = Object.keys(seasonalMenuData).find(k => k.toLowerCase().replace(/\s+/g, '') === normalizedRequested) || null;
             console.debug('displaySeasonalMenu: matched actualKey =', actualKey);
-            const seasonData = actualKey ? seasonalMenuData[actualKey] : {}; 
+            let seasonData = actualKey ? seasonalMenuData[actualKey] : {};
+
+            // If no direct match, check for an 'all' bucket which may contain nested seasons or flat items with a season field
+            if (!actualKey && seasonalMenuData['all']) {
+                const allBucket = seasonalMenuData['all'];
+                console.debug('displaySeasonalMenu: checking "all" bucket for nested seasons or items');
+
+                // 1) If allBucket itself contains season-named keys (Valentines, New Year, ...), use that
+                const nestedKey = Object.keys(allBucket).find(k => k.toLowerCase().replace(/\s+/g, '') === normalizedRequested) || null;
+                if (nestedKey && typeof allBucket[nestedKey] === 'object') {
+                    actualKey = nestedKey;
+                    seasonData = allBucket[nestedKey];
+                    console.debug('displaySeasonalMenu: found nested season inside all ->', nestedKey);
+                } else {
+                    // 2) Otherwise treat allBucket as a flat item list and filter items by their `season` (if present)
+                    const filtered = Object.fromEntries(Object.entries(allBucket).filter(([iname, idata]) => {
+                        const seasonField = (idata?.season || idata?.seasonName || idata?.category || '')?.toString().toLowerCase().replace(/\s+/g, '') || '';
+                        return seasonField === normalizedRequested;
+                    }));
+
+                    if (Object.keys(filtered).length > 0) {
+                        actualKey = normalizedRequested;
+                        seasonData = filtered;
+                        console.debug('displaySeasonalMenu: filtered items from all bucket for season ->', normalizedRequested);
+                    }
+                }
+            } 
 
             // sync UI tabs
             const normKey = actualKey ? actualKey.toLowerCase().replace(/\s+/g, '') : normalizedRequested;
@@ -2787,14 +2813,37 @@
                 hasNestedSeasons = !!isNestedStructure;
 
                 if (isNestedStructure) {
-                    // This is nested seasonal structure from bot: { Halloween: {...}, Christmas: {...} }
+                    // Proper nested seasonal structure (e.g. { Halloween: {...}, Christmas: {...} })
                     seasonalMenuData = normalizedMenu.seasonal;
                     console.log('🎃 Found nested seasonal structure with seasons:', Object.keys(seasonalMenuData));
                 } else {
-                    // Flat seasonal list — present as a single 'all' bucket and hide season tabs
-                    seasonalMenuData = { 'all': normalizedMenu.seasonal };
-                    currentSeasonalView = 'all';
-                    console.log('📋 Using flat seasonal structure; treating as single "all" bucket');
+                    // Possible shapes when not nested:
+                    //  - flat items (itemName -> itemData)
+                    //  - flat items where each itemData includes a `season` field
+                    const flat = normalizedMenu.seasonal || {};
+
+                    // Detect whether items include a `season` property (group by it)
+                    const sampleValues = Object.values(flat).slice(0, 6);
+                    const looksLikeFlatWithSeason = sampleValues.some(v => v && typeof v === 'object' && (v.season || v.seasonName || v.category));
+
+                    if (looksLikeFlatWithSeason) {
+                        // Group items by their season field to reconstruct nested structure
+                        const grouped = {};
+                        Object.entries(flat).forEach(([iname, idata]) => {
+                            const seasonName = (idata?.season || idata?.seasonName || idata?.category || 'all') || 'all';
+                            const seasonKey = seasonName.toString();
+                            if (!grouped[seasonKey]) grouped[seasonKey] = {};
+                            grouped[seasonKey][iname] = idata;
+                        });
+                        seasonalMenuData = grouped;
+                        hasNestedSeasons = true;
+                        console.log('🔁 Converted flat seasonal list (items had season) into nested seasons:', Object.keys(seasonalMenuData));
+                    } else {
+                        // Treat as single 'all' bucket (legacy flat list)
+                        seasonalMenuData = { 'all': flat };
+                        currentSeasonalView = 'all';
+                        console.log('📋 Using flat seasonal structure; treating as single "all" bucket');
+                    }
                 }
             } else {
                 console.log('⚠️ No seasonal menu data found');
@@ -2952,7 +3001,7 @@
             Object.entries(items).forEach(([itemName, itemData]) => {
                 // Get sales count (accept multiple possible payload keys for robustness)
                 const soldCount = Number(itemData?.sold ?? itemData?.sold_count ?? itemData?.soldCount ?? itemData?.sales ?? 0) || 0;
-                const salesBadge = soldCount > 0 ? `<span class="sales-badge"> • ${soldCount} sold</span>` : '';
+                const salesBadge = soldCount > 0 ? `<span class="sales-badge"> • ${soldCount} served</span>` : '';
                 
                 // Handle N/A prices
                 let priceDisplay;
@@ -2979,19 +3028,29 @@
                 const isNewItem = usingNewMenu && !oldItem && isRecentlyAdded;
                 
                 // Check for price changes (only for numeric prices)
-                const hasPriceChange = usingNewMenu && oldItem && 
-                    oldItem.selling_price != null && itemData.selling_price != null &&
-                    priceDisplay.startsWith('$') && 
-                    typeof itemData.selling_price === 'number' && typeof oldItem.selling_price === 'number' &&
-                    oldItem.selling_price !== itemData.selling_price;
+                // Price change detection: prefer explicit `previous_price` from server if present,
+                // otherwise fall back to comparing with the `oldItems` snapshot when `usingNewMenu` is true.
+                let hasPriceChange = false;
+                let oldPriceValue = null;
 
-                if (hasPriceChange) {
-                    const oldPrice = Number(oldItem.selling_price);
+                if (itemData?.previous_price != null && typeof itemData.previous_price === 'number' && typeof itemData.selling_price === 'number') {
+                    if (itemData.previous_price !== itemData.selling_price) {
+                        hasPriceChange = true;
+                        oldPriceValue = Number(itemData.previous_price);
+                    }
+                } else if (usingNewMenu && oldItem && oldItem.selling_price != null && itemData.selling_price != null && typeof oldItem.selling_price === 'number') {
+                    if (oldItem.selling_price !== itemData.selling_price) {
+                        hasPriceChange = true;
+                        oldPriceValue = Number(oldItem.selling_price);
+                    }
+                }
+
+                if (hasPriceChange && oldPriceValue != null) {
                     const newPrice = Number(itemData.selling_price);
-                    const changeIndicator = newPrice > oldPrice ? '📈' : '📉';
+                    const changeIndicator = newPrice > oldPriceValue ? '📈' : '📉';
                     priceDisplay = `
                         <div class="price-change">
-                            <span class="old-price">$${oldPrice.toFixed(2)}</span>
+                            <span class="old-price">$${oldPriceValue.toFixed(2)}</span>
                             <span class="current-price">$${newPrice.toFixed(2)} ${changeIndicator}</span>
                         </div>
                     `;
