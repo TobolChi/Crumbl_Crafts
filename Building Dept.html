@@ -121,8 +121,7 @@
         /* Low-end device optimizations */
         .low-end-device .glass::before,
         .low-end-device .glass::after,
-        .low-end-device body::after,
-        .low-end-device body::before {
+        .low-end-device body::after {
             display: none !important;
         }
         .low-end-device *, .low-end-device *::before, .low-end-device *::after {
@@ -146,7 +145,7 @@
         }
         /* Mobile optimizations */
         @media (max-width: 768px) {
-            body::before, body::after {
+            body::after {
                 display: none;
             }
             .glass::before, .glass::after {
@@ -178,17 +177,6 @@
             z-index: 0;
             mix-blend-mode: screen;
         }
-        body::before {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background-image: 
-                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 215, 0, 0.02) 2px, rgba(255, 215, 0, 0.02) 4px),
-                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0, 212, 255, 0.02) 2px, rgba(0, 212, 255, 0.02) 4px);
-            pointer-events: none;
-            z-index: 0;
-            opacity: 0.3;
-        }
         .wrapper { 
             position: relative; 
             z-index: 1; 
@@ -198,7 +186,7 @@
             display: grid;
             grid-template-columns: 1fr 520px;
             gap: 16px;
-            min-height: calc(100vh - 60px);
+            min-height: auto;
         }
         .main-content {
             display: flex;
@@ -2591,7 +2579,7 @@
                     <span>Home</span>
                 </a>
                 
-                <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0;">
+                <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0; flex-wrap: wrap;">
                     <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 4px;">
                         <div class="status-badge" id="statusBadge">
                             <span class="status-dot" id="statusDot"></span>
@@ -5364,50 +5352,6 @@
         let previousStats = {};
         let lastActivityCount = 0;
         
-        // Audio notification for new activity
-        let audioContext = null;
-        let audioUnlocked = false;
-        
-        const unlockAudio = () => {
-            if (!audioUnlocked && !audioContext) {
-                audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                audioUnlocked = true;
-                console.log('✓ Audio unlocked for notifications');
-            }
-        };
-        
-        const playNotificationSound = () => {
-            try {
-                if (!audioContext) {
-                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                }
-                
-                // Resume context if suspended (browser autoplay policy)
-                if (audioContext.state === 'suspended') {
-                    audioContext.resume();
-                }
-                
-                const oscillator = audioContext.createOscillator();
-                const gainNode = audioContext.createGain();
-                
-                oscillator.connect(gainNode);
-                gainNode.connect(audioContext.destination);
-                
-                oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
-                oscillator.type = 'sine';
-                
-                gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
-                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
-                
-                oscillator.start(audioContext.currentTime);
-                oscillator.stop(audioContext.currentTime + 0.3);
-                
-                debug.log('🔔 Notification played');
-            } catch (e) {
-                debug.warn('Sound failed:', e.message);
-            }
-        };
-        
         const loadActivityCache = () => {
             try {
                 // Check cache version
@@ -5507,12 +5451,6 @@
             
             if (addedCount > 0) {
                 console.log(`Added ${addedCount} new activity entries`);
-                
-                // Play notification sound for new activities
-                // Only play if we had activities before (not initial load) AND we actually added new ones
-                if (initialCacheSize > 0 && addedCount > 0) {
-                    playNotificationSound();
-                }
                 
                 // Sort by timestamp descending (newest first)
                 activityCache.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
