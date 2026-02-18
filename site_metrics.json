@@ -317,6 +317,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "He FORGOT Valentines Day!! \ud83d\ude2d\ud83e\udd2c #bloxburg #bloxburgfamily #roblox #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771375879.0,
+      "url": "https://www.youtube.com/watch?v=uUJoFlrgGJ0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "\u300eWelcome to Bloxburg\u300f- Bloxburg Map Theme - The Ruling of ASPX",
+      "description": "Warning This theme will not be used in the full game. I am not the creator of this theme. In the fut...",
+      "source": "YouTube",
+      "timestamp": 1771375196.0,
+      "url": "https://www.youtube.com/watch?v=f52-Eb4IfP8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#bloxburg #robloxedit #brunomarsvibes #brunomars #brunomarswheniwasyourmanlyrics #wangyibo",
       "description": "...",
       "source": "YouTube",
@@ -340,24 +358,6 @@
       "source": "YouTube",
       "timestamp": 1771368045.0,
       "url": "https://www.youtube.com/watch?v=miNv19W2ldw",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "\ud83c\udf88Bloxburg Lunar New Year UPDATE! All New Build Items &amp; More! #bloxburg #bloxburgupdate #roblox",
-      "description": "the bloxburg lunar new year update is here! i review all new build items & more! #bloxburg #bloxburg...",
-      "source": "YouTube",
-      "timestamp": 1771363809.0,
-      "url": "https://www.youtube.com/watch?v=UWuGuzRvznU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "\u201cmotherlode\u201d #roblox #bloxburg #bloxburgbuild #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771363627.0,
-      "url": "https://www.youtube.com/watch?v=-qS6LdLTF2I",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771376440.8033311,
+    "generated_at": 1771377640.3207812,
     "mode": "memory",
     "refresh_interval": 2000
   }
