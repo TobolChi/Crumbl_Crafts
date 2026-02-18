@@ -248,15 +248,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1194467390549921852"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "finn124 left the server",
-      "timestamp": 1770817393,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/290467205697634304"
     }
   ],
   "pipeline": [
@@ -389,7 +380,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771422040.3232036,
+    "generated_at": 1771423240.324358,
     "mode": "memory",
     "refresh_interval": 2000
   }
