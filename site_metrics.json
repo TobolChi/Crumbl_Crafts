@@ -239,15 +239,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1127005993612627968"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "cavi3r left the server",
-      "timestamp": 1770819230,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1194467390549921852"
     }
   ],
   "pipeline": [
@@ -299,6 +290,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #bloxburg #automobile",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1771422318.0,
+      "url": "https://www.youtube.com/watch?v=z5T7FLUh49w",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox Pebble Trip: Ragdoll Portal Chaos! \ud83d\ude31\ud83c\udf00",
       "description": "INSANE Roblox fail: Trip over a tiny pebble in Bloxburg, ragdoll into portal madness bouncing throug...",
       "source": "YouTube",
@@ -331,15 +331,6 @@
       "source": "YouTube",
       "timestamp": 1771411911.0,
       "url": "https://www.youtube.com/watch?v=CCQX81ZO4ZQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #automobile #bloxburg",
-      "description": "Roblox....",
-      "source": "YouTube",
-      "timestamp": 1771405242.0,
-      "url": "https://www.youtube.com/watch?v=V04Y44y1qvc",
       "icon": "fa-youtube"
     },
     {
@@ -380,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771423240.324358,
+    "generated_at": 1771424440.3277426,
     "mode": "memory",
     "refresh_interval": 2000
   }
