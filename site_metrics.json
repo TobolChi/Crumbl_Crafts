@@ -290,6 +290,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "itens que foram esquecidos no brook parte 1 ib: @MrKaua21 #rp #roblox #robloxedit #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771424798.0,
+      "url": "https://www.youtube.com/watch?v=2brnWD6Kn1E",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #bloxburg #automobile",
       "description": "Roblox....",
       "source": "YouTube",
@@ -317,20 +326,11 @@
     },
     {
       "type": "trend",
-      "title": "NEW BLOXBURG BUILDING HACKS FOR YOUR HOUSE BUILDS! #bloxburg #roblox #thesims4   #bloxburgbuild",
+      "title": "FAMILY HOME DECAL CODES For Berry Avenue! \ud83c\udf53 #berryave #berryavenue #robloxrp #bloxburg",
       "description": "...",
       "source": "YouTube",
-      "timestamp": 1771411993.0,
-      "url": "https://www.youtube.com/watch?v=I48gACsckZ4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Costume Dengan Beberapa Emote - Clip Roblox Bloxburg Indonesia #RobloxIndonesia",
-      "description": "klik text di samping panah \u25b6\ufe0f untuk full video. Kalian bisa membantu channel gua dengan klik subscri...",
-      "source": "YouTube",
-      "timestamp": 1771411911.0,
-      "url": "https://www.youtube.com/watch?v=CCQX81ZO4ZQ",
+      "timestamp": 1771415895.0,
+      "url": "https://www.youtube.com/watch?v=aQXZ4sp7bDg",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771425040.7974434,
+    "generated_at": 1771425640.3303752,
     "mode": "memory",
     "refresh_interval": 2000
   }
