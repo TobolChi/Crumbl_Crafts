@@ -308,6 +308,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Costume Dengan Beberapa Emote - Clip Roblox Bloxburg Indonesia #RobloxIndonesia",
+      "description": "klik text di samping panah \u25b6\ufe0f untuk full video. Kalian bisa membantu channel gua dengan klik subscri...",
+      "source": "YouTube",
+      "timestamp": 1771411911.0,
+      "url": "https://www.youtube.com/watch?v=CCQX81ZO4ZQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #automobile #bloxburg",
       "description": "Roblox....",
       "source": "YouTube",
@@ -340,15 +349,6 @@
       "source": "YouTube",
       "timestamp": 1771383076.0,
       "url": "https://www.youtube.com/watch?v=YLMcLToKLjc",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#roblox #memes #robloxmemes #minecraft #meme #robloxedits #dankmemes #bloxburg #robloxgfx",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771382385.0,
-      "url": "https://www.youtube.com/watch?v=83dk-Eeo3YQ",
       "icon": "fa-youtube"
     },
     {
@@ -389,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771414481.0841117,
+    "generated_at": 1771414840.4201252,
     "mode": "memory",
     "refresh_interval": 2000
   }
