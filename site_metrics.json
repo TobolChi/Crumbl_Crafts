@@ -308,6 +308,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox Pebble Trip: Ragdoll Portal Chaos! \ud83d\ude31\ud83c\udf00",
+      "description": "INSANE Roblox fail: Trip over a tiny pebble in Bloxburg, ragdoll into portal madness bouncing throug...",
+      "source": "YouTube",
+      "timestamp": 1771419604.0,
+      "url": "https://www.youtube.com/watch?v=2S4YS1W2lO8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "The Bloxburg Chinese New Year Update is out! #roblox #bloxburg #chinesenewyear #fyp #update #shorts",
       "description": "...",
       "source": "YouTube",
@@ -340,15 +349,6 @@
       "source": "YouTube",
       "timestamp": 1771401680.0,
       "url": "https://www.youtube.com/watch?v=zV1LO4yn0DY",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "bff personally #roblox #robloxedit #edit #valentinecelebrate #ttd3 #bloxburg #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771386861.0,
-      "url": "https://www.youtube.com/watch?v=Xx1S6n0S3nY",
       "icon": "fa-youtube"
     },
     {
@@ -389,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771419640.6648347,
+    "generated_at": 1771420840.3215137,
     "mode": "memory",
     "refresh_interval": 2000
   }
