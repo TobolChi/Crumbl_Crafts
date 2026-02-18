@@ -308,6 +308,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #automobile #bloxburg",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1771405242.0,
+      "url": "https://www.youtube.com/watch?v=V04Y44y1qvc",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "bff personally #roblox #robloxedit #edit #valentinecelebrate #ttd3 #bloxburg #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -340,15 +349,6 @@
       "source": "YouTube",
       "timestamp": 1771382385.0,
       "url": "https://www.youtube.com/watch?v=83dk-Eeo3YQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "He FORGOT Valentines Day!! \ud83d\ude2d\ud83e\udd2c #bloxburg #bloxburgfamily #roblox #shorts",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771375879.0,
-      "url": "https://www.youtube.com/watch?v=uUJoFlrgGJ0",
       "icon": "fa-youtube"
     },
     {
@@ -389,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771405240.3271995,
+    "generated_at": 1771406440.3278792,
     "mode": "memory",
     "refresh_interval": 2000
   }
