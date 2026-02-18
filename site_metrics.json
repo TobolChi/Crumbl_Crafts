@@ -308,6 +308,15 @@
     },
     {
       "type": "trend",
+      "title": "itens que foram esquecidos no brook parte 1 ib: @MrKaua21 #rp #roblox #robloxedit #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771424798.0,
+      "url": "https://www.youtube.com/watch?v=2brnWD6Kn1E",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #bloxburg #automobile",
       "description": "Roblox....",
       "source": "YouTube",
@@ -331,15 +340,6 @@
       "source": "YouTube",
       "timestamp": 1771416032.0,
       "url": "https://www.youtube.com/watch?v=FkOaRezEkso",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "FAMILY HOME DECAL CODES For Berry Avenue! \ud83c\udf53 #berryave #berryavenue #robloxrp #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771415895.0,
-      "url": "https://www.youtube.com/watch?v=aQXZ4sp7bDg",
       "icon": "fa-youtube"
     },
     {
@@ -380,7 +380,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771434040.3474994,
+    "generated_at": 1771435240.326736,
     "mode": "memory",
     "refresh_interval": 2000
   }
