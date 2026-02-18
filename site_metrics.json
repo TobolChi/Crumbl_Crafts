@@ -290,6 +290,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "it\u2019s actually fun #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771448615.0,
+      "url": "https://www.youtube.com/watch?v=nOdqI9bqJ_c",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Unpopular Opinion about bloxburg!\ud83d\udeab #roblox",
+      "description": "Unpopular Opinion! I love bloxburg don't get me wrong! But I don't play it as much as others!   Ques...",
+      "source": "YouTube",
+      "timestamp": 1771448414.0,
+      "url": "https://www.youtube.com/watch?v=EV2pfvatoOM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "I can\u2019t remember \ud83d\ude2d #roblox #bloxburg #bloxburgbuild #relatable #fyp",
       "description": "...",
       "source": "YouTube",
@@ -299,38 +317,20 @@
     },
     {
       "type": "trend",
+      "title": "Bro thought I\u2019d cry \ud83d\udc80 #roblox #bloxburg #shorts",
+      "description": "Tried the Cry For Me trend in Bloxburg did I pass?...",
+      "source": "YouTube",
+      "timestamp": 1771442646.0,
+      "url": "https://www.youtube.com/watch?v=hSla40-vCgA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Like seriously #fyp\u30b7 #roblox #funny #viral #like #bloxburg #bloxburgroleplay #roleplay #real",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1771438696.0,
       "url": "https://www.youtube.com/watch?v=zDaccq0iwT4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #bloxburg #automobile",
-      "description": "Roblox....",
-      "source": "YouTube",
-      "timestamp": 1771437668.0,
-      "url": "https://www.youtube.com/watch?v=yz-ok9KhdmE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #bloxburg #automobile",
-      "description": "Roblox....",
-      "source": "YouTube",
-      "timestamp": 1771426882.0,
-      "url": "https://www.youtube.com/watch?v=ldbFQ659q00",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "itens que foram esquecidos no brook parte 1 ib: @MrKaua21 #rp #roblox #robloxedit #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771424798.0,
-      "url": "https://www.youtube.com/watch?v=2brnWD6Kn1E",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771449640.3181765,
+    "generated_at": 1771450840.3263843,
     "mode": "memory",
     "refresh_interval": 2000
   }
