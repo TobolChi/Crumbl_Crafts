@@ -239,15 +239,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1156487593442148402"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "neighborhoodvillan left the server",
-      "timestamp": 1770840553,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1127005993612627968"
     }
   ],
   "pipeline": [
@@ -380,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771444840.3509202,
+    "generated_at": 1771446040.33305,
     "mode": "memory",
     "refresh_interval": 2000
   }
