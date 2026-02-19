@@ -290,6 +290,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #bloxburg #automobile",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1771470046.0,
+      "url": "https://www.youtube.com/watch?v=i6OlKZJYLr8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Literally only bloxburg  #bloxburg #helpmemakethismakesense #sims4 #roblox #bloxburgcontentcreator",
       "description": "ig reels has ruined my brain #robloxbloxburgspeedbuilder....",
       "source": "YouTube",
@@ -322,15 +331,6 @@
       "source": "YouTube",
       "timestamp": 1771453767.0,
       "url": "https://www.youtube.com/watch?v=vd6zPUxhOFE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "goodbye \ud83d\udc4b #roblox #bloxburg #bloxburgbuild #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771452611.0,
-      "url": "https://www.youtube.com/watch?v=hcYLr873CkY",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771470040.3209374,
+    "generated_at": 1771471240.3164394,
     "mode": "memory",
     "refresh_interval": 2000
   }
