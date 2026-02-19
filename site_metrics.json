@@ -290,6 +290,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "It takes way to long to level up \ud83e\udee9\ud83e\udee9\ud83e\udee9 #bloxburg #roblox #robloxbloxburg #welcometobloxburg #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771532499.0,
+      "url": "https://www.youtube.com/watch?v=HReV-EMqx6A",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "when i\u2019m placing limited items!!!! #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771532431.0,
+      "url": "https://www.youtube.com/watch?v=NMO1_Jk8B8I",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "\u203c\ufe0fONLY\u203c\ufe0fOG BLOXBURG RELATE\ud83d\ude0e\ud83d\udcaa#bloxburg #roblox #bloxburgroleplay #robloxedit #shorts",
       "description": "roblox #bloxburg #robloxmemes #robloxedit #robloxshorts #shorts #tiktok #reels #robloxtiktok #roblox...",
       "source": "YouTube",
@@ -313,24 +331,6 @@
       "source": "YouTube",
       "timestamp": 1771530523.0,
       "url": "https://www.youtube.com/watch?v=kVTiPX3S3us",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#bloxburg #lushlife #godlovesyou",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771528938.0,
-      "url": "https://www.youtube.com/watch?v=S-3i3jPVT_A",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Aviones en Argentina | #bloxburg #roblox",
-      "description": "M\u00e1s informaci\u00f3n en el perfil del canal....",
-      "source": "YouTube",
-      "timestamp": 1771514466.0,
-      "url": "https://www.youtube.com/watch?v=lA0kwpbh1b4",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771533040.6453583,
+    "generated_at": 1771533640.3198762,
     "mode": "memory",
     "refresh_interval": 2000
   }
