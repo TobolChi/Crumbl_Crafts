@@ -316,44 +316,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1770217233.7867024,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #horror #mm2 #robloxedit #kpop #funny #bloxburg #automobile",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1771470046.0,
+      "url": "https://www.youtube.com/watch?v=i6OlKZJYLr8",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "Literally only bloxburg  #bloxburg #sims4 #roblox #bloxburgcontentcreator",
+      "description": "ig reels has ruined my brain #robloxbloxburgspeedbuilder....",
       "source": "YouTube",
-      "timestamp": 1770213633.7867038,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1771460825.0,
+      "url": "https://www.youtube.com/watch?v=HZOAK0fOBro",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1770210033.7867045,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "builds by one of my viewers!! #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771456691.0,
+      "url": "https://www.youtube.com/watch?v=GdWusYZXgcY",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1770206433.7867053,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "IT WOULD MAKE BLOXBURG SO MUCH MORE REALISTIC!! #roblox #bloxburg #gemini",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771453924.0,
+      "url": "https://www.youtube.com/watch?v=WO0tAGiUBNg",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Breaking into people\u2019s bloxburg houses day 5",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771453767.0,
+      "url": "https://www.youtube.com/watch?v=vd6zPUxhOFE",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1771520440.3554611,
+    "generated_at": 1771521640.3215437,
     "mode": "memory",
     "refresh_interval": 2000
   }
