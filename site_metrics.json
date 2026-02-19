@@ -230,15 +230,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/714188354362802186"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "tvkie left the server",
-      "timestamp": 1770930254,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/709783553277296780"
     }
   ],
   "pipeline": [
@@ -290,11 +281,20 @@
   "news": [
     {
       "type": "trend",
-      "title": "It takes way to long to level up \ud83e\udee9\ud83e\udee9\ud83e\udee9 #bloxburg #roblox #robloxbloxburg #welcometobloxburg #fyp",
-      "description": "...",
+      "title": "SOPHIE &amp; DAISY GIVE ME A MAKEOVER! *IT WAS HORRIBLE!* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
-      "timestamp": 1771532499.0,
-      "url": "https://www.youtube.com/watch?v=HReV-EMqx6A",
+      "timestamp": 1771534806.0,
+      "url": "https://www.youtube.com/watch?v=RQgvOK-FtOA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Roblox #roblox #granny #mm2 #horror #policetycoon #robloxedit #funny #bloxburg #kpop #automobile",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1771533902.0,
+      "url": "https://www.youtube.com/watch?v=ukg3ivF8O6g",
       "icon": "fa-youtube"
     },
     {
@@ -322,15 +322,6 @@
       "source": "YouTube",
       "timestamp": 1771530907.0,
       "url": "https://www.youtube.com/watch?v=rQc1KBsPxrA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#roblox #roleplay #berryavenueroleplay #bloxburg #robloxedit #channel",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771530523.0,
-      "url": "https://www.youtube.com/watch?v=kVTiPX3S3us",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +362,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771534840.3216422,
+    "generated_at": 1771536040.3338118,
     "mode": "memory",
     "refresh_interval": 2000
   }
