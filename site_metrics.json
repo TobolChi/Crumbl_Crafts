@@ -290,6 +290,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Literally only bloxburg  #bloxburg #helpmemakethismakesense #sims4 #roblox #bloxburgcontentcreator",
+      "description": "ig reels has ruined my brain #robloxbloxburgspeedbuilder....",
+      "source": "YouTube",
+      "timestamp": 1771460825.0,
+      "url": "https://www.youtube.com/watch?v=HZOAK0fOBro",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "builds by one of my viewers!! #roblox #bloxburg #bloxburgbuild #relatable #fyp",
       "description": "...",
       "source": "YouTube",
@@ -322,15 +331,6 @@
       "source": "YouTube",
       "timestamp": 1771452611.0,
       "url": "https://www.youtube.com/watch?v=hcYLr873CkY",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "it\u2019s actually fun #roblox #bloxburg #bloxburgbuild #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771448615.0,
-      "url": "https://www.youtube.com/watch?v=nOdqI9bqJ_c",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771460440.3198864,
+    "generated_at": 1771461640.3192773,
     "mode": "memory",
     "refresh_interval": 2000
   }
