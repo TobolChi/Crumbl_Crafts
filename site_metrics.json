@@ -2,7 +2,7 @@
   "summary": {
     "builder_count": 1,
     "total_completed": 0,
-    "total_requests": 11,
+    "total_requests": 12,
     "total_ratings": 0,
     "request_completion_ratio": 0.0
   },
@@ -24,6 +24,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "sent",
+      "shop_name": "ULuvOllie's Shop",
+      "message": "Request sent by 1ts_n0t_n1k1",
+      "timestamp": 1771527616,
+      "thread_id": 1457057884968845373,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/channels/1301988304279048275/1457057884968845373"
+    },
     {
       "type": "member_join",
       "shop_name": "Server",
@@ -235,8 +244,8 @@
   "pipeline": [
     {
       "label": "Pending Requests",
-      "value": 0,
-      "trend": "0 new today \u00b7 4 responded",
+      "value": 1,
+      "trend": "1 new today \u00b7 4 responded",
       "max": 50
     },
     {
@@ -247,7 +256,7 @@
     },
     {
       "label": "Requests (7d)",
-      "value": 0,
+      "value": 1,
       "trend": "1 accepted \u00b7 3 rejected",
       "max": 100
     }
@@ -273,7 +282,7 @@
     },
     {
       "title": "Queue Health",
-      "detail": "0 requests awaiting response",
+      "detail": "1 requests awaiting response",
       "score": "Manageable",
       "status": "good"
     }
@@ -371,7 +380,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771527616.5526896,
+    "generated_at": 1771527619.2715933,
     "mode": "memory",
     "refresh_interval": 2000
   }
