@@ -272,6 +272,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "SOPHIE &amp; DAISY GIVE PEACHYYLEXI A BAD MAKEOVER! #shorts #roblox #roleplay #bloxburg #makeover #bad",
+      "description": "SOPHIE & DAISY GIVE PEACHYYLEXI A BAD MAKEOVER! Make sure to like and check out the full video in th...",
+      "source": "YouTube",
+      "timestamp": 1771495280.0,
+      "url": "https://www.youtube.com/watch?v=vnQ-xOAbcWk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#roblox #bloxburg #bloxburg #stumbleguys #adoptme #gaming #trending #edit #music #minecraft #lamborg",
       "description": "...",
       "source": "YouTube",
@@ -304,15 +313,6 @@
       "source": "YouTube",
       "timestamp": 1771470046.0,
       "url": "https://www.youtube.com/watch?v=i6OlKZJYLr8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Literally only bloxburg  #bloxburg #sims4 #roblox #bloxburgcontentcreator",
-      "description": "ig reels has ruined my brain #robloxbloxburgspeedbuilder....",
-      "source": "YouTube",
-      "timestamp": 1771460825.0,
-      "url": "https://www.youtube.com/watch?v=HZOAK0fOBro",
       "icon": "fa-youtube"
     },
     {
@@ -353,7 +353,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771503640.318975,
+    "generated_at": 1771504840.3245,
     "mode": "memory",
     "refresh_interval": 2000
   }
