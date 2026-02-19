@@ -290,6 +290,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "taught me bills are EXPENSIVE. #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771536136.0,
+      "url": "https://www.youtube.com/watch?v=Bn7tgHdzf7U",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "SOPHIE &amp; DAISY GIVE ME A MAKEOVER! *IT WAS HORRIBLE!* Roblox Bloxburg Voiced RP Roleplay",
       "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
@@ -304,15 +313,6 @@
       "source": "YouTube",
       "timestamp": 1771534200.0,
       "url": "https://www.youtube.com/watch?v=xjCLjGPjwvk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #roblox #granny #mm2 #horror #policetycoon #robloxedit #funny #bloxburg #kpop #automobile",
-      "description": "Roblox....",
-      "source": "YouTube",
-      "timestamp": 1771533902.0,
-      "url": "https://www.youtube.com/watch?v=ukg3ivF8O6g",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771538440.8261468,
+    "generated_at": 1771539640.3184376,
     "mode": "memory",
     "refresh_interval": 2000
   }
