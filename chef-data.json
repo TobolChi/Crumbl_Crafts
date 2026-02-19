@@ -1249,12 +1249,13 @@
     "avgRating": 4.7
   },
   "active_seasons": [
-    "Valentines",
+    "No Active Season",
+    "Christmas",
     "New Year"
   ],
   "meta": {
-    "timestamp": "2026-02-18T00:34:07.248887",
-    "last_updated": 1771367647.248898,
+    "timestamp": "2026-02-20T00:04:37.813342",
+    "last_updated": 1771538677.8133495,
     "cached": false,
     "data_source": "discord_bot"
   },
