@@ -290,6 +290,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "makes me SO MAD \ud83d\ude2d #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771622166.0,
+      "url": "https://www.youtube.com/watch?v=i2Uq5xFsw1w",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "A MENINA QUE FICOU RICA VENDENDO DOCES no BLOXBURG",
+      "description": "NESSE V\u00cdDEO IRE\u00cd PRODUZIR TODAS AS ROUPAS DO DRESS AO CONTR\u00c1RIO Jogo: Bloxburg Vamos explorar, criar...",
+      "source": "YouTube",
+      "timestamp": 1771621869.0,
+      "url": "https://www.youtube.com/watch?v=2ATPeDQYQc4",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "literally \ud83d\ude2d #roblox #bloxburg #bloxburgbuild #relatable #fyp",
       "description": "...",
       "source": "YouTube",
@@ -326,30 +344,12 @@
     },
     {
       "type": "trend",
-      "title": "Bloxburg Rthro Update #roblox #shorts",
-      "description": "Is this the greatest Roblox game update #roblox #shorts #robloxshorts #robloxmemes....",
-      "source": "YouTube",
-      "timestamp": 1771614001.0,
-      "url": "https://www.youtube.com/watch?v=aDbRJsR9Pcg",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "Modern Mansion Builds Trending",
       "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
       "timestamp": 1771611635.476955,
       "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
       "icon": "fa-fire"
-    },
-    {
-      "type": "trend",
-      "title": "Wa wa wa dance \ud83d\udc83\ud83d\udd7a\ud83d\udc6f #robloxshorts #roblox #robloxedit #robloxtrend #bloxburg",
-      "description": "robloxshorts #roblox #robloxedit #bloxburg #robloxtrend #robloxindonesia #robloxgames. Wa wa wa....",
-      "source": "YouTube",
-      "timestamp": 1771610294.0,
-      "url": "https://www.youtube.com/watch?v=afA1QlZ3hDM",
-      "icon": "fa-youtube"
     },
     {
       "type": "tip",
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771623890.204331,
+    "generated_at": 1771624241.83827,
     "mode": "memory",
     "refresh_interval": 2000
   }
