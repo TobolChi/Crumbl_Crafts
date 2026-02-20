@@ -290,6 +290,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "like what am I building?? \ud83d\ude2d #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771547509.0,
+      "url": "https://www.youtube.com/watch?v=E2a2iaR5PLY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Isso tamb\u00e9m acontece com voc\u00ea no Bloxburg? \ud83d\ude02 (Se inscreve a\u00ed)",
       "description": "bloxburg #shorts #roblox #robloxbrasil #engra\u00e7ado #robloxshorts #fyp #viral....",
       "source": "YouTube",
@@ -322,15 +331,6 @@
       "source": "YouTube",
       "timestamp": 1771534806.0,
       "url": "https://www.youtube.com/watch?v=RQgvOK-FtOA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "bloxburg managed to bring the player count to over 750k that day!!! #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771534564.0,
-      "url": "https://www.youtube.com/watch?v=fFI3G_ZFiSo",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771549240.6961405,
+    "generated_at": 1771550440.3218665,
     "mode": "memory",
     "refresh_interval": 2000
   }
