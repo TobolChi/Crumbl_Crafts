@@ -290,6 +290,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Let&#39;s tour a Valentine&#39;s Day House in BLOXBURG with me \ud83c\udf39 #bloxburgbuild #bloxburg #roblox",
+      "description": "Thank you for watching. In this short, I'm touring my favorite view from the valentine's day house b...",
+      "source": "YouTube",
+      "timestamp": 1771624902.0,
+      "url": "https://www.youtube.com/watch?v=0C4cS3jTuOU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "makes me SO MAD \ud83d\ude2d #roblox #bloxburg #bloxburgbuild #relatable #fyp",
       "description": "...",
       "source": "YouTube",
@@ -300,7 +309,7 @@
     {
       "type": "trend",
       "title": "A MENINA QUE FICOU RICA VENDENDO DOCES no BLOXBURG",
-      "description": "NESSE V\u00cdDEO IRE\u00cd PRODUZIR TODAS AS ROUPAS DO DRESS AO CONTR\u00c1RIO Jogo: Bloxburg Vamos explorar, criar...",
+      "description": "Jogo: Bloxburg Vamos explorar, criar mem\u00f3rias e nos divertir juntos no universo fascinante do Roblox...",
       "source": "YouTube",
       "timestamp": 1771621869.0,
       "url": "https://www.youtube.com/watch?v=2ATPeDQYQc4",
@@ -335,15 +344,6 @@
     },
     {
       "type": "trend",
-      "title": "Buscamos MUCHO Personal | #bloxburg - #roblox",
-      "description": "M\u00e1s informaci\u00f3n en el perfil del canal....",
-      "source": "YouTube",
-      "timestamp": 1771615095.0,
-      "url": "https://www.youtube.com/watch?v=svHuDdQQg1w",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "Modern Mansion Builds Trending",
       "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771624841.5754812,
+    "generated_at": 1771626041.5776508,
     "mode": "memory",
     "refresh_interval": 2000
   }
