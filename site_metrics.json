@@ -317,15 +317,6 @@
     },
     {
       "type": "trend",
-      "title": "Kayla Trolls Dinker &amp; VuxVux with Halloween Cake Pops \ud83d\udc7b #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771552866.0,
-      "url": "https://www.youtube.com/watch?v=ZwjgZM3R_OE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "MY DREAM NYC SoHo Apartment Tour! |Roblox Bloxburg Roleplay | w/voices",
       "description": "\ufe0eHey Guys! We're back again with an exciting new video, providing you with a full nyc apartment tour...",
       "source": "YouTube",
@@ -340,6 +331,15 @@
       "source": "YouTube",
       "timestamp": 1771547509.0,
       "url": "https://www.youtube.com/watch?v=E2a2iaR5PLY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Isso tamb\u00e9m acontece com voc\u00ea no Bloxburg? \ud83d\ude02 (Se inscreve a\u00ed)",
+      "description": "bloxburg #shorts #roblox #robloxbrasil #engra\u00e7ado #robloxshorts #fyp #viral....",
+      "source": "YouTube",
+      "timestamp": 1771542467.0,
+      "url": "https://www.youtube.com/watch?v=mCRCRSo7_5Y",
       "icon": "fa-youtube"
     },
     {
@@ -380,7 +380,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771565440.681489,
+    "generated_at": 1771566040.3187113,
     "mode": "memory",
     "refresh_interval": 2000
   }
