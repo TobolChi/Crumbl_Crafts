@@ -7,7 +7,7 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 367,
+    "total_members": 366,
     "joined_today": 0,
     "active_shops": 0,
     "avg_response_time": 395.25
@@ -24,6 +24,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_leave",
+      "shop_name": "Server",
+      "message": "ngrlyn. left the server",
+      "timestamp": 1771623338,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/1142772847891202118"
+    },
     {
       "type": "member_leave",
       "shop_name": "Server",
@@ -344,7 +353,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771622441.5846994,
+    "generated_at": 1771623340.9428384,
     "mode": "memory",
     "refresh_interval": 2000
   }
