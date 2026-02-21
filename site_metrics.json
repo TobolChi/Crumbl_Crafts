@@ -578,6 +578,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "DAISY MAKES BABY MAX SAY A CUSS WORD! #shorts #roblox #roleplay #bloxburg #bloxburgroleplay",
+      "description": "DAISY MAKES BABY MAX SAY A CUSS WORD! Make sure to like and check out the full video in the link to ...",
+      "source": "YouTube",
+      "timestamp": 1771668013.0,
+      "url": "https://www.youtube.com/watch?v=Beg8OlvquCo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#roblox #disney #robloxedit #robloxedit #nsync #edit #mm2 #dance #bloxburg #music #barbie",
       "description": "...",
       "source": "YouTube",
@@ -622,44 +631,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1771615235.4769535,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "#\u0627\u0645\u0634\u064a_\u0648\u062f\u0648\u0631\u0644\u0643 \u0628\u0644\u0643\u0648\u0646  #danslabulledecali #duet #automobile #bloxburg #funny #football #cryptocurre",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771632885.0,
+      "url": "https://www.youtube.com/watch?v=mKYX2JMoZc0",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "FAHHH #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1771611635.476955,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1771629840.0,
+      "url": "https://www.youtube.com/watch?v=yY9zoyqERT4",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1771608035.4769554,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "It gets soo much hate.... #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771627796.0,
+      "url": "https://www.youtube.com/watch?v=75Xh0n5pq_k",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1771604435.4769561,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "just give me my moneyyy #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771625575.0,
+      "url": "https://www.youtube.com/watch?v=PysnetMlrB8",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1771669241.5708897,
+    "generated_at": 1771670441.5777,
     "mode": "memory",
     "refresh_interval": 2000
   }
