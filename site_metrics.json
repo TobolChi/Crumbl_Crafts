@@ -416,11 +416,29 @@
   "news": [
     {
       "type": "trend",
+      "title": "Ano Lunar no bloxburg!\ud83d\udc96 Parte 3  #roblox#bloxburg #atualiza\u00e7\u00e3o #new",
+      "description": "Espero muito que gostem !! Sempre feito com amor e carinho para voc\u00eas! E n\u00e3o esquece do like em? Um ...",
+      "source": "YouTube",
+      "timestamp": 1771636711.0,
+      "url": "https://www.youtube.com/watch?v=3ssi81zJp0w",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#\u0627\u0645\u0634\u064a_\u0648\u062f\u0648\u0631\u0644\u0643 \u0628\u0644\u0643\u0648\u0646  #danslabulledecali #duet #automobile #bloxburg #funny #football #cryptocurre",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1771632885.0,
       "url": "https://www.youtube.com/watch?v=mKYX2JMoZc0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "It gets soo much hate.... #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771627796.0,
+      "url": "https://www.youtube.com/watch?v=75Xh0n5pq_k",
       "icon": "fa-youtube"
     },
     {
@@ -442,42 +460,6 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "HENRY GETS HIS REVENGE ON HALEY (BLOXBURG FAMILY ROLEPLAY)",
-      "description": "roblox #robloxedit #bloxburg #blackmailing #revenge hey bubba's It's me Kayla and I appreciate all t...",
-      "source": "YouTube",
-      "timestamp": 1771622344.0,
-      "url": "https://www.youtube.com/watch?v=1VPfud3MmrY",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "makes me SO MAD \ud83d\ude2d #roblox #bloxburg #bloxburgbuild #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771622166.0,
-      "url": "https://www.youtube.com/watch?v=i2Uq5xFsw1w",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "A MENINA QUE FICOU RICA VENDENDO DOCES no BLOXBURG",
-      "description": "Jogo: Bloxburg Vamos explorar, criar mem\u00f3rias e nos divertir juntos no universo fascinante do Roblox...",
-      "source": "YouTube",
-      "timestamp": 1771621869.0,
-      "url": "https://www.youtube.com/watch?v=2ATPeDQYQc4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I BUILT A DRIVING SCHOOL TO TEACH PEOPLE DRIVING IN BLOXBURG",
-      "description": "bloxburg #roblox #robloxbloxburg Bloxburg drivers are awful, so I built a driving school to teach al...",
-      "source": "YouTube",
-      "timestamp": 1771617629.0,
-      "url": "https://www.youtube.com/watch?v=fuLqo4WNuBM",
-      "icon": "fa-youtube"
-    },
-    {
       "type": "game_update",
       "title": "New Winter Update Available!",
       "description": "Explore new winter-themed furniture and decorations",
@@ -488,25 +470,34 @@
     },
     {
       "type": "trend",
-      "title": "Buscamos MUCHO Personal | #bloxburg - #roblox",
-      "description": "M\u00e1s informaci\u00f3n en el perfil del canal....",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1771615095.0,
-      "url": "https://www.youtube.com/watch?v=svHuDdQQg1w",
-      "icon": "fa-youtube"
+      "timestamp": 1771611635.476955,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "Bloxburg Rthro Update #roblox #shorts",
-      "description": "Is this the greatest Roblox game update #roblox #shorts #robloxshorts #robloxmemes....",
-      "source": "YouTube",
-      "timestamp": 1771614001.0,
-      "url": "https://www.youtube.com/watch?v=aDbRJsR9Pcg",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1771608035.4769554,
+      "url": "#",
+      "icon": "fa-lightbulb"
+    },
+    {
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1771604435.4769561,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1771638041.5756004,
+    "generated_at": 1771639241.573791,
     "mode": "memory",
     "refresh_interval": 2000
   }
