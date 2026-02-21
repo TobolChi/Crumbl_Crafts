@@ -578,11 +578,11 @@
   "news": [
     {
       "type": "trend",
-      "title": "POV You&#39;re A KID  ROLEPLAYING  In  BLOXBURG  On ROBLOX Until....",
-      "description": "...",
+      "title": "Grinding For Money In Bloxburg #bloxburg #roblox #feed #shorts #robloxshorts",
+      "description": "bloxburg #roblox #feed #shorts #robloxedit #games #robloxshorts #robloxgames #fyp #foryou #bloxburgr...",
       "source": "YouTube",
-      "timestamp": 1771680111.0,
-      "url": "https://www.youtube.com/watch?v=2QYmQYoFSqk",
+      "timestamp": 1771682763.0,
+      "url": "https://www.youtube.com/watch?v=ggwEkr9kv7U",
       "icon": "fa-youtube"
     },
     {
@@ -622,53 +622,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "#roblox #disney #robloxedit #robloxedit #nsync #edit #mm2 #dance #bloxburg #music #barbie",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771656184.0,
-      "url": "https://www.youtube.com/watch?v=2MJ2BRgqf6w",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1771615235.4769535,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "Bloxburg *EAST ASIAN UPDATE* \ud83e\udd8b #roblox #bloxburg #bloxburgupdate",
-      "description": "...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1771649760.0,
-      "url": "https://www.youtube.com/watch?v=PgMPZEhkeqw",
-      "icon": "fa-youtube"
+      "timestamp": 1771611635.476955,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "#roblox #viral #defnotdyl #artist #adoptme #robloxedit #viral bloxburg #sab #fyp\u30b7 #stealabrainrot",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771647689.0,
-      "url": "https://www.youtube.com/watch?v=w6HIeKzjtNw",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1771608035.4769554,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "Biggest Mistake in Bloxburg Build! (Gone Wrong)",
-      "description": "Biggest Mistake in Bloxburg Build! (Gone Wrong)...",
-      "source": "YouTube",
-      "timestamp": 1771645816.0,
-      "url": "https://www.youtube.com/watch?v=QXthCF5atak",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "When Your Sister Is A Hater! \ud83d\ude44\ud83d\ude2d #bloxburg #bloxburgfamily #roblox #shorts",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771638627.0,
-      "url": "https://www.youtube.com/watch?v=jPj3_zPl2vU",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1771604435.4769561,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1771683641.9347973,
+    "generated_at": 1771684841.580473,
     "mode": "memory",
     "refresh_interval": 2000
   }
