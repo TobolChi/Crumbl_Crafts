@@ -425,6 +425,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Bloxburg *EAST ASIAN UPDATE* \ud83e\udd8b #roblox #bloxburg #bloxburgupdate",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771649760.0,
+      "url": "https://www.youtube.com/watch?v=PgMPZEhkeqw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#roblox #viral #defnotdyl #artist #adoptme #robloxedit #viral bloxburg #sab #fyp\u30b7 #stealabrainrot",
       "description": "...",
       "source": "YouTube",
@@ -457,15 +466,6 @@
       "source": "YouTube",
       "timestamp": 1771625575.0,
       "url": "https://www.youtube.com/watch?v=PysnetMlrB8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Let&#39;s tour a Valentine&#39;s Day House in BLOXBURG with me \ud83c\udf39 #bloxburgbuild #bloxburg #roblox",
-      "description": "Thank you for watching. In this short, I'm touring my favorite view from the valentine's day house b...",
-      "source": "YouTube",
-      "timestamp": 1771624902.0,
-      "url": "https://www.youtube.com/watch?v=0C4cS3jTuOU",
       "icon": "fa-youtube"
     },
     {
@@ -506,7 +506,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771652441.5722096,
+    "generated_at": 1771653641.5725489,
     "mode": "memory",
     "refresh_interval": 2000
   }
