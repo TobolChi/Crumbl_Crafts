@@ -416,6 +416,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "getting closer ever day #roblox #bloxburg #fyp #shorts",
+      "description": "secret comment word is \"1K SUBS WILL COME\" if you say this you are garenteed a reply from me and a h...",
+      "source": "YouTube",
+      "timestamp": 1771628445.0,
+      "url": "https://www.youtube.com/watch?v=ZZL6xBWcC0E",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "just give me my moneyyy #roblox #bloxburg #bloxburgbuild #relatable #fyp",
       "description": "...",
       "source": "YouTube",
@@ -448,15 +457,6 @@
       "source": "YouTube",
       "timestamp": 1771622166.0,
       "url": "https://www.youtube.com/watch?v=i2Uq5xFsw1w",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "A MENINA QUE FICOU RICA VENDENDO DOCES no BLOXBURG",
-      "description": "Jogo: Bloxburg Vamos explorar, criar mem\u00f3rias e nos divertir juntos no universo fascinante do Roblox...",
-      "source": "YouTube",
-      "timestamp": 1771621869.0,
-      "url": "https://www.youtube.com/watch?v=2ATPeDQYQc4",
       "icon": "fa-youtube"
     },
     {
@@ -497,7 +497,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771630841.5750005,
+    "generated_at": 1771632041.573666,
     "mode": "memory",
     "refresh_interval": 2000
   }
