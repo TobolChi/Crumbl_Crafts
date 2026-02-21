@@ -443,6 +443,15 @@
     },
     {
       "type": "trend",
+      "title": "Biggest Mistake in Bloxburg Build! (Gone Wrong)",
+      "description": "Biggest Mistake in Bloxburg Build! (Gone Wrong)...",
+      "source": "YouTube",
+      "timestamp": 1771645816.0,
+      "url": "https://www.youtube.com/watch?v=QXthCF5atak",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "When Your Sister Is A Hater! \ud83d\ude44\ud83d\ude2d #bloxburg #bloxburgfamily #roblox #shorts",
       "description": "...",
       "source": "YouTube",
@@ -457,15 +466,6 @@
       "source": "YouTube",
       "timestamp": 1771632885.0,
       "url": "https://www.youtube.com/watch?v=mKYX2JMoZc0",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "just give me my moneyyy #roblox #bloxburg #bloxburgbuild #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771625575.0,
-      "url": "https://www.youtube.com/watch?v=PysnetMlrB8",
       "icon": "fa-youtube"
     },
     {
@@ -506,7 +506,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771654841.5730855,
+    "generated_at": 1771656041.5750442,
     "mode": "memory",
     "refresh_interval": 2000
   }
