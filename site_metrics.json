@@ -7,8 +7,8 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 366,
-    "joined_today": 9,
+    "total_members": 367,
+    "joined_today": 10,
     "active_shops": 0,
     "avg_response_time": 395.25
   },
@@ -24,6 +24,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_join",
+      "shop_name": "Server",
+      "message": "got2bpreppy joined the server",
+      "timestamp": 1771664323,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/1431812406996107268"
+    },
     {
       "type": "member_join",
       "shop_name": "Server",
@@ -443,6 +452,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "#roblox #disney #robloxedit #robloxedit #nsync #edit #mm2 #dance #bloxburg #music #barbie",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771656184.0,
+      "url": "https://www.youtube.com/watch?v=2MJ2BRgqf6w",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Bloxburg *EAST ASIAN UPDATE* \ud83e\udd8b #roblox #bloxburg #bloxburgupdate",
       "description": "...",
       "source": "YouTube",
@@ -475,15 +493,6 @@
       "source": "YouTube",
       "timestamp": 1771638627.0,
       "url": "https://www.youtube.com/watch?v=jPj3_zPl2vU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#\u0627\u0645\u0634\u064a_\u0648\u062f\u0648\u0631\u0644\u0643 \u0628\u0644\u0643\u0648\u0646  #danslabulledecali #duet #automobile #bloxburg #funny #football #cryptocurre",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771632885.0,
-      "url": "https://www.youtube.com/watch?v=mKYX2JMoZc0",
       "icon": "fa-youtube"
     },
     {
@@ -524,7 +533,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771663241.5735924,
+    "generated_at": 1771664325.8950806,
     "mode": "memory",
     "refresh_interval": 2000
   }
