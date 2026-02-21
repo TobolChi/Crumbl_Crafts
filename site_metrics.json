@@ -578,6 +578,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "$1M LUXURY APARTMENT BUILD BATTLE in BLOXBURG",
+      "description": "Become A Channel Member by pressing the 'JOIN' button next to subscribe to gain extra perks!...",
+      "source": "YouTube",
+      "timestamp": 1771700409.0,
+      "url": "https://www.youtube.com/watch?v=C19p_W6mffU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Dear Bloxburg Community... #welcometobloxburg #bloxburg #roblox #bloxburgmap #bloxburgroblox #viral",
       "description": "Dear Bloxburg Community... #welcometobloxburg #bloxburg #roblox #bloxburgmap #bloxburgroblox #viral....",
       "source": "YouTube",
@@ -596,29 +605,20 @@
     },
     {
       "type": "trend",
-      "title": "#bloxburg LORI FINALLY ISNT CRYING",
-      "description": "...",
+      "title": "MOVING INTO OUR NEW BEACH HOUSE IN BLOXBURG | Roblox Bloxburg Roleplay \ud83c\udfdd\ufe0f\ud83c\udf0a",
+      "description": "hello ! \u2570\ufe52my name is sean and i do bloxburg roleplays ! \u27e1 in today's video, my family moves into our...",
       "source": "YouTube",
-      "timestamp": 1771690858.0,
-      "url": "https://www.youtube.com/watch?v=vCldeYAsaKc",
+      "timestamp": 1771696806.0,
+      "url": "https://www.youtube.com/watch?v=6Bezt_dKShk",
       "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "#bloxburg #abonnezvous #roblox #faitepercer #humour #memes",
+      "title": "Es chiste :)  #roblox #trolledit #edit #trolllife #robloxedit #bloxburgnewleaks #memes #bloxburg",
       "description": "...",
       "source": "YouTube",
-      "timestamp": 1771688443.0,
-      "url": "https://www.youtube.com/watch?v=FGG2z3IrB4A",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#bloxburg #bloxburg #roblox #robloxbloxburgspeedbuild",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771685014.0,
-      "url": "https://www.youtube.com/watch?v=0MfB0zL191o",
+      "timestamp": 1771695775.0,
+      "url": "https://www.youtube.com/watch?v=b28T9EeJqqI",
       "icon": "fa-youtube"
     },
     {
@@ -659,7 +659,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771701641.5749593,
+    "generated_at": 1771702841.5746574,
     "mode": "memory",
     "refresh_interval": 2000
   }
