@@ -578,6 +578,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Are people hating on bloxburg??",
+      "description": "bloxburg #roblox....",
+      "source": "YouTube",
+      "timestamp": 1771705627.0,
+      "url": "https://www.youtube.com/watch?v=I1uHAvurnnE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "THE URGEE #roblox #bloxburg #bloxburgbuild #relatable #fyp",
       "description": "...",
       "source": "YouTube",
@@ -610,15 +619,6 @@
       "source": "YouTube",
       "timestamp": 1771697740.0,
       "url": "https://www.youtube.com/watch?v=DlMdsNWfq9s",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "MOVING INTO OUR NEW BEACH HOUSE IN BLOXBURG | Roblox Bloxburg Roleplay \ud83c\udfdd\ufe0f\ud83c\udf0a",
-      "description": "hello ! \u2570\ufe52my name is sean and i do bloxburg roleplays ! \u27e1 in today's video, my family moves into our...",
-      "source": "YouTube",
-      "timestamp": 1771696806.0,
-      "url": "https://www.youtube.com/watch?v=6Bezt_dKShk",
       "icon": "fa-youtube"
     },
     {
@@ -659,7 +659,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771706441.5793698,
+    "generated_at": 1771707641.5737867,
     "mode": "memory",
     "refresh_interval": 2000
   }
