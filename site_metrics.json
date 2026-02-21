@@ -578,6 +578,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "he better pay me or else... #roblox #bloxburg # #welcometobloxburg #freebloxburg",
+      "description": "Check out my other socials! \u2661 TIKTOK: https://www.tiktok.com/@celesti_sam INSTAGRAM: ......",
+      "source": "YouTube",
+      "timestamp": 1771675237.0,
+      "url": "https://www.youtube.com/watch?v=jRH4p8P_ETU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Follow me #\u0435\u0444\u0443roblox #\u0440\u043e\u0431\u043b\u043e\u043a\u0441 #elbruto #brawlstars #bloxburg #games #\u0437\u0430\u043b\u0438\u0442\u0438 #\u0438\u0433\u0440\u044b #\u0442\u0442\u0434 #roblox",
       "description": "...",
       "source": "YouTube",
@@ -610,15 +619,6 @@
       "source": "YouTube",
       "timestamp": 1771649760.0,
       "url": "https://www.youtube.com/watch?v=PgMPZEhkeqw",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#roblox #viral #defnotdyl #artist #adoptme #robloxedit #viral bloxburg #sab #fyp\u30b7 #stealabrainrot",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771647689.0,
-      "url": "https://www.youtube.com/watch?v=w6HIeKzjtNw",
       "icon": "fa-youtube"
     },
     {
@@ -659,7 +659,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771676441.5726635,
+    "generated_at": 1771677641.5727959,
     "mode": "memory",
     "refresh_interval": 2000
   }
