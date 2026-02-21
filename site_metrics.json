@@ -578,20 +578,20 @@
   "news": [
     {
       "type": "trend",
+      "title": "Dear Bloxburg Community... #welcometobloxburg #bloxburg #roblox #bloxburgmap #bloxburgroblox #viral",
+      "description": "Dear Bloxburg Community... #welcometobloxburg #bloxburg #roblox #bloxburgmap #bloxburgroblox #viral....",
+      "source": "YouTube",
+      "timestamp": 1771697740.0,
+      "url": "https://www.youtube.com/watch?v=DlMdsNWfq9s",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "BLOXBURG: Modern Hillside Home Speedbuild | Roblox House Build",
       "description": "Hello builders! In this video i am building a BLOXBURG: Modern Hillside Home Speedbuild | Roblox Hou...",
       "source": "YouTube",
       "timestamp": 1771696821.0,
       "url": "https://www.youtube.com/watch?v=SoCJf7TEmI4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Es chiste :)  #roblox #trolledit #edit #trolllife #robloxedit #bloxburgnewleaks #memes #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771695775.0,
-      "url": "https://www.youtube.com/watch?v=b28T9EeJqqI",
       "icon": "fa-youtube"
     },
     {
@@ -659,7 +659,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771699841.9965794,
+    "generated_at": 1771700441.580108,
     "mode": "memory",
     "refresh_interval": 2000
   }
