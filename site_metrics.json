@@ -614,6 +614,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "How to decorate your kids rooms in bloxburg! #bloxburg #joke #funny",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771714343.0,
+      "url": "https://www.youtube.com/watch?v=ZVaMVuWLQgE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Bloxburg - Perfect Family House Speedbuild (exterior) | Roblox",
+      "description": "Today I made an perfect family house build I'll work on the interior for next week's video! Play BLO...",
+      "source": "YouTube",
+      "timestamp": 1771711210.0,
+      "url": "https://www.youtube.com/watch?v=UUvbATxWj8U",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#helpmemakethismakesense #roblox #roblox #funny #robloxgames #robloxedit #bloxburg #memes #speedrun",
       "description": "...",
       "source": "YouTube",
@@ -637,24 +655,6 @@
       "source": "YouTube",
       "timestamp": 1771707155.0,
       "url": "https://www.youtube.com/watch?v=Tg9PC-yzh_4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "THE URGEE #roblox #bloxburg #bloxburgbuild #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771702942.0,
-      "url": "https://www.youtube.com/watch?v=LVShxugtJpU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "POV: you film a tiktok with your kids #roblox #bloxburg #funny #shorts #spongebob #bigguy",
-      "description": "viral #funny #blowup #roblox #bloxburg #bloxburgroleplay #family #gaming #robloxgaming #roleplay #tr...",
-      "source": "YouTube",
-      "timestamp": 1771702746.0,
-      "url": "https://www.youtube.com/watch?v=gK6usnwFB8s",
       "icon": "fa-youtube"
     },
     {
@@ -695,7 +695,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771716041.8979483,
+    "generated_at": 1771717241.5770628,
     "mode": "memory",
     "refresh_interval": 2000
   }
