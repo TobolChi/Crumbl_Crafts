@@ -407,20 +407,20 @@
   "news": [
     {
       "type": "trend",
+      "title": "#roblox #viral #defnotdyl #artist #adoptme #robloxedit #viral bloxburg #sab #fyp\u30b7 #stealabrainrot",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771647689.0,
+      "url": "https://www.youtube.com/watch?v=w6HIeKzjtNw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "When Your Sister Is A Hater! \ud83d\ude44\ud83d\ude2d #bloxburg #bloxburgfamily #roblox #shorts",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1771638627.0,
       "url": "https://www.youtube.com/watch?v=jPj3_zPl2vU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Who else agrees #bloxburg #roblox #shorts #foryou ",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771637497.0,
-      "url": "https://www.youtube.com/watch?v=sIESrPqGeLU",
       "icon": "fa-youtube"
     },
     {
@@ -488,7 +488,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771648841.5732298,
+    "generated_at": 1771650041.5766566,
     "mode": "memory",
     "refresh_interval": 2000
   }
