@@ -578,6 +578,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "POV You&#39;re A KID  ROLEPLAYING  In  BLOXBURG  On ROBLOX Until....",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771680111.0,
+      "url": "https://www.youtube.com/watch?v=2QYmQYoFSqk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Get to know us\ud83c\udf1e #cute #roblox #berryave #bloxburg #fyp\u30b7 #jesuslovesyou #roleplay #robloxedits #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771679286.0,
+      "url": "https://www.youtube.com/watch?v=FTN9EHr_b6M",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "he better pay me or else... #roblox #bloxburg # #welcometobloxburg #freebloxburg",
       "description": "Check out my other socials! \u2661 TIKTOK: https://www.tiktok.com/@celesti_sam INSTAGRAM: ......",
       "source": "YouTube",
@@ -622,44 +640,35 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1771615235.4769535,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "#roblox #viral #defnotdyl #artist #adoptme #robloxedit #viral bloxburg #sab #fyp\u30b7 #stealabrainrot",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771647689.0,
+      "url": "https://www.youtube.com/watch?v=w6HIeKzjtNw",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "Biggest Mistake in Bloxburg Build! (Gone Wrong)",
+      "description": "Biggest Mistake in Bloxburg Build! (Gone Wrong)...",
       "source": "YouTube",
-      "timestamp": 1771611635.476955,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1771645816.0,
+      "url": "https://www.youtube.com/watch?v=QXthCF5atak",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1771608035.4769554,
-      "url": "#",
-      "icon": "fa-lightbulb"
-    },
-    {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1771604435.4769561,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "When Your Sister Is A Hater! \ud83d\ude44\ud83d\ude2d #bloxburg #bloxburgfamily #roblox #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771638627.0,
+      "url": "https://www.youtube.com/watch?v=jPj3_zPl2vU",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1771681241.5755806,
+    "generated_at": 1771682441.5717223,
     "mode": "memory",
     "refresh_interval": 2000
   }
