@@ -578,6 +578,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "THE URGEE #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771702942.0,
+      "url": "https://www.youtube.com/watch?v=LVShxugtJpU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "POV: you film a tiktok with your kids #roblox #bloxburg #funny #shorts #spongebob #bigguy",
+      "description": "viral #funny #blowup #roblox #bloxburg #bloxburgroleplay #family #gaming #robloxgaming #roleplay #tr...",
+      "source": "YouTube",
+      "timestamp": 1771702746.0,
+      "url": "https://www.youtube.com/watch?v=gK6usnwFB8s",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "$1M LUXURY APARTMENT BUILD BATTLE in BLOXBURG",
       "description": "Become A Channel Member by pressing the 'JOIN' button next to subscribe to gain extra perks!...",
       "source": "YouTube",
@@ -596,29 +614,11 @@
     },
     {
       "type": "trend",
-      "title": "BLOXBURG: Modern Hillside Home Speedbuild | Roblox House Build",
-      "description": "Hello builders! In this video i am building a BLOXBURG: Modern Hillside Home Speedbuild | Roblox Hou...",
-      "source": "YouTube",
-      "timestamp": 1771696821.0,
-      "url": "https://www.youtube.com/watch?v=SoCJf7TEmI4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "MOVING INTO OUR NEW BEACH HOUSE IN BLOXBURG | Roblox Bloxburg Roleplay \ud83c\udfdd\ufe0f\ud83c\udf0a",
       "description": "hello ! \u2570\ufe52my name is sean and i do bloxburg roleplays ! \u27e1 in today's video, my family moves into our...",
       "source": "YouTube",
       "timestamp": 1771696806.0,
       "url": "https://www.youtube.com/watch?v=6Bezt_dKShk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Es chiste :)  #roblox #trolledit #edit #trolllife #robloxedit #bloxburgnewleaks #memes #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771695775.0,
-      "url": "https://www.youtube.com/watch?v=b28T9EeJqqI",
       "icon": "fa-youtube"
     },
     {
@@ -659,7 +659,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771702841.5746574,
+    "generated_at": 1771704041.572994,
     "mode": "memory",
     "refresh_interval": 2000
   }
