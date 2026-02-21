@@ -578,6 +578,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "#bloxburg #abonnezvous #roblox #faitepercer #humour #memes",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771688443.0,
+      "url": "https://www.youtube.com/watch?v=FGG2z3IrB4A",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#bloxburg #bloxburg #roblox #robloxbloxburgspeedbuild",
       "description": "...",
       "source": "YouTube",
@@ -610,15 +619,6 @@
       "source": "YouTube",
       "timestamp": 1771679286.0,
       "url": "https://www.youtube.com/watch?v=FTN9EHr_b6M",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "he better pay me or else... #roblox #bloxburg # #welcometobloxburg #freebloxburg",
-      "description": "Check out my other socials! \u2661 TIKTOK: https://www.tiktok.com/@celesti_sam INSTAGRAM: ......",
-      "source": "YouTube",
-      "timestamp": 1771675237.0,
-      "url": "https://www.youtube.com/watch?v=jRH4p8P_ETU",
       "icon": "fa-youtube"
     },
     {
@@ -659,7 +659,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771690841.5742311,
+    "generated_at": 1771692041.5780902,
     "mode": "memory",
     "refresh_interval": 2000
   }
