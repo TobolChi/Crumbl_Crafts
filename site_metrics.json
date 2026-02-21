@@ -578,6 +578,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "#bloxburg #bloxburg #roblox #robloxbloxburgspeedbuild",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771685014.0,
+      "url": "https://www.youtube.com/watch?v=0MfB0zL191o",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Faces for you\u2728\ud83d\udc40\ud83c\udf0a\ud83e\udee7#roblox #berryave #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771684392.0,
+      "url": "https://www.youtube.com/watch?v=S8SHpNMH2a8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Grinding For Money In Bloxburg #bloxburg #roblox #feed #shorts #robloxshorts",
       "description": "bloxburg #roblox #feed #shorts #robloxedit #games #robloxshorts #robloxgames #fyp #foryou #bloxburgr...",
       "source": "YouTube",
@@ -601,24 +619,6 @@
       "source": "YouTube",
       "timestamp": 1771675237.0,
       "url": "https://www.youtube.com/watch?v=jRH4p8P_ETU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Follow me #\u0435\u0444\u0443roblox #\u0440\u043e\u0431\u043b\u043e\u043a\u0441 #elbruto #brawlstars #bloxburg #games #\u0437\u0430\u043b\u0438\u0442\u0438 #\u0438\u0433\u0440\u044b #\u0442\u0442\u0434 #roblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771669380.0,
-      "url": "https://www.youtube.com/watch?v=UkZqa8j0lP0",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "DAISY MAKES BABY MAX SAY A CUSS WORD! #shorts #roblox #roleplay #bloxburg #bloxburgroleplay",
-      "description": "DAISY MAKES BABY MAX SAY A CUSS WORD! Make sure to like and check out the full video in the link to ...",
-      "source": "YouTube",
-      "timestamp": 1771668013.0,
-      "url": "https://www.youtube.com/watch?v=Beg8OlvquCo",
       "icon": "fa-youtube"
     },
     {
@@ -659,7 +659,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771684841.580473,
+    "generated_at": 1771686041.5755172,
     "mode": "memory",
     "refresh_interval": 2000
   }
