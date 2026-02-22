@@ -632,6 +632,15 @@
     },
     {
       "type": "trend",
+      "title": "Guys please give advice and anything that I can fix! #bloxburg #bloxburgbuilds #bloxburgroleplay",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771733345.0,
+      "url": "https://www.youtube.com/watch?v=zLWma0yr9As",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Bloxburg Build: Dreamy French House | Tour | Roblox",
       "description": "Open ! \u2601\ufe0f Put the video on highest quality for better watching experience ^_^ \u2601\ufe0f Hello! Chel here, a...",
       "source": "YouTube",
@@ -650,20 +659,11 @@
     },
     {
       "type": "trend",
-      "title": "Caught in 4k \ud83d\udc80\ud83d\udc80\ud83d\udc80 #bloxburg #bloxburgbuild #roblox #robloxmeme #robloxedit ",
+      "title": "most unexpected bloxburg event tbh... #roblox #bloxburg",
       "description": "...",
       "source": "YouTube",
-      "timestamp": 1771716380.0,
-      "url": "https://www.youtube.com/watch?v=1AsigQFCnvU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "famous last words \ud83d\udc80 #robloxanimation #trending #roblox #funny #memes #moonanimator #bloxburg",
-      "description": "subscribe to \u27a1\ufe0f @thenerdyglassesguy....",
-      "source": "YouTube",
-      "timestamp": 1771714821.0,
-      "url": "https://www.youtube.com/watch?v=IeI_Hd8FORo",
+      "timestamp": 1771717305.0,
+      "url": "https://www.youtube.com/watch?v=kYLelQZz-ck",
       "icon": "fa-youtube"
     },
     {
@@ -704,7 +704,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771735241.571903,
+    "generated_at": 1771736441.5769837,
     "mode": "memory",
     "refresh_interval": 2000
   }
