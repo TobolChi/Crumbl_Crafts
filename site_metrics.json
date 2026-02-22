@@ -659,6 +659,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "fav kitchen! #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771799714.0,
+      "url": "https://www.youtube.com/watch?v=tZtmSEKCsrc",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Bloxburg Spring Modern House Build Idea! \u2728\ud83c\udf37",
       "description": "bloxburg, bloxburg house build, bloxburg cheap house, bloxburg modern house, bloxburg update....",
       "source": "YouTube",
@@ -691,15 +700,6 @@
       "source": "YouTube",
       "timestamp": 1771790433.0,
       "url": "https://www.youtube.com/watch?v=bHkkfihQ08E",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "its so cozy #roblox #bloxburg #bloxburgbuild #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771790395.0,
-      "url": "https://www.youtube.com/watch?v=IBdzDHM_q2k",
       "icon": "fa-youtube"
     },
     {
@@ -740,7 +740,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771802441.8329687,
+    "generated_at": 1771803641.5744817,
     "mode": "memory",
     "refresh_interval": 2000
   }
