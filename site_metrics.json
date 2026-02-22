@@ -605,6 +605,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Caught in 4k \ud83d\udc80\ud83d\udc80\ud83d\udc80 #bloxburg #bloxburgbuild #roblox #robloxmeme #robloxedit ",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771716380.0,
+      "url": "https://www.youtube.com/watch?v=1AsigQFCnvU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "How to decorate your kids rooms in bloxburg! #bloxburg #joke #funny",
       "description": "...",
       "source": "YouTube",
@@ -637,15 +646,6 @@
       "source": "YouTube",
       "timestamp": 1771707606.0,
       "url": "https://www.youtube.com/watch?v=hW2wrySjbB8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I DID \u263a\ufe0f #roblox #bloxburg #bloxburgbuild #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771707155.0,
-      "url": "https://www.youtube.com/watch?v=Tg9PC-yzh_4",
       "icon": "fa-youtube"
     },
     {
@@ -686,7 +686,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771719641.5772848,
+    "generated_at": 1771720841.5731847,
     "mode": "memory",
     "refresh_interval": 2000
   }
