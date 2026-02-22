@@ -667,44 +667,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1771615235.4769535,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "#helpmemakethismakesense #roblox #roblox #funny #robloxgames #robloxedit #bloxburg #memes #speedrun",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771710014.0,
+      "url": "https://www.youtube.com/watch?v=UwbYppNZyj4",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "MY BABY SON MAX SAYS A CUSS WORD! *CAUGHT ON CAMERA!* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
-      "timestamp": 1771611635.476955,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1771707606.0,
+      "url": "https://www.youtube.com/watch?v=hW2wrySjbB8",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1771608035.4769554,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "I DID \u263a\ufe0f #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771707155.0,
+      "url": "https://www.youtube.com/watch?v=Tg9PC-yzh_4",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1771604435.4769561,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "\u203c\ufe0fONLY\u203c\ufe0fOG BLOXBURG RELATE\ud83d\ude0e\ud83d\udcaa#bloxburg #roblox #bloxburgbuilds #relatable  #shorts",
+      "description": "roblox #bloxburg #robloxmemes #robloxedit #robloxshorts #shorts #tiktok #reels #robloxtiktok #roblox...",
+      "source": "YouTube",
+      "timestamp": 1771706040.0,
+      "url": "https://www.youtube.com/watch?v=PLwUWfFr7FU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "$1M LUXURY APARTMENT BUILD BATTLE in BLOXBURG",
+      "description": "Become A Channel Member by pressing the 'JOIN' button next to subscribe to gain extra perks!...",
+      "source": "YouTube",
+      "timestamp": 1771700409.0,
+      "url": "https://www.youtube.com/watch?v=C19p_W6mffU",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1771730441.5793831,
+    "generated_at": 1771731641.5737665,
     "mode": "memory",
     "refresh_interval": 2000
   }
