@@ -641,6 +641,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "40k Large Bloxburg Family House Build: 2 Story Tutorial *VOICE*",
+      "description": "hiii! today i show how to build a realistic family house in bloxburg! this modern 2 story house buil...",
+      "source": "YouTube",
+      "timestamp": 1771776065.0,
+      "url": "https://www.youtube.com/watch?v=n96yW68YOtE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "I Worked 24 HOURS in Bloxburg...",
       "description": "Join my neighborhood! Want your builds to be in a video? Show them off in my community! Neighborhood...",
       "source": "YouTube",
@@ -673,15 +682,6 @@
       "source": "YouTube",
       "timestamp": 1771753027.0,
       "url": "https://www.youtube.com/watch?v=YaFjaSyrQNA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Bloxburg Outfit Codes \u2728Baddie edition\u2728 pt. 1   #bloxburg #bloxburgbuilder #bloxburgroleplay",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771752368.0,
-      "url": "https://www.youtube.com/watch?v=qPpkNSyhFpk",
       "icon": "fa-youtube"
     },
     {
@@ -722,7 +722,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771777241.5783477,
+    "generated_at": 1771778441.5746553,
     "mode": "memory",
     "refresh_interval": 2000
   }
