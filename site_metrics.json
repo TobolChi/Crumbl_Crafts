@@ -623,6 +623,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Bloxburg Outfit Codes \u2728Baddie edition\u2728 pt. 1   #bloxburg #bloxburgbuilder #bloxburgroleplay",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771752368.0,
+      "url": "https://www.youtube.com/watch?v=qPpkNSyhFpk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "\ud83e\udd73\ud83e\udef0\ud83d\udc93 les gusta ? #roblox #viral #videogames #bloxburg #funny #robloxshorts #shorts",
       "description": "...",
       "source": "YouTube",
@@ -655,15 +664,6 @@
       "source": "YouTube",
       "timestamp": 1771734782.0,
       "url": "https://www.youtube.com/watch?v=Q65iJET6gIQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "GNARLYYYYYYYYY\ud83d\ude1c#robloxoutfits#aesthetic#gnarlykatseye#bloxburg#emote#robloxoutfits#katseyedance",
-      "description": "\ud81a\uddb9\u00b0\u2027Hey Berrys! Tysm for watching! Make sure to subscribe so we can reach 1K! When we hit 1K I will b...",
-      "source": "YouTube",
-      "timestamp": 1771733528.0,
-      "url": "https://www.youtube.com/watch?v=t2PlYF6n444",
       "icon": "fa-youtube"
     },
     {
@@ -704,7 +704,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771753841.842142,
+    "generated_at": 1771754441.5748594,
     "mode": "memory",
     "refresh_interval": 2000
   }
