@@ -605,11 +605,29 @@
   "news": [
     {
       "type": "trend",
+      "title": "Big Brother bloxburg: Pen\u00faltimo Epis\u00f3dio - Elimina\u00e7\u00e3o + Vota\u00e7\u00e3o do Vencedor! | Globo Roblox",
+      "description": "PEN\u00daLTIMO EP NO AR! A casa ferveu, o clima ficou insano e rolou a \u00daLTIMA elimina\u00e7\u00e3o da temporada! Ag...",
+      "source": "YouTube",
+      "timestamp": 1771722906.0,
+      "url": "https://www.youtube.com/watch?v=x6IQo7evCN0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Caught in 4k \ud83d\udc80\ud83d\udc80\ud83d\udc80 #bloxburg #bloxburgbuild #roblox #robloxmeme #robloxedit ",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1771716380.0,
       "url": "https://www.youtube.com/watch?v=1AsigQFCnvU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "famous last words \ud83d\udc80 #robloxanimation #trending #roblox #funny #memes #moonanimator #bloxburg",
+      "description": "subscribe to \u27a1\ufe0f @thenerdyglassesguy....",
+      "source": "YouTube",
+      "timestamp": 1771714821.0,
+      "url": "https://www.youtube.com/watch?v=IeI_Hd8FORo",
       "icon": "fa-youtube"
     },
     {
@@ -649,44 +667,35 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1771615235.4769535,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "I DID \u263a\ufe0f #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771707155.0,
+      "url": "https://www.youtube.com/watch?v=Tg9PC-yzh_4",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "\u203c\ufe0fONLY\u203c\ufe0fOG BLOXBURG RELATE\ud83d\ude0e\ud83d\udcaa#bloxburg #roblox #bloxburgbuilds #relatable  #shorts",
+      "description": "roblox #bloxburg #robloxmemes #robloxedit #robloxshorts #shorts #tiktok #reels #robloxtiktok #roblox...",
       "source": "YouTube",
-      "timestamp": 1771611635.476955,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1771706040.0,
+      "url": "https://www.youtube.com/watch?v=PLwUWfFr7FU",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1771608035.4769554,
-      "url": "#",
-      "icon": "fa-lightbulb"
-    },
-    {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1771604435.4769561,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "$1M LUXURY APARTMENT BUILD BATTLE in BLOXBURG",
+      "description": "Become A Channel Member by pressing the 'JOIN' button next to subscribe to gain extra perks!...",
+      "source": "YouTube",
+      "timestamp": 1771700409.0,
+      "url": "https://www.youtube.com/watch?v=C19p_W6mffU",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1771724441.5780118,
+    "generated_at": 1771725641.5752409,
     "mode": "memory",
     "refresh_interval": 2000
   }
