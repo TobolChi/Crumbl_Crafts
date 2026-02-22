@@ -2,7 +2,7 @@
   "summary": {
     "builder_count": 1,
     "total_completed": 0,
-    "total_requests": 12,
+    "total_requests": 13,
     "total_ratings": 0,
     "request_completion_ratio": 0.0
   },
@@ -24,6 +24,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "sent",
+      "shop_name": "ULuvOllie's Shop",
+      "message": "Request sent by 65n2",
+      "timestamp": 1771799001,
+      "thread_id": 1457057884968845373,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/channels/1301988304279048275/1457057884968845373"
+    },
     {
       "type": "member_join",
       "shop_name": "Server",
@@ -604,8 +613,8 @@
   "pipeline": [
     {
       "label": "Pending Requests",
-      "value": 1,
-      "trend": "0 new today \u00b7 4 responded",
+      "value": 2,
+      "trend": "1 new today \u00b7 4 responded",
       "max": 50
     },
     {
@@ -616,7 +625,7 @@
     },
     {
       "label": "Requests (7d)",
-      "value": 1,
+      "value": 2,
       "trend": "1 accepted \u00b7 3 rejected",
       "max": 100
     }
@@ -642,7 +651,7 @@
     },
     {
       "title": "Queue Health",
-      "detail": "1 requests awaiting response",
+      "detail": "2 requests awaiting response",
       "score": "Manageable",
       "status": "good"
     }
@@ -694,53 +703,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "40k Large Bloxburg Family House Build: 2 Story Tutorial *VOICE*",
-      "description": "hiii! today i show how to build a realistic family house in bloxburg! this modern 2 story house buil...",
-      "source": "YouTube",
-      "timestamp": 1771776065.0,
-      "url": "https://www.youtube.com/watch?v=n96yW68YOtE",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1771615235.4769535,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "Make a oulfit with me #roblox #bloxburgcontentcreator #bloxburg #music",
-      "description": "...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1771773718.0,
-      "url": "https://www.youtube.com/watch?v=OK-y51Ek3uU",
-      "icon": "fa-youtube"
+      "timestamp": 1771611635.476955,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "I Worked 24 HOURS in Bloxburg...",
-      "description": "Join my neighborhood! Want your builds to be in a video? Show them off in my community! Neighborhood...",
-      "source": "YouTube",
-      "timestamp": 1771772451.0,
-      "url": "https://www.youtube.com/watch?v=RWyPTtHv62E",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1771608035.4769554,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "love this phase #bloxburg #roblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771769475.0,
-      "url": "https://www.youtube.com/watch?v=eOCKV8qENwU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "\u0627\u0644\u0642\u062f\u064a\u0645 \u0648 \u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a \u0631\u0648\u0628\u0644\u0648\u0643\u0633 \ud83d\udd25 #roblox #amazingroblox #robloxfriends #\u0631\u0648\u0628\u0644\u0648\u0643\u0633 #bloxburg #shorts",
-      "description": "\u0627\u0644\u0641\u0631\u0642 \u0648\u0627\u0636\u062d \u0645\u0646 \u0627\u0627\u062c\u062f\u064a\u062f \u0648 \u0627\u0644\u0642\u062f\u064a\u0645 #edit....",
-      "source": "YouTube",
-      "timestamp": 1771768264.0,
-      "url": "https://www.youtube.com/watch?v=JpgppIYcatU",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1771604435.4769561,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1771798841.6024318,
+    "generated_at": 1771799003.8214064,
     "mode": "memory",
     "refresh_interval": 2000
   }
