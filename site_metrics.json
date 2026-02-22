@@ -641,20 +641,20 @@
   "news": [
     {
       "type": "trend",
+      "title": "I Worked 24 HOURS in Bloxburg...",
+      "description": "Join my neighborhood! Want your builds to be in a video? Show them off in my community! Neighborhood...",
+      "source": "YouTube",
+      "timestamp": 1771772451.0,
+      "url": "https://www.youtube.com/watch?v=RWyPTtHv62E",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "\u0627\u0644\u0642\u062f\u064a\u0645 \u0648 \u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a \u0631\u0648\u0628\u0644\u0648\u0643\u0633 \ud83d\udd25 #roblox #amazingroblox #robloxfriends #\u0631\u0648\u0628\u0644\u0648\u0643\u0633 #bloxburg #shorts",
       "description": "\u0627\u0644\u0641\u0631\u0642 \u0648\u0627\u0636\u062d \u0645\u0646 \u0627\u0627\u062c\u062f\u064a\u062f \u0648 \u0627\u0644\u0642\u062f\u064a\u0645 #edit....",
       "source": "YouTube",
       "timestamp": 1771768264.0,
       "url": "https://www.youtube.com/watch?v=JpgppIYcatU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "literally \ud83d\ude2d #roblox #bloxburg #bloxburgbuild #fyp #relatable",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771758496.0,
-      "url": "https://www.youtube.com/watch?v=biTvWZcgZg0",
       "icon": "fa-youtube"
     },
     {
@@ -722,7 +722,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771775441.897759,
+    "generated_at": 1771776041.575525,
     "mode": "memory",
     "refresh_interval": 2000
   }
