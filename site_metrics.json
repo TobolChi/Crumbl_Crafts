@@ -623,6 +623,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox #roblox #memes #robloxmemes #minecraft #meme #robloxedits #dankmemes #bloxburg #robloxgfx",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771739484.0,
+      "url": "https://www.youtube.com/watch?v=VtEaY9SpJwo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Like why they have me working for hours #bloxburg #expensive #relatable",
       "description": "...",
       "source": "YouTube",
@@ -650,20 +659,11 @@
     },
     {
       "type": "trend",
-      "title": "Bloxburg Build: Dreamy French House | Tour | Roblox",
-      "description": "Open ! \u2601\ufe0f Put the video on highest quality for better watching experience ^_^ \u2601\ufe0f Hello! Chel here, a...",
+      "title": "Big Brother bloxburg: Pen\u00faltimo Epis\u00f3dio - Elimina\u00e7\u00e3o + Vota\u00e7\u00e3o do Vencedor! | Globo Roblox",
+      "description": "PEN\u00daLTIMO EP NO AR! A casa ferveu, o clima ficou insano e rolou a \u00daLTIMA elimina\u00e7\u00e3o da temporada! Ag...",
       "source": "YouTube",
-      "timestamp": 1771728418.0,
-      "url": "https://www.youtube.com/watch?v=lRfNA4o7rGM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Bloxburg please bring the layered floors back please \ud83d\udc94 #roblox #fyp #shorts  #bloxburgbuilds",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771727753.0,
-      "url": "https://www.youtube.com/watch?v=p5WamR0Ub3Y",
+      "timestamp": 1771722906.0,
+      "url": "https://www.youtube.com/watch?v=x6IQo7evCN0",
       "icon": "fa-youtube"
     },
     {
@@ -704,7 +704,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771741241.5726502,
+    "generated_at": 1771742441.580501,
     "mode": "memory",
     "refresh_interval": 2000
   }
