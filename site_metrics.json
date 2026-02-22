@@ -623,6 +623,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "GNARLYYYYYYYYY\ud83d\ude1c#robloxoutfits#aesthetic#gnarlykatseye#bloxburg#emote#robloxoutfits#katseyedance",
+      "description": "\ud81a\uddb9\u00b0\u2027Hey Berrys! Tysm for watching! Make sure to subscribe so we can reach 1K! When we hit 1K I will b...",
+      "source": "YouTube",
+      "timestamp": 1771733528.0,
+      "url": "https://www.youtube.com/watch?v=t2PlYF6n444",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Bloxburg Build: Dreamy French House | Tour | Roblox",
       "description": "Open ! \u2601\ufe0f Put the video on highest quality for better watching experience ^_^ \u2601\ufe0f Hello! Chel here, a...",
       "source": "YouTube",
@@ -655,15 +664,6 @@
       "source": "YouTube",
       "timestamp": 1771714821.0,
       "url": "https://www.youtube.com/watch?v=IeI_Hd8FORo",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "How to decorate your kids rooms in bloxburg! #bloxburg #joke #funny",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771714343.0,
-      "url": "https://www.youtube.com/watch?v=ZVaMVuWLQgE",
       "icon": "fa-youtube"
     },
     {
@@ -704,7 +704,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771734041.574803,
+    "generated_at": 1771735241.571903,
     "mode": "memory",
     "refresh_interval": 2000
   }
