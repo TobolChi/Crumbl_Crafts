@@ -641,6 +641,15 @@
     },
     {
       "type": "trend",
+      "title": "Bloxburg Outfit Codes \u2728Baddie edition\u2728 pt. 1   #bloxburg #bloxburgbuilder #bloxburgroleplay",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771752368.0,
+      "url": "https://www.youtube.com/watch?v=qPpkNSyhFpk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "\ud83e\udd73\ud83e\udef0\ud83d\udc93 les gusta ? #roblox #viral #videogames #bloxburg #funny #robloxshorts #shorts",
       "description": "...",
       "source": "YouTube",
@@ -655,15 +664,6 @@
       "source": "YouTube",
       "timestamp": 1771739484.0,
       "url": "https://www.youtube.com/watch?v=VtEaY9SpJwo",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Like why they have me working for hours #bloxburg #expensive #relatable",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771735510.0,
-      "url": "https://www.youtube.com/watch?v=cR4WymIwMrU",
       "icon": "fa-youtube"
     },
     {
@@ -704,7 +704,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771762841.5769002,
+    "generated_at": 1771764041.5765,
     "mode": "memory",
     "refresh_interval": 2000
   }
