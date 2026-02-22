@@ -632,15 +632,6 @@
     },
     {
       "type": "trend",
-      "title": "most unexpected bloxburg event tbh... #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771717305.0,
-      "url": "https://www.youtube.com/watch?v=kYLelQZz-ck",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "Caught in 4k \ud83d\udc80\ud83d\udc80\ud83d\udc80 #bloxburg #bloxburgbuild #roblox #robloxmeme #robloxedit ",
       "description": "...",
       "source": "YouTube",
@@ -664,6 +655,15 @@
       "source": "YouTube",
       "timestamp": 1771714343.0,
       "url": "https://www.youtube.com/watch?v=ZVaMVuWLQgE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Bloxburg - Perfect Family House Speedbuild (exterior) | Roblox",
+      "description": "Today I made an perfect family house build I'll work on the interior for next week's video! Play BLO...",
+      "source": "YouTube",
+      "timestamp": 1771711210.0,
+      "url": "https://www.youtube.com/watch?v=UUvbATxWj8U",
       "icon": "fa-youtube"
     },
     {
@@ -704,7 +704,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771728041.5738444,
+    "generated_at": 1771729241.5725176,
     "mode": "memory",
     "refresh_interval": 2000
   }
