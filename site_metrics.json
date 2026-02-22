@@ -623,6 +623,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "\ud83e\udd73\ud83e\udef0\ud83d\udc93 les gusta ? #roblox #viral #videogames #bloxburg #funny #robloxshorts #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771749898.0,
+      "url": "https://www.youtube.com/watch?v=gj4ZgMNrgi0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #roblox #memes #robloxmemes #minecraft #meme #robloxedits #dankmemes #bloxburg #robloxgfx",
       "description": "...",
       "source": "YouTube",
@@ -655,15 +664,6 @@
       "source": "YouTube",
       "timestamp": 1771733528.0,
       "url": "https://www.youtube.com/watch?v=t2PlYF6n444",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Guys please give advice and anything that I can fix! #bloxburg #bloxburgbuilds #bloxburgroleplay",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771733345.0,
-      "url": "https://www.youtube.com/watch?v=zLWma0yr9As",
       "icon": "fa-youtube"
     },
     {
@@ -704,7 +704,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771752041.5779436,
+    "generated_at": 1771753241.575831,
     "mode": "memory",
     "refresh_interval": 2000
   }
