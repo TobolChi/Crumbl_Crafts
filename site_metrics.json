@@ -7,7 +7,7 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 369,
+    "total_members": 368,
     "joined_today": 3,
     "active_shops": 0,
     "avg_response_time": 395.25
@@ -24,6 +24,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_leave",
+      "shop_name": "Server",
+      "message": ".strawberie left the server",
+      "timestamp": 1771770167,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/1118582810714837163"
+    },
     {
       "type": "member_join",
       "shop_name": "Server",
@@ -632,6 +641,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "\u0627\u0644\u0642\u062f\u064a\u0645 \u0648 \u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a \u0631\u0648\u0628\u0644\u0648\u0643\u0633 \ud83d\udd25 #roblox #amazingroblox #robloxfriends #\u0631\u0648\u0628\u0644\u0648\u0643\u0633 #bloxburg #shorts",
+      "description": "\u0627\u0644\u0641\u0631\u0642 \u0648\u0627\u0636\u062d \u0645\u0646 \u0627\u0627\u062c\u062f\u064a\u062f \u0648 \u0627\u0644\u0642\u062f\u064a\u0645 #edit....",
+      "source": "YouTube",
+      "timestamp": 1771768264.0,
+      "url": "https://www.youtube.com/watch?v=JpgppIYcatU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "MISS KAREN ARGUES WITH DAISY DURING CLASS! #shorts #roblox #roleplay #bloxburg #bloxburgroleplay",
       "description": "MISS KAREN ARGUES WITH DAISY DURING CLASS! Make sure to like and check out the full video in the lin...",
       "source": "YouTube",
@@ -664,15 +682,6 @@
       "source": "YouTube",
       "timestamp": 1771749898.0,
       "url": "https://www.youtube.com/watch?v=gj4ZgMNrgi0",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #roblox #memes #robloxmemes #minecraft #meme #robloxedits #dankmemes #bloxburg #robloxgfx",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771739484.0,
-      "url": "https://www.youtube.com/watch?v=VtEaY9SpJwo",
       "icon": "fa-youtube"
     },
     {
@@ -713,7 +722,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771770041.9229789,
+    "generated_at": 1771770170.1726258,
     "mode": "memory",
     "refresh_interval": 2000
   }
