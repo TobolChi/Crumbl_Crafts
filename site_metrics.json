@@ -590,15 +590,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/714188354362802186",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "fahim98008 joined the server",
-      "timestamp": 1771177043,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1313877639613775892",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -668,6 +659,15 @@
     },
     {
       "type": "trend",
+      "title": "love this phase #bloxburg #roblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771769475.0,
+      "url": "https://www.youtube.com/watch?v=eOCKV8qENwU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "\u0627\u0644\u0642\u062f\u064a\u0645 \u0648 \u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a \u0631\u0648\u0628\u0644\u0648\u0643\u0633 \ud83d\udd25 #roblox #amazingroblox #robloxfriends #\u0631\u0648\u0628\u0644\u0648\u0643\u0633 #bloxburg #shorts",
       "description": "\u0627\u0644\u0641\u0631\u0642 \u0648\u0627\u0636\u062d \u0645\u0646 \u0627\u0627\u062c\u062f\u064a\u062f \u0648 \u0627\u0644\u0642\u062f\u064a\u0645 #edit....",
       "source": "YouTube",
@@ -682,15 +682,6 @@
       "source": "YouTube",
       "timestamp": 1771754426.0,
       "url": "https://www.youtube.com/watch?v=L1UmBXwR7mA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Nd mein Sound \ud83e\udd7a #amnewbutnottheleast #roblox #bloxburg # #funny  #gameskhelkarp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771753027.0,
-      "url": "https://www.youtube.com/watch?v=YaFjaSyrQNA",
       "icon": "fa-youtube"
     },
     {
@@ -731,7 +722,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771780841.9650803,
+    "generated_at": 1771782041.575336,
     "mode": "memory",
     "refresh_interval": 2000
   }
