@@ -650,6 +650,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "I DELIVERED pizzas for 5 HOURS in Bloxburg \ud83d\ude2d #roblox #rblx #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771806112.0,
+      "url": "https://www.youtube.com/watch?v=7k7eWv_4n3o",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "My Grandpa Came To Live With Me For a Week\u2026 \ud83d\ude33 | Bloxburg Roleplay",
+      "description": "What happens when your grandpa comes to live with you? In today's Bloxburg roleplay, my grandpa move...",
+      "source": "YouTube",
+      "timestamp": 1771804189.0,
+      "url": "https://www.youtube.com/watch?v=ediLBA9zYmM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "When Your Nurse Is Rude! \ud83e\udd2c\ud83d\ude2d #bloxburg #bloxburgfamily #roblox #shorts",
       "description": "...",
       "source": "YouTube",
@@ -673,24 +691,6 @@
       "source": "YouTube",
       "timestamp": 1771799400.0,
       "url": "https://www.youtube.com/watch?v=NV-fKFA2cis",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "CAMPING TRIP! \ud83c\udfd5\ufe0f  | Bloxburg Roleplay ",
-      "description": "About Me Hey there! I'm Liv from Livxdivine \u2764\ufe0fI create Roblox Bloxburg family roleplay content inspi...",
-      "source": "YouTube",
-      "timestamp": 1771797643.0,
-      "url": "https://www.youtube.com/watch?v=i_EFPNoevBk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "NEVER PAY BLOXBURG BILLS - POOR TO RICH \ud83d\udcb5 #roblox #bloxburg #robloxshorts #robloxgames #dti #viral",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771796738.0,
-      "url": "https://www.youtube.com/watch?v=hG2XP2hXeGE",
       "icon": "fa-youtube"
     },
     {
@@ -731,7 +731,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771807841.8515866,
+    "generated_at": 1771808441.5738776,
     "mode": "memory",
     "refresh_interval": 2000
   }
