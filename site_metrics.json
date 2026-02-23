@@ -596,6 +596,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Class Modern Living Room in Bloxburg #bloxburg #bloxburgbuilder #bloxburgbuild",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771873200.0,
+      "url": "https://www.youtube.com/watch?v=RgbOsgzsh4M",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "MALU-MALU | dia , INDAHKUS #roblox #bloxburg #robloxgames #robloxedit #robloxgamer #fyppppppppppppp",
       "description": "...",
       "source": "YouTube",
@@ -628,15 +637,6 @@
       "source": "YouTube",
       "timestamp": 1771790433.0,
       "url": "https://www.youtube.com/watch?v=bHkkfihQ08E",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I Worked 24 HOURS in Bloxburg...",
-      "description": "Join my neighborhood! Want your builds to be in a video? Show them off in my community! Neighborhood...",
-      "source": "YouTube",
-      "timestamp": 1771772451.0,
-      "url": "https://www.youtube.com/watch?v=RWyPTtHv62E",
       "icon": "fa-youtube"
     },
     {
@@ -677,7 +677,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771874441.5807674,
+    "generated_at": 1771875641.6039147,
     "mode": "memory",
     "refresh_interval": 2000
   }
