@@ -545,15 +545,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1252404012318462056",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "hechosenn joined the server",
-      "timestamp": 1771272765,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1069885054781755463",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -686,7 +677,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771876841.5770757,
+    "generated_at": 1771878041.5786586,
     "mode": "memory",
     "refresh_interval": 2000
   }
