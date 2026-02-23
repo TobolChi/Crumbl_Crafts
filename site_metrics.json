@@ -605,6 +605,15 @@
     },
     {
       "type": "trend",
+      "title": "Would you taste my BLOXBURG HOLIDAY CUPCAKES I made?? \ud83d\udc40\u2744\ufe0f\u2603\ufe0f",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771869635.0,
+      "url": "https://www.youtube.com/watch?v=STSOL7rEnsA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Epic Splash! Giant Inflatable Water Slide \u2013 Direct from Source Factory! \ud83d\udca6\ud83c\udfc4\u200d\u2642\ufe0f\ud83c\udf0a#InflatableWaterSlide",
       "description": "...",
       "source": "YouTube",
@@ -628,15 +637,6 @@
       "source": "YouTube",
       "timestamp": 1771794006.0,
       "url": "https://www.youtube.com/watch?v=9L1sB8emHH4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I LET AI DESIGN MY BLOXBURG HOUSE",
-      "description": "bloxburg #roblox #robloxbloxburg I ran out of ideas for bloxburg houses...so I forced AI to build me...",
-      "source": "YouTube",
-      "timestamp": 1771790433.0,
-      "url": "https://www.youtube.com/watch?v=bHkkfihQ08E",
       "icon": "fa-youtube"
     },
     {
@@ -677,7 +677,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771878041.9373646,
+    "generated_at": 1771879241.5811586,
     "mode": "memory",
     "refresh_interval": 2000
   }
