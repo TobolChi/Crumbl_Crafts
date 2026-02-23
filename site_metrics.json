@@ -623,20 +623,20 @@
     },
     {
       "type": "trend",
-      "title": "The evil hospital...\ud83d\ude08\ud83d\ude08 #roblox #bloxburg #bloxburgcontentcreator #bloxburgroleplay #fyp #funny",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771794029.0,
-      "url": "https://www.youtube.com/watch?v=5dT4TEYCdQY",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "DAISY HAS SCHOOL FOOD FIGHT WITH MISS KAREN! *SHE GOT SUSPENDED!* Roblox Bloxburg Voiced RP Rolplay",
       "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
       "timestamp": 1771794006.0,
       "url": "https://www.youtube.com/watch?v=9L1sB8emHH4",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "I LET AI DESIGN MY BLOXBURG HOUSE",
+      "description": "bloxburg #roblox #robloxbloxburg I ran out of ideas for bloxburg houses...so I forced AI to build me...",
+      "source": "YouTube",
+      "timestamp": 1771790433.0,
+      "url": "https://www.youtube.com/watch?v=bHkkfihQ08E",
       "icon": "fa-youtube"
     },
     {
@@ -677,7 +677,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771863641.5757985,
+    "generated_at": 1771864841.5728712,
     "mode": "memory",
     "refresh_interval": 2000
   }
