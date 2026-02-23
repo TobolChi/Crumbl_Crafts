@@ -623,6 +623,15 @@
     },
     {
       "type": "trend",
+      "title": "The evil hospital...\ud83d\ude08\ud83d\ude08 #roblox #bloxburg #bloxburgcontentcreator #bloxburgroleplay #fyp #funny",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771794029.0,
+      "url": "https://www.youtube.com/watch?v=5dT4TEYCdQY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "DAISY HAS SCHOOL FOOD FIGHT WITH MISS KAREN! *SHE GOT SUSPENDED!* Roblox Bloxburg Voiced RP Rolplay",
       "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
@@ -631,62 +640,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "I LET AI DESIGN MY BLOXBURG HOUSE",
-      "description": "bloxburg #roblox #robloxbloxburg I ran out of ideas for bloxburg houses...so I forced AI to build me...",
-      "source": "YouTube",
-      "timestamp": 1771790433.0,
-      "url": "https://www.youtube.com/watch?v=bHkkfihQ08E",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1771615235.4769535,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "I Worked 24 HOURS in Bloxburg...",
-      "description": "Join my neighborhood! Want your builds to be in a video? Show them off in my community! Neighborhood...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1771772451.0,
-      "url": "https://www.youtube.com/watch?v=RWyPTtHv62E",
-      "icon": "fa-youtube"
+      "timestamp": 1771611635.476955,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "\u0627\u0644\u0642\u062f\u064a\u0645 \u0648 \u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a \u0631\u0648\u0628\u0644\u0648\u0643\u0633 \ud83d\udd25 #roblox #amazingroblox #robloxfriends #\u0631\u0648\u0628\u0644\u0648\u0643\u0633 #bloxburg #shorts",
-      "description": "\u0627\u0644\u0641\u0631\u0642 \u0648\u0627\u0636\u062d \u0645\u0646 \u0627\u0627\u062c\u062f\u064a\u062f \u0648 \u0627\u0644\u0642\u062f\u064a\u0645 #edit....",
-      "source": "YouTube",
-      "timestamp": 1771768264.0,
-      "url": "https://www.youtube.com/watch?v=JpgppIYcatU",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1771608035.4769554,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "Preppy child\u2019s bedroom!!! $20,000 #bloxburg#preppyyyy#blowthisaccountup",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771766720.0,
-      "url": "https://www.youtube.com/watch?v=9xV2Pp-jyXs",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "sink",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771766240.0,
-      "url": "https://www.youtube.com/watch?v=reM5J5LHrV8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "ITS A CHALLENGE U CANT COMPLETE\ud83e\udef5\ud83c\udffb\ud83e\udef5\ud83c\udffb\ud83e\udef5\ud83c\udffb #roblox #helpmemakethismakesense #shorts",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771757165.0,
-      "url": "https://www.youtube.com/watch?v=nZfsL5yoHpA",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1771604435.4769561,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1771861841.8713856,
+    "generated_at": 1771862441.5748205,
     "mode": "memory",
     "refresh_interval": 2000
   }
