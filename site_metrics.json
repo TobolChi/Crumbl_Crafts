@@ -641,15 +641,6 @@
     },
     {
       "type": "trend",
-      "title": "I DELIVERED pizzas for 5 HOURS in Bloxburg \ud83d\ude2d #roblox #rblx #shorts",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771806112.0,
-      "url": "https://www.youtube.com/watch?v=7k7eWv_4n3o",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "My Grandpa Came To Live With Me For a Week\u2026 \ud83d\ude33 | Bloxburg Roleplay",
       "description": "What happens when your grandpa comes to live with you? In today's Bloxburg roleplay, my grandpa move...",
       "source": "YouTube",
@@ -664,6 +655,15 @@
       "source": "YouTube",
       "timestamp": 1771801831.0,
       "url": "https://www.youtube.com/watch?v=3ot6Oi8XZhs",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "#roblox #funny #games #bloxburg #viral #robloxfunny",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771801255.0,
+      "url": "https://www.youtube.com/watch?v=NIxJVEeJYV0",
       "icon": "fa-youtube"
     },
     {
@@ -713,7 +713,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771832441.5742075,
+    "generated_at": 1771833641.5709486,
     "mode": "memory",
     "refresh_interval": 2000
   }
