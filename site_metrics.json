@@ -650,15 +650,6 @@
     },
     {
       "type": "trend",
-      "title": "#roblox #funny #games #bloxburg #viral #robloxfunny",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771801255.0,
-      "url": "https://www.youtube.com/watch?v=NIxJVEeJYV0",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "fav kitchen! #roblox #bloxburg #bloxburgbuild #relatable #fyp",
       "description": "...",
       "source": "YouTube",
@@ -673,6 +664,15 @@
       "source": "YouTube",
       "timestamp": 1771799400.0,
       "url": "https://www.youtube.com/watch?v=NV-fKFA2cis",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "CAMPING TRIP! \ud83c\udfd5\ufe0f  | Bloxburg Roleplay ",
+      "description": "About Me Hey there! I'm Liv from Livxdivine \u2764\ufe0fI create Roblox Bloxburg family roleplay content inspi...",
+      "source": "YouTube",
+      "timestamp": 1771797643.0,
+      "url": "https://www.youtube.com/watch?v=i_EFPNoevBk",
       "icon": "fa-youtube"
     },
     {
@@ -713,7 +713,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771836041.5722344,
+    "generated_at": 1771837241.5827184,
     "mode": "memory",
     "refresh_interval": 2000
   }
