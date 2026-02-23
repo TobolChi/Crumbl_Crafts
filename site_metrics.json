@@ -605,15 +605,6 @@
     },
     {
       "type": "trend",
-      "title": "My Grandpa Came To Live With Me For a Week\u2026 \ud83d\ude33 | Bloxburg Roleplay",
-      "description": "What happens when your grandpa comes to live with you? In today's Bloxburg roleplay, my grandpa move...",
-      "source": "YouTube",
-      "timestamp": 1771804189.0,
-      "url": "https://www.youtube.com/watch?v=ediLBA9zYmM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "fav kitchen! #roblox #bloxburg #bloxburgbuild #relatable #fyp",
       "description": "...",
       "source": "YouTube",
@@ -637,6 +628,15 @@
       "source": "YouTube",
       "timestamp": 1771790433.0,
       "url": "https://www.youtube.com/watch?v=bHkkfihQ08E",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "I Worked 24 HOURS in Bloxburg...",
+      "description": "Join my neighborhood! Want your builds to be in a video? Show them off in my community! Neighborhood...",
+      "source": "YouTube",
+      "timestamp": 1771772451.0,
+      "url": "https://www.youtube.com/watch?v=RWyPTtHv62E",
       "icon": "fa-youtube"
     },
     {
@@ -677,7 +677,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771870841.5758963,
+    "generated_at": 1771872041.5801294,
     "mode": "memory",
     "refresh_interval": 2000
   }
