@@ -641,6 +641,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Aku dapat Angpau dari China Town di Bloxburg! | Kisah Bloxburg (Roblox Malaysia)",
+      "description": "Mal pergi China Town di Bloxburg.. Nama Game: Welcome to Bloxburg Link Game: ......",
+      "source": "YouTube",
+      "timestamp": 1771812006.0,
+      "url": "https://www.youtube.com/watch?v=P_vS7GErges",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "I DELIVERED pizzas for 5 HOURS in Bloxburg \ud83d\ude2d #roblox #rblx #shorts",
       "description": "...",
       "source": "YouTube",
@@ -685,44 +694,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1771615235.4769535,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "CAMPING TRIP! \ud83c\udfd5\ufe0f  | Bloxburg Roleplay ",
+      "description": "About Me Hey there! I'm Liv from Livxdivine \u2764\ufe0fI create Roblox Bloxburg family roleplay content inspi...",
+      "source": "YouTube",
+      "timestamp": 1771797643.0,
+      "url": "https://www.youtube.com/watch?v=i_EFPNoevBk",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "NEVER PAY BLOXBURG BILLS - POOR TO RICH \ud83d\udcb5 #roblox #bloxburg #robloxshorts #robloxgames #dti #viral",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1771611635.476955,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1771796738.0,
+      "url": "https://www.youtube.com/watch?v=hG2XP2hXeGE",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1771608035.4769554,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "\u203c\ufe0fONLY\u203c\ufe0fOG BLOXBURG RELATE\ud83d\ude0e\ud83d\udcaa#bloxburg #roblox #bloxburgbuilds #relatable  #shorts",
+      "description": "roblox #bloxburg #robloxmemes #robloxedit #robloxshorts #shorts #tiktok #reels #robloxtiktok #roblox...",
+      "source": "YouTube",
+      "timestamp": 1771793101.0,
+      "url": "https://www.youtube.com/watch?v=rJuLuDlBnTo",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1771604435.4769561,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "How to get 1 million bloxburg cash #roblox #bloxburg urg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771790986.0,
+      "url": "https://www.youtube.com/watch?v=HASZx-koKZ4",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1771813241.8623278,
+    "generated_at": 1771814441.5746467,
     "mode": "memory",
     "refresh_interval": 2000
   }
