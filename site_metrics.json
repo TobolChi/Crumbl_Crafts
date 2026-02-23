@@ -8,7 +8,7 @@
   },
   "server": {
     "total_members": 368,
-    "joined_today": 2,
+    "joined_today": 0,
     "active_shops": 0,
     "avg_response_time": 395.25
   },
@@ -545,15 +545,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1194417103395106956",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "xxdarkkeke_xx joined the server",
-      "timestamp": 1771278815,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1252404012318462056",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -605,20 +596,11 @@
   "news": [
     {
       "type": "trend",
-      "title": "Class Modern Living Room in Bloxburg #bloxburg #bloxburgbuilder #bloxburgbuild",
+      "title": "Classic Modern Living Room in Bloxburg #bloxburg #bloxburgbuilder #bloxburgbuild",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1771873200.0,
       "url": "https://www.youtube.com/watch?v=RgbOsgzsh4M",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Would you taste my BLOXBURG HOLIDAY CUPCAKES I made?? \ud83d\udc40\u2744\ufe0f\u2603\ufe0f",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771869635.0,
-      "url": "https://www.youtube.com/watch?v=STSOL7rEnsA",
       "icon": "fa-youtube"
     },
     {
@@ -628,6 +610,15 @@
       "source": "YouTube",
       "timestamp": 1771810135.0,
       "url": "https://www.youtube.com/watch?v=_1MKEzvfAHw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "fav kitchen! #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771799714.0,
+      "url": "https://www.youtube.com/watch?v=tZtmSEKCsrc",
       "icon": "fa-youtube"
     },
     {
@@ -686,7 +677,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771883441.8408136,
+    "generated_at": 1771884041.57931,
     "mode": "memory",
     "refresh_interval": 2000
   }
