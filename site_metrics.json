@@ -623,20 +623,20 @@
   "news": [
     {
       "type": "trend",
+      "title": "Connected \u2013 Barbie Diamond Castle (Bloxburg Version) - EstherOQ #roblox #bloxburg #barbie",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771846560.0,
+      "url": "https://www.youtube.com/watch?v=ogKwsZq1tJo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "MALU-MALU | dia , INDAHKUS #roblox #bloxburg #robloxgames #robloxedit #robloxgamer #fyppppppppppppp",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1771842338.0,
       "url": "https://www.youtube.com/watch?v=MlTopWvBI5A",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "TYSM for 136 subs gng #roblox #helpmemakethismakesense #robloxedit #amnewbutnottheleast #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771808982.0,
-      "url": "https://www.youtube.com/watch?v=9MnG6Yh79DA",
       "icon": "fa-youtube"
     },
     {
@@ -704,7 +704,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771852841.5775056,
+    "generated_at": 1771854041.5777743,
     "mode": "memory",
     "refresh_interval": 2000
   }
