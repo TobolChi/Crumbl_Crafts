@@ -536,15 +536,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1194417103395106956",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "alex_1260. joined the server",
-      "timestamp": 1771284902,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1194417103395106956",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -677,7 +668,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771888841.9757707,
+    "generated_at": 1771890041.5721498,
     "mode": "memory",
     "refresh_interval": 2000
   }
