@@ -632,15 +632,6 @@
     },
     {
       "type": "trend",
-      "title": "fav kitchen! #roblox #bloxburg #bloxburgbuild #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771799714.0,
-      "url": "https://www.youtube.com/watch?v=tZtmSEKCsrc",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "DAISY HAS SCHOOL FOOD FIGHT WITH MISS KAREN! *SHE GOT SUSPENDED!* Roblox Bloxburg Voiced RP Rolplay",
       "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
@@ -658,44 +649,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "I Worked 24 HOURS in Bloxburg...",
-      "description": "Join my neighborhood! Want your builds to be in a video? Show them off in my community! Neighborhood...",
-      "source": "YouTube",
-      "timestamp": 1771772451.0,
-      "url": "https://www.youtube.com/watch?v=RWyPTtHv62E",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1771615235.4769535,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "Preppy child\u2019s bedroom!!! $20,000 #bloxburg#preppyyyy#blowthisaccountup",
-      "description": "...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1771766720.0,
-      "url": "https://www.youtube.com/watch?v=9xV2Pp-jyXs",
-      "icon": "fa-youtube"
+      "timestamp": 1771611635.476955,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "MISS KAREN ARGUES WITH DAISY DURING CLASS! #shorts #roblox #roleplay #bloxburg #bloxburgroleplay",
-      "description": "MISS KAREN ARGUES WITH DAISY DURING CLASS! Make sure to like and check out the full video in the lin...",
-      "source": "YouTube",
-      "timestamp": 1771754426.0,
-      "url": "https://www.youtube.com/watch?v=L1UmBXwR7mA",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1771608035.4769554,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "Is Thrillville: Off The Rails on Xbox 360 Still Worth Playing in 2026?",
-      "description": "Is Thrillville: Off The Rails on Xbox 360 still worth playing in 2026? In this video, I break down t...",
-      "source": "YouTube",
-      "timestamp": 1771744764.0,
-      "url": "https://www.youtube.com/watch?v=2hxASc0340I",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1771604435.4769561,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1771881641.5719965,
+    "generated_at": 1771882841.5772333,
     "mode": "memory",
     "refresh_interval": 2000
   }
