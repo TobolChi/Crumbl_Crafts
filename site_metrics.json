@@ -605,6 +605,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "SOPHIES ROBLOX AESTHETIC NEW ROOM RENOVATION! #shorts #roblox #roleplay #bloxburg #bloxburgroleplay",
+      "description": "SOPHIES ROBLOX AESTHETIC NEW ROOM RENOVATION! Make sure to like and check out the full video in the ...",
+      "source": "YouTube",
+      "timestamp": 1771948857.0,
+      "url": "https://www.youtube.com/watch?v=hzhMele_R3A",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "#roblox #robloxedit #lifeisbutadream #bloxburg #bloxburg #funny #funny #haveitoldyoulatelythatilovey",
       "description": "...",
       "source": "YouTube",
@@ -637,15 +646,6 @@
       "source": "YouTube",
       "timestamp": 1771873200.0,
       "url": "https://www.youtube.com/watch?v=RgbOsgzsh4M",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Epic Splash! Giant Inflatable Water Slide \u2013 Direct from Source Factory! \ud83d\udca6\ud83c\udfc4\u200d\u2642\ufe0f\ud83c\udf0a#InflatableWaterSlide",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771810135.0,
-      "url": "https://www.youtube.com/watch?v=_1MKEzvfAHw",
       "icon": "fa-youtube"
     },
     {
@@ -686,7 +686,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771953641.8818836,
+    "generated_at": 1771954841.5729282,
     "mode": "memory",
     "refresh_interval": 2000
   }
