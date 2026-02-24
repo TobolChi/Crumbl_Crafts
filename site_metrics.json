@@ -649,53 +649,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "fav kitchen! #roblox #bloxburg #bloxburgbuild #relatable #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771799714.0,
-      "url": "https://www.youtube.com/watch?v=tZtmSEKCsrc",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1771615235.4769535,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "DAISY HAS SCHOOL FOOD FIGHT WITH MISS KAREN! *SHE GOT SUSPENDED!* Roblox Bloxburg Voiced RP Rolplay",
-      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1771794006.0,
-      "url": "https://www.youtube.com/watch?v=9L1sB8emHH4",
-      "icon": "fa-youtube"
+      "timestamp": 1771611635.476955,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "I LET AI DESIGN MY BLOXBURG HOUSE",
-      "description": "bloxburg #roblox #robloxbloxburg I ran out of ideas for bloxburg houses...so I forced AI to build me...",
-      "source": "YouTube",
-      "timestamp": 1771790433.0,
-      "url": "https://www.youtube.com/watch?v=bHkkfihQ08E",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1771608035.4769554,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "Apps die ihr unbedingt braucht Part 2",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771778195.0,
-      "url": "https://www.youtube.com/watch?v=RcFYNP82oM8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "The barber when you&#39;re about to pay #roblox",
-      "description": "roblox #robloxanimation #robloxgameplay #robloxmemes....",
-      "source": "YouTube",
-      "timestamp": 1771773553.0,
-      "url": "https://www.youtube.com/watch?v=f96VwJuAzk0",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1771604435.4769561,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1771951241.5727906,
+    "generated_at": 1771952441.5763943,
     "mode": "memory",
     "refresh_interval": 2000
   }
