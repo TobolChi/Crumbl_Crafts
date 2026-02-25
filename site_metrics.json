@@ -623,6 +623,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Ow\u2026 \ud83e\udd72 #robloxedit #bloxburg #roblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771976598.0,
+      "url": "https://www.youtube.com/watch?v=ZRfLZXpx5Wk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "SURPRISING KIDS WITH BEDROOM RENOVATIONS! *IT COST THOUSANDS!!* Roblox Bloxburg Voiced RP Roleplay",
       "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
@@ -655,15 +664,6 @@
       "source": "YouTube",
       "timestamp": 1771885354.0,
       "url": "https://www.youtube.com/watch?v=cvcwmQhvMdk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Informal Living Room in Bloxburg #bloxburg #bloxburgbuilder #bloxburgbuild",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771884000.0,
-      "url": "https://www.youtube.com/watch?v=Vexya7cKXgo",
       "icon": "fa-youtube"
     },
     {
@@ -704,7 +704,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771976441.572073,
+    "generated_at": 1771977641.5770538,
     "mode": "memory",
     "refresh_interval": 2000
   }
