@@ -650,20 +650,20 @@
     },
     {
       "type": "trend",
+      "title": "BUILDING A HOUSE But EACH ROOM Is A DIFFERENT ERA | Bloxburg",
+      "description": "bloxburg #roblox #robloxbloxburg I couldn't decide what style I wanted my house...so I built a house...",
+      "source": "YouTube",
+      "timestamp": 1771963237.0,
+      "url": "https://www.youtube.com/watch?v=dPCuyitcQK8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "SOPHIES ROBLOX AESTHETIC NEW ROOM RENOVATION! #shorts #roblox #roleplay #bloxburg #bloxburgroleplay",
       "description": "SOPHIES ROBLOX AESTHETIC NEW ROOM RENOVATION! Make sure to like and check out the full video in the ...",
       "source": "YouTube",
       "timestamp": 1771948857.0,
       "url": "https://www.youtube.com/watch?v=hzhMele_R3A",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#roblox #robloxedit #lifeisbutadream #bloxburg #bloxburg #funny #funny #haveitoldyoulatelythatilovey",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771897531.0,
-      "url": "https://www.youtube.com/watch?v=Z5uxkcpVB04",
       "icon": "fa-youtube"
     },
     {
@@ -704,7 +704,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1771991441.9356887,
+    "generated_at": 1771992041.5719938,
     "mode": "memory",
     "refresh_interval": 2000
   }
