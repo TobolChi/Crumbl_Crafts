@@ -667,44 +667,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1771615235.4769535,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "IT&#39;S LITERALLY MULTI FUNCTION!! #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771885354.0,
+      "url": "https://www.youtube.com/watch?v=cvcwmQhvMdk",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "Informal Living Room in Bloxburg #bloxburg #bloxburgbuilder #bloxburgbuild",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1771611635.476955,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1771884000.0,
+      "url": "https://www.youtube.com/watch?v=Vexya7cKXgo",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1771608035.4769554,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "Classic Modern Living Room in Bloxburg #bloxburg #bloxburgbuilder #bloxburgbuild",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771873200.0,
+      "url": "https://www.youtube.com/watch?v=RgbOsgzsh4M",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1771604435.4769561,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "Epic Splash! Giant Inflatable Water Slide \u2013 Direct from Source Factory! \ud83d\udca6\ud83c\udfc4\u200d\u2642\ufe0f\ud83c\udf0a#InflatableWaterSlide",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771810135.0,
+      "url": "https://www.youtube.com/watch?v=_1MKEzvfAHw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "fav kitchen! #roblox #bloxburg #bloxburgbuild #relatable #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771799714.0,
+      "url": "https://www.youtube.com/watch?v=tZtmSEKCsrc",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1771982441.5821393,
+    "generated_at": 1771983641.5739493,
     "mode": "memory",
     "refresh_interval": 2000
   }
