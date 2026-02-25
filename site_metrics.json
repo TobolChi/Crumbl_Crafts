@@ -7,7 +7,7 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 370,
+    "total_members": 369,
     "joined_today": 3,
     "active_shops": 0,
     "avg_response_time": 395.25
@@ -24,6 +24,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_leave",
+      "shop_name": "Server",
+      "message": "heartdesire0898 left the server",
+      "timestamp": 1772035067,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/1335343098561036412"
+    },
     {
       "type": "member_leave",
       "shop_name": "Server",
@@ -581,15 +590,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1129856922670080061",
       "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "brucepaul7 left the server",
-      "timestamp": 1771430163,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1322019163597701261",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -722,7 +722,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772034641.9196131,
+    "generated_at": 1772035070.003857,
     "mode": "memory",
     "refresh_interval": 2000
   }
