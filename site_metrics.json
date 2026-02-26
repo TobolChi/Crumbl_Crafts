@@ -2,7 +2,7 @@
   "summary": {
     "builder_count": 2,
     "total_completed": 0,
-    "total_requests": 13,
+    "total_requests": 14,
     "total_ratings": 0,
     "request_completion_ratio": 0.0
   },
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "sent",
+      "shop_name": "Hidenori's Builder Shop",
+      "message": "Request sent by larasimk",
+      "timestamp": 1772086648,
+      "thread_id": 1476400516950134958,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/channels/1301988304279048275/1476400516950134958"
+    },
     {
       "type": "member_join",
       "shop_name": "Server",
@@ -649,8 +658,8 @@
   "pipeline": [
     {
       "label": "Pending Requests",
-      "value": 2,
-      "trend": "0 new today \u00b7 4 responded",
+      "value": 3,
+      "trend": "1 new today \u00b7 4 responded",
       "max": 50
     },
     {
@@ -661,7 +670,7 @@
     },
     {
       "label": "Requests (7d)",
-      "value": 2,
+      "value": 3,
       "trend": "1 accepted \u00b7 3 rejected",
       "max": 100
     }
@@ -687,7 +696,7 @@
     },
     {
       "title": "Queue Health",
-      "detail": "2 requests awaiting response",
+      "detail": "3 requests awaiting response",
       "score": "Manageable",
       "status": "good"
     }
@@ -776,7 +785,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772086364.9829986,
+    "generated_at": 1772086651.286565,
     "mode": "memory",
     "refresh_interval": 2000
   }
