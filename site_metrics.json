@@ -644,15 +644,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/631213970971164706",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "reitheoni joined the server",
-      "timestamp": 1771536383,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/663930692916346893",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -713,6 +704,15 @@
     },
     {
       "type": "trend",
+      "title": "BLOXBURG IRL!\ud83c\udf66 #shorts #roblox",
+      "description": "Credits: intheeyesofmarley DM to request a takedown!   Subscribe ......",
+      "source": "YouTube",
+      "timestamp": 1772133186.0,
+      "url": "https://www.youtube.com/watch?v=Iw3Hy3-hix8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "I built a Claw Machine in Bloxburg!!!! #Bloxburg #roblox #clawmachineshorts",
       "description": "...",
       "source": "YouTube",
@@ -748,44 +748,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1771615235.4769535,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "GRWN #roblox #vlog #grwm #haveitoldyoulatelythatiloveyou #bloxburg #theothersideofmakebelieve #hair",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772040501.0,
+      "url": "https://www.youtube.com/watch?v=7ydKM78KwwM",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "NEW BLOXBURG EAST ASIAN ITEMS UPDATE TEASER! MATCHA LATTE, TATAMI TEA TABLE, BAMBOO PLANT...",
+      "description": "today we have another new bloxburg update teaser showing even more of the eastern asian items for th...",
       "source": "YouTube",
-      "timestamp": 1771611635.476955,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1771980075.0,
+      "url": "https://www.youtube.com/watch?v=toBiX0Pe2nU",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1771608035.4769554,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "Ow\u2026 \ud83e\udd72 #robloxedit #bloxburg #roblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1771976598.0,
+      "url": "https://www.youtube.com/watch?v=ZRfLZXpx5Wk",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1771604435.4769561,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "SURPRISING KIDS WITH BEDROOM RENOVATIONS! *IT COST THOUSANDS!!* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "source": "YouTube",
+      "timestamp": 1771966806.0,
+      "url": "https://www.youtube.com/watch?v=vMwYTC1aFaY",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1772140841.5734804,
+    "generated_at": 1772142041.577589,
     "mode": "memory",
     "refresh_interval": 2000
   }
