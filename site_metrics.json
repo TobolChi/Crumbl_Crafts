@@ -662,15 +662,6 @@
       "thread_id": 1457057884968845373,
       "url": "https://discord.com/channels/1301988304279048275/1457057884968845373",
       "server_id": 1301988304279048275
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "1ts_n0t_n1k1 joined the server",
-      "timestamp": 1771526942,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1129856922670080061",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -803,7 +794,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772131241.5758302,
+    "generated_at": 1772131841.9070635,
     "mode": "memory",
     "refresh_interval": 2000
   }
