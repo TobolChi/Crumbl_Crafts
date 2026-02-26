@@ -1,6 +1,6 @@
 {
   "summary": {
-    "builder_count": 1,
+    "builder_count": 2,
     "total_completed": 0,
     "total_requests": 13,
     "total_ratings": 0,
@@ -21,6 +21,15 @@
       "avatar_url": "https://cdn.discordapp.com/avatars/794776553955131393/59d39e1b21292034465594821b6c9d55.png?size=1024",
       "server_id": 1301988304279048275,
       "url": "https://discord.com/channels/1301988304279048275/1457057884968845373"
+    },
+    {
+      "shop_name": "Hidenori's Builder Shop",
+      "completed_projects": 0,
+      "average_rating": 0.0,
+      "thread_id": 1476400516950134958,
+      "avatar_url": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/channels/1301988304279048275/1476400516950134958"
     }
   ],
   "activityLog": [
@@ -731,7 +740,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772071241.5779147,
+    "generated_at": 1772071716.058055,
     "mode": "memory",
     "refresh_interval": 2000
   }
