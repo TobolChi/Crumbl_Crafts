@@ -653,15 +653,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/663930692916346893",
       "thread_id": null
-    },
-    {
-      "type": "sent",
-      "shop_name": "ULuvOllie's Shop",
-      "message": "Request sent by 1ts_n0t_n1k1",
-      "timestamp": 1771527616,
-      "thread_id": 1457057884968845373,
-      "url": "https://discord.com/channels/1301988304279048275/1457057884968845373",
-      "server_id": 1301988304279048275
     }
   ],
   "pipeline": [
@@ -679,7 +670,7 @@
     },
     {
       "label": "Requests (7d)",
-      "value": 4,
+      "value": 3,
       "trend": "1 accepted \u00b7 4 rejected",
       "max": 100
     }
@@ -722,6 +713,15 @@
     },
     {
       "type": "trend",
+      "title": "\u26e9\ufe0fWhat you Missed in Bloxburg\u2019s New Eastern Asia Update",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772128061.0,
+      "url": "https://www.youtube.com/watch?v=26nOioQgSLo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "NEW BLOXBURG EAST ASIAN ITEMS UPDATE IS HERE! LUCKY CAT, SHOJI FURNITURE, MATCHA LATTES AND MORE!",
       "description": "Happy Bloxburg update day! today they release their Eastern Asian items, and surprisingly a new preb...",
       "source": "YouTube",
@@ -745,15 +745,6 @@
       "source": "YouTube",
       "timestamp": 1771980075.0,
       "url": "https://www.youtube.com/watch?v=toBiX0Pe2nU",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Ow\u2026 \ud83e\udd72 #robloxedit #bloxburg #roblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771976598.0,
-      "url": "https://www.youtube.com/watch?v=ZRfLZXpx5Wk",
       "icon": "fa-youtube"
     },
     {
@@ -794,7 +785,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772131841.9070635,
+    "generated_at": 1772132441.5729237,
     "mode": "memory",
     "refresh_interval": 2000
   }
