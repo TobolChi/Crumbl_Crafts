@@ -7,7 +7,7 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 370,
+    "total_members": 369,
     "joined_today": 0,
     "active_shops": 1,
     "avg_response_time": 2254.8
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_leave",
+      "shop_name": "Server",
+      "message": "lexii0101 left the server",
+      "timestamp": 1772145221,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/1190384363939053708"
+    },
     {
       "type": "rejected",
       "shop_name": "Hidenori's Builder Shop",
@@ -776,7 +785,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772144441.57522,
+    "generated_at": 1772145224.5080485,
     "mode": "memory",
     "refresh_interval": 2000
   }
