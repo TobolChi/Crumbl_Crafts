@@ -7,7 +7,7 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 370,
+    "total_members": 369,
     "joined_today": 2,
     "active_shops": 1,
     "avg_response_time": 395.25
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_leave",
+      "shop_name": "Server",
+      "message": "ronkoye_boob3s left the server",
+      "timestamp": 1772083356,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/1322382891711336560"
+    },
     {
       "type": "member_leave",
       "shop_name": "Server",
@@ -758,7 +767,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772083241.8655293,
+    "generated_at": 1772083358.7636125,
     "mode": "memory",
     "refresh_interval": 2000
   }
