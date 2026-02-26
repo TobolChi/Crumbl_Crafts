@@ -722,6 +722,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "I built a Claw Machine in Bloxburg!!!! #Bloxburg #roblox #clawmachineshorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772128901.0,
+      "url": "https://www.youtube.com/watch?v=laENKx7Ggqg",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "NEW BLOXBURG EAST ASIAN ITEMS UPDATE IS HERE! LUCKY CAT, SHOJI FURNITURE, MATCHA LATTES AND MORE!",
+      "description": "Happy Bloxburg update day! today they release their Eastern Asian items, and surprisingly a new preb...",
+      "source": "YouTube",
+      "timestamp": 1772122687.0,
+      "url": "https://www.youtube.com/watch?v=DSLU5PvZYzw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "cute custom windows in bloxburg #bloxburg #custumbuild",
       "description": "...",
       "source": "YouTube",
@@ -745,24 +763,6 @@
       "source": "YouTube",
       "timestamp": 1771976598.0,
       "url": "https://www.youtube.com/watch?v=ZRfLZXpx5Wk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Qlaway buget ebike",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1771969643.0,
-      "url": "https://www.youtube.com/watch?v=hb9LzzRKxRY",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "SURPRISING KIDS WITH BEDROOM RENOVATIONS! *IT COST THOUSANDS!!* Roblox Bloxburg Voiced RP Roleplay",
-      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
-      "source": "YouTube",
-      "timestamp": 1771966806.0,
-      "url": "https://www.youtube.com/watch?v=vMwYTC1aFaY",
       "icon": "fa-youtube"
     },
     {
@@ -803,7 +803,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772130041.575815,
+    "generated_at": 1772131241.5758302,
     "mode": "memory",
     "refresh_interval": 2000
   }
