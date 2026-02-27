@@ -704,6 +704,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Uhm...bloxburg? #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772151635.0,
+      "url": "https://www.youtube.com/watch?v=XoTOPe_PQU4",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "DAISY\u2019S AFTER SCHOOL FAMILY PLAYDATE ROUTINE! *NEW BEDROOM DRAMA* Roblox Bloxburg Voiced RP Roleplay",
       "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
@@ -736,15 +745,6 @@
       "source": "YouTube",
       "timestamp": 1772128061.0,
       "url": "https://www.youtube.com/watch?v=26nOioQgSLo",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "NEW BLOXBURG EAST ASIAN ITEMS UPDATE IS HERE! LUCKY CAT, SHOJI FURNITURE, MATCHA LATTES AND MORE!",
-      "description": "Happy Bloxburg update day! today they release their Eastern Asian items, and surprisingly a new preb...",
-      "source": "YouTube",
-      "timestamp": 1772122687.0,
-      "url": "https://www.youtube.com/watch?v=DSLU5PvZYzw",
       "icon": "fa-youtube"
     },
     {
@@ -785,7 +785,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772151641.5749667,
+    "generated_at": 1772152841.5764847,
     "mode": "memory",
     "refresh_interval": 2000
   }
