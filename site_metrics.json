@@ -581,42 +581,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1098992055272878081",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "hid3nori joined the server",
-      "timestamp": 1771626616,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "hid3nori left the server",
-      "timestamp": 1771626601,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "hid3nori joined the server",
-      "timestamp": 1771626307,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "hid3nori left the server",
-      "timestamp": 1771626299,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -694,15 +658,6 @@
       "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "COMPRANDO LA NUEVA CASA DE $220K EN BLOXBURG",
-      "description": "S\u00edgueme en Instagram: https://www.instagram.com/fabriciosob?igsh=MTBxZWdlNzFvZnVkZg%3D%3D&utm_source...",
-      "source": "YouTube",
-      "timestamp": 1772218847.0,
-      "url": "https://www.youtube.com/watch?v=k6Rf3fDfUpk",
-      "icon": "fa-youtube"
-    },
-    {
       "type": "tip",
       "title": "Money Making Guide 2024",
       "description": "Best jobs and strategies to earn cash quickly",
@@ -746,10 +701,19 @@
       "timestamp": 1772203117.0,
       "url": "https://www.youtube.com/watch?v=BxAQCJYjcug",
       "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Day 1 Level 5 Fire #shorts",
+      "description": "roblox \u200e#robloxfyp \u200e#robloxedit \u200e#robloxtiktok \u200e#robloxmemes \u200e#bloxburg #adoptme \u200e#royalehigh \u200e#robl...",
+      "source": "YouTube",
+      "timestamp": 1772195221.0,
+      "url": "https://www.youtube.com/watch?v=Q1ZIeKTaD8A",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1772230466.4887578,
+    "generated_at": 1772231666.4885736,
     "mode": "memory",
     "refresh_interval": 2000
   }
