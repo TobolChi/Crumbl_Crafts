@@ -617,33 +617,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1098992055272878081",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "s4m.xx. joined the server",
-      "timestamp": 1771623887,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1358340564046712957",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "s4m.xx. left the server",
-      "timestamp": 1771623880,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1358340564046712957",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "ngrlyn. left the server",
-      "timestamp": 1771623338,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1142772847891202118",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -776,7 +749,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772228067.0379643,
+    "generated_at": 1772229266.4895885,
     "mode": "memory",
     "refresh_interval": 2000
   }
