@@ -491,78 +491,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1386462409773813824",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "hid3nori joined the server",
-      "timestamp": 1771629946,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "hid3nori left the server",
-      "timestamp": 1771629934,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "hid3nori joined the server",
-      "timestamp": 1771629725,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "hid3nori left the server",
-      "timestamp": 1771629697,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "hid3nori joined the server",
-      "timestamp": 1771629457,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "hid3nori left the server",
-      "timestamp": 1771629443,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "hid3nori joined the server",
-      "timestamp": 1771629371,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "hid3nori left the server",
-      "timestamp": 1771629365,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -614,6 +542,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "OUR CRAZY NIGHT ROUTINE!! *WEIRD DREAM* | Bloxburg Family Roleplay",
+      "description": "Let's gather in our cozy town - Heartopia! https://tap.io/FD1UKgy Hey ZeeFam! It's \"Zaryee\" here! Do...",
+      "source": "YouTube",
+      "timestamp": 1772233206.0,
+      "url": "https://www.youtube.com/watch?v=C4QY_CJCLW8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "plz sub #4urpage #roblox #roblox #cheese #bloxburg #bloxburg #catchy #funny #bloxburghacks #bloxfrui",
       "description": "...",
       "source": "YouTube",
@@ -638,6 +575,15 @@
       "timestamp": 1772220860.505241,
       "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
       "icon": "fa-fire"
+    },
+    {
+      "type": "trend",
+      "title": "COMPRANDO LA NUEVA CASA DE $220K EN BLOXBURG",
+      "description": "S\u00edgueme en Instagram: https://www.instagram.com/fabriciosob?igsh=MTBxZWdlNzFvZnVkZg%3D%3D&utm_source...",
+      "source": "YouTube",
+      "timestamp": 1772218847.0,
+      "url": "https://www.youtube.com/watch?v=k6Rf3fDfUpk",
+      "icon": "fa-youtube"
     },
     {
       "type": "tip",
@@ -674,28 +620,10 @@
       "timestamp": 1772207715.0,
       "url": "https://www.youtube.com/watch?v=bulY0KySxLk",
       "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "\u200b#Roblox #Gaming #RobloxCommunity #Gamer #RobloxPlayer #Bloxburg #Brookhaven #Obby #RobloxLife",
-      "description": "Roblox #Gaming #RobloxCommunity #Gamer #RobloxPlayer #Bloxburg #Brookhaven #Obby #RobloxLife #Roblox...",
-      "source": "YouTube",
-      "timestamp": 1772203117.0,
-      "url": "https://www.youtube.com/watch?v=BxAQCJYjcug",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Day 1 Level 5 Fire #shorts",
-      "description": "roblox \u200e#robloxfyp \u200e#robloxedit \u200e#robloxtiktok \u200e#robloxmemes \u200e#bloxburg #adoptme \u200e#royalehigh \u200e#robl...",
-      "source": "YouTube",
-      "timestamp": 1772195221.0,
-      "url": "https://www.youtube.com/watch?v=Q1ZIeKTaD8A",
-      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1772234066.4933064,
+    "generated_at": 1772235266.4882944,
     "mode": "memory",
     "refresh_interval": 2000
   }
