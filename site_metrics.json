@@ -695,6 +695,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "TOUR TO PREBUILT PEACEFUL PAVILION IN BLOXBURG - BLOXBURG BUILDS - ROBLOX",
+      "description": "In this video, I am going to have a tour to new bloxburg prebuilt Peaceful Pavilion Like & Subscribe...",
+      "source": "YouTube",
+      "timestamp": 1772207715.0,
+      "url": "https://www.youtube.com/watch?v=bulY0KySxLk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "\u200b#Roblox #Gaming #RobloxCommunity #Gamer #RobloxPlayer #Bloxburg #Brookhaven #Obby #RobloxLife",
       "description": "Roblox #Gaming #RobloxCommunity #Gamer #RobloxPlayer #Bloxburg #Brookhaven #Obby #RobloxLife #Roblox...",
       "source": "YouTube",
@@ -713,29 +722,20 @@
     },
     {
       "type": "trend",
+      "title": "OUR CRAZY NIGHT ROUTINE!! *WEIRD DREAM* | Bloxburg Family Roleplay",
+      "description": "Let's gather in our cozy town - Heartopia! https://tap.io/FD1UKgy Hey ZeeFam! It's \"Zaryee\" here! Do...",
+      "source": "YouTube",
+      "timestamp": 1772172172.0,
+      "url": "https://www.youtube.com/watch?v=C4QY_CJCLW8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Saben algo ? #stealabrainrot #Shorts #Roblox #Bloxburg #RobloxShorts #Viral #Trending #FYP",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1772168015.0,
       "url": "https://www.youtube.com/watch?v=GzZtqggOQ5w",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Like girl i wanna build my house #roblox #bloxburg #annoying #glitch #bloxburgcontentcreator",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772163401.0,
-      "url": "https://www.youtube.com/watch?v=A8s_1NySX2w",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Uhm...bloxburg? #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772151635.0,
-      "url": "https://www.youtube.com/watch?v=XoTOPe_PQU4",
       "icon": "fa-youtube"
     },
     {
@@ -776,7 +776,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772209241.5765088,
+    "generated_at": 1772210441.5772169,
     "mode": "memory",
     "refresh_interval": 2000
   }
