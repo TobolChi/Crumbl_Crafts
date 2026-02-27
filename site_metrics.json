@@ -704,6 +704,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Like girl i wanna build my house #roblox #bloxburg #annoying #glitch #bloxburgcontentcreator",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772163401.0,
+      "url": "https://www.youtube.com/watch?v=A8s_1NySX2w",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Uhm...bloxburg? #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -736,15 +745,6 @@
       "source": "YouTube",
       "timestamp": 1772139606.0,
       "url": "https://www.youtube.com/watch?v=4n2cmUHRr2Q",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "New way to BREAK INTO PLOTS in Bloxburg #bloxburg #welcometobloxburg #roblox #bloxburgroblox",
-      "description": "New way to BREAK INTO PLOTS IN Bloxburg #bloxburg #welcometobloxburg #roblox #bloxburgroblox....",
-      "source": "YouTube",
-      "timestamp": 1772135777.0,
-      "url": "https://www.youtube.com/watch?v=pkVW18-BrYY",
       "icon": "fa-youtube"
     },
     {
@@ -785,7 +785,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772164241.8659527,
+    "generated_at": 1772164841.5747726,
     "mode": "memory",
     "refresh_interval": 2000
   }
