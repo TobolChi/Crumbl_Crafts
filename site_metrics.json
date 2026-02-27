@@ -695,6 +695,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Day 1 Level 5 Fire #shorts",
+      "description": "roblox \u200e#robloxfyp \u200e#robloxedit \u200e#robloxtiktok \u200e#robloxmemes \u200e#bloxburg #adoptme \u200e#royalehigh \u200e#robl...",
+      "source": "YouTube",
+      "timestamp": 1772195221.0,
+      "url": "https://www.youtube.com/watch?v=Q1ZIeKTaD8A",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Saben algo ? #stealabrainrot #Shorts #Roblox #Bloxburg #RobloxShorts #Viral #Trending #FYP",
       "description": "...",
       "source": "YouTube",
@@ -739,44 +748,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1771615235.4769535,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "O que voc\u00ea achou dessa nova atualiza\u00e7\u00e3o? #bloxburg #bloxburgnewupdate #roblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772146709.0,
+      "url": "https://www.youtube.com/watch?v=BjEk8rvpvpk",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "DAISY\u2019S AFTER SCHOOL FAMILY PLAYDATE ROUTINE! *NEW BEDROOM DRAMA* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
-      "timestamp": 1771611635.476955,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1772139606.0,
+      "url": "https://www.youtube.com/watch?v=4n2cmUHRr2Q",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1771608035.4769554,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "New way to BREAK INTO PLOTS in Bloxburg #bloxburg #welcometobloxburg #roblox #bloxburgroblox",
+      "description": "New way to BREAK INTO PLOTS IN Bloxburg #bloxburg #welcometobloxburg #roblox #bloxburgroblox....",
+      "source": "YouTube",
+      "timestamp": 1772135777.0,
+      "url": "https://www.youtube.com/watch?v=pkVW18-BrYY",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1771604435.4769561,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "I built a Claw Machine in Bloxburg!!!! #Bloxburg #roblox #clawmachineshorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772128901.0,
+      "url": "https://www.youtube.com/watch?v=laENKx7Ggqg",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1772196641.9246318,
+    "generated_at": 1772197241.5756774,
     "mode": "memory",
     "refresh_interval": 2000
   }
