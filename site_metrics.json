@@ -695,6 +695,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "\u200b#Roblox #Gaming #RobloxCommunity #Gamer #RobloxPlayer #Bloxburg #Brookhaven #Obby #RobloxLife",
+      "description": "Roblox #Gaming #RobloxCommunity #Gamer #RobloxPlayer #Bloxburg #Brookhaven #Obby #RobloxLife #Roblox...",
+      "source": "YouTube",
+      "timestamp": 1772203117.0,
+      "url": "https://www.youtube.com/watch?v=BxAQCJYjcug",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Day 1 Level 5 Fire #shorts",
       "description": "roblox \u200e#robloxfyp \u200e#robloxedit \u200e#robloxtiktok \u200e#robloxmemes \u200e#bloxburg #adoptme \u200e#royalehigh \u200e#robl...",
       "source": "YouTube",
@@ -727,15 +736,6 @@
       "source": "YouTube",
       "timestamp": 1772151635.0,
       "url": "https://www.youtube.com/watch?v=XoTOPe_PQU4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "\ud83d\udea8Bloxburg UPDATE! New Eastern Asian Items\ud83c\udf75 #bloxburg #bloxburgupdate #roblox #shorts",
-      "description": "a new bloxburg update is here bringing us Eastern Asian items in build mode! #bloxburg #roblox #shor...",
-      "source": "YouTube",
-      "timestamp": 1772150462.0,
-      "url": "https://www.youtube.com/watch?v=k_Wm0P6D4Eg",
       "icon": "fa-youtube"
     },
     {
@@ -776,7 +776,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772203241.5785708,
+    "generated_at": 1772204441.5794232,
     "mode": "memory",
     "refresh_interval": 2000
   }
