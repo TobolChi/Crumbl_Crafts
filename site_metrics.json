@@ -398,6 +398,15 @@
     },
     {
       "type": "trend",
+      "title": "BLOXBURG: Modern Hillside Home Speedbuild (interior + full tour) Roblox House Build",
+      "description": "Hello builders! In this video i am building a BLOXBURG: Modern Hillside Home Speedbuild (interior + ...",
+      "source": "YouTube",
+      "timestamp": 1772298029.0,
+      "url": "https://www.youtube.com/watch?v=gUm43UWuEEY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Adopt me new egg leaks! #explorepage #shorts #bloxburg #leaks #fyp #adoptme #roblox #viral",
       "description": "Adopt me new leaks! Follow the TikTok! @shalynax #adoptmeroblox #robloxnoob #bloxburg #adoptme #robl...",
       "source": "YouTube",
@@ -421,15 +430,6 @@
       "source": "YouTube",
       "timestamp": 1772280092.0,
       "url": "https://www.youtube.com/watch?v=qsVtF3dfvwE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "SOPHIE HAS A SECRET BOYFRIEND! #shorts #roblox #roleplay #bloxburg #bloxburgroleplay #boyfriend",
-      "description": "SOPHIE HAS A SECRET BOYFRIEND! Make sure to like and check out the full video in the link to find ou...",
-      "source": "YouTube",
-      "timestamp": 1772272873.0,
-      "url": "https://www.youtube.com/watch?v=lHKymqbEye8",
       "icon": "fa-youtube"
     },
     {
@@ -470,7 +470,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772303666.8842115,
+    "generated_at": 1772304866.4869094,
     "mode": "memory",
     "refresh_interval": 2000
   }
