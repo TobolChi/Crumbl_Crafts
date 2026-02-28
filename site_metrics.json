@@ -362,6 +362,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Bloxburg - Perfect Family House Speedbuild (interior + full tour) | Roblox",
+      "description": "Today I made an perfect family house build suitable for 5 people to live in! Play BLOXBURG! https://...",
+      "source": "YouTube",
+      "timestamp": 1772316019.0,
+      "url": "https://www.youtube.com/watch?v=ZUk8d-xMsnc",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "oops \ud83e\udd2d #roblox #bloxburg #relateable #bloxburgbuild #fyp",
       "description": "...",
       "source": "YouTube",
@@ -394,15 +403,6 @@
       "source": "YouTube",
       "timestamp": 1772308801.0,
       "url": "https://www.youtube.com/watch?v=02XVSTcOUdA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "OMGGG #roblox #bloxburg #relateable #bloxburgbuild #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772306476.0,
-      "url": "https://www.youtube.com/watch?v=UmI0mZfKCXA",
       "icon": "fa-youtube"
     },
     {
@@ -443,7 +443,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772318066.4908123,
+    "generated_at": 1772319266.4909205,
     "mode": "memory",
     "refresh_interval": 2000
   }
