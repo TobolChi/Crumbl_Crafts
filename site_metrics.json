@@ -8,7 +8,7 @@
   },
   "server": {
     "total_members": 370,
-    "joined_today": 2,
+    "joined_today": 0,
     "active_shops": 1,
     "avg_response_time": 2254.8
   },
@@ -380,6 +380,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "oops \ud83e\udd2d #roblox #bloxburg #relateable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772315299.0,
+      "url": "https://www.youtube.com/watch?v=LUbRnavFD_U",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Los jugadores de BLOXBURG eran malos\ud83d\ude14 #roblox #robloxhumor #brookhaven #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772313738.0,
+      "url": "https://www.youtube.com/watch?v=SUC5DX_D8Yw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "SOPHIE SNEAKS OUT TO HER SECRET BOYFRIENDS HOUSE! *DRAMA!* Roblox Bloxburg Voiced RP Roleplay",
       "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
       "source": "YouTube",
@@ -403,24 +421,6 @@
       "source": "YouTube",
       "timestamp": 1772306476.0,
       "url": "https://www.youtube.com/watch?v=UmI0mZfKCXA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "ideia de jardim#bloxburg #roblox #naofloppa #sims4 #shorts #viral #fy",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772305473.0,
-      "url": "https://www.youtube.com/watch?v=b40eX_ED8xk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Bloxburg Was So Fun \ud83d\udc94 | #roblox",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772298575.0,
-      "url": "https://www.youtube.com/watch?v=oJz7AXDx0q4",
       "icon": "fa-youtube"
     },
     {
@@ -461,7 +461,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772315666.4878101,
+    "generated_at": 1772316866.485844,
     "mode": "memory",
     "refresh_interval": 2000
   }
