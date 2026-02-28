@@ -362,6 +362,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Punch!!!!! \u2764\ufe0f\ud83d\udc12\ud83e\udda7 #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772317856.0,
+      "url": "https://www.youtube.com/watch?v=OtluPEHTiRE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Bloxburg - Perfect Family House Speedbuild (interior + full tour) | Roblox",
       "description": "Today I made an perfect family house build suitable for 5 people to live in! Play BLOXBURG! https://...",
       "source": "YouTube",
@@ -394,15 +403,6 @@
       "source": "YouTube",
       "timestamp": 1772312406.0,
       "url": "https://www.youtube.com/watch?v=KUHPXKd7lXA",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I BUILT A JAPANESE HOUSE IN BLOXBURG",
-      "description": "bloxburg #roblox #robloxbloxburg I built a Japanese house using the eastern asian bloxburg items...F...",
-      "source": "YouTube",
-      "timestamp": 1772308801.0,
-      "url": "https://www.youtube.com/watch?v=02XVSTcOUdA",
       "icon": "fa-youtube"
     },
     {
@@ -443,7 +443,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772319866.7985597,
+    "generated_at": 1772320466.487102,
     "mode": "memory",
     "refresh_interval": 2000
   }
