@@ -524,6 +524,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "my cat edit #bloxburg #bloxburg #duet #robloxbloxburgspeedbuild",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772267357.0,
+      "url": "https://www.youtube.com/watch?v=0ms5ALUNKyo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Base down low\ud83d\udc40\ud83d\udc83           New teen\ud83d\udc40 Any name guesses??#roblox #berryave #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -556,15 +565,6 @@
       "source": "YouTube",
       "timestamp": 1772236398.0,
       "url": "https://www.youtube.com/watch?v=iF_Y-B38uzw",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "TOURING THE NEW BLOXBURG $220K JAPANESE PREBUILT UPDATE HOUSE...",
-      "description": "it's been a while since we've gotten a new prebuilt in bloxburg.. but today that changes! we take a ...",
-      "source": "YouTube",
-      "timestamp": 1772235072.0,
-      "url": "https://www.youtube.com/watch?v=sfB-Z-_t6Lc",
       "icon": "fa-youtube"
     },
     {
@@ -605,7 +605,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772267666.4861162,
+    "generated_at": 1772268866.4891195,
     "mode": "memory",
     "refresh_interval": 2000
   }
