@@ -398,6 +398,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "SOPHIE SNEAKS OUT TO HER SECRET BOYFRIENDS HOUSE! *DRAMA!* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "source": "YouTube",
+      "timestamp": 1772312406.0,
+      "url": "https://www.youtube.com/watch?v=KUHPXKd7lXA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "I BUILT A JAPANESE HOUSE IN BLOXBURG",
+      "description": "bloxburg #roblox #robloxbloxburg I built a Japanese house using the eastern asian bloxburg items...F...",
+      "source": "YouTube",
+      "timestamp": 1772308801.0,
+      "url": "https://www.youtube.com/watch?v=02XVSTcOUdA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "OMGGG #roblox #bloxburg #relateable #bloxburgbuild #fyp",
       "description": "...",
       "source": "YouTube",
@@ -421,24 +439,6 @@
       "source": "YouTube",
       "timestamp": 1772302326.0,
       "url": "https://www.youtube.com/watch?v=5-PE0l6E2oI",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "building a NEW JAPANESE HOUSE PREBUILT in bloxburg..",
-      "description": "JOIN ME ON ROBLOX: https://www.roblox.com/join/isaacfaulty \u2b50 \ud83d\udecd\ufe0f SHOP MY UGC: https://www.roblox.com/...",
-      "source": "YouTube",
-      "timestamp": 1772298053.0,
-      "url": "https://www.youtube.com/watch?v=iHR9g88551o",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "BLOXBURG: Modern Hillside Home Speedbuild (interior + full tour) Roblox House Build",
-      "description": "Hello builders! In this video i am building a BLOXBURG: Modern Hillside Home Speedbuild (interior + ...",
-      "source": "YouTube",
-      "timestamp": 1772298029.0,
-      "url": "https://www.youtube.com/watch?v=gUm43UWuEEY",
       "icon": "fa-youtube"
     },
     {
@@ -479,7 +479,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772312066.49126,
+    "generated_at": 1772313266.4917853,
     "mode": "memory",
     "refresh_interval": 2000
   }
