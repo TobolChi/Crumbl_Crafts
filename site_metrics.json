@@ -410,69 +410,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1358340564046712957",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "s4m.xx. joined the server",
-      "timestamp": 1771664950,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1358340564046712957",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "s4m.xx. left the server",
-      "timestamp": 1771664939,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1358340564046712957",
-      "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "s4m.xx. joined the server",
-      "timestamp": 1771664870,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1358340564046712957",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "s4m.xx. left the server",
-      "timestamp": 1771664851,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1358340564046712957",
-      "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "s4m.xx. joined the server",
-      "timestamp": 1771664831,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1358340564046712957",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "s4m.xx. left the server",
-      "timestamp": 1771664821,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1358340564046712957",
-      "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "got2bpreppy joined the server",
-      "timestamp": 1771664323,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1431812406996107268",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -524,6 +461,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "now im creator #roblox #\u0440\u043e\u0431\u043b\u043e\u043a\u0441 #\u0430\u0440\u0442\u0440\u043e\u0431\u043b\u043e\u043a\u0441 #art15k #bloxburg #bloxburg #\u044e\u043c\u043e\u0440 #steam #doom",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772269109.0,
+      "url": "https://www.youtube.com/watch?v=aNi7Wi4TRZo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "my cat edit #bloxburg #bloxburg #duet #robloxbloxburgspeedbuild",
       "description": "...",
       "source": "YouTube",
@@ -556,15 +502,6 @@
       "source": "YouTube",
       "timestamp": 1772240273.0,
       "url": "https://www.youtube.com/watch?v=VeAzfTqyn0E",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "so hard for NO reason \ud83d\ude2d #roblox #bloxburg #relateable #bloxburgbuild #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772236398.0,
-      "url": "https://www.youtube.com/watch?v=iF_Y-B38uzw",
       "icon": "fa-youtube"
     },
     {
@@ -605,7 +542,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772268866.4891195,
+    "generated_at": 1772270066.490776,
     "mode": "memory",
     "refresh_interval": 2000
   }
