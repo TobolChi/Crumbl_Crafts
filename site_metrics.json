@@ -542,6 +542,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "I AM A SURGEON!!! #roblox #bloxburg #relateable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772240273.0,
+      "url": "https://www.youtube.com/watch?v=VeAzfTqyn0E",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "TOURING THE NEW BLOXBURG $220K JAPANESE PREBUILT UPDATE HOUSE...",
       "description": "it's been a while since we've gotten a new prebuilt in bloxburg.. but today that changes! we take a ...",
       "source": "YouTube",
@@ -604,15 +613,6 @@
       "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "New bloxburg east Asia + prebuilt update #roblox #bloxburgnewleaks #fyp\u30b7 #bloxburg #shorts #update",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772215955.0,
-      "url": "https://www.youtube.com/watch?v=yrkKHG6h_9M",
-      "icon": "fa-youtube"
-    },
-    {
       "type": "community",
       "title": "Weekly Build Contest",
       "description": "Submit your best holiday-themed builds to win prizes!",
@@ -623,7 +623,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772244266.7696161,
+    "generated_at": 1772244866.4855697,
     "mode": "memory",
     "refresh_interval": 2000
   }
