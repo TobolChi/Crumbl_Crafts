@@ -551,6 +551,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "#foryou #bloxburg bloxburg working",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772249743.0,
+      "url": "https://www.youtube.com/watch?v=XTAeVKrAcRI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "I AM A SURGEON!!! #roblox #bloxburg #relateable #bloxburgbuild #fyp",
       "description": "...",
       "source": "YouTube",
@@ -604,15 +613,6 @@
       "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "COMPRANDO LA NUEVA CASA DE $220K EN BLOXBURG",
-      "description": "S\u00edgueme en Instagram: https://www.instagram.com/fabriciosob?igsh=MTBxZWdlNzFvZnVkZg%3D%3D&utm_source...",
-      "source": "YouTube",
-      "timestamp": 1772218847.0,
-      "url": "https://www.youtube.com/watch?v=k6Rf3fDfUpk",
-      "icon": "fa-youtube"
-    },
-    {
       "type": "tip",
       "title": "Money Making Guide 2024",
       "description": "Best jobs and strategies to earn cash quickly",
@@ -632,7 +632,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772250866.4875112,
+    "generated_at": 1772252066.4995558,
     "mode": "memory",
     "refresh_interval": 2000
   }
