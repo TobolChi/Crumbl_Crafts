@@ -338,78 +338,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1427351140252651673",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "hid3nori joined the server",
-      "timestamp": 1771666371,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "hid3nori left the server",
-      "timestamp": 1771666359,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "hid3nori joined the server",
-      "timestamp": 1771666297,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "hid3nori left the server",
-      "timestamp": 1771666287,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "hid3nori joined the server",
-      "timestamp": 1771666219,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "hid3nori left the server",
-      "timestamp": 1771666206,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1098992055272878081",
-      "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "s4m.xx. joined the server",
-      "timestamp": 1771665573,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1358340564046712957",
-      "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "s4m.xx. left the server",
-      "timestamp": 1771665566,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1358340564046712957",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -542,7 +470,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772270066.490776,
+    "generated_at": 1772271266.4880426,
     "mode": "memory",
     "refresh_interval": 2000
   }
