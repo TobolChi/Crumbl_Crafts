@@ -407,6 +407,15 @@
     },
     {
       "type": "trend",
+      "title": "now im creator #roblox #\u0440\u043e\u0431\u043b\u043e\u043a\u0441 #\u0430\u0440\u0442\u0440\u043e\u0431\u043b\u043e\u043a\u0441 #art15k #bloxburg #bloxburg #\u044e\u043c\u043e\u0440 #steam #doom",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772269109.0,
+      "url": "https://www.youtube.com/watch?v=aNi7Wi4TRZo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "my cat edit #bloxburg #bloxburg #duet #robloxbloxburgspeedbuild",
       "description": "...",
       "source": "YouTube",
@@ -424,62 +433,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "#foryou #bloxburg bloxburg working",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772249743.0,
-      "url": "https://www.youtube.com/watch?v=XTAeVKrAcRI",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1772224460.505239,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "I AM A SURGEON!!! #roblox #bloxburg #relateable #bloxburgbuild #fyp",
-      "description": "...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1772240273.0,
-      "url": "https://www.youtube.com/watch?v=VeAzfTqyn0E",
-      "icon": "fa-youtube"
+      "timestamp": 1772220860.505241,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "TOURING THE NEW BLOXBURG $220K JAPANESE PREBUILT UPDATE HOUSE...",
-      "description": "it's been a while since we've gotten a new prebuilt in bloxburg.. but today that changes! we take a ...",
-      "source": "YouTube",
-      "timestamp": 1772235072.0,
-      "url": "https://www.youtube.com/watch?v=sfB-Z-_t6Lc",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1772217260.5052419,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "OUR CRAZY NIGHT ROUTINE!! *WEIRD DREAM* | Bloxburg Family Roleplay",
-      "description": "Let's gather in our cozy town - Heartopia! https://tap.io/FD1UKgy Hey ZeeFam! It's \"Zaryee\" here! Do...",
-      "source": "YouTube",
-      "timestamp": 1772233206.0,
-      "url": "https://www.youtube.com/watch?v=C4QY_CJCLW8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "plz sub #4urpage #roblox #roblox #cheese #bloxburg #bloxburg #catchy #funny #bloxburghacks #bloxfrui",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772229597.0,
-      "url": "https://www.youtube.com/watch?v=l-ZPbCJypmE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "MI MEJOR AMIGA... QUIERE SER YO |HISTORIA DE TERROR| #roblox #bloxburg #brookhaven",
-      "description": "Valentina conoce a una chica nueva que lleg\u00f3 a su escuela, piensa que es buena idea hacerse su amiga...",
-      "source": "YouTube",
-      "timestamp": 1772227241.0,
-      "url": "https://www.youtube.com/watch?v=11_ZhE05FGk",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1772213660.5052426,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1772296466.4967232,
+    "generated_at": 1772297666.4922657,
     "mode": "memory",
     "refresh_interval": 2000
   }
