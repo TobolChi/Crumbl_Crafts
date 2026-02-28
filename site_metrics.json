@@ -389,6 +389,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Bloxburg just updated! #bloxburg #roblox #fyp #bloxburgupdate #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772280092.0,
+      "url": "https://www.youtube.com/watch?v=qsVtF3dfvwE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "SOPHIE HAS A SECRET BOYFRIEND! #shorts #roblox #roleplay #bloxburg #bloxburgroleplay #boyfriend",
       "description": "SOPHIE HAS A SECRET BOYFRIEND! Make sure to like and check out the full video in the link to find ou...",
       "source": "YouTube",
@@ -421,15 +430,6 @@
       "source": "YouTube",
       "timestamp": 1772254247.0,
       "url": "https://www.youtube.com/watch?v=1OYZFwOUblc",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#foryou #bloxburg bloxburg working",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772249743.0,
-      "url": "https://www.youtube.com/watch?v=XTAeVKrAcRI",
       "icon": "fa-youtube"
     },
     {
@@ -470,7 +470,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772287466.8099205,
+    "generated_at": 1772288066.488516,
     "mode": "memory",
     "refresh_interval": 2000
   }
