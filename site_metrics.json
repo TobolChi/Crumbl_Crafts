@@ -370,53 +370,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "trend",
-      "title": "My parents when they see me build #bloxburg #welcometobloxburg #roblox #bloxburgbuild #viral",
-      "description": "My parents when they see me build #bloxburg #welcometobloxburg #roblox #bloxburgbuild #viral....",
-      "source": "YouTube",
-      "timestamp": 1772392415.0,
-      "url": "https://www.youtube.com/watch?v=c_ueWavs9Sk",
-      "icon": "fa-youtube"
+      "type": "game_update",
+      "title": "New Winter Update Available!",
+      "description": "Explore new winter-themed furniture and decorations",
+      "source": "Bloxburg Official",
+      "timestamp": 1772224460.505239,
+      "url": "https://twitter.com/BloxburgGame",
+      "icon": "fa-gamepad"
     },
     {
       "type": "trend",
-      "title": "I renovated a BLOXBURG STARTER HOUSE but it&#39;s REALISTIC | Roblox |",
-      "description": "Join my neighborhood! Want your builds to be in a video? Show them off in my community! Neighborhood...",
+      "title": "Modern Mansion Builds Trending",
+      "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1772382250.0,
-      "url": "https://www.youtube.com/watch?v=JR1zVrc1lF4",
-      "icon": "fa-youtube"
+      "timestamp": 1772220860.505241,
+      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
+      "icon": "fa-fire"
     },
     {
-      "type": "trend",
-      "title": "Trailer for our rp series!! #roblox #besties #bloxburg #roleplay #series",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772380868.0,
-      "url": "https://www.youtube.com/watch?v=hSSwlQLg2B0",
-      "icon": "fa-youtube"
+      "type": "tip",
+      "title": "Money Making Guide 2024",
+      "description": "Best jobs and strategies to earn cash quickly",
+      "source": "Community Guide",
+      "timestamp": 1772217260.5052419,
+      "url": "#",
+      "icon": "fa-lightbulb"
     },
     {
-      "type": "trend",
-      "title": "Large Bloxburg Family House Build: INTERIOR Tutorial *EASY*",
-      "description": "hiii! today i decorate my large family house in bloxburg! let me know which room is your fav! love y...",
-      "source": "YouTube",
-      "timestamp": 1772380850.0,
-      "url": "https://www.youtube.com/watch?v=bH14VCiAVTc",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Berry av horror story #berryave #roblox #horrorgenre #berryavehorrorstory # #horrorstory #bloxburg",
-      "description": "Credits: isasavenueq on TikTok #berryave #roblox #robloxedit #berryavehorrorstory #horrorstory #horr...",
-      "source": "YouTube",
-      "timestamp": 1772378984.0,
-      "url": "https://www.youtube.com/watch?v=QD5gCIfEc0k",
-      "icon": "fa-youtube"
+      "type": "community",
+      "title": "Weekly Build Contest",
+      "description": "Submit your best holiday-themed builds to win prizes!",
+      "source": "Crumbl Crafts",
+      "timestamp": 1772213660.5052426,
+      "url": "#",
+      "icon": "fa-trophy"
     }
   ],
   "meta": {
-    "generated_at": 1772406266.8135839,
+    "generated_at": 1772406866.4871502,
     "mode": "memory",
     "refresh_interval": 2000
   }
