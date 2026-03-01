@@ -344,6 +344,33 @@
   "news": [
     {
       "type": "trend",
+      "title": "Cara nak bulid (bakar lemang)di #roblox  #bloxburg need (Gamepass )(Malaysia)",
+      "description": "Hello everyone pls subscribe and like my channel GamerDH. if u want to see more buildings watching i...",
+      "source": "YouTube",
+      "timestamp": 1772339406.0,
+      "url": "https://www.youtube.com/watch?v=34EdCNKtY30",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Mobile Home Layout | 1 Bedroom 1 Bath | Roblox Bloxburg #bloxburg #roblox #bloxburghouses",
+      "description": "1 bedroom 1 bath Mobile Home Layout and Tour Value - 20k #bloxburg #roblox #bloxburghousetour #bloxb...",
+      "source": "YouTube",
+      "timestamp": 1772339373.0,
+      "url": "https://www.youtube.com/watch?v=tLdpDdppYx8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "I need ideas to decorate my mid evil bloxburg castle#robloxdti#bloxburg#robloxytshorts#fypage",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772338003.0,
+      "url": "https://www.youtube.com/watch?v=OHThgpcyWNI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "BLOXBURG #fypyoutube ",
       "description": "fypyoutube #fyp\u30b7 #katseye #roblox #dandysworld #fypyoutubeshorts #dandysworldpebble #internetculture...",
       "source": "YouTube",
@@ -358,33 +385,6 @@
       "source": "YouTube",
       "timestamp": 1772323455.0,
       "url": "https://www.youtube.com/watch?v=IxNYCyiO3UQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Punch!!!!! \u2764\ufe0f\ud83d\udc12\ud83e\udda7 #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772317856.0,
-      "url": "https://www.youtube.com/watch?v=OtluPEHTiRE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Bloxburg - Perfect Family House Speedbuild (interior + full tour) | Roblox",
-      "description": "Today I made an perfect family house build suitable for 5 people to live in! Play BLOXBURG! https://...",
-      "source": "YouTube",
-      "timestamp": 1772316019.0,
-      "url": "https://www.youtube.com/watch?v=ZUk8d-xMsnc",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Los jugadores de BLOXBURG eran malos\ud83d\ude14 #roblox #robloxhumor #brookhaven #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772313738.0,
-      "url": "https://www.youtube.com/watch?v=SUC5DX_D8Yw",
       "icon": "fa-youtube"
     },
     {
@@ -425,7 +425,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772339666.4856076,
+    "generated_at": 1772340866.4854977,
     "mode": "memory",
     "refresh_interval": 2000
   }
