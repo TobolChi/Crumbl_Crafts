@@ -362,6 +362,15 @@
     },
     {
       "type": "trend",
+      "title": "#newupdateinrobloxbedwars #funny #bloxburg #robloxedit #roblox \ud83d\ude04",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772348383.0,
+      "url": "https://www.youtube.com/watch?v=H_HyCIGRIFE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "BMW or??? #roblox #funny #cute #memes #bloxburg #bloxburg #viral #fyp",
       "description": "...",
       "source": "YouTube",
@@ -385,15 +394,6 @@
       "source": "YouTube",
       "timestamp": 1772339373.0,
       "url": "https://www.youtube.com/watch?v=tLdpDdppYx8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I need ideas to decorate my mid evil bloxburg castle#robloxdti#bloxburg#robloxytshorts#fypage",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772338003.0,
-      "url": "https://www.youtube.com/watch?v=OHThgpcyWNI",
       "icon": "fa-youtube"
     },
     {
@@ -434,7 +434,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772350466.486799,
+    "generated_at": 1772351666.4875524,
     "mode": "memory",
     "refresh_interval": 2000
   }
