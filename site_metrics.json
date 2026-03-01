@@ -293,15 +293,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1118582810714837163",
       "thread_id": null
-    },
-    {
-      "type": "new_request_thread",
-      "shop_name": "french medium sized house",
-      "message": "<@820855091409977414> posted a new request titled: french medium sized house",
-      "timestamp": 1771726143,
-      "thread_id": 1474951090226200626,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/channels/1301988304279048275/1474951090226200626"
     }
   ],
   "pipeline": [
@@ -434,7 +425,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772330666.7603993,
+    "generated_at": 1772331266.4916341,
     "mode": "memory",
     "refresh_interval": 2000
   }
