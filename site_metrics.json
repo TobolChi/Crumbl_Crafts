@@ -379,44 +379,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1772224460.505239,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Stealing my Friend Build in BloxBurg",
+      "description": "roblox #gaming #funny #bloxburg #BloxBurg....",
+      "source": "YouTube",
+      "timestamp": 1772376437.0,
+      "url": "https://www.youtube.com/watch?v=BH2SJZBQlpE",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "There&#39;s a new bloxburg prebuilt by Faulty! #bloxburg #roblox #fyp #shorts #bloxburgbuild",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1772220860.505241,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1772371564.0,
+      "url": "https://www.youtube.com/watch?v=NzFzavwRqG4",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1772217260.5052419,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "roblox infinity castle build,bloxburg new update,east asian decors\ud83e\udd0d #bloxburg #roblox #demonslayer",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772366825.0,
+      "url": "https://www.youtube.com/watch?v=h7ZL2l3PyJ8",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1772213660.5052426,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "PEACHYYLEXI IS HIDING A SECRET FROM HER KIDS! #shorts #roblox #roleplay #bloxburg #bloxburgroleplay",
+      "description": "PEACHYYLEXI IS HIDING A SECRET FROM HER KIDS! Make sure to like and check out the full video in the ...",
+      "source": "YouTube",
+      "timestamp": 1772359223.0,
+      "url": "https://www.youtube.com/watch?v=JnNQWKJAhi4",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "SUMMON ALASKA, KING OF AUSTRALIA\ud83d\uddff@alaskaviolet#alaskaviolet#bloxburg#nogamepass#house#roblox",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772357833.0,
+      "url": "https://www.youtube.com/watch?v=UVXsU0vz1bI",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1772395466.7922888,
+    "generated_at": 1772396066.494995,
     "mode": "memory",
     "refresh_interval": 2000
   }
