@@ -8,7 +8,7 @@
   },
   "server": {
     "total_members": 372,
-    "joined_today": 2,
+    "joined_today": 0,
     "active_shops": 1,
     "avg_response_time": 2254.8
   },
@@ -344,6 +344,33 @@
   "news": [
     {
       "type": "trend",
+      "title": "did I eat??? #roblox #bloxburg #relateable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772402251.0,
+      "url": "https://www.youtube.com/watch?v=8fGLKXGydvk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "I made a coquette room in bloxburg\ud83c\udf80\ud83e\udd0d #roblox #mybunny #newalbums #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772400364.0,
+      "url": "https://www.youtube.com/watch?v=ZOVhtza8Xno",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "SURPRISING KIDS WITH A NEW FAMILY TREEHOUSE! *THE KIDS HATE IT?* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "source": "YouTube",
+      "timestamp": 1772398806.0,
+      "url": "https://www.youtube.com/watch?v=tQmAKoM2JnM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "watch midge falling for ryan loll \ud83e\udd2d #bloxburg #barbie #barbielifeinthedreamhouse",
       "description": "...",
       "source": "YouTube",
@@ -358,33 +385,6 @@
       "source": "YouTube",
       "timestamp": 1772397918.0,
       "url": "https://www.youtube.com/watch?v=n51ZK3bRsWQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "My parents when they see me build #bloxburg #welcometobloxburg #roblox #bloxburgbuild #viral",
-      "description": "My parents when they see me build #bloxburg #welcometobloxburg #roblox #bloxburgbuild #viral....",
-      "source": "YouTube",
-      "timestamp": 1772392415.0,
-      "url": "https://www.youtube.com/watch?v=c_ueWavs9Sk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "TYLA DANCE #blowup #roblox #preppyoreo #cute #bloxburg #4urpage #robloxedit #love #dailyshorts",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772389212.0,
-      "url": "https://www.youtube.com/watch?v=hLjwWgu_jJI",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I renovated a BLOXBURG STARTER HOUSE but it&#39;s REALISTIC | Roblox |",
-      "description": "Join my neighborhood! Want your builds to be in a video? Show them off in my community! Neighborhood...",
-      "source": "YouTube",
-      "timestamp": 1772382250.0,
-      "url": "https://www.youtube.com/watch?v=JR1zVrc1lF4",
       "icon": "fa-youtube"
     },
     {
@@ -425,7 +425,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772402066.4892268,
+    "generated_at": 1772403266.4845319,
     "mode": "memory",
     "refresh_interval": 2000
   }
