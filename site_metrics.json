@@ -344,11 +344,29 @@
   "news": [
     {
       "type": "trend",
+      "title": "anyone else?\ud83d\ude2d #roblox #bloxburg #relateable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772397918.0,
+      "url": "https://www.youtube.com/watch?v=n51ZK3bRsWQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "My parents when they see me build #bloxburg #welcometobloxburg #roblox #bloxburgbuild #viral",
       "description": "My parents when they see me build #bloxburg #welcometobloxburg #roblox #bloxburgbuild #viral....",
       "source": "YouTube",
       "timestamp": 1772392415.0,
       "url": "https://www.youtube.com/watch?v=c_ueWavs9Sk",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "TYLA DANCE #blowup #roblox #preppyoreo #cute #bloxburg #4urpage #robloxedit #love #dailyshorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772389212.0,
+      "url": "https://www.youtube.com/watch?v=hLjwWgu_jJI",
       "icon": "fa-youtube"
     },
     {
@@ -367,24 +385,6 @@
       "source": "YouTube",
       "timestamp": 1772380868.0,
       "url": "https://www.youtube.com/watch?v=hSSwlQLg2B0",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Large Bloxburg Family House Build: INTERIOR Tutorial *EASY*",
-      "description": "hiii! today i decorate my large family house in bloxburg! let me know which room is your fav! love y...",
-      "source": "YouTube",
-      "timestamp": 1772380850.0,
-      "url": "https://www.youtube.com/watch?v=bH14VCiAVTc",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Berry av horror story #berryave #roblox #horrorgenre #berryavehorrorstory # #horrorstory #bloxburg",
-      "description": "Credits: isasavenueq on TikTok #berryave #roblox #robloxedit #berryavehorrorstory #horrorstory #horr...",
-      "source": "YouTube",
-      "timestamp": 1772378984.0,
-      "url": "https://www.youtube.com/watch?v=QD5gCIfEc0k",
       "icon": "fa-youtube"
     },
     {
@@ -425,7 +425,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772398466.4946697,
+    "generated_at": 1772399666.4895976,
     "mode": "memory",
     "refresh_interval": 2000
   }
