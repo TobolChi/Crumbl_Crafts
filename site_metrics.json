@@ -275,15 +275,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1306053332447789138",
       "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "veiledswan left the server",
-      "timestamp": 1771780568,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/820855091409977414",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -416,7 +407,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772385266.489169,
+    "generated_at": 1772386466.488495,
     "mode": "memory",
     "refresh_interval": 2000
   }
