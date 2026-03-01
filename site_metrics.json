@@ -326,6 +326,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "slay?? #roblox #bloxburg #relateable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772406740.0,
+      "url": "https://www.youtube.com/watch?v=_ANMgsU-giQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "#roblox #memes #edit #old #robloxedit #trend #viral #bloxburg #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772406484.0,
+      "url": "https://www.youtube.com/watch?v=KsD_VtwnkeU",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "did I eat??? #roblox #bloxburg #relateable #bloxburgbuild #fyp",
       "description": "...",
       "source": "YouTube",
@@ -349,24 +367,6 @@
       "source": "YouTube",
       "timestamp": 1772398806.0,
       "url": "https://www.youtube.com/watch?v=tQmAKoM2JnM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "watch midge falling for ryan loll \ud83e\udd2d #bloxburg #barbie #barbielifeinthedreamhouse",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772398288.0,
-      "url": "https://www.youtube.com/watch?v=41NrRuTW8HE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "anyone else?\ud83d\ude2d #roblox #bloxburg #relateable #bloxburgbuild #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772397918.0,
-      "url": "https://www.youtube.com/watch?v=n51ZK3bRsWQ",
       "icon": "fa-youtube"
     },
     {
@@ -407,7 +407,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772408066.4887674,
+    "generated_at": 1772409266.4854138,
     "mode": "memory",
     "refresh_interval": 2000
   }
