@@ -275,24 +275,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1189307593135505552",
       "thread_id": null
-    },
-    {
-      "type": "sent",
-      "shop_name": "ULuvOllie's Shop",
-      "message": "Request sent by 65n2",
-      "timestamp": 1771799001,
-      "thread_id": 1457057884968845373,
-      "url": "https://discord.com/channels/1301988304279048275/1457057884968845373",
-      "server_id": 1301988304279048275
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "65n2 joined the server",
-      "timestamp": 1771798804,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1306053332447789138",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -310,7 +292,7 @@
     },
     {
       "label": "Requests (7d)",
-      "value": 3,
+      "value": 2,
       "trend": "1 accepted \u00b7 4 rejected",
       "max": 100
     }
@@ -425,7 +407,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772403266.4845319,
+    "generated_at": 1772404466.4884863,
     "mode": "memory",
     "refresh_interval": 2000
   }
