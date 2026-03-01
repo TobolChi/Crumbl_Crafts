@@ -397,44 +397,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1772224460.505239,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Punch!!!!! \u2764\ufe0f\ud83d\udc12\ud83e\udda7 #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772317856.0,
+      "url": "https://www.youtube.com/watch?v=OtluPEHTiRE",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "Bloxburg - Perfect Family House Speedbuild (interior + full tour) | Roblox",
+      "description": "Today I made an perfect family house build suitable for 5 people to live in! Play BLOXBURG! https://...",
       "source": "YouTube",
-      "timestamp": 1772220860.505241,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1772316019.0,
+      "url": "https://www.youtube.com/watch?v=ZUk8d-xMsnc",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1772217260.5052419,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "Los jugadores de BLOXBURG eran malos\ud83d\ude14 #roblox #robloxhumor #brookhaven #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772313738.0,
+      "url": "https://www.youtube.com/watch?v=SUC5DX_D8Yw",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1772213660.5052426,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "SOPHIE SNEAKS OUT TO HER SECRET BOYFRIENDS HOUSE! *DRAMA!* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "source": "YouTube",
+      "timestamp": 1772312406.0,
+      "url": "https://www.youtube.com/watch?v=KUHPXKd7lXA",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Relatable? #bloxburg #viral #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772310076.0,
+      "url": "https://www.youtube.com/watch?v=iqazVnFFfLg",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1772344466.4865928,
+    "generated_at": 1772345666.4877555,
     "mode": "memory",
     "refresh_interval": 2000
   }
