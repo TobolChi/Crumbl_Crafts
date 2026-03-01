@@ -326,15 +326,6 @@
   "news": [
     {
       "type": "trend",
-      "title": "LOOPING THE ROOMS \ud83d\udd25",
-      "description": "roblox #robloxgames #gaming #robloxshorts #fyp#roblox\u200b #bloxburg\u200b #bloxburgbuilds\u200b...",
-      "source": "YouTube",
-      "timestamp": 1772386471.0,
-      "url": "https://www.youtube.com/watch?v=70_khvJ122k",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "I renovated a BLOXBURG STARTER HOUSE but it&#39;s REALISTIC | Roblox |",
       "description": "Join my neighborhood! Want your builds to be in a video? Show them off in my community! Neighborhood...",
       "source": "YouTube",
@@ -367,6 +358,15 @@
       "source": "YouTube",
       "timestamp": 1772376437.0,
       "url": "https://www.youtube.com/watch?v=BH2SJZBQlpE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "There&#39;s a new bloxburg prebuilt by Faulty! #bloxburg #roblox #fyp #shorts #bloxburgbuild",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772371564.0,
+      "url": "https://www.youtube.com/watch?v=NzFzavwRqG4",
       "icon": "fa-youtube"
     },
     {
@@ -407,7 +407,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772387666.4934702,
+    "generated_at": 1772388866.4946003,
     "mode": "memory",
     "refresh_interval": 2000
   }
