@@ -344,6 +344,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "watch midge falling for ryan loll \ud83e\udd2d #bloxburg #barbie #barbielifeinthedreamhouse",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772398288.0,
+      "url": "https://www.youtube.com/watch?v=41NrRuTW8HE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "anyone else?\ud83d\ude2d #roblox #bloxburg #relateable #bloxburgbuild #fyp",
       "description": "...",
       "source": "YouTube",
@@ -376,15 +385,6 @@
       "source": "YouTube",
       "timestamp": 1772382250.0,
       "url": "https://www.youtube.com/watch?v=JR1zVrc1lF4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Trailer for our rp series!! #roblox #besties #bloxburg #roleplay #series",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772380868.0,
-      "url": "https://www.youtube.com/watch?v=hSSwlQLg2B0",
       "icon": "fa-youtube"
     },
     {
@@ -425,7 +425,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772400866.7658312,
+    "generated_at": 1772402066.4892268,
     "mode": "memory",
     "refresh_interval": 2000
   }
