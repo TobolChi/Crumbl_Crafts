@@ -257,15 +257,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/797365938092507176",
       "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "xysof1a left the server",
-      "timestamp": 1771881412,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/930178599334588446",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -398,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772486066.5013788,
+    "generated_at": 1772487266.4925044,
     "mode": "memory",
     "refresh_interval": 2000
   }
