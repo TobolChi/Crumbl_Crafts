@@ -317,6 +317,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #funny #bloxburg",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1772484303.0,
+      "url": "https://www.youtube.com/watch?v=fd7X0pgDr8U",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "The 1880\u2019s! \ud83d\udc95\ud83d\udc69\ud83c\udffb\u200d\ud83e\uddb2 #robloxedit #bloxburg #bloxburghousetour",
       "description": "...",
       "source": "YouTube",
@@ -349,15 +358,6 @@
       "source": "YouTube",
       "timestamp": 1772474417.0,
       "url": "https://www.youtube.com/watch?v=KusQsnehJv8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #funny #bloxburg",
-      "description": "Roblox....",
-      "source": "YouTube",
-      "timestamp": 1772463664.0,
-      "url": "https://www.youtube.com/watch?v=ddyC8n4AtxM",
       "icon": "fa-youtube"
     },
     {
@@ -398,7 +398,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772484866.4929855,
+    "generated_at": 1772486066.5013788,
     "mode": "memory",
     "refresh_interval": 2000
   }
