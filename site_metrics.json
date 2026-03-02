@@ -326,20 +326,20 @@
   "news": [
     {
       "type": "trend",
+      "title": "Should it?? #roblox #bloxburgcontentcreator #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772424076.0,
+      "url": "https://www.youtube.com/watch?v=r8SfI_f21N4",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Ily | #deceased #bloxburg #hamster #sad #lovedonesinheaven ",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1772414805.0,
       "url": "https://www.youtube.com/watch?v=T7bVwfhyCV4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I want half walls!!! #roblox #bloxburg #relateable #bloxburgbuild #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772410240.0,
-      "url": "https://www.youtube.com/watch?v=sV403vzM7sM",
       "icon": "fa-youtube"
     },
     {
@@ -407,7 +407,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772426066.491446,
+    "generated_at": 1772427266.4908261,
     "mode": "memory",
     "refresh_interval": 2000
   }
