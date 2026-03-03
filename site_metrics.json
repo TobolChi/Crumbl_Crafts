@@ -290,6 +290,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #funny #bloxburg",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1772506845.0,
+      "url": "https://www.youtube.com/watch?v=jKMDwzCDncI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "i\u2019m a pro \ud83d\ude0e #roblox #bloxburg #relateable #bloxburgbuild #fyp",
       "description": "...",
       "source": "YouTube",
@@ -334,44 +343,44 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1772224460.505239,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "The 1880\u2019s! \ud83d\udc95\ud83d\udc69\ud83c\udffb\u200d\ud83e\uddb2 #robloxedit #bloxburg #bloxburghousetour",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772480088.0,
+      "url": "https://www.youtube.com/watch?v=gknkwMaX7-Q",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "153k Japanese Home | no gamepass | Part 1 | Bloxburg Speedbuild ",
+      "description": "Informa\u00e7\u00f5es da Constru\u00e7\u00e3o: Gamepasses utilizadas: nenhuma Valor:$153k \u00bb Quer ser um patrocinador do ...",
       "source": "YouTube",
-      "timestamp": 1772220860.505241,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1772479806.0,
+      "url": "https://www.youtube.com/watch?v=-sBpeg9auA8",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1772217260.5052419,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #funny #bloxburg",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1772474417.0,
+      "url": "https://www.youtube.com/watch?v=KusQsnehJv8",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1772213660.5052426,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #funny #bloxburg",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1772463664.0,
+      "url": "https://www.youtube.com/watch?v=ddyC8n4AtxM",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1772506466.4850926,
+    "generated_at": 1772507666.4870245,
     "mode": "memory",
     "refresh_interval": 2000
   }
