@@ -263,6 +263,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "TOP 5 RAREST GACHA FRUITS! (Part 1) \ud83d\ude31 #bloxfurit #bloxburg #bloxdio #clubroblox",
+      "description": "Is your luck actually good? Check out these 5 fruits with the lowest drop rates in the Gacha. Have y...",
+      "source": "YouTube",
+      "timestamp": 1772551187.0,
+      "url": "https://www.youtube.com/watch?v=Q-uqu6DJpuY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #funny #bloxburg",
       "description": "Roblox....",
       "source": "YouTube",
@@ -295,15 +304,6 @@
       "source": "YouTube",
       "timestamp": 1772506845.0,
       "url": "https://www.youtube.com/watch?v=jKMDwzCDncI",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "i\u2019m a pro \ud83d\ude0e #roblox #bloxburg #relateable #bloxburgbuild #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772497016.0,
-      "url": "https://www.youtube.com/watch?v=f7YJ2BDLZz0",
       "icon": "fa-youtube"
     },
     {
@@ -344,7 +344,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772552066.7503822,
+    "generated_at": 1772553266.490707,
     "mode": "memory",
     "refresh_interval": 2000
   }
