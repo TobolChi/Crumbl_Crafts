@@ -263,6 +263,24 @@
   "news": [
     {
       "type": "trend",
+      "title": "girlfriend &amp; boyfriend short | Roblox short | Roblox tips and tricks",
+      "description": "Roblox#RobloxShorts#GamingShorts#RobloxGameplay#Bloxburg#AdoptMe#RobloxEdit#FYP (viral reach \u0915\u0947 ......",
+      "source": "YouTube",
+      "timestamp": 1772523953.0,
+      "url": "https://www.youtube.com/watch?v=7ZhoQPlaHdw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "#youtubeshorts #roblox #rblx #robloxgamedesign #robloxedit #ytshorts #edit #bloxburg #memes",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772522954.0,
+      "url": "https://www.youtube.com/watch?v=wBj9cS_5jW8",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #funny #bloxburg",
       "description": "Roblox....",
       "source": "YouTube",
@@ -281,29 +299,11 @@
     },
     {
       "type": "trend",
-      "title": "Part 2 in a hour #fyp #viral #trending #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772492178.0,
-      "url": "https://www.youtube.com/watch?v=f3w2RwOLI8c",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "BLOXBURG STOCK UP REMINDER!!! #roblox #bloxburg",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1772491783.0,
       "url": "https://www.youtube.com/watch?v=JlugCfGI2w4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I LOB PLANTS\ud83d\ude03 #roblox #bloxburg #relateable #bloxburgbuild #fyp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772489199.0,
-      "url": "https://www.youtube.com/watch?v=-jSHdvBsCho",
       "icon": "fa-youtube"
     },
     {
@@ -344,7 +344,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772525066.8786638,
+    "generated_at": 1772525666.4855292,
     "mode": "memory",
     "refresh_interval": 2000
   }
