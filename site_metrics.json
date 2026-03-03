@@ -272,6 +272,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Building In BLOXBURG But EVERY ROOM DOUBLES IN SIZE",
+      "description": "Become A Channel Member by pressing the 'JOIN' button next to subscribe to gain extra perks!...",
+      "source": "YouTube",
+      "timestamp": 1772564444.0,
+      "url": "https://www.youtube.com/watch?v=jw4dxkkdYnc",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "TOP 5 RAREST GACHA FRUITS! (Part 1) \ud83d\ude31 #bloxfurit #bloxburg #bloxdio #clubroblox",
       "description": "Is your luck actually good? Check out these 5 fruits with the lowest drop rates in the Gacha. Have y...",
       "source": "YouTube",
@@ -304,15 +313,6 @@
       "source": "YouTube",
       "timestamp": 1772523953.0,
       "url": "https://www.youtube.com/watch?v=7ZhoQPlaHdw",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #funny #bloxburg",
-      "description": "Roblox....",
-      "source": "YouTube",
-      "timestamp": 1772506845.0,
-      "url": "https://www.youtube.com/watch?v=jKMDwzCDncI",
       "icon": "fa-youtube"
     },
     {
@@ -353,7 +353,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772568266.8086655,
+    "generated_at": 1772568866.491693,
     "mode": "memory",
     "refresh_interval": 2000
   }
