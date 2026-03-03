@@ -212,15 +212,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/649407396816617482",
       "thread_id": null
-    },
-    {
-      "type": "new_request_thread",
-      "shop_name": "Looking for a builder to build me a ghetto trap house",
-      "message": "<@1322382891711336560> posted a new request titled: Looking for a builder to build me a ghetto trap house",
-      "timestamp": 1771909625,
-      "thread_id": 1475720670506782873,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/channels/1301988304279048275/1475720670506782873"
     }
   ],
   "pipeline": [
@@ -353,7 +344,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772514266.783083,
+    "generated_at": 1772514866.489287,
     "mode": "memory",
     "refresh_interval": 2000
   }
