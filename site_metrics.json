@@ -272,6 +272,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #bloxburg #funny",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1772593265.0,
+      "url": "https://www.youtube.com/watch?v=v2Ky2xth3TQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "The pain of buying computers... #bloxburg #roblox #welcometobloxburg #bloxburgbuild #viral",
       "description": "The pain of buying computers... #bloxburg #roblox #welcometobloxburg #bloxburgbuild #viral....",
       "source": "YouTube",
@@ -304,15 +313,6 @@
       "source": "YouTube",
       "timestamp": 1772570703.0,
       "url": "https://www.youtube.com/watch?v=ZaT1ilH_5d0",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Building In BLOXBURG But EVERY ROOM DOUBLES IN SIZE",
-      "description": "Become A Channel Member by pressing the 'JOIN' button next to subscribe to gain extra perks!...",
-      "source": "YouTube",
-      "timestamp": 1772564444.0,
-      "url": "https://www.youtube.com/watch?v=jw4dxkkdYnc",
       "icon": "fa-youtube"
     },
     {
@@ -353,7 +353,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772592866.487956,
+    "generated_at": 1772594066.4935246,
     "mode": "memory",
     "refresh_interval": 2000
   }
