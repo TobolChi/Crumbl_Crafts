@@ -7,8 +7,8 @@
     "request_completion_ratio": 0.0
   },
   "server": {
-    "total_members": 373,
-    "joined_today": 1,
+    "total_members": 374,
+    "joined_today": 2,
     "active_shops": 1,
     "avg_response_time": 2254.8
   },
@@ -33,6 +33,15 @@
     }
   ],
   "activityLog": [
+    {
+      "type": "member_join",
+      "shop_name": "Server",
+      "message": "abbeyyvv joined the server",
+      "timestamp": 1772660618,
+      "thread_id": null,
+      "server_id": 1301988304279048275,
+      "url": "https://discord.com/users/1134421341118922866"
+    },
     {
       "type": "member_join",
       "shop_name": "Server",
@@ -272,15 +281,6 @@
     },
     {
       "type": "trend",
-      "title": "Sold for MILLIONS?! \ud83d\ude33#roblox #shorts",
-      "description": "This Roblox Game Is Worth WHAT?! #shorts #roblox #bloxburg....",
-      "source": "YouTube",
-      "timestamp": 1772645032.0,
-      "url": "https://www.youtube.com/watch?v=K02Sy9WFEMI",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "Caf\u00e9 Vlog \u2615 #berryave #roblox #roleplay #brookhaven #robloxrp  #bloxburg",
       "description": "Eating at a caf\u00e9 in Berry Avenue \u2615\u2728 Would you try this? Click the bell so you don't miss any of my v...",
       "source": "YouTube",
@@ -295,6 +295,15 @@
       "source": "YouTube",
       "timestamp": 1772636466.0,
       "url": "https://www.youtube.com/watch?v=c_waxRo4z2k",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "\u0435\u0435\u0435 \u0447\u0433 \u0432\u0435\u0440\u043d\u0443\u043b\u0441\u044f #roblox #bloxburg #memes #funny #house #\u0432_\u0440_\u0435_\u043a_\u043e_\u043c_\u0435_\u043d_\u0434_\u0430_\u0446_\u0438_\u0438 #\u0432\u0440\u0435\u043a #\u0444\u043d\u0430\u0444\u0442\u043e\u043f",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772631859.0,
+      "url": "https://www.youtube.com/watch?v=7_YncLY2tvg",
       "icon": "fa-youtube"
     },
     {
@@ -335,7 +344,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772660066.7944975,
+    "generated_at": 1772660621.4770598,
     "mode": "memory",
     "refresh_interval": 2000
   }
