@@ -316,44 +316,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1772224460.505239,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Building In BLOXBURG But EVERY ROOM DOUBLES IN SIZE",
+      "description": "Become A Channel Member by pressing the 'JOIN' button next to subscribe to gain extra perks!...",
+      "source": "YouTube",
+      "timestamp": 1772564444.0,
+      "url": "https://www.youtube.com/watch?v=jw4dxkkdYnc",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "TOP 5 RAREST GACHA FRUITS! (Part 1) \ud83d\ude31 #bloxfurit #bloxburg #bloxdio #clubroblox",
+      "description": "Is your luck actually good? Check out these 5 fruits with the lowest drop rates in the Gacha. Have y...",
       "source": "YouTube",
-      "timestamp": 1772220860.505241,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1772551187.0,
+      "url": "https://www.youtube.com/watch?v=Q-uqu6DJpuY",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1772217260.5052419,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #funny #bloxburg",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1772550092.0,
+      "url": "https://www.youtube.com/watch?v=r1eT-kLbC3k",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1772213660.5052426,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #funny #bloxburg",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1772527504.0,
+      "url": "https://www.youtube.com/watch?v=H5jom123hRo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "girlfriend &amp; boyfriend short | Roblox short | Roblox tips and tricks",
+      "description": "Roblox#RobloxShorts#GamingShorts#RobloxGameplay#Bloxburg#AdoptMe#RobloxEdit#FYP (viral reach \u0915\u0947 ......",
+      "source": "YouTube",
+      "timestamp": 1772523953.0,
+      "url": "https://www.youtube.com/watch?v=7ZhoQPlaHdw",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1772607266.4897223,
+    "generated_at": 1772608466.4882557,
     "mode": "memory",
     "refresh_interval": 2000
   }
