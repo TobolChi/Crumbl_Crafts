@@ -221,15 +221,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1322382891711336560",
       "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "https.toyosi left the server",
-      "timestamp": 1772078162,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1152982576269643867",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -281,47 +272,47 @@
   "news": [
     {
       "type": "trend",
-      "title": "You can be whatever you want\ud83e\udef6\ud83e\udd79\ud83e\ude77#bloxburg  #roblox #taylorswift",
+      "title": "Hehehawhaw #roblox #amazingroblox #robloxedit #rblx #edit #dance #funny #bloxburg",
       "description": "...",
       "source": "YouTube",
-      "timestamp": 1772675803.0,
-      "url": "https://www.youtube.com/watch?v=dhMjgU-7fGE",
+      "timestamp": 1772675348.0,
+      "url": "https://www.youtube.com/watch?v=mZJ9e52AwzM",
       "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #bloxburg #funny",
-      "description": "Roblox....",
+      "title": "Roblox Bloxburg Episode 195: Nelson &amp; The Ice Cream Seller Job At Ben&#39;s Ice Cream (1/1/26)",
+      "description": "Filmed On March 1st, 2026....",
       "source": "YouTube",
-      "timestamp": 1772657102.0,
-      "url": "https://www.youtube.com/watch?v=uUlx1DLR5JE",
+      "timestamp": 1772672796.0,
+      "url": "https://www.youtube.com/watch?v=gzAxixVRSgI",
       "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "I BUILT A BLOXBURG HOUSE Using ONLY FLY MODE",
-      "description": "roblox #bloxburg #robloxbloxburg I built a bloxburg house using free cam ONLY...how will I build whe...",
+      "title": "top 5 worst bloxburg moments \ud83d\ude2d #roblox #bloxburg #relateable #bloxburgbuild #fyp",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1772654434.0,
-      "url": "https://www.youtube.com/watch?v=WmUEdEwd40s",
+      "timestamp": 1772670659.0,
+      "url": "https://www.youtube.com/watch?v=taRAZOn3DTo",
       "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Stock footage be like part 1 #roblox #edit #bloxburg #funny #memes #robloxedit #fortnite",
-      "description": "More stock footage funny videos coming....",
+      "title": "#roblox #robloxedit #robloxusa #usa #robloxgames #robloxshorts #bloxburg #gamingshorts #shorts",
+      "description": "roblox #robloxedit #robloxusa #usa #robloxgames #robloxshorts #bloxburg #gamingshorts #shorts....",
       "source": "YouTube",
-      "timestamp": 1772652890.0,
-      "url": "https://www.youtube.com/watch?v=lOwYCxSGI8M",
+      "timestamp": 1772670631.0,
+      "url": "https://www.youtube.com/watch?v=O0d0-7spPEY",
       "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Caf\u00e9 Vlog \u2615 #berryave #roblox #roleplay #brookhaven #robloxrp  #bloxburg",
-      "description": "Eating at a caf\u00e9 in Berry Avenue \u2615\u2728 Would you try this? Click the bell so you don't miss any of my v...",
+      "title": "who wants one?? #roblox #bloxburg #relateable #bloxburgbuild #fyp",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1772640036.0,
-      "url": "https://www.youtube.com/watch?v=Q6McLEvu9Tc",
+      "timestamp": 1772667734.0,
+      "url": "https://www.youtube.com/watch?v=Vfi0XGK-MO4",
       "icon": "fa-youtube"
     },
     {
@@ -362,7 +353,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772682866.4865165,
+    "generated_at": 1772684066.4874785,
     "mode": "memory",
     "refresh_interval": 2000
   }
