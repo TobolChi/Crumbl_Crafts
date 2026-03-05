@@ -212,15 +212,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/941257263690154005",
       "thread_id": null
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "ronkoye_boob3s left the server",
-      "timestamp": 1772083356,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1322382891711336560",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -362,7 +353,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772687666.4884164,
+    "generated_at": 1772688866.4903584,
     "mode": "memory",
     "refresh_interval": 2000
   }
