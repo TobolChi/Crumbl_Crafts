@@ -185,24 +185,6 @@
       "thread_id": 1476400516950134958,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/channels/1301988304279048275/1476400516950134958"
-    },
-    {
-      "type": "sent",
-      "shop_name": "ULuvOllie's Shop",
-      "message": "Request sent by larasimk",
-      "timestamp": 1772086802,
-      "thread_id": 1457057884968845373,
-      "url": "https://discord.com/channels/1301988304279048275/1457057884968845373",
-      "server_id": 1301988304279048275
-    },
-    {
-      "type": "sent",
-      "shop_name": "Hidenori's Builder Shop",
-      "message": "Request sent by larasimk",
-      "timestamp": 1772086648,
-      "thread_id": 1476400516950134958,
-      "url": "https://discord.com/channels/1301988304279048275/1476400516950134958",
-      "server_id": 1301988304279048275
     }
   ],
   "pipeline": [
@@ -220,7 +202,7 @@
     },
     {
       "label": "Requests (7d)",
-      "value": 2,
+      "value": 0,
       "trend": "1 accepted \u00b7 4 rejected",
       "max": 100
     }
@@ -335,7 +317,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772691266.4919863,
+    "generated_at": 1772692466.4878452,
     "mode": "memory",
     "refresh_interval": 2000
   }
