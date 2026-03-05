@@ -254,6 +254,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "HOSTING A SPRING BBQ IN OUR NEIGHBOURHOOD! *NAUGHTY KIDS!* Roblox Bloxburg Voiced RP Roleplay",
+      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "source": "YouTube",
+      "timestamp": 1772744406.0,
+      "url": "https://www.youtube.com/watch?v=zT0SVJ_4tIs",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "do it do it #shorts #steak #bloxburg",
       "description": "...",
       "source": "YouTube",
@@ -277,15 +286,6 @@
       "source": "YouTube",
       "timestamp": 1772715743.0,
       "url": "https://www.youtube.com/watch?v=esAWOXB6Hfg",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I CAME BACK to bloxburg AGAIN!",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772709364.0,
-      "url": "https://www.youtube.com/watch?v=CTsUaW3acEM",
       "icon": "fa-youtube"
     },
     {
@@ -335,7 +335,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772744066.487838,
+    "generated_at": 1772745266.4883854,
     "mode": "memory",
     "refresh_interval": 2000
   }
