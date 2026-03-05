@@ -227,6 +227,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "#lifeisbutadream #ihavethisthingwithplants #bloxburg #theothersideofmakebelieve #adoptme",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772715743.0,
+      "url": "https://www.youtube.com/watch?v=esAWOXB6Hfg",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "I CAME BACK to bloxburg AGAIN!",
       "description": "...",
       "source": "YouTube",
@@ -259,15 +268,6 @@
       "source": "YouTube",
       "timestamp": 1772657102.0,
       "url": "https://www.youtube.com/watch?v=uUlx1DLR5JE",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I BUILT A BLOXBURG HOUSE Using ONLY FLY MODE",
-      "description": "roblox #bloxburg #robloxbloxburg I built a bloxburg house using free cam ONLY...how will I build whe...",
-      "source": "YouTube",
-      "timestamp": 1772654434.0,
-      "url": "https://www.youtube.com/watch?v=WmUEdEwd40s",
       "icon": "fa-youtube"
     },
     {
@@ -308,7 +308,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772715266.4898038,
+    "generated_at": 1772716466.4914181,
     "mode": "memory",
     "refresh_interval": 2000
   }
