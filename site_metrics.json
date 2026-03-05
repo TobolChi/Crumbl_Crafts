@@ -194,15 +194,6 @@
       "thread_id": null,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/798777078191095820"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "lexii0101 left the server",
-      "timestamp": 1772145221,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1190384363939053708",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -344,7 +335,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772748866.490401,
+    "generated_at": 1772750066.4877346,
     "mode": "memory",
     "refresh_interval": 2000
   }
