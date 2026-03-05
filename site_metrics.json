@@ -299,15 +299,6 @@
     },
     {
       "type": "trend",
-      "title": "\u203c\ufe0fONLY\u203c\ufe0f OG BLOXBURG RELATE\ud83d\ude0e\ud83d\udcaa\u203c\ufe0f #bloxburg #roblox #bloxburgbuild #robloxedit #shorts",
-      "description": "roblox #bloxburg #robloxmemes #robloxedit #robloxshorts #shorts #tiktok #reels #robloxtiktok #roblox...",
-      "source": "YouTube",
-      "timestamp": 1772656200.0,
-      "url": "https://www.youtube.com/watch?v=1aJRGhz7iso",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "I BUILT A BLOXBURG HOUSE Using ONLY FLY MODE",
       "description": "roblox #bloxburg #robloxbloxburg I built a bloxburg house using free cam ONLY...how will I build whe...",
       "source": "YouTube",
@@ -326,11 +317,20 @@
     },
     {
       "type": "trend",
-      "title": "Caf\u00e9 Vlog \u2615 #berryave #roblox #roleplay #brookhaven #robloxrp  #bloxburg",
-      "description": "Eating at a caf\u00e9 in Berry Avenue \u2615\u2728 Would you try this? Click the bell so you don't miss any of my v...",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #bloxburg #funny",
+      "description": "Roblox....",
       "source": "YouTube",
-      "timestamp": 1772640036.0,
-      "url": "https://www.youtube.com/watch?v=Q6McLEvu9Tc",
+      "timestamp": 1772636466.0,
+      "url": "https://www.youtube.com/watch?v=c_waxRo4z2k",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "\u0435\u0435\u0435 \u0447\u0433 \u0432\u0435\u0440\u043d\u0443\u043b\u0441\u044f #roblox #bloxburg #memes #funny #house #\u0432_\u0440_\u0435_\u043a_\u043e_\u043c_\u0435_\u043d_\u0434_\u0430_\u0446_\u0438_\u0438 #\u0432\u0440\u0435\u043a #\u0444\u043d\u0430\u0444\u0442\u043e\u043f",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772631859.0,
+      "url": "https://www.youtube.com/watch?v=7_YncLY2tvg",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772674466.4889507,
+    "generated_at": 1772675666.4876769,
     "mode": "memory",
     "refresh_interval": 2000
   }
