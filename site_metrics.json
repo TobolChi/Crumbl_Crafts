@@ -280,44 +280,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1772224460.505239,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #bloxburg #funny",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1772636466.0,
+      "url": "https://www.youtube.com/watch?v=c_waxRo4z2k",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "\u0435\u0435\u0435 \u0447\u0433 \u0432\u0435\u0440\u043d\u0443\u043b\u0441\u044f #roblox #bloxburg #memes #funny #house #\u0432_\u0440_\u0435_\u043a_\u043e_\u043c_\u0435_\u043d_\u0434_\u0430_\u0446_\u0438_\u0438 #\u0432\u0440\u0435\u043a #\u0444\u043d\u0430\u0444\u0442\u043e\u043f",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1772220860.505241,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1772631859.0,
+      "url": "https://www.youtube.com/watch?v=7_YncLY2tvg",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1772217260.5052419,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "did it #roblox #funny #bloxburg #memes #games",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772628866.0,
+      "url": "https://www.youtube.com/watch?v=2zZLmBBwTRM",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1772213660.5052426,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "#bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772625095.0,
+      "url": "https://www.youtube.com/watch?v=kT8-U4NBFD0",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #robloxgames #games #mm2 #bloxburg #funny",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1772613900.0,
+      "url": "https://www.youtube.com/watch?v=9GVWzLoGnL0",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1772692466.7817628,
+    "generated_at": 1772693666.4876559,
     "mode": "memory",
     "refresh_interval": 2000
   }
