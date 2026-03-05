@@ -176,15 +176,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/1190384363939053708",
       "thread_id": null
-    },
-    {
-      "type": "rejected",
-      "shop_name": "Hidenori's Builder Shop",
-      "message": "Request from larasimk rejected",
-      "timestamp": 1772096341,
-      "thread_id": 1476400516950134958,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/channels/1301988304279048275/1476400516950134958"
     }
   ],
   "pipeline": [
@@ -236,6 +227,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "cmon man too easy \ud83e\udd11\ud83e\udd11\ud83e\udd11\ud83e\udd11\ud83e\udd11\ud83e\udd11\ud83e\udd11 #roblox #helpmemakethismakesense #funny #bloxburg #giveusourstolenmoneybac",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772700970.0,
+      "url": "https://www.youtube.com/watch?v=h5JoY-81N9Q",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "You can be whatever you want\ud83e\udef6\ud83e\udd79\ud83e\ude77#bloxburg  #roblox #taylorswift",
       "description": "...",
       "source": "YouTube",
@@ -268,15 +268,6 @@
       "source": "YouTube",
       "timestamp": 1772652890.0,
       "url": "https://www.youtube.com/watch?v=lOwYCxSGI8M",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Caf\u00e9 Vlog \u2615 #berryave #roblox #roleplay #brookhaven #robloxrp  #bloxburg",
-      "description": "Eating at a caf\u00e9 in Berry Avenue \u2615\u2728 Would you try this? Click the bell so you don't miss any of my v...",
-      "source": "YouTube",
-      "timestamp": 1772640036.0,
-      "url": "https://www.youtube.com/watch?v=Q6McLEvu9Tc",
       "icon": "fa-youtube"
     },
     {
@@ -317,7 +308,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772700866.4871216,
+    "generated_at": 1772702066.492288,
     "mode": "memory",
     "refresh_interval": 2000
   }
