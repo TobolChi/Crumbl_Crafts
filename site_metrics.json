@@ -290,29 +290,11 @@
   "news": [
     {
       "type": "trend",
-      "title": "Bloxburg aesthetic modern house! 3 rooms 1 bathroom office ballet/ yoga room kitchen and pantry! Fam",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772677330.0,
-      "url": "https://www.youtube.com/watch?v=-1RBb8nVw7I",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "Hehehawhaw #roblox #amazingroblox #robloxedit #rblx #edit #dance #funny #bloxburg",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1772675348.0,
       "url": "https://www.youtube.com/watch?v=mZJ9e52AwzM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox Modern Bloxburg Speed Build. #roblox #bloxburg ",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772672947.0,
-      "url": "https://www.youtube.com/watch?v=pWj_JfsmaKM",
       "icon": "fa-youtube"
     },
     {
@@ -326,11 +308,29 @@
     },
     {
       "type": "trend",
-      "title": "How i make my bloxburg money (when i feel like it).",
-      "description": "making bloxburg money (just a little bit) And other things because i got bored....",
+      "title": "top 5 worst bloxburg moments \ud83d\ude2d #roblox #bloxburg #relateable #bloxburgbuild #fyp",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1772671510.0,
-      "url": "https://www.youtube.com/watch?v=uNpP3abwBow",
+      "timestamp": 1772670659.0,
+      "url": "https://www.youtube.com/watch?v=taRAZOn3DTo",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "#roblox #robloxedit #robloxusa #usa #robloxgames #robloxshorts #bloxburg #gamingshorts #shorts",
+      "description": "roblox #robloxedit #robloxusa #usa #robloxgames #robloxshorts #bloxburg #gamingshorts #shorts....",
+      "source": "YouTube",
+      "timestamp": 1772670631.0,
+      "url": "https://www.youtube.com/watch?v=O0d0-7spPEY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "who wants one?? #roblox #bloxburg #relateable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772667734.0,
+      "url": "https://www.youtube.com/watch?v=Vfi0XGK-MO4",
       "icon": "fa-youtube"
     },
     {
@@ -371,7 +371,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772679266.4907541,
+    "generated_at": 1772680466.4895117,
     "mode": "memory",
     "refresh_interval": 2000
   }
