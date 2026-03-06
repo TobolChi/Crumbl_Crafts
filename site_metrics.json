@@ -263,47 +263,47 @@
   "news": [
     {
       "type": "trend",
-      "title": "$10,000 BUDGET HOME (No Gamepasses) #bloxburg",
-      "description": "View YouTube video here: https://www.youtube.com/watch?v=P_qOFb9FL4c&t=7s #bloxburg #bloxburgbudgeth...",
-      "source": "YouTube",
-      "timestamp": 1772803870.0,
-      "url": "https://www.youtube.com/watch?v=qQi8eeKguGY",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "BLOXBURG DANCE STUDIO LEAKS??",
-      "description": "BUY MY MERCH: https://acggoods.com/store/glossbossboutique ......",
-      "source": "YouTube",
-      "timestamp": 1772803601.0,
-      "url": "https://www.youtube.com/watch?v=NyhPg4d0iGM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "the breakup can wait im BUILDING #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772802148.0,
-      "url": "https://www.youtube.com/watch?v=TRX1uQGjwpM",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "YOU SPIN ME #bloxburg #roblox #helpmemakethismakesense #amnewbutnottheleast",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772799561.0,
-      "url": "https://www.youtube.com/watch?v=sqiNsnlJIHc",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
       "title": "#robloxedit #roblox #funny #viral #bloxburg #games #robloxbloxburgspeedbuild #robloxfunny",
       "description": "...",
       "source": "YouTube",
       "timestamp": 1772799318.0,
       "url": "https://www.youtube.com/watch?v=aUgNCXxbWMg",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "5 Star Hotel in Roblox Gone Wrong! \ud83d\ude31\ud83c\udfe8 #roblox #shorts trending",
+      "description": "5 Star Hotel in Roblox Gone Wrong! #roblox #shorts trending \"POV: Checking into the creepiest hotel ...",
+      "source": "YouTube",
+      "timestamp": 1772793024.0,
+      "url": "https://www.youtube.com/watch?v=lTGyKyEzcZw",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Bloxburg #bloxburg #fyp #builder #song",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772771501.0,
+      "url": "https://www.youtube.com/watch?v=rGZS58LpDsY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Join if you\u2019re interested! #roblox #voiceacting #bloxburg #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772769428.0,
+      "url": "https://www.youtube.com/watch?v=kAB8coAAQ_w",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "POV: it\u2019s payday but you remember you have bills #roblox #bloxburg #funny #shorts",
+      "description": "viral #funny #blowup #roblox #bloxburg #bloxburgroleplay #family #gaming #robloxgaming #roleplay #tr...",
+      "source": "YouTube",
+      "timestamp": 1772764262.0,
+      "url": "https://www.youtube.com/watch?v=yILtddU_ANc",
       "icon": "fa-youtube"
     },
     {
@@ -344,7 +344,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772808866.4878774,
+    "generated_at": 1772810066.4866698,
     "mode": "memory",
     "refresh_interval": 2000
   }
