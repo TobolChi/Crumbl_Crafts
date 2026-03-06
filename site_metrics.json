@@ -263,20 +263,47 @@
   "news": [
     {
       "type": "trend",
-      "title": "Airell React AM28 Bloxburg (Reaction Malaysia)",
-      "description": "Hai dan Assalamualaikum Semua, Nama Saya Arif Airell dan Selamat Datang Ke Youtube Channel Saya Aire...",
+      "title": "Bloxburg #bloxburg #fyp #builder #song",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1772774354.0,
-      "url": "https://www.youtube.com/watch?v=ELqiAdnsgQk",
+      "timestamp": 1772771501.0,
+      "url": "https://www.youtube.com/watch?v=rGZS58LpDsY",
       "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "OCEANBORN | Episode 1- &quot;Something is strange&quot; | Bloxburg Series",
-      "description": "\"the land is his home, but the ocean is his heart..\" \u2764\ufe0f  Make sure to leave a like and subscribe and...",
+      "title": "Join if you\u2019re interested! #roblox #voiceacting #bloxburg #shorts",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1772752838.0,
-      "url": "https://www.youtube.com/watch?v=F-rhCGvFS7w",
+      "timestamp": 1772769428.0,
+      "url": "https://www.youtube.com/watch?v=kAB8coAAQ_w",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "POV: it\u2019s payday but you remember you have bills #roblox #bloxburg #funny #shorts",
+      "description": "viral #funny #blowup #roblox #bloxburg #bloxburgroleplay #family #gaming #robloxgaming #roleplay #tr...",
+      "source": "YouTube",
+      "timestamp": 1772764262.0,
+      "url": "https://www.youtube.com/watch?v=yILtddU_ANc",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "When Your Dad Forgets Your Name! \ud83d\ude2d\ud83e\udd2c#bloxburg #bloxburgfamily #roblox #shorts",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772759572.0,
+      "url": "https://www.youtube.com/watch?v=XEBtHe26CYY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "#roblox #amazingroblox #amazingroblox #edit #minecraft #gaming #bloxburg #bloxburg #cocomelon",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772756317.0,
+      "url": "https://www.youtube.com/watch?v=CXc6zx28Umk",
       "icon": "fa-youtube"
     },
     {
@@ -317,7 +344,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772786066.4886146,
+    "generated_at": 1772787266.4879928,
     "mode": "memory",
     "refresh_interval": 2000
   }
