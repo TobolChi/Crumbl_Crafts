@@ -298,44 +298,53 @@
       "icon": "fa-youtube"
     },
     {
-      "type": "game_update",
-      "title": "New Winter Update Available!",
-      "description": "Explore new winter-themed furniture and decorations",
-      "source": "Bloxburg Official",
-      "timestamp": 1772224460.505239,
-      "url": "https://twitter.com/BloxburgGame",
-      "icon": "fa-gamepad"
+      "type": "trend",
+      "title": "Nail Day \ud83d\udc85 #berryave #roblox #roleplay #brookhaven #robloxrp  #bloxburg",
+      "description": "Going to my nail appointment \u2728 Glow up time! Click the bell so you don't miss any of my videos! \u2b50 Su...",
+      "source": "YouTube",
+      "timestamp": 1772726462.0,
+      "url": "https://www.youtube.com/watch?v=b3LWaFpc0xo",
+      "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Modern Mansion Builds Trending",
-      "description": "Community showcasing stunning modern architecture",
+      "title": "#lifeisbutadream #ihavethisthingwithplants #bloxburg #theothersideofmakebelieve #adoptme",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1772220860.505241,
-      "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
-      "icon": "fa-fire"
+      "timestamp": 1772715743.0,
+      "url": "https://www.youtube.com/watch?v=esAWOXB6Hfg",
+      "icon": "fa-youtube"
     },
     {
-      "type": "tip",
-      "title": "Money Making Guide 2024",
-      "description": "Best jobs and strategies to earn cash quickly",
-      "source": "Community Guide",
-      "timestamp": 1772217260.5052419,
-      "url": "#",
-      "icon": "fa-lightbulb"
+      "type": "trend",
+      "title": "I CAME BACK to bloxburg AGAIN!",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772709364.0,
+      "url": "https://www.youtube.com/watch?v=CTsUaW3acEM",
+      "icon": "fa-youtube"
     },
     {
-      "type": "community",
-      "title": "Weekly Build Contest",
-      "description": "Submit your best holiday-themed builds to win prizes!",
-      "source": "Crumbl Crafts",
-      "timestamp": 1772213660.5052426,
-      "url": "#",
-      "icon": "fa-trophy"
+      "type": "trend",
+      "title": "You can be whatever you want\ud83e\udef6\ud83e\udd79\ud83e\ude77#bloxburg  #roblox #taylorswift",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772675803.0,
+      "url": "https://www.youtube.com/watch?v=dhMjgU-7fGE",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "like actually? #roblox #bloxburg #relateable #bloxburgbuild #fyp",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772663860.0,
+      "url": "https://www.youtube.com/watch?v=2hf6jGfO-Ow",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1772760866.4876335,
+    "generated_at": 1772762066.4885285,
     "mode": "memory",
     "refresh_interval": 2000
   }
