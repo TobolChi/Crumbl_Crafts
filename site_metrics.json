@@ -244,6 +244,24 @@
   ],
   "news": [
     {
+      "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #funny #games #memes #bloxburg #horror",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1772895613.0,
+      "url": "https://www.youtube.com/watch?v=8f6ar3UOSPY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "STICKER #roblox #amnewbutnottheleast #robloxedit #ishowspeedwannabe #bloxburg #bloxburg #minecraft",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772895182.0,
+      "url": "https://www.youtube.com/watch?v=z56u2ceb-Rw",
+      "icon": "fa-youtube"
+    },
+    {
       "type": "game_update",
       "title": "New Winter Update Available!",
       "description": "Explore new winter-themed furniture and decorations",
@@ -305,28 +323,10 @@
       "timestamp": 1772854013.0,
       "url": "https://www.youtube.com/watch?v=LToWHhCJuTY",
       "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #funny #games #memes #bloxburg #horror",
-      "description": "Roblox....",
-      "source": "YouTube",
-      "timestamp": 1772852422.0,
-      "url": "https://www.youtube.com/watch?v=QP_X44s7ZWQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "build my dream house in Roblox #rblx #robloxedit #mm2 #roblox #bloxburg",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772843395.0,
-      "url": "https://www.youtube.com/watch?v=thM_STgS5yI",
-      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1772895227.14485,
+    "generated_at": 1772896427.1403933,
     "mode": "memory",
     "refresh_interval": 2000
   }
