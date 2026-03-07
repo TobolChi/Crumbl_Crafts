@@ -1,18 +1,6 @@
 {
   "chefs": [],
-  "activities": [
-    {
-      "type": "menu_update",
-      "chef": "Hidenori",
-      "user": "Hidenori",
-      "message": "Bulk updated 14 items in Christmas",
-      "action": "Bulk updated 14 items in Christmas",
-      "timestamp": 1771975521,
-      "user_id": 1098992055272878081,
-      "id": "cooking_1771975521_15",
-      "source": "live"
-    }
-  ],
+  "activities": [],
   "menu": {
     "catering": {
       "Apple Pie": {
@@ -1074,8 +1062,8 @@
     "New Year"
   ],
   "meta": {
-    "timestamp": "2026-02-26T01:22:29.462210",
-    "last_updated": 1772061749.46222,
+    "timestamp": "2026-03-07T14:56:25.228663",
+    "last_updated": 1772888185.2286754,
     "cached": false,
     "data_source": "discord_bot"
   },
