@@ -38,36 +38,36 @@
       "shop_name": "Server",
       "message": "witz0._ left the server",
       "timestamp": 1772775950,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/840113540060413962"
+      "url": "https://discord.com/users/840113540060413962",
+      "thread_id": null
     },
     {
       "type": "member_leave",
       "shop_name": "Server",
       "message": "65n2 left the server",
       "timestamp": 1772754230,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1306053332447789138"
+      "url": "https://discord.com/users/1306053332447789138",
+      "thread_id": null
     },
     {
       "type": "member_leave",
       "shop_name": "Server",
       "message": "roossss left the server",
       "timestamp": 1772737449,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/667769343094030350"
+      "url": "https://discord.com/users/667769343094030350",
+      "thread_id": null
     },
     {
       "type": "member_join",
       "shop_name": "Server",
       "message": "roossss joined the server",
       "timestamp": 1772737041,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/667769343094030350"
+      "url": "https://discord.com/users/667769343094030350",
+      "thread_id": null
     },
     {
       "type": "sent",
@@ -75,62 +75,62 @@
       "message": "Request sent by kungjoel",
       "timestamp": 1772724220,
       "thread_id": 1457057884968845373,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/channels/1301988304279048275/1457057884968845373"
+      "url": "https://discord.com/channels/1301988304279048275/1457057884968845373",
+      "server_id": 1301988304279048275
     },
     {
       "type": "member_leave",
       "shop_name": "Server",
       "message": "duoyourlingo left the server",
       "timestamp": 1772670875,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1236523031741071360"
+      "url": "https://discord.com/users/1236523031741071360",
+      "thread_id": null
     },
     {
       "type": "member_join",
       "shop_name": "Server",
       "message": "duoyourlingo joined the server",
       "timestamp": 1772670679,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1236523031741071360"
+      "url": "https://discord.com/users/1236523031741071360",
+      "thread_id": null
     },
     {
       "type": "member_leave",
       "shop_name": "Server",
       "message": "abbeyyvv left the server",
       "timestamp": 1772660697,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1134421341118922866"
+      "url": "https://discord.com/users/1134421341118922866",
+      "thread_id": null
     },
     {
       "type": "member_join",
       "shop_name": "Server",
       "message": "gracie.3 joined the server",
       "timestamp": 1772660655,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/585707535286140948"
+      "url": "https://discord.com/users/585707535286140948",
+      "thread_id": null
     },
     {
       "type": "member_join",
       "shop_name": "Server",
       "message": "abbeyyvv joined the server",
       "timestamp": 1772660618,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1134421341118922866"
+      "url": "https://discord.com/users/1134421341118922866",
+      "thread_id": null
     },
     {
       "type": "member_join",
       "shop_name": "Server",
       "message": "noelle_orion joined the server",
       "timestamp": 1772647124,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1467666239680806973"
+      "url": "https://discord.com/users/1467666239680806973",
+      "thread_id": null
     },
     {
       "type": "new_request_thread",
@@ -146,27 +146,27 @@
       "shop_name": "Server",
       "message": "skyistheb3stie joined the server",
       "timestamp": 1772574239,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1256868606210211871"
+      "url": "https://discord.com/users/1256868606210211871",
+      "thread_id": null
     },
     {
       "type": "member_leave",
       "shop_name": "Server",
       "message": "reitheoni left the server",
       "timestamp": 1772565291,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/663930692916346893"
+      "url": "https://discord.com/users/663930692916346893",
+      "thread_id": null
     },
     {
       "type": "member_join",
       "shop_name": "Server",
       "message": "doghoes67 joined the server",
       "timestamp": 1772397286,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1419313489033298010"
+      "url": "https://discord.com/users/1419313489033298010",
+      "thread_id": null
     },
     {
       "type": "new_request_thread",
@@ -182,36 +182,18 @@
       "shop_name": "Server",
       "message": "vuptox joined the server",
       "timestamp": 1772342679,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/747813601720533084"
+      "url": "https://discord.com/users/747813601720533084",
+      "thread_id": null
     },
     {
       "type": "member_join",
       "shop_name": "Server",
       "message": "sxspectt. joined the server",
       "timestamp": 1772307541,
-      "thread_id": null,
       "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1451246437806379009"
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "riku.in.memoriam joined the server",
-      "timestamp": 1772257721,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/955865629032845372"
-    },
-    {
-      "type": "member_leave",
-      "shop_name": "Server",
-      "message": "kyaisawesome left the server",
-      "timestamp": 1772245559,
-      "thread_id": null,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/798777078191095820"
+      "url": "https://discord.com/users/1451246437806379009",
+      "thread_id": null
     }
   ],
   "pipeline": [
@@ -262,56 +244,11 @@
   ],
   "news": [
     {
-      "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #funny #games #memes #bloxburg #horror",
-      "description": "Roblox....",
-      "source": "YouTube",
-      "timestamp": 1772830335.0,
-      "url": "https://www.youtube.com/watch?v=15xDFIfXei4",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "I GOT HIRED AS A MAID TO SPY ON BLOXBURG&#39;S RICHEST FAMILY",
-      "description": "bloxburg #roblox #robloxbloxburg I worked as a maid for the rudest family in bloxburg...what I saw t...",
-      "source": "YouTube",
-      "timestamp": 1772827205.0,
-      "url": "https://www.youtube.com/watch?v=22k6yOHpoZ8",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#robloxedit #roblox #funny #viral #bloxburg #games #robloxbloxburgspeedbuild #robloxfunny",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772799318.0,
-      "url": "https://www.youtube.com/watch?v=aUgNCXxbWMg",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "5 Star Hotel in Roblox Gone Wrong! \ud83d\ude31\ud83c\udfe8 #roblox #shorts trending",
-      "description": "5 Star Hotel in Roblox Gone Wrong! #roblox #shorts trending \"POV: Checking into the creepiest hotel ...",
-      "source": "YouTube",
-      "timestamp": 1772793024.0,
-      "url": "https://www.youtube.com/watch?v=lTGyKyEzcZw",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#Animatic",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772772414.0,
-      "url": "https://www.youtube.com/watch?v=wQJ3P22RiQE",
-      "icon": "fa-youtube"
-    },
-    {
       "type": "game_update",
       "title": "New Winter Update Available!",
       "description": "Explore new winter-themed furniture and decorations",
       "source": "Bloxburg Official",
-      "timestamp": 1772224460.505239,
+      "timestamp": 1772885621.3138177,
       "url": "https://twitter.com/BloxburgGame",
       "icon": "fa-gamepad"
     },
@@ -320,7 +257,7 @@
       "title": "Modern Mansion Builds Trending",
       "description": "Community showcasing stunning modern architecture",
       "source": "YouTube",
-      "timestamp": 1772220860.505241,
+      "timestamp": 1772882021.3138194,
       "url": "https://youtube.com/results?search_query=bloxburg+modern+mansion",
       "icon": "fa-fire"
     },
@@ -329,7 +266,7 @@
       "title": "Money Making Guide 2024",
       "description": "Best jobs and strategies to earn cash quickly",
       "source": "Community Guide",
-      "timestamp": 1772217260.5052419,
+      "timestamp": 1772878421.31382,
       "url": "#",
       "icon": "fa-lightbulb"
     },
@@ -338,13 +275,58 @@
       "title": "Weekly Build Contest",
       "description": "Submit your best holiday-themed builds to win prizes!",
       "source": "Crumbl Crafts",
-      "timestamp": 1772213660.5052426,
+      "timestamp": 1772874821.3138204,
       "url": "#",
       "icon": "fa-trophy"
+    },
+    {
+      "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #funny #games #memes #bloxburg #horror",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1772874025.0,
+      "url": "https://www.youtube.com/watch?v=E20Y622toXI",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "#bloxburg #bloxburg #roblox #ytdayibenionecikarnolur #buildaboatfort #robloxbloxburgspeedbuild",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772862831.0,
+      "url": "https://www.youtube.com/watch?v=UKKc-wYgOAg",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Are yall #roblox #royalehigh #sims4 #bloxburg #royalehighroblox Dti update are you excited yall \ud83d\ude1d",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772854013.0,
+      "url": "https://www.youtube.com/watch?v=LToWHhCJuTY",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #funny #games #memes #bloxburg #horror",
+      "description": "Roblox....",
+      "source": "YouTube",
+      "timestamp": 1772852422.0,
+      "url": "https://www.youtube.com/watch?v=QP_X44s7ZWQ",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "build my dream house in Roblox #rblx #robloxedit #mm2 #roblox #bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772843395.0,
+      "url": "https://www.youtube.com/watch?v=thM_STgS5yI",
+      "icon": "fa-youtube"
     }
   ],
   "meta": {
-    "generated_at": 1772834066.4876308,
+    "generated_at": 1772889225.2492228,
     "mode": "memory",
     "refresh_interval": 2000
   }
