@@ -185,15 +185,6 @@
       "server_id": 1301988304279048275,
       "url": "https://discord.com/users/747813601720533084",
       "thread_id": null
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "sxspectt. joined the server",
-      "timestamp": 1772307541,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/1451246437806379009",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -326,7 +317,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772912027.1441712,
+    "generated_at": 1772913227.1414416,
     "mode": "memory",
     "refresh_interval": 2000
   }
