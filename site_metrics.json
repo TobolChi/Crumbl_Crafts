@@ -245,29 +245,11 @@
   "news": [
     {
       "type": "trend",
-      "title": "Restaurant Build Battle in BLOXBURG!!!",
-      "description": "Hey guys! I forced my friends to compete in a restaurant build battle in Bloxburg! good luck watchin...",
-      "source": "YouTube",
-      "timestamp": 1772954702.0,
-      "url": "https://www.youtube.com/watch?v=uGZ1mnexfZQ",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#roblox #robloxedit #memes #bloxburg #funny #99daysintheforest #robloxmemes #rblx #videogamememes",
+      "title": "DANCING IN THE MIRROR \ud83e\ude9e#shorts #fyp #roblox #funny #bloxburg #trending",
       "description": "...",
       "source": "YouTube",
-      "timestamp": 1772953796.0,
-      "url": "https://www.youtube.com/watch?v=DFzg8qozCtk",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "#robloxedit #roblox #bloxburg #rp",
-      "description": "...",
-      "source": "YouTube",
-      "timestamp": 1772948785.0,
-      "url": "https://www.youtube.com/watch?v=GkBOoz7bY1g",
+      "timestamp": 1772959663.0,
+      "url": "https://www.youtube.com/watch?v=QycPziCjdKk",
       "icon": "fa-youtube"
     },
     {
@@ -286,6 +268,24 @@
       "source": "YouTube",
       "timestamp": 1772948451.0,
       "url": "https://www.youtube.com/watch?v=lnRpEM2oUsM",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "Custom working fridge On#bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772948256.0,
+      "url": "https://www.youtube.com/watch?v=PZCzlSotm0Q",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
+      "title": "#roblox #robloxedit #rp #bloxburg #masukberanda #ramdhan #robloxshorts #robloxeditbymaryam",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772942111.0,
+      "url": "https://www.youtube.com/watch?v=iyYMSP-k5fk",
       "icon": "fa-youtube"
     },
     {
@@ -326,7 +326,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772961227.1378407,
+    "generated_at": 1772962427.140177,
     "mode": "memory",
     "refresh_interval": 2000
   }
