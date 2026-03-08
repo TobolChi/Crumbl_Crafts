@@ -245,6 +245,15 @@
   "news": [
     {
       "type": "trend",
+      "title": "Custom working fridge On#bloxburg",
+      "description": "...",
+      "source": "YouTube",
+      "timestamp": 1772948256.0,
+      "url": "https://www.youtube.com/watch?v=PZCzlSotm0Q",
+      "icon": "fa-youtube"
+    },
+    {
+      "type": "trend",
       "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #funny #games #memes #bloxburg #horror",
       "description": "Roblox....",
       "source": "YouTube",
@@ -277,15 +286,6 @@
       "source": "YouTube",
       "timestamp": 1772917206.0,
       "url": "https://www.youtube.com/watch?v=UM4uCiacmNs",
-      "icon": "fa-youtube"
-    },
-    {
-      "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #funny #games #memes #bloxburg #horror",
-      "description": "Roblox....",
-      "source": "YouTube",
-      "timestamp": 1772895613.0,
-      "url": "https://www.youtube.com/watch?v=8f6ar3UOSPY",
       "icon": "fa-youtube"
     },
     {
@@ -326,7 +326,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772957627.1401849,
+    "generated_at": 1772958827.1379085,
     "mode": "memory",
     "refresh_interval": 2000
   }
