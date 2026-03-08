@@ -194,15 +194,6 @@
       "thread_id": 1477741762364834017,
       "server_id": 1301988304279048275,
       "url": "https://discord.com/channels/1301988304279048275/1477741762364834017"
-    },
-    {
-      "type": "member_join",
-      "shop_name": "Server",
-      "message": "vuptox joined the server",
-      "timestamp": 1772342679,
-      "server_id": 1301988304279048275,
-      "url": "https://discord.com/users/747813601720533084",
-      "thread_id": null
     }
   ],
   "pipeline": [
@@ -254,47 +245,47 @@
   "news": [
     {
       "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #funny #games #memes #bloxburg #horror",
-      "description": "Roblox....",
+      "title": "when someone drives by my house #roblox #bloxburg #relatable #tiktok #fyp",
+      "description": "Where you can find me: ~~~~~~~~~~~~~~~~~~~~~~~~~~~ \u2606Vlog channel: https://www.youtube.com/@PandaBear...",
       "source": "YouTube",
-      "timestamp": 1772938825.0,
-      "url": "https://www.youtube.com/watch?v=FM2XIU6DzCk",
+      "timestamp": 1772946044.0,
+      "url": "https://www.youtube.com/watch?v=bztO6-iLe5Y",
       "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "#colors #bloxburg #preppy #zodiac #filter",
+      "title": "Bloxburg house idea 1\ufffc,000,000 House or is it",
       "description": "...",
       "source": "YouTube",
-      "timestamp": 1772924662.0,
-      "url": "https://www.youtube.com/watch?v=JPanUfXUFl4",
+      "timestamp": 1772940315.0,
+      "url": "https://www.youtube.com/watch?v=rDY4EiIc_As",
       "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #funny #games #memes #bloxburg #horror",
-      "description": "Roblox....",
+      "title": "Roblox building dreamhouse epic #bloxburg #motivation #lifeisbutadream",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1772918105.0,
-      "url": "https://www.youtube.com/watch?v=uKjeSmZ-0sY",
+      "timestamp": 1772937990.0,
+      "url": "https://www.youtube.com/watch?v=M-PyW28F7ic",
       "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "MY KIDS GET TRAPPED IN OUR TREEHOUSE OVERNIGHT! *24 HOURS ALONE* Roblox Bloxburg Voiced RP Roleplay",
-      "description": "Description: \u2661\ufe0e. \u25dd \u2b50\ufe0fUSE STARCODE 'PEACH' WHEN BUYING ROBUX OR PREMIUM!\u2b50\ufe0f \u029a hey everyone!   Today it...",
+      "title": "krispy kreme owe me a donut #roblox #bloxburg",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1772917206.0,
-      "url": "https://www.youtube.com/watch?v=UM4uCiacmNs",
+      "timestamp": 1772935646.0,
+      "url": "https://www.youtube.com/watch?v=aN9sBqQ2o6c",
       "icon": "fa-youtube"
     },
     {
       "type": "trend",
-      "title": "Roblox #granny #roblox #policetycoon #robloxedit #kpop #funny #games #memes #bloxburg #horror",
-      "description": "Roblox....",
+      "title": "Roblox characters life \ud83c\udfae\ud83c\udfaf #Roblox #RobloxEdits #RobloxGaming #RobloxMemes #RobloxStory #bloxburg",
+      "description": "...",
       "source": "YouTube",
-      "timestamp": 1772895613.0,
-      "url": "https://www.youtube.com/watch?v=8f6ar3UOSPY",
+      "timestamp": 1772932932.0,
+      "url": "https://www.youtube.com/watch?v=PwVPcWjUFlo",
       "icon": "fa-youtube"
     },
     {
@@ -335,7 +326,7 @@
     }
   ],
   "meta": {
-    "generated_at": 1772946827.139749,
+    "generated_at": 1772948027.1400375,
     "mode": "memory",
     "refresh_interval": 2000
   }
